@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<subscribers>
+		<subscriber id="werner">
+			<settings>
+				<setting name="phoneNumber">+4366488653519</setting>
+				<setting name="language">de</setting>
+			</settings>
+			<notifications>
+				<notification responseTextId="$yaha_tuid:alarmcenter$" valueMap="0=$yaha_tuid:disarmed$,1=$yaha_tuid:gettingarmed$,2=$yaha_tuid:armed$">
+					<processtag>alarmCenterState</processtag>
+				</notification>
+				<notification responseTextId="$yaha_tuid:entrance$" valueMap="0=$yaha_tuid:inactive$,1=$yaha_tuid:ok$,2=$yaha_tuid:alarm$">
+					<processtag>zoneStateEntrance</processtag>
+				</notification>
+				<notification responseTextId="$yaha_tuid:lounge$" valueMap="0=$yaha_tuid:inactive$,1=$yaha_tuid:ok$,2=$yaha_tuid:alarm$">
+					<processtag>zoneStateLounge</processtag>
+				</notification>
+				<notification responseTextId="$yaha_tuid:firstfloor$" valueMap="0=$yaha_tuid:inactive$,1=$yaha_tuid:ok$,2=$yaha_tuid:alarm$">
+					<processtag>zoneStateFirstFloor</processtag>
+				</notification>
+				<notification responseTextId="$yaha_tuid:garage$" valueMap="0=$yaha_tuid:inactive$,1=$yaha_tuid:ok$,2=$yaha_tuid:alarm$">
+					<processtag>zoneStateGarage</processtag>
+				</notification>
+				<notification responseTextId="$yaha_tuid:basement$" valueMap="0=$yaha_tuid:inactive$,1=$yaha_tuid:ok$,2=$yaha_tuid:alarm$">
+					<processtag>zoneStateBasement</processtag>
+				</notification>
+			</notifications>
+			<commands>
+				<command key="?">
+					<actions>
+						<action type="read" responseTextId="$yaha_tuid:alarmcenter$" valueMap="0=$yaha_tuid:disarmed$,1=$yaha_tuid:gettingarmed$,2=$yaha_tuid:armed$">
+							<processtag>alarmCenterState</processtag>
+						</action>
+						<action type="read" responseTextId="$yaha_tuid:entrance$:" valueMap="0=$yaha_tuid:inactive$,1=$yaha_tuid:ok$,2=$yaha_tuid:alarm$">
+							<processtag>zoneStateEntrance</processtag>
+						</action>
+						<action type="read" responseTextId="$yaha_tuid:lounge$:" valueMap="0=$yaha_tuid:inactive$,1=$yaha_tuid:ok$,2=$yaha_tuid:alarm$">
+							<processtag>zoneStateLounge</processtag>
+						</action>
+						<action type="read" responseTextId="$yaha_tuid:firstfloor$:" valueMap="0=$yaha_tuid:inactive$,1=$yaha_tuid:ok$,2=$yaha_tuid:alarm$">
+							<processtag>zoneStateFirstFloor</processtag>
+						</action>
+						<action type="read" responseTextId="$yaha_tuid:garage$:" valueMap="0=$yaha_tuid:inactive$,1=$yaha_tuid:ok$,2=$yaha_tuid:alarm$">
+							<processtag>zoneStateGarage</processtag>
+						</action>
+						<action type="read" responseTextId="$yaha_tuid:basement$:" valueMap="0=$yaha_tuid:inactive$,1=$yaha_tuid:ok$,2=$yaha_tuid:alarm$">
+							<processtag>zoneStateBasement</processtag>
+						</action>
+					</actions>
+				</command>
+				<command key="arm">
+					<actions>
+						<action type="write" writeValue="0.0"  writeValueType="REAL">
+							<processtag>alarmCenterMode</processtag>
+						</action>
+						<action type="write" writeValue="1.0"  writeValueType="REAL">
+							<processtag>manuallyArmed</processtag>
+						</action>
+					</actions>
+				</command>
+				<command key="disarm">
+					<actions>
+						<action type="write" writeValue="0.0"  writeValueType="REAL">
+							<processtag>alarmCenterMode</processtag>
+						</action>
+						<action type="write" writeValue="0.0"  writeValueType="REAL">
+							<processtag>manuallyArmed</processtag>
+						</action>
+					</actions>
+				</command>
+				<command key="panic">
+					<actions>
+						<action type="write" writeValue="1.0"  writeValueType="REAL">
+							<processtag>uiButtonAlarmLight</processtag>
+						</action>
+						<action type="write" writeValue="1.0"  writeValueType="REAL">
+							<processtag>uiButtonAlarmSound</processtag>
+						</action>
+					</actions>
+				</command>
+			</commands>
+		</subscriber>
+	</subscribers>
+</cfg>

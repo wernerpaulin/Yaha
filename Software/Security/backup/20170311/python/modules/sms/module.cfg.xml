@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<subscribers>
+		<subscriber id="werner">
+			<settings>
+				<setting name="phoneNumber">+4366488653519</setting>
+				<setting name="language">de</setting>
+			</settings>
+			<notifications>
+				<notification riseEventValue="1" fallEventValue="0" responseTextId="$yaha_tuid:entrance$" valueMap="0=$yaha_tuid:ok$,1=$yaha_tuid:alarm$">
+					<processtag>alarmMotionEntrance</processtag>
+				</notification>
+				<notification riseEventValue="1" responseTextId="$yaha_tuid:lounge$" valueMap="0=$yaha_tuid:ok$,1=$yaha_tuid:alarm$">
+					<processtag>alarmMotionLounge</processtag>
+				</notification>
+				<notification responseTextId="$yaha_tuid:alarmcenter$" valueMap="0=$yaha_tuid:disarmed$,1=$yaha_tuid:armed$">
+					<processtag>alarmCenterMode</processtag>
+				</notification>
+			</notifications>
+			<commands>
+				<command key="?">
+					<actions>
+						<action type="read" responseTextId="$yaha_tuid:alarmcenter$" valueMap="0=$yaha_tuid:disarmed$,1=$yaha_tuid:armed$">
+							<processtag>alarmCenterMode</processtag>
+						</action>
+						<action type="read" responseTextId="$yaha_tuid:entrance$:" valueMap="0=$yaha_tuid:ok$,1=$yaha_tuid:alarm$">
+							<processtag>alarmMotionEntrance</processtag>
+						</action>
+						<action type="read" responseTextId="$yaha_tuid:lounge$:" valueMap="0=$yaha_tuid:ok$,1=$yaha_tuid:alarm$">
+							<processtag>alarmMotionLounge</processtag>
+						</action>
+					</actions>
+				</command>
+				<command key="arm">
+					<actions>
+						<action type="write" writeValue="1.0"  writeValueType="REAL">
+							<processtag>alarmCenterMode</processtag>
+						</action>
+						<action type="read" responseTextId="$yaha_tuid:alarmcenter$" valueMap="0=$yaha_tuid:disarmed$,1=$yaha_tuid:armed$">
+							<processtag>alarmCenterMode</processtag>
+						</action>
+					</actions>
+				</command>
+				<command key="disarm">
+					<actions>
+						<action type="write" writeValue="0" writeValueType="REAL">
+							<processtag>alarmCenterMode</processtag>
+						</action>
+						<action type="read" responseTextId="$yaha_tuid:alarmcenter$" valueMap="0=$yaha_tuid:disarmed$,1=$yaha_tuid:armed$">
+							<processtag>alarmCenterMode</processtag>
+						</action>
+					</actions>
+				</command>
+			</commands>
+		</subscriber>
+	</subscribers>
+</cfg>

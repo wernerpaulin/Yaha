@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<!--
+	Ion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Yaha Project - Screenshots</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Yaha is a light weight home automation solution. It is open source and free of charge." />
+		<meta name="keywords" content="home automation, open source, raspberry pi, python, yaha" />
+
+		<meta name="apple-mobile-web-app-title" content="Yaha">
+	
+	    <!-- Icon -->
+	 	<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+		<link rel="shortcut icon" href="yaha/core/images/favicon.ico" />
+	
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />
+		
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		
+	    <!-- http://www.w3schools.com/howto/howto_js_slideshow.asp -->
+	    <script type="text/javascript">
+		    var slideIndex = 1;
+		    showSlides(slideIndex);
+	
+		    function plusSlides(n) {
+		      showSlides(slideIndex += n);
+		    }
+	
+		    function currentSlide(n) {
+		      showSlides(slideIndex = n);
+		    }
+	
+		    function showSlides(n) {
+		      var i;
+		      var slides = document.getElementsByClassName("mySlides");
+		      var dots = document.getElementsByClassName("dot");
+		      if (n > slides.length) {slideIndex = 1} 
+		      if (n < 1) {slideIndex = slides.length}
+		      for (i = 0; i < slides.length; i++) {
+		          slides[i].style.display = "none"; 
+		      }
+		      for (i = 0; i < dots.length; i++) {
+		          dots[i].className = dots[i].className.replace(" active", "");
+		      }
+		      slides[slideIndex-1].style.display = "block"; 
+		      dots[slideIndex-1].className += " active";
+		    }
+	    </script>
+	    <style>
+			/* Slideshow container */
+			.slideshow-container {
+			  max-width: 1000px;
+			  position: relative;
+			  margin: auto;
+			}
+
+			/* image formating */
+			.slideimage {
+			width:90%;
+			}
+
+			.mySlides {
+			width:90%;
+			}
+			
+			/* Next & previous buttons */
+			.prev, .next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 50%;
+			  width: auto;
+			  margin-top: -22px;
+			  padding: 16px;
+			  color: #0C40FF;
+			  font-weight: bold;
+			  font-size: 18px;
+			  transition: 0.6s ease;
+			  text-decoration: none;
+			}
+			
+			/* Position the "next button" to the right */
+			.next {
+			  right: 19%;
+			  border-radius: 3px 3px 3px 3px;
+			}
+			
+			/* Position the "previous button" to the left */
+			.prev {
+			  left: 0%;
+			  border-radius: 3px 3px 3px 3px;
+			}
+			
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover {
+			  background-color: rgba(0,0,0,0.8);
+			  color: #FFFFFF;
+			}
+			
+			/* Caption text */
+			.text {
+			  color: #000000;
+			  font-size: 25px;
+			  padding: 8px 30px;
+			  position: absolute;
+			  bottom: -5px;
+			  width: 100%;
+			  text-align: left;
+			}
+			
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+			
+			/* The dots/bullets/indicators */
+			.dot {
+			  cursor:pointer;
+			  height: 13px;
+			  width: 13px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+			
+			.active, .dot:hover {
+			  background-color: #717171;
+			}
+			
+			/* Fading animation */
+			.fade {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+			}
+			
+			@-webkit-keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+			
+			@keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+	    </style>
+
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="yaha.html">This is Yaha</a></li>
+						<li><a href="screenshots.html">Screenshots</a></li>
+						<li><a href="download.html">Download</a></li>
+						<li><a href="contact.php">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<header class="major">
+					<h2>Screenshots</h2>
+				</header>
+				<div class="container">
+					<section>
+						<p style="text-align:center;">
+							Here are some screenshots of the user interface.
+						</p>
+					</section>
+					<hr class="major" />
+					<section>
+						<p>
+							<div class="slideshow-container">
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_10_dashboard.png" class="slideimage">
+							    <div class="text">Quick access to favorite functions</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_11_diagnostics.png" class="slideimage">
+							    <div class="text">Under the hood diagnostics</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_12_settings.png" class="slideimage">
+							    <div class="text">Language selection, date and time</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_13_dashboard_CN.png" class="slideimage">
+							    <div class="text">Full UNICODE support</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_14_navigation.png" class="slideimage">
+							    <div class="text">Slide in navigation menu</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_20_blinds.png" class="slideimage">
+							    <div class="text">Blinds and shading</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_21_blinds_popup.png" class="slideimage">
+							    <div class="text">Interactive floor plan</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_30_weather.png" class="slideimage">
+							    <div class="text">Weather dashboard</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_31_charts.png" class="slideimage">
+							    <div class="text">Weather log</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_32_wind.png" class="slideimage">
+							    <div class="text">Wind direction and speed</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_40_doors.png" class="slideimage">
+							    <div class="text">Doors and gates</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_50_lights.png" class="slideimage">
+							    <div class="text">Lights and switches</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_60_heating.png" class="slideimage">
+							    <div class="text">Heating dashboard</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_61_heating_settings.png" class="slideimage">
+							    <div class="text">Heating settings</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_62_heating_settings.png" class="slideimage">
+							    <div class="text">Heating settings</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_63_heating_charts.png" class="slideimage">
+							    <div class="text">Heating log</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_64_heating_manual.png" class="slideimage">
+							    <div class="text">Live process graphics and manual mode</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <img src="images/ui/yaha_ui_screen_65_heating_manual.png" class="slideimage">
+							    <div class="text">Heating controller trends</div>
+							  </div>
+							
+							  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+							<br>
+							
+							<div style="text-align:center">
+							  <span class="dot" onclick="currentSlide(1)"></span> 
+							  <span class="dot" onclick="currentSlide(2)"></span> 
+							  <span class="dot" onclick="currentSlide(3)"></span> 
+							  <span class="dot" onclick="currentSlide(4)"></span> 
+							  <span class="dot" onclick="currentSlide(5)"></span> 
+							  <span class="dot" onclick="currentSlide(6)"></span> 
+							  <span class="dot" onclick="currentSlide(7)"></span> 
+							  <span class="dot" onclick="currentSlide(8)"></span> 
+							  <span class="dot" onclick="currentSlide(9)"></span> 
+							  <span class="dot" onclick="currentSlide(10)"></span> 
+							  <span class="dot" onclick="currentSlide(11)"></span> 
+							  <span class="dot" onclick="currentSlide(12)"></span> 
+							  <span class="dot" onclick="currentSlide(13)"></span> 
+							  <span class="dot" onclick="currentSlide(14)"></span> 
+							  <span class="dot" onclick="currentSlide(15)"></span> 
+							  <span class="dot" onclick="currentSlide(16)"></span> 
+							  <span class="dot" onclick="currentSlide(17)"></span> 
+							  <span class="dot" onclick="currentSlide(18)"></span> 
+							</div>						
+							<script type="text/javascript">showSlides(1);</script>
+
+						</p>
+					</section>
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; Werner Paulin. All rights reserved.</li>
+						<li><a href="web_disclaimer.html">Website Terms of Use</a></li>
+						<li><a href="software_disclaimer.html">Software Terms of Use</a></li>
+						<li>Design: <a href="http://templated.co">templated</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>

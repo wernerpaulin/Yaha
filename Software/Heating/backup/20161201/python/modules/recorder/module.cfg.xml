@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<recordcontainers>
+		<recordcontainer id="heating" directory="/home/pi/Yaha/logs/" filenametrunk="heating" filenameoption="" interval="1" nbMaxDataRecords="1000" startCmdTag="recorderCmdStart" stopCmdTag="recorderCmdStop" clearCmdTag="recorderCmdClear">
+			<dataitems>
+				<dataitem name="actTempBurner" pditag="actTempBurner" decimalplaces="2"></dataitem>
+				<dataitem name="burnerState" pditag="burnerState"></dataitem>
+			</dataitems>
+		</recordcontainer>
+	</recordcontainers>
+</cfg>

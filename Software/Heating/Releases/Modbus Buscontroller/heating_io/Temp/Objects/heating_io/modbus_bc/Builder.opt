@@ -1,0 +1,5 @@
+AsFw	 "$(AS_PROJECT_PATH)/Physical/$(AS_CONFIGURATION)/Hardware.hc" -v V1.00.0 -S modbus_bc -o "$(AS_CPU_PATH)/asfw.br" -T SGC -B V2.00 -P "$(AS_PROJECT_PATH)"  -s modbus_bc -firmware  -extOptions  -W 6848 6751 -W 6848 6751 -W 6848 6751
+sysconf	 -sysconf -E Fieldbus -S modbus_bc -o "$(AS_CPU_PATH)/sysconf.br" -T SGC -B V2.00 -P "$(AS_PROJECT_PATH)" -s modbus_bc  -extOptions  -W 6848 6751
+iomap	 -m "$(AS_CPU_PATH)/ConfigInfo.cfi" -x "$(AS_CPU_PATH)/ChannelConfiguration.xml" -v V1.00.0 -o "$(AS_CPU_PATH)/iomap.br" -T SGC -B V2.00 -P "$(AS_PROJECT_PATH)" -s modbus_bc  -extOptions  -W 6848 6751 -W 6848 6751 -W 6848 6751
+AsHwd	 "$(AS_PROJECT_PATH)/Physical/$(AS_CONFIGURATION)/Hardware.hc" -v V1.00.0 -S modbus_bc -o "$(AS_CPU_PATH)/ashwd.br" -T SGC -B V2.00 -P "$(AS_PROJECT_PATH)" -zip -s modbus_bc -hwd  -extOptions  -W 6848 6751 -W 6848 6751 -W 6848 6751
+arconfig	"$(AS_ACTIVE_CONFIG_PATH)/IoMap.iom"  -c heating_io -arconfig -E Fieldbus -v V1.00.0 -S modbus_bc -o "$(AS_CPU_PATH)/arconfig.br" "$(AS_CPU_PATH)/ChannelConfiguration.xml" -T SGC -B V2.00 -P "$(AS_PROJECT_PATH)" -s modbus_bc  -extOptions  -W 6848 6751 -W 6848 6751

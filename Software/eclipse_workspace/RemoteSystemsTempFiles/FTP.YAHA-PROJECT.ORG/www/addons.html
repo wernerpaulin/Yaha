@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<!--
+	Ion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Yaha Project - Add-ons</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Yaha is a light weight home automation solution. It is open source and free of charge." />
+		<meta name="keywords" content="home automation, open source, raspberry pi, python, yaha" />
+
+		<meta name="apple-mobile-web-app-title" content="Yaha">
+	
+	    <!-- Icon -->
+	 	<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+		<link rel="shortcut icon" href="yaha/core/images/favicon.ico" />
+	
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />
+		
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		
+		<style>
+			/* DivTable.com */
+			.divTable{
+				display: table;
+				width: 100%;
+			}
+			.divTableRow {
+				display: table-row;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+			}
+			.divTableCell, .divTableHead {
+				border: 0px solid #000000;
+				display: table-cell;
+				padding: 3px 10px;
+				vertical-align:top;
+				text-align: left;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+				font-weight: bold;
+			}
+			.divTableFoot {
+				background-color: #EEE;
+				display: table-footer-group;
+				font-weight: bold;
+			}
+			.divTableBody {
+				display: table-row-group;
+			}		
+
+		</style>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="yaha.html">This is Yaha</a></li>
+						<li><a href="screenshots.html">Screenshots</a></li>
+						<li><a href="download.html">Download</a></li>
+						<li><a href="contact.php">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<header class="major">
+					<h2>Add-ons</h2>
+				</header>
+				<div class="container">
+					<section>
+						<p style="text-align:center;">
+							Yaha is fully modular and can be extended by various add-ons. Each add-on comes with its own user interface. 
+							<br>
+							Additionally modules can be distributed on several hardware devices to improve availability. 
+							<br>
+							The following modules exist already:						
+						</p>
+					</section>
+					<hr class="major" />
+					<section>
+						<h2>Overview - dashboard</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:15%">
+											<img src="images/ui/yaha_ui_icon_overview.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px;">
+											This is actually no runtime module but a dashboard module in the UI. 
+											It provides quick access to frequently used controls such as all shutters up or down, current temperatures, etc.
+											The dashboard also features  diagnostics page and system settings page for language switching and date & time settings.
+											<br>
+											<a href="screenshots.html">Screenshots</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+					</section>
+
+					<section>
+						<h2>Blinds and shading</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:15%">
+											<img src="images/ui/yaha_ui_icon_blinds.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px;">
+											With this module any kind of shading device can be automated.
+											Currently rolling shutters are supported. To control the angle of blinds is currently not implemented.
+											Several devices can be grouped freely and can be operated together (e.g. all ground floor shutters up or down).
+											<br>
+											<a href="screenshots.html">Screenshots</a>
+											<br>
+											<br>
+											Features:
+											<ul>
+												<li>Open / close / stop</li>
+												<li>Move to manually given set position</li>
+												<li>Auto shading using sun position</li>
+												<li>Flexible time control to open or close like entire year a period, weekend or day of week</li>
+												<li>Event control like open and sun rise</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+					</section>
+
+					<section>
+						<h2>Weather</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:15%">
+											<img src="images/ui/yaha_ui_icon_weather.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px;">
+											This modules gathers any kind of data from a various given weather stations which has a web interface and is accessible through WiFi or Ethernet. 
+											In other words if you can browse life data on your weather station this module can do it too: It mimics a HTML page request to the weather station and interprets the HTML response.
+											The <a target="_blank" href="https://www.conrad.at/de/funk-wetterstation-renkforce-wh2600-vorhersage-fuer-12-bis-24-stunden-1267654.html">renkforce WH2600 weather station</a> is a cost-efficient entry version from conrad.at and has been successfully tested.
+											<br>
+											<a href="screenshots.html">Screenshots</a>
+											<br>
+											<br>
+											Features:
+											<ul>
+												<li>Time stamp</li>
+												<li>Indoor temperature</li>
+												<li>Outdoor temperature and trend</li>
+												<li>Outdoor temperature "feels like" with wind chill and heat index</li>
+												<li>Indoor humidity</li>
+												<li>Outdoor humidity and trend</li>
+												<li>Absolute pressure</li>
+												<li>Relative pressure and trend</li>
+												<li>Wind direction</li>
+												<li>Wind speed</li>
+												<li>Wind gust</li>
+												<li>Solar radiation</li>
+												<li>UV radiation</li>
+												<li>UV radiation</li>
+												<li>Weather condition summary (sunny, cloudy, rain)</li>
+												<li>Together with the recorder module all these values can be recorded with time stamp</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+					</section>
+
+					<section>
+						<h2>Recorder</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:15%">
+											<img src="images/ui/yaha_ui_icon_recorder.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px;">
+											This module is a runtime module. It records continously and synchronous to the cyclic system any given data points and creates a CSV file. Several recorders can be scheduled in parallel.
+											<br>
+											The user interface uses <a target="_blank" href="https://d3js.org">D3 (Data-Driven Documents)</a> to display the data.
+											<br>
+											<a href="screenshots.html">Screenshots</a>
+											<br>
+											<br>
+											Features:
+											<ul>
+												<li>Minimum recorder interval: 1s</li>
+												<li>Trigger to start recording by time or command</li>
+												<li>Number formating before saving to CSV</li>
+												<li>Average calculation of data point between scans</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+					</section>
+
+					<section>
+						<h2>Lights, doors, gates and switches</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:15%">
+											<img src="images/ui/yaha_ui_icon_switches.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px;">
+											This module is very versatile and can control any on/off switch for lights or doors. Although not yet fully implemented it is also prepared to control hue lights.
+											On and off commands can be initiated by different signals. Additionally each command can be a logical (and/or) combination of several signals.
+											<br>
+											<a href="screenshots.html">Screenshots</a>
+											<br>
+											<br>
+											Features:
+											<ul>
+												<li>Inputs and outputs can be normally open or normally closed</li>
+												<li>Blink mode with independent on and off durations</li>
+												<li>Actuator can be configured as impulse with a certain on-duration</li>
+												<li>Actuator can have an off-delay which delays the switch off for a certain time once the off-command has been initiated (e.g. for lights).</li>
+												<li>Flexible time control to switch on and off at a certain time in a defined period, weekend or day of week</li>
+												<li>Energy measurement (if actuator provides these data)</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+					</section>
+
+					<section>
+						<h2>Heating</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:15%">
+											<img src="images/ui/yaha_ui_icon_heating.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px;">
+											The heating module allows you to control both the heating system and hot water preparation.
+											The heating system consits of a number of heating circuits in your home. 
+											Each circuit is independently controlled individually by a weather-compensated closed-loop control: a certain outside temperature and a desired indoor temperature are used to calculate a certain set flow temperature. A PI-controller ensures that the actual flow temperature matches the set flow temperature. 
+											<br>
+											<a href="screenshots.html">Screenshots</a>
+											<br>
+											<br>
+											
+											Each heating circuit has:
+											<ul>
+												<li>A heat source (the form of energy is not important. Can be oil, gas, heat pump, solar,...)</li>
+												<li>A pump which brings the warm media (e.g. water) into the building</li>
+												<li>A mixer which is PI controlled so the flow temperature keeps a certain set point</li>
+											</ul>
+											
+											Features of a heating circuit:
+											<ul>
+												<li>Modes of each circuit: automatic (time controlled), permanent comfort operation, permanent reduced operation</li>
+												<li>Temperature settings for comfort and reduced operation</li>
+												<li>All circuits can be switched globally on, off, suspended ventilation, not at home</li>
+												<li>Different timings for weekdays and weekends</li>
+												<li>Heat curve to calculate flow temperature can be manipulated by level and slope</li>
+												<li>PI controller for mixer</li>
+												<li>2-point hysteresis controller for room temperature</li>
+												<li>Manual operation to get full control of the mixer</li>
+												<li>Simulation of entire circuit</li>
+											</ul>
+			
+											Features of hot water preparation:
+											<ul>
+												<li>Free pump assignment</li>
+												<li>Time controlled in which a set temperature is controlled</li>
+												<li>Legionella protection</li>
+												<li>Simulation of entire module</li>							
+											</ul>
+			
+											Features of heat source:
+											<ul>
+												<li>Heating device (e.g. burner) is controlled by a digital release signal</li>
+												<li>Digital status feedback for general failure and overtemperature</li>
+												<li>One heat source can be a supply for various heat circuits</li>
+												<li>Safety switch off</li>
+												<li>Manual operation</li>
+												<li>Simulation of heat source behaviour</li>
+											</ul>
+			
+											Features of mixers:
+											<ul>
+												<li>Open and close by different outputs</li>
+												<li>Actual position estimation</li>
+												<li>Automatic homing every midnight</li>
+												<li>Manual operation in combination with heat circuit</li>
+												<li>Simulation of mixer movement</li>
+											</ul>
+			
+											Features of pumps:
+											<ul>
+												<li>Frost protection</li>
+												<li>Safety release monitoring (external temperature sensors which can override pump)</li>
+												<li>Manual operation</li>
+												<li>Simulation of pump behaviour</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+					</section>
+
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; Werner Paulin. All rights reserved.</li>
+						<li><a href="web_disclaimer.html">Website Terms of Use</a></li>
+						<li><a href="software_disclaimer.html">Software Terms of Use</a></li>
+						<li>Design: <a href="http://templated.co">templated</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="lightsandswitches">
+			<tuv xml:lang="de">
+				<seg>Licht und Schalter</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Lights and switches</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Lumières et interrupteurs</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>灯和开关</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="groundfloor">
+			<tuv xml:lang="de">
+				<seg>Erdgeschoss</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Ground floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Rez-de-chaussée</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>一楼</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="firstfloor">
+			<tuv xml:lang="de">
+				<seg>1. Stock</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>First floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>premier étage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>二楼</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="garage">
+			<tuv xml:lang="de">
+				<seg>Garage</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Garage</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Garage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>车库</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="testswitch1">
+			<tuv xml:lang="de">
+				<seg>Testschalter 1</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Test switch 1</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Commutateur de test 1</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>测试开关1</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="testswitch2">
+			<tuv xml:lang="de">
+				<seg>Testschalter 2</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Test switch 2</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Commutateur de test 2</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>测试开关2</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="tvlight">
+			<tuv xml:lang="de">
+				<seg>Fernseher Licht</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>TV light</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>TV lampe sur pied</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>测试开关1</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="laternlight">
+			<tuv xml:lang="de">
+				<seg>Laternenlicht</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Latern light</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Lanterne de salon</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>测试开关1</seg>
+			</tuv>
+		</tu>
+
+
+
+		<tu tuid="energy">
+			<tuv xml:lang="de">
+				<seg>Energie</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Energy</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Énergie</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>能量</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="ontime">
+			<tuv xml:lang="de">
+				<seg>Einschaltzeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>On time</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Durée d'allumage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开启时间</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="blinkmode">
+			<tuv xml:lang="de">
+				<seg>Blinkmodus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Blink mode</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Mode clignotement</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>闪烁模式</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="impulsemode">
+			<tuv xml:lang="de">
+				<seg>Impulsmodus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Impulse mode</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Mode impulsions</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>脉冲模式</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="offdelay">
+			<tuv xml:lang="de">
+				<seg>Ausschaltverzögerung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Off delay</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Délai de désactivation</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>关闭延迟</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="timecontrol">
+			<tuv xml:lang="de">
+				<seg>Zeitsteuerung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Time control</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Contrôle horaire</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>时间控制</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="off">
+			<tuv xml:lang="de">
+				<seg>aus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>off</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>dés.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>关闭</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="on">
+			<tuv xml:lang="de">
+				<seg>ein</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>on</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>act.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开启</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="teaching">
+			<tuv xml:lang="de">
+				<seg>Anlernen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Teaching</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>programmer</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>教学</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="start">
+			<tuv xml:lang="de">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Démarrage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开始</seg>
+			</tuv>
+		</tu>
+
+	</body>
+</tmx>

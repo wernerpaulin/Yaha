@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="languages">
+			<tuv xml:lang="de">
+				<seg>Deutsch</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>English</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Français</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>中文</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>

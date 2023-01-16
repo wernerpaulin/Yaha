@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="weather">
+			<tuv xml:lang="de">
+				<seg>Wetter</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Weather</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Weather</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="weathercondition">
+			<tuv xml:lang="de">
+				<seg>Wetterlage</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Weather condition</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Weather condition</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="gardensouth">
+			<tuv xml:lang="de">
+				<seg>Garten Südseite</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Garden south</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Garden south</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="feelslike">
+			<tuv xml:lang="de">
+				<seg>gefühlt</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>feels like</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_feels like</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="humidity">
+			<tuv xml:lang="de">
+				<seg>Luftfeuchtigkeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Humidity</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Humidity</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="pressure">
+			<tuv xml:lang="de">
+				<seg>Luftdruck</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Pressure</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Pressure</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="uvindex">
+			<tuv xml:lang="de">
+				<seg>UV Index</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>UV index</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_UV index</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="off">
+			<tuv xml:lang="de">
+				<seg>von</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>off</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_off</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="wind">
+			<tuv xml:lang="de">
+				<seg>Wind</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Wind</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Wind</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="gust">
+			<tuv xml:lang="de">
+				<seg>Böhen mit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Gust speed</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Gust speed</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="charts">
+			<tuv xml:lang="de">
+				<seg>Grafiken</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Charts</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Charts</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="rain">
+			<tuv xml:lang="de">
+				<seg>Regenmenge</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Rain</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Rain</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="mmperhour">
+			<tuv xml:lang="de">
+				<seg>mm pro Stunde</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>mm per hour</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_mm per hour</seg>
+			</tuv>
+		</tu>
+
+	</body>
+</tmx>

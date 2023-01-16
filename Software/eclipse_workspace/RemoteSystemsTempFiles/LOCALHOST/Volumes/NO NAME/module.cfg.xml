@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<switches>
+		<switch>
+			<inputs>
+				<input type="on" logic="or">
+					<processtag level="normallyOpen">xxx</processtag>
+				</input>
+				<input type="off" logic="or">
+					<processtag level="normallyOpen">yyy</processtag>
+				</input>
+				<input type="brightness">
+					<processtag></processtag>
+				</input>
+				<input type="color">
+					<processtag></processtag>
+				</input>
+				<input type="teach">
+					<processtag></processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output type="on">
+					<processtag level="normallyOpen">xxx</processtag>
+				</output>
+				<output type="off">
+					<processtag level="normallyClosed">xxx</processtag>
+				</output>
+				<output type="brightness">
+					<processtag></processtag>
+				</output>
+				<output type="color">
+					<processtag></processtag>
+				</output>
+				<output type="teach">
+					<processtag></processtag>
+				</output>
+			</outputs>
+			<times>
+				<time type = "on">
+					<processtag>aaa</processtag>
+				</time>
+				<time type = "off">
+					<processtag>bbb</processtag>
+				</time>
+				<time type = "on">
+					<processtag>aaa</processtag>
+				</time>
+				<time type = "off">
+					<processtag>bbb</processtag>
+				</time>
+			</times>
+			<statusitems>
+				<statusitem type="ontime">
+					<processtag>bbIb</processtag>
+				</statusitem>
+				<statusitem type="energy">
+					<processtag>bbb</processtag>
+				</statusitem>
+				<statusitem type="switchlevel">
+					<processtag>bbb</processtag>
+				<statusitem>
+			</statusitems>
+		</switch>
+	</switches>
+</cfg>

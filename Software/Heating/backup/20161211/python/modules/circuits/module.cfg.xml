@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<circuits>
+		<circuit id="floorheating">
+			<inputs>
+				<input name="actTempFlow">
+					<processtag>actTempFlowFloor</processtag>
+				</input>
+				<input name="actTempOutside">
+					<processtag>actTempOutsideNorth</processtag>
+				</input>
+				<input name="actTempBurner">
+					<processtag>actTempBurner</processtag>
+				</input>
+				<input name="actTempRoom">
+					<processtag>actTempRoomLounge</processtag>
+				</input>
+				<input name="mixerState">
+					<processtag>floorHeatingMixerState</processtag>
+				</input>
+				<input name="mixerActPosition">
+					<processtag>floorHeatingMixerActPosition</processtag>
+				</input>
+				<input name="pumpState">
+					<processtag>floorPumpState</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="burnerSetTemp">
+					<processtag>burnerAutoSetTempFloor</processtag>
+				</output>
+				<output name="pumpRelease">
+					<processtag initialstate="normallyOpen">floorPumpAutoRelease</processtag>
+				</output>
+				<output name="mixerSetPosition">
+					<processtag>floorHeatingMixerAutoSetPosition</processtag>
+				</output>
+			</outputs>			
+			<parameters>
+				<settings>
+					<setting name="hysteresisHigh">0.1</setting>
+					<setting name="hysteresisLow">0.2</setting>
+					<setting name="pidKp">4.89</setting>
+					<setting name="pidTi">91.2</setting>
+					<setting name="Ymax">100.0</setting>
+					<setting name="Ymin">0.0</setting>
+					<setting name="burnerSetTempOffset">3.0</setting>
+					<setting name="offDurationForVentilation">900.0</setting>
+					<setting name="maxFlowTemp">45.0</setting>
+					<setting name="returnFlowTempDrop">0.80</setting>
+				</settings>				
+				<operatingmodes>
+					<switch>
+						<processtag logic="or">floorHeatingManOp</processtag>
+						<processtag logic="or">floorPumpManOp</processtag>
+					</switch>
+					<operatingmode name="automatic">
+						<interfaces>
+							<interface name="globalMode">
+								<processtag>globalHeatingMode</processtag>
+							</interface>		
+							<interface name="notAtHomeStartDate">
+								<processtag>globalHeatingNotAtHomeStartDate</processtag>
+							</interface>		
+							<interface name="notAtHomeStartTime">
+								<processtag>globalHeatingNotAtHomeStartTime</processtag>
+							</interface>		
+							<interface name="notAtHomeEndDate">
+								<processtag>globalHeatingNotAtHomeEndDate</processtag>
+							</interface>		
+							<interface name="notAtHomeEndTime">
+								<processtag>globalHeatingNotAtHomeEndTime</processtag>
+							</interface>		
+							<interface name="circuitMode">
+								<processtag>floorHeatingMode</processtag>
+							</interface>		
+							<interface name="roomComfortSetTemp">
+								<processtag>floorHeatingSetTemp</processtag>
+							</interface>		
+							<interface name="roomReducedSetTemp">
+								<processtag>floorHeatingReducedTemp</processtag>
+							</interface>		
+							<interface name="weekdayStartTime">
+								<processtag>floorHeatingWeekdaysStartTime</processtag>
+							</interface>		
+							<interface name="weekdayEndTime">
+								<processtag>floorHeatingWeekdaysEndTime</processtag>
+							</interface>		
+							<interface name="weekendStartTime">
+								<processtag>floorHeatingWeekendStartTime</processtag>
+							</interface>		
+							<interface name="weekendEndTime">
+								<processtag>floorHeatingWeekendEndTime</processtag>
+							</interface>		
+							<interface name="heatCurveLevel">
+								<processtag>floorHeatCurveLevel</processtag>
+							</interface>		
+							<interface name="heatCurveSlope">
+								<processtag>floorHeatCurveSlope</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+				</operatingmodes>
+				<simulation>
+					<enable>
+						<processtag>ioSimulation</processtag>
+					</enable>
+					<settings>
+						<setting name="roomTemperaturePtTau">30.0</setting>
+						<setting name="flowTemperaturePtTau">5.0</setting>
+						<setting name="environmentalTemperature">19.0</setting>
+						<setting name="outsideTemperature">6.0</setting>
+						<setting name="flowToRoomConversionRate">0.7</setting>
+					</settings>
+				</simulation>
+			</parameters>
+			<statusitems>
+				<statusitem name="heatingState">
+					<processtag>floorHeatingState</processtag>
+				</statusitem>
+				<statusitem name="controllerState">
+					<processtag>floorHeatingControllerState</processtag>
+				</statusitem>
+				<statusitem name="setRoomTemperature">
+					<processtag>floorHeatingSetRoomTemp</processtag>
+				</statusitem>
+				<statusitem name="setFlowTemperature">
+					<processtag>floorHeatingSetFlowTemp</processtag>
+				</statusitem>
+			</statusitems>			
+		</circuit>
+
+		<circuit id="radiatorheating">
+			<inputs>
+				<input name="actTempFlow">
+					<processtag>actTempFlowRadiator</processtag>
+				</input>
+				<input name="actTempOutside">
+					<processtag>actTempOutsideNorth</processtag>
+				</input>
+				<input name="actTempBurner">
+					<processtag>actTempBurner</processtag>
+				</input>
+				<input name="actTempRoom">
+					<processtag>actTempRoomLibrary</processtag>
+				</input>
+				<input name="mixerState">
+					<processtag>radiatorHeatingMixerState</processtag>
+				</input>
+				<input name="mixerActPosition">
+					<processtag>radiatorHeatingMixerActPosition</processtag>
+				</input>
+				<input name="pumpState">
+					<processtag>radiatorPumpState</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="burnerSetTemp">
+					<processtag>burnerAutoSetTempRadiator</processtag>
+				</output>
+				<output name="pumpRelease">
+					<processtag initialstate="normallyOpen">radiatorPumpAutoRelease</processtag>
+				</output>
+				<output name="mixerSetPosition">
+					<processtag>radiatorHeatingMixerAutoSetPosition</processtag>
+				</output>
+			</outputs>			
+			<parameters>
+				<settings>
+					<setting name="hysteresisHigh">0.1</setting>
+					<setting name="hysteresisLow">0.2</setting>
+					<setting name="pidKp">4.0</setting>
+					<setting name="pidTi">150.0</setting>
+					<setting name="Ymax">100.0</setting>
+					<setting name="Ymin">0.0</setting>
+					<setting name="burnerSetTempOffset">3.0</setting>
+					<setting name="offDurationForVentilation">900.0</setting>
+					<setting name="maxFlowTemp">65.0</setting>
+					<setting name="returnFlowTempDrop">0.80</setting>
+				</settings>				
+				<operatingmodes>
+					<switch>
+						<processtag logic="or">radiatorHeatingManOp</processtag>
+						<processtag logic="or">radiatorPumpManOp</processtag>
+					</switch>
+					<operatingmode name="automatic">
+						<interfaces>
+							<interface name="globalMode">
+								<processtag>globalHeatingMode</processtag>
+							</interface>		
+							<interface name="notAtHomeStartDate">
+								<processtag>globalHeatingNotAtHomeStartDate</processtag>
+							</interface>		
+							<interface name="notAtHomeStartTime">
+								<processtag>globalHeatingNotAtHomeStartTime</processtag>
+							</interface>		
+							<interface name="notAtHomeEndDate">
+								<processtag>globalHeatingNotAtHomeEndDate</processtag>
+							</interface>		
+							<interface name="notAtHomeEndTime">
+								<processtag>globalHeatingNotAtHomeEndTime</processtag>
+							</interface>		
+							<interface name="circuitMode">
+								<processtag>radiatorHeatingMode</processtag>
+							</interface>		
+							<interface name="roomComfortSetTemp">
+								<processtag>radiatorHeatingSetTemp</processtag>
+							</interface>		
+							<interface name="roomReducedSetTemp">
+								<processtag>radiatorHeatingReducedTemp</processtag>
+							</interface>		
+							<interface name="weekdayStartTime">
+								<processtag>radiatorHeatingWeekdaysStartTime</processtag>
+							</interface>		
+							<interface name="weekdayEndTime">
+								<processtag>radiatorHeatingWeekdaysEndTime</processtag>
+							</interface>		
+							<interface name="weekendStartTime">
+								<processtag>radiatorHeatingWeekendStartTime</processtag>
+							</interface>		
+							<interface name="weekendEndTime">
+								<processtag>radiatorHeatingWeekendEndTime</processtag>
+							</interface>		
+							<interface name="heatCurveLevel">
+								<processtag>radiatorHeatCurveLevel</processtag>
+							</interface>		
+							<interface name="heatCurveSlope">
+								<processtag>radiatorHeatCurveSlope</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+				</operatingmodes>
+				<simulation>
+					<enable>
+						<processtag>ioSimulation</processtag>
+					</enable>
+					<settings>
+						<setting name="roomTemperaturePtTau">20.0</setting>
+						<setting name="flowTemperaturePtTau">5.0</setting>
+						<setting name="environmentalTemperature">19.0</setting>
+						<setting name="outsideTemperature">6.0</setting>
+						<setting name="flowToRoomConversionRate">0.7</setting>
+					</settings>
+				</simulation>
+			</parameters>
+			<statusitems>
+				<statusitem name="heatingState">
+					<processtag>radiatorHeatingState</processtag>
+				</statusitem>
+				<statusitem name="controllerState">
+					<processtag>radiatorHeatingControllerState</processtag>
+				</statusitem>
+				<statusitem name="setRoomTemperature">
+					<processtag>radiatorHeatingSetRoomTemp</processtag>
+				</statusitem>
+				<statusitem name="setFlowTemperature">
+					<processtag>radiatorHeatingSetFlowTemp</processtag>
+				</statusitem>
+			</statusitems>			
+		</circuit>
+
+
+	</circuits>
+</cfg>

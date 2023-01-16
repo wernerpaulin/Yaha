@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="lightsandswitches">
+			<tuv xml:lang="de">
+				<seg>Licht und Schalter</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Lights and switches</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Lights and switches</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="groundfloor">
+			<tuv xml:lang="de">
+				<seg>Erdgeschoss</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Ground floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Ground floor</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="firstfloor">
+			<tuv xml:lang="de">
+				<seg>1. Stock</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>First floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_First floor</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="garage">
+			<tuv xml:lang="de">
+				<seg>Garage</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Garage</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Garage</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="testswitch1">
+			<tuv xml:lang="de">
+				<seg>Testschalter 1</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Test switch 1</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Test switch 1</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="testswitch2">
+			<tuv xml:lang="de">
+				<seg>Testschalter 2</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Test switch 2</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Test switch 2</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="energy">
+			<tuv xml:lang="de">
+				<seg>Energie</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Energy</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Energy</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="ontime">
+			<tuv xml:lang="de">
+				<seg>Einschaltzeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>On time</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_On time</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="blinkmode">
+			<tuv xml:lang="de">
+				<seg>Blinkmodus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Blink mode</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Blink mode</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="impulsemode">
+			<tuv xml:lang="de">
+				<seg>Impulsmodus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Impulse mode</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Impulse mode</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="offdelay">
+			<tuv xml:lang="de">
+				<seg>Ausschaltverzögerung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Off delay</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Off delay</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="timecontrol">
+			<tuv xml:lang="de">
+				<seg>Zeitsteuerung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Time control</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Time control</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="off">
+			<tuv xml:lang="de">
+				<seg>aus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>off</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_off</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="on">
+			<tuv xml:lang="de">
+				<seg>ein</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>on</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_on</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="teaching">
+			<tuv xml:lang="de">
+				<seg>Anlernen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Teaching</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Teaching</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="start">
+			<tuv xml:lang="de">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Start</seg>
+			</tuv>
+		</tu>
+
+	</body>
+</tmx>

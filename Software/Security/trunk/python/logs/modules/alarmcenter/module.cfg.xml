@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<alarmcenters>
+		<alarmcenter id="main">
+			<inputs>
+				<input name="panicAlarmLightTrigger">
+					<processtag logic="or">ioRemoteControlPanicAlarmLight</processtag>
+					<processtag logic="or">uiButtonAlarmLight</processtag>
+				</input>					
+				<input name="panicAlarmSoundTrigger">
+					<processtag logic="or">ioRemoteControlPanicAlarmSound</processtag>
+					<processtag logic="or">uiButtonAlarmSound</processtag>
+				</input>
+				<input name="alarmOffTrigger">
+					<processtag logic="or">ioRemoteControlDisarm</processtag>
+					<processtag logic="or">uiButtonAlarmOff</processtag>
+				</input>
+				<input name="supplyVoltageOk">
+					<processtag>ioSupplyVoltageOk</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="alarmLight">
+					<processtag>ioLightAlarmCenter</processtag>
+				</output>					
+				<output name="alarmSound">
+					<processtag>ioSoundAlarmCenter</processtag>
+				</output>					
+			</outputs>
+			<settings>
+				<setting name="alarmDelayLight">0</setting>
+				<setting name="alarmDelaySound">60</setting>
+				<setting name="delayToBeArmed">60</setting>
+				<setting name="shortFlashTime">1.5</setting>
+			</settings>		
+			<operatingmodes>
+				<switch>
+					<processtag>alarmCenterMode</processtag>
+				</switch>
+				<operatingmode name="manual">
+					<interfaces>
+						<interface name="armStartTrigger">
+							<processtag logic="or">ioKeyArm</processtag>
+							<processtag logic="or">ioRemoteControlArm</processtag>
+						</interface>		
+						<interface name="armEndTrigger">
+							<processtag logic="or">ioKeyDisarm</processtag>
+							<processtag logic="or">ioRemoteControlDisarm</processtag>
+						</interface>		
+						<interface name="armEnableSwitch">
+							<processtag>manuallyArmed</processtag>
+						</interface>		
+					</interfaces>
+				</operatingmode>
+				<operatingmode name="automatic">
+					<interfaces>
+						<interface name="armStartTime">
+							<processtag>automaticArmStartTime</processtag>
+						</interface>		
+						<interface name="armEndTime">
+							<processtag>automaticArmEndTime</processtag>
+						</interface>		
+					</interfaces>
+				</operatingmode>
+			</operatingmodes>
+			<statusitems>
+				<statusitem name="state">
+					<processtag>alarmCenterState</processtag>
+				</statusitem>	
+			</statusitems>			
+			<zones>
+				<zone id="entrance">
+					<inputs>
+						<input name="enable">
+							<processtag>zoneEnableEntrance</processtag>
+						</input>					
+						<input name="sensor">
+							<processtag>ioMotionEntrance</processtag>
+						</input>
+					</inputs>
+					<statusitems>
+						<statusitem name="state">
+							<processtag>zoneStateEntrance</processtag>
+						</statusitem>	
+					</statusitems>
+				</zone>
+			</zones>
+		</alarmcenter>
+	</alarmcenters>
+</cfg>

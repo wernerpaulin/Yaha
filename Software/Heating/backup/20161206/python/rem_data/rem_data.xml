@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<pdi><floorHeatingSetTemp>21.0</floorHeatingSetTemp>
+<globalHeatingMode>3.0</globalHeatingMode>
+<floorHeatingReducedTemp>18.0</floorHeatingReducedTemp>
+<radiatorHeatingMode>0.0</radiatorHeatingMode>
+<radiatorHeatCurveLevel>1.0</radiatorHeatCurveLevel>
+<hotwaterSetTemp>60.0</hotwaterSetTemp>
+<radiatorHeatingReducedTemp>18.0</radiatorHeatingReducedTemp>
+<radiatorPumpTotalOperatingHours>0.35</radiatorPumpTotalOperatingHours>
+<burnerTotalOperatingHours>0.06666666666666667</burnerTotalOperatingHours>
+<hotwaterPumpTotalOperatingHours>0.016666666666666666</hotwaterPumpTotalOperatingHours>
+<floorHeatingMode>0.0</floorHeatingMode>
+<radiatorPumpAnnualOperatingHours>0.35</radiatorPumpAnnualOperatingHours>
+<floorHeatCurveLevel>1.0</floorHeatCurveLevel>
+<floorHeatCurveSlope>0.2</floorHeatCurveSlope>
+<floorPumpAnnualOperatingHours>0.35</floorPumpAnnualOperatingHours>
+<floorPumpTotalOperatingHours>0.35</floorPumpTotalOperatingHours>
+<hotwaterPumpAnnualOperatingHours>0.016666666666666666</hotwaterPumpAnnualOperatingHours>
+<burnerAnnualOperatingHours>0.06666666666666667</burnerAnnualOperatingHours>
+<radiatorHeatingSetTemp>21.0</radiatorHeatingSetTemp>
+<radiatorHeatCurveSlope>0.8</radiatorHeatCurveSlope>
+<hotwaterMorningStartTime>06:30</hotwaterMorningStartTime>
+<hotwaterMorningEndTime>11:30</hotwaterMorningEndTime>
+<hotwaterEveningEndTime>22:30</hotwaterEveningEndTime>
+</pdi>

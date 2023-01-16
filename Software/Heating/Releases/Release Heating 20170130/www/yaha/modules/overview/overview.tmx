@@ -1,0 +1,1541 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="myhome">
+			<tuv xml:lang="de">
+				<seg>Mein Zuhause</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>My home</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Ma maison</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>我的家</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="dashboard">
+			<tuv xml:lang="de">
+				<seg>Übersicht</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Dashboard</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Tableau de bord</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>仪表盘</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="livecounter">
+			<tuv xml:lang="de">
+				<seg>Live counter</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Live counter</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Compteur</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>活计数器</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="cycletime">
+			<tuv xml:lang="de">
+				<seg>Zykluszeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Cycle time</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Temps de cycle</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>循环时间</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="cpuload">
+			<tuv xml:lang="de">
+				<seg>CPU Last</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>CPU load</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Charge CPU</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CPU负载</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="diagnostics">
+			<tuv xml:lang="de">
+				<seg>Diagnose</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Diagnostics</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Diagnostic</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>诊断</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="settings">
+			<tuv xml:lang="de">
+				<seg>Einstellungen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Settings</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Paramètres</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>设置</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="languageselection">
+			<tuv xml:lang="de">
+				<seg>Sprachauswahl</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Language selection</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Sélection de la langue choisie</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>语言选择</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="dateandtime">
+			<tuv xml:lang="de">
+				<seg>Datum und Uhrzeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Date and time</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Date et heure</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>日期和时间</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="time">
+			<tuv xml:lang="de">
+				<seg>Uhrzeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Time</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Heure</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>时间</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="date">
+			<tuv xml:lang="de">
+				<seg>Datum</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Date</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Date</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>日期</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="ondevice">
+			<tuv xml:lang="de">
+				<seg>Am Gerät</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>On device</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Sur l'appareil</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>在设备上</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="new">
+			<tuv xml:lang="de">
+				<seg>Neu</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>New</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Nouveau</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>新</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="apply">
+			<tuv xml:lang="de">
+				<seg>Übernehmen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>apply</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Appliqué</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>应用</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="pumps">
+			<tuv xml:lang="de">
+				<seg>Pumpen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Pumps</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Pompes</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>泵</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="temperatures">
+			<tuv xml:lang="de">
+				<seg>Temperaturen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Temperatures</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Températures</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>温度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="flowtempradiator">
+			<tuv xml:lang="de">
+				<seg>Vorlauftemperatur Heizkörper</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Flow temperature radiator</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température du flux - radiateur</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>散热器流动温度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="flowtempfloor">
+			<tuv xml:lang="de">
+				<seg>Vorlauftemperatur Fussbodenheizung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Flow temperature floor heating</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température du flux - chauffage au sol</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>地暖流动温度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="flowtemperature">
+			<tuv xml:lang="de">
+				<seg>Vorlauftemperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Flow temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température du flux</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>流动温度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="setflowtemperature">
+			<tuv xml:lang="de">
+				<seg>Vorlauf Solltemperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Set flow temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température du flux souhaitée</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>理想的流动温度</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="mixersetposition">
+			<tuv xml:lang="de">
+				<seg>Mischer Sollposition</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Mixer set position</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Position réglée du mélangeur</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>混合器设定位置</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="outtemperature">
+			<tuv xml:lang="de">
+				<seg>Aussentemperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Outside temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température extérieure</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>室外温度</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="northside">
+			<tuv xml:lang="de">
+				<seg>Nordseite</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>North side</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Versant nord</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>北边</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="boiler">
+			<tuv xml:lang="de">
+				<seg>Boiler</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Boiler</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Chauffe-eau</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>锅炉</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="lounge">
+			<tuv xml:lang="de">
+				<seg>Wohzimmer</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Lounge</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salon</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>客厅</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="settemperature">
+			<tuv xml:lang="de">
+				<seg>Solltemperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Set temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température réglée</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>设定温度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="burner">
+			<tuv xml:lang="de">
+				<seg>Brenner</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Burner</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Brûleur</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>燃烧器</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="acttemperature">
+			<tuv xml:lang="de">
+				<seg>Isttemperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Actual temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température actuelle</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>实际温度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="off">
+			<tuv xml:lang="de">
+				<seg>aus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>off</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>dés.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>关闭</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="on">
+			<tuv xml:lang="de">
+				<seg>ein</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>on</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>act.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开启</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="release">
+			<tuv xml:lang="de">
+				<seg>Freigabe</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Release</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Déclencher</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>释放</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="status">
+			<tuv xml:lang="de">
+				<seg>Status</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Status</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Statut</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>状态</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="overtemperature">
+			<tuv xml:lang="de">
+				<seg>Übertemperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Over temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Surchauffe</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>过温</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="yes">
+			<tuv xml:lang="de">
+				<seg>ja</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>yes</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>oui</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>是</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="no">
+			<tuv xml:lang="de">
+				<seg>nein</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>no</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>non</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>不是</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="failure">
+			<tuv xml:lang="de">
+				<seg>Fehler</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Failure</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Panne</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>故障</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="mixers">
+			<tuv xml:lang="de">
+				<seg>Mischer</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Mixers</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Mélangeurs</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>混合器</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="open">
+			<tuv xml:lang="de">
+				<seg>Öffnen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Open</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Ouvrir</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="close">
+			<tuv xml:lang="de">
+				<seg>Schliessen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Close</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Fermer</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>关</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="generalsettings">
+			<tuv xml:lang="de">
+				<seg>Allgemeine Einstellungen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>General settings</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Paramètres généraux</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>常规设置</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="manualoperation">
+			<tuv xml:lang="de">
+				<seg>Handbetrieb</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Manual operation</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Opération manuelle</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>手动模式</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="heatingmode">
+			<tuv xml:lang="de">
+				<seg>Heizungsmodus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Heating mode</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Mode de chauffage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>加热模式</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="heating">
+			<tuv xml:lang="de">
+				<seg>Heizung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Heating</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Chauffage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>加热</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="alarmmessages">
+			<tuv xml:lang="de">
+				<seg>Alarmmeldungen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Alarm messages</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Messages d'alerte</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>报警消息</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="burnerovertemperatur">
+			<tuv xml:lang="de">
+				<seg>Brenner Übertemperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Burner overtemperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Brûleur surchauffe</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>燃烧器过温</seg>
+			</tuv>
+		</tu>
+		
+
+		<tu tuid="burnerfault">
+			<tuv xml:lang="de">
+				<seg>Brenner Störung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Burner fault</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Brûleur panne</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>燃烧器故障</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="modbusheatingio">
+			<tuv xml:lang="de">
+				<seg>Keine Verbindung zu Modbusstation für Heizung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>No connection to heating modbus station</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Pas de connection au poste procédant au chauffage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>与加热方式站没有连接</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="iosimulationactive">
+			<tuv xml:lang="de">
+				<seg>IO Simulation aktiv</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>IO simulation active</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Simulation de l’entrée et sortie</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>模拟IO启动</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="noalarmspending">
+			<tuv xml:lang="de">
+				<seg>Keine Störungen anstehend</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>No alarms pending</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Pas d'alarmes en cours</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>没有报警等待</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="automaticoperation">
+			<tuv xml:lang="de">
+				<seg>Automatikbetrieb</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Automatic operation</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Opération automatique</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>自动模式</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="switchedon">
+			<tuv xml:lang="de">
+				<seg>Eingeschaltet</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Switched on</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Allumé</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>打开</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="switchedoff">
+			<tuv xml:lang="de">
+				<seg>Ausgeschaltet</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Switched off</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Éteint</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>关闭</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="notAtHomeFunction">
+			<tuv xml:lang="de">
+				<seg>Ausser Haus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Not at home</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Hors de la maison</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>假期中</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="leaving">
+			<tuv xml:lang="de">
+				<seg>Abreise am</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Leaving on</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Départ le</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>离开状态</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="backhome">
+			<tuv xml:lang="de">
+				<seg>Zurück am</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Back home on</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Retour le</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>在家状态</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="at">
+			<tuv xml:lang="de">
+				<seg>um</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>at</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>à</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>在</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="floorheating">
+			<tuv xml:lang="de">
+				<seg>Fussbodenheizung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Floor heating</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Chauffage au sol</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>地暖</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="reducedoperation">
+			<tuv xml:lang="de">
+				<seg>Dauernd Absenkbetrieb</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Permanent reduced operation</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Fonction réduite permanente</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>永久低温模式</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="comfortoperation">
+			<tuv xml:lang="de">
+				<seg>Dauernd Komfortbetrieb</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Permanent comfort operation</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Fonction de confort permanente</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>永久舒适模式</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="lounge">
+			<tuv xml:lang="de">
+				<seg>Wohnzimmer</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Lounge</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salon</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>客厅</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="acttemperature">
+			<tuv xml:lang="de">
+				<seg>Ist-Temperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Actual temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température actuelle</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>实际温度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="desiredcomforttemperature">
+			<tuv xml:lang="de">
+				<seg>Gewünschte Komforttemperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Desired comfort temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température de confort souhaitée</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>理想舒适温度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="reducedtemperature">
+			<tuv xml:lang="de">
+				<seg>Absenk-Temperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Reduced temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température réduite</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>对比温度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="outside">
+			<tuv xml:lang="de">
+				<seg>Draussen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Outside</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Extérieur</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>外面</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="library">
+			<tuv xml:lang="de">
+				<seg>Bibliothek</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Library</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Bibliothèque</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>图书馆</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="heatingphasesconfiguration">
+			<tuv xml:lang="de">
+				<seg>Konfiguration der Heizphasen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Configuration of heating phases</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Configuration des phases de chauffage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>加热阶段的设置</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="mondaytofriday">
+			<tuv xml:lang="de">
+				<seg>Montag bis Freitag</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Monday to Friday</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>De lundi à vendredi</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>星期一到星期五</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="weekend">
+			<tuv xml:lang="de">
+				<seg>Wochenende</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Weekend</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>weekend</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>周末</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="from">
+			<tuv xml:lang="de">
+				<seg>von</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>from</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>de</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>从</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="to">
+			<tuv xml:lang="de">
+				<seg>bis</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>to</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>à</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>到</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="heatingswitchedoff">
+			<tuv xml:lang="de">
+				<seg>Heizkreis ist ausgeschaltet</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Heating circuit is switched off</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Circuit de chauffage éteint</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>加热电路已关闭</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="heatingcircuit">
+			<tuv xml:lang="de">
+				<seg>Heizkreislauf</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Heating circuit</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Circuit de  chauffage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>加热电路</seg>
+			</tuv>
+		</tu>
+
+
+		<tu tuid="heatingcomfortoperationactive">
+			<tuv xml:lang="de">
+				<seg>Komfortbetrieb aktiv</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Comfort operation active</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Fonctionnement confort actif</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>舒适模式启动</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="heatingreducedoperationactive">
+			<tuv xml:lang="de">
+				<seg>Reduzierter Betrieb aktiv</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Reduced operation active</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Fonctionnement réduit actif</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>低温模式启动</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="radiatorheating">
+			<tuv xml:lang="de">
+				<seg>Heizkörperheizung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Radiator heating</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Radiateur de chauffage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>散热器供暖</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="hotwatersupply">
+			<tuv xml:lang="de">
+				<seg>Warmwasserbereitstellung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Hot water supply</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Approvisionnement en eau chaude</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>热水供应</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="hotwater">
+			<tuv xml:lang="de">
+				<seg>Warmwasser</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Hot water</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Eau chaude</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>热水</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="morning">
+			<tuv xml:lang="de">
+				<seg>Vormittag</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Morning</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Matin</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>早晨</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="evening">
+			<tuv xml:lang="de">
+				<seg>Abends</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Evening</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Soir</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>夜间</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="suspendforventilation">
+			<tuv xml:lang="de">
+				<seg>Aus wegen Lüften</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Suspend for ventilation</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Interrompre pour ventilation</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>暂停并通风</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="level">
+			<tuv xml:lang="de">
+				<seg>Niveau</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Level</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Niveau</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>级</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="slope">
+			<tuv xml:lang="de">
+				<seg>Neigung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Slope</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Inclinaison</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>斜率</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="start">
+			<tuv xml:lang="de">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Démarrage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开始</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="stop">
+			<tuv xml:lang="de">
+				<seg>Stopp</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Stop</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Arrêt</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>停止</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="clear">
+			<tuv xml:lang="de">
+				<seg>Löschen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Clear</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Effacer</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>清除</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="refresh">
+			<tuv xml:lang="de">
+				<seg>Aktualisieren</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Refresh</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Mise à jour</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>更新</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="processgraphic">
+			<tuv xml:lang="de">
+				<seg>Prozessgrafik</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Process graphic</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Graphique de déroulement</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>过程图形</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="trend">
+			<tuv xml:lang="de">
+				<seg>Trend</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Trend</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Tendance</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>走势</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="controllerrelease">
+			<tuv xml:lang="de">
+				<seg>Reglerfreigabe</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Controller release</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Distribution contrôlée</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>控制器释放</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="totaloperatinghours">
+			<tuv xml:lang="de">
+				<seg>Gesamtbetriebsstunden</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Total operating hours</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Total des heures de fonctionnement</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>总运行小时</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="annualoperatinghours">
+			<tuv xml:lang="de">
+				<seg>Jahresbetriebsstunden</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Annual operating hours</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Nombre annuel des heures de fonctionnement</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>年运行小时</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="floorheatingpump">
+			<tuv xml:lang="de">
+				<seg>Pumpe - Fussbodenheizung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Pump - Floor heating</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Pompe - Chauffage au sol</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>泵 - 地暖</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="radiatorpump">
+			<tuv xml:lang="de">
+				<seg>Pumpe - Heizkörper</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Pump - Radiators</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Pompe - Radiateurs</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>泵 - 散热器</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="hotwaterpump">
+			<tuv xml:lang="de">
+				<seg>Pumpe - Warmwasser</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Pump - Hotwater</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Pompe - Eau chaude</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>泵 - 热水</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="override">
+			<tuv xml:lang="de">
+				<seg>Übersteuerung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Override</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Outrepasser</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>手动操作</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="frostprotectionmodeactive">
+			<tuv xml:lang="de">
+				<seg>Frostschutzbetrieb aktiv</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Frost protection mode active</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Mode de protection antigel actif</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>防冻模式启动</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="safetyreleaseoff">
+			<tuv xml:lang="de">
+				<seg>Sicherheitsabschaltung aktiv</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Safety switch off active</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Coupure de sécurité active</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Safety switch off active</seg>
+			</tuv>
+		</tu>
+
+
+		<tu tuid="floorheatingroomcontroller">
+			<tuv xml:lang="de">
+				<seg>Raumregler - Fussbodenheizung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Room controller - Floor heating</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Régulateur par pièce - Chauffage au sol</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>房间控制器 - 地暖加热</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="radiatorheatingroomcontroller">
+			<tuv xml:lang="de">
+				<seg>Raumregler - Heizkörperheizung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Room controller - Radiator heating</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Régulateur par piéce - Radiateur de chauffage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>房间控制器 - 散热器加热</seg>
+			</tuv>
+		</tu>
+
+
+		<tu tuid="mixerhoming">
+			<tuv xml:lang="de">
+				<seg>Mischer referenzieren</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Mixer homing</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Mélangeur référencé</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>混合器归零</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="charts">
+			<tuv xml:lang="de">
+				<seg>Grafiken</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Charts</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Graphique</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>图像</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="showyear">
+			<tuv xml:lang="de">
+				<seg>Jahr auswählen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Select year</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Sélectionner l'année</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>选择年份</seg>
+			</tuv>
+		</tu>
+
+	</body>
+</tmx>

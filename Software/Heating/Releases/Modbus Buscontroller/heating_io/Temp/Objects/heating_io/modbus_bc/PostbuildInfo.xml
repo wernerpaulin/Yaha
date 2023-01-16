@@ -1,0 +1,1405 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<IOCFG>
+  <Cpu ID="$root" Hardware="ModbusCPU" Target="SGC" FirmwareFolder="">
+    <Link ID="Parameter">
+      <Parameter ID="HardwareModuleName" Address="" Type="" Value="CPU">
+        <Labels />
+        <Descriptions />
+      </Parameter>
+      <Parameter ID="DDECycleTime" Address="" Type="" Value="1000">
+        <Labels />
+        <Descriptions />
+      </Parameter>
+    </Link>
+    <Link ID="Register" />
+    <Link ID="IF1">
+      <Module ID="ST1" Hardware="X20BC0087" ProductCode="8828" FunctionModel="0" FirmwareFolder="" Disabled="False">
+        <Link ID="Parameter">
+          <Parameter ID="ProductCode" Address="" Type="" Value="8828">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="IPAddress" Address="4099" Type="UINT" Value="192.168.0.92">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="SubnetMask" Address="67112967" Type="UINT" Value="255.255.255.0">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="DefaultGateway" Address="67112971" Type="UINT" Value="192.168.0.254">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="Port" Address="4111" Type="UINT" Value="502">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="TcpLifeTime" Address="67112976" Type="UINT" Value="0">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="MTU" Address="67112977" Type="UINT" Value="1500">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="WatchdogMode" Address="67113027" Type="UINT" Value="0xC1">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="WatchdogThreshold" Address="67113024" Type="UINT" Value="5000">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="X2XBusConfig" Address="67112978" Type="UINT" Value="0xC0">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="X2XBusCableLength" Address="67112983" Type="UINT" Value="0">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="IoAddressCheck" Address="67113346" Type="UINT" Value="0xC1">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+          <Parameter ID="ModuleInitDelay" Address="67113345" Type="UINT" Value="3000">
+            <Labels />
+            <Descriptions />
+          </Parameter>
+        </Link>
+        <Link ID="IF1">
+          <Module ID="ST1" Hardware="X20PS9400a" ProductCode="8076" FunctionModel="0" FirmwareFolder="" Disabled="False">
+            <Link ID="Parameter">
+              <Parameter ID="InSize" Address="" Type="" Value="2">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="OutSize" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModel" Address="" Type="" Value="Standard">
+                <Labels>
+                  <Label Lang="en" Text="Function model" />
+                  <Label Lang="de" Text="Funktionsmodell" />
+                  <Label Lang="fr" Text="Mod�le fonctionnel" />
+                </Labels>
+                <Descriptions>
+                  <Description Lang="en" Text="Module�s operating mode" />
+                  <Description Lang="de" Text="Arbeitsweise des Moduls" />
+                  <Description Lang="fr" Text="Mode de fonctionnement du module" />
+                </Descriptions>
+              </Parameter>
+              <Parameter ID="FunctionModelNumber" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Supervision" Address="" Type="" Value="on">
+                <Labels>
+                  <Label Lang="en" Text="Module supervised" />
+                  <Label Lang="de" Text="Modulueberwachung" />
+                  <Label Lang="fr" Text="Surveillance module" />
+                </Labels>
+                <Descriptions>
+                  <Description Lang="en" Text="Service mode if there is no hardware module" />
+                  <Description Lang="de" Text="Service Mode ausloesen, wenn Modul nicht vorhanden ist" />
+                  <Description Lang="fr" Text="Mode service si module absent" />
+                </Descriptions>
+              </Parameter>
+              <Parameter ID="ModuleInfo" Address="" Type="" Value="off">
+                <Labels>
+                  <Label Lang="en" Text="Module information" />
+                  <Label Lang="de" Text="Modulinformation" />
+                </Labels>
+                <Descriptions>
+                  <Description Lang="en" Text="Additional module information" />
+                  <Description Lang="de" Text="Zusaetzliche Modulinformation" />
+                </Descriptions>
+              </Parameter>
+              <Parameter ID="StatusInfo" Address="" Type="" Value="on">
+                <Labels>
+                  <Label Lang="en" Text="Module status information" />
+                  <Label Lang="de" Text="Modulstatusinformation" />
+                </Labels>
+                <Descriptions>
+                  <Description Lang="en" Text="Additional status information" />
+                  <Description Lang="de" Text="Zusaetzliche Statusinformation" />
+                </Descriptions>
+              </Parameter>
+              <Parameter ID="PowerInfo" Address="" Type="" Value="off">
+                <Labels>
+                  <Label Lang="en" Text="Current/voltage information" />
+                  <Label Lang="de" Text="Strom-/Spannungsinformation" />
+                </Labels>
+                <Descriptions>
+                  <Description Lang="en" Text="Additional current/voltage information" />
+                  <Description Lang="de" Text="Zusaetzliche Strom-/Spannungsinformation" />
+                </Descriptions>
+              </Parameter>
+              <Parameter ID="ProductCode" Address="" Type="" Value="8076">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+            </Link>
+            <Link ID="Register">
+              <Register ID="RCF1" Address="0x1" Ext="/FIXED" Direction="IN" Size="1" Value="0">
+                <Channel ID="StatusInput01" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="de" Text="Busversorgungswarnung (1 = Ueberstrom &gt;2,3 A oder Unterspannung &lt;4,7 V)" />
+                    <Description Lang="en" Text="Bus power supply warning (1 = over current &gt;2.3 A or low voltage &lt;4.7 V)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="StatusInput02" DataType="BOOL" PvName="" BitOffset="2" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="de" Text="I/O Versorgungswarnung (0 = DC OK)" />
+                    <Description Lang="en" Text="I/O power supply warning (0 = DC OK)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF2" Address="0x0" Ext="/OK" Direction="IN" Size="1" Value="">
+                <Channel ID="ModuleOk" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="de" Text="Modul Status (1 = Modul gesteckt)" />
+                    <Description Lang="en" Text="Module status (1 = module present)" />
+                    <Description Lang="fr" Text="Etat module (1 = module présent)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+            </Link>
+          </Module>
+          <Module ID="ST2" Hardware="X20AT4222" ProductCode="7079" FunctionModel="1" FirmwareFolder="" Disabled="False">
+            <Link ID="Parameter">
+              <Parameter ID="InSize" Address="" Type="" Value="10">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="OutSize" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModel" Address="" Type="" Value="FunctionModel001">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModelNumber" Address="" Type="" Value="1">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Supervision" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ModuleInfo" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="IOCycleCounter" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="InputFilter" Address="" Type="" Value="20ms">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SensorType01" Address="" Type="" Value="0.05 Ohm to 2250.0 Ohm">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SensorType02" Address="" Type="" Value="0.05 Ohm to 2250.0 Ohm">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SensorType03" Address="" Type="" Value="0.05 Ohm to 2250.0 Ohm">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SensorType04" Address="" Type="" Value="0.05 Ohm to 2250.0 Ohm">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ProductCode" Address="" Type="" Value="7079">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+            </Link>
+            <Link ID="Register">
+              <Register ID="RCF1" Address="0x10" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="3" Name="ConfigOutput01" />
+              <Register ID="RCF2" Address="0x12" Ext="/NOTCYCLIC" Direction="OUT" Size="2" Value="26214" Name="ConfigOutput02" />
+              <Register ID="RCF3" Address="0x0" Ext="/CYCLIC" Direction="IN" Size="2" Value="0">
+                <Channel ID="Resistor01" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Resistance measurement, 2-wire connection" />
+                    <Description Lang="de" Text="Widerstandsmessung, 2-Leiteranschluss" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF4" Address="0x2" Ext="/CYCLIC" Direction="IN" Size="2" Value="0">
+                <Channel ID="Resistor02" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Resistance measurement, 2-wire connection" />
+                    <Description Lang="de" Text="Widerstandsmessung, 2-Leiteranschluss" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF5" Address="0x4" Ext="/CYCLIC" Direction="IN" Size="2" Value="0">
+                <Channel ID="Resistor03" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Resistance measurement, 2-wire connection" />
+                    <Description Lang="de" Text="Widerstandsmessung, 2-Leiteranschluss" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF6" Address="0x6" Ext="/CYCLIC" Direction="IN" Size="2" Value="0">
+                <Channel ID="Resistor04" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Resistance measurement, 2-wire connection" />
+                    <Description Lang="de" Text="Widerstandsmessung, 2-Leiteranschluss" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF7" Address="0x1e" Ext="/PSEUDOCYCLIC" Direction="IN" Size="1" Value="0">
+                <Channel ID="StatusInput01" DataType="USINT" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Status of analog inputs" />
+                    <Description Lang="de" Text="Status der analogen Eingaenge" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF8" Address="0x0" Ext="/OK" Direction="IN" Size="1" Value="">
+                <Channel ID="ModuleOk" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Module status (1 = module present)" />
+                    <Description Lang="de" Text="Modul Status (1 = Modul gesteckt)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+            </Link>
+          </Module>
+          <Module ID="ST3" Hardware="X20AT4222" ProductCode="7079" FunctionModel="1" FirmwareFolder="" Disabled="False">
+            <Link ID="Parameter">
+              <Parameter ID="InSize" Address="" Type="" Value="6">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="OutSize" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModel" Address="" Type="" Value="FunctionModel001">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModelNumber" Address="" Type="" Value="1">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Supervision" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ModuleInfo" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="IOCycleCounter" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="InputFilter" Address="" Type="" Value="20ms">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SensorType01" Address="" Type="" Value="0.05 Ohm to 2250.0 Ohm">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SensorType02" Address="" Type="" Value="PT1000">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SensorType03" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SensorType04" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ProductCode" Address="" Type="" Value="7079">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+            </Link>
+            <Link ID="Register">
+              <Register ID="RCF1" Address="0x10" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="3" Name="ConfigOutput01" />
+              <Register ID="RCF2" Address="0x12" Ext="/NOTCYCLIC" Direction="OUT" Size="2" Value="30518" Name="ConfigOutput02" />
+              <Register ID="RCF3" Address="0x1e" Ext="/PSEUDOCYCLIC" Direction="IN" Size="1" Value="0">
+                <Channel ID="StatusInput01" DataType="USINT" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Status of analog inputs" />
+                    <Description Lang="de" Text="Status der analogen Eingaenge" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF4" Address="0x2" Ext="/CYCLIC" Direction="IN" Size="2" Value="0">
+                <Channel ID="Temperature02" DataType="INT" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="PT100, PT1000, 2-wire connection" />
+                    <Description Lang="de" Text="PT100, PT1000, 2-Leiteranschluss" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF5" Address="0x0" Ext="/CYCLIC" Direction="IN" Size="2" Value="0">
+                <Channel ID="Resistor01" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Resistance measurement, 2-wire connection" />
+                    <Description Lang="de" Text="Widerstandsmessung, 2-Leiteranschluss" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF6" Address="0x0" Ext="/OK" Direction="IN" Size="1" Value="">
+                <Channel ID="ModuleOk" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Module status (1 = module present)" />
+                    <Description Lang="de" Text="Modul Status (1 = Modul gesteckt)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+            </Link>
+          </Module>
+          <Module ID="ST4" Hardware="X20DI4653" ProductCode="9541" FunctionModel="0" FirmwareFolder="" Disabled="False">
+            <Link ID="Parameter">
+              <Parameter ID="InSize" Address="" Type="" Value="2">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="OutSize" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModel" Address="" Type="" Value="Standard">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModelNumber" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Supervision" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ModuleInfo" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="InputFilter" Address="" Type="" Value="10">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="DigitalInputsPacked" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ProductCode" Address="" Type="" Value="9541">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+            </Link>
+            <Link ID="Register">
+              <Register ID="RCF1" Address="0x12" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="10" Name="ConfigOutput01" />
+              <Register ID="RCF2" Address="0x1" Ext="/FIXED" Direction="IN" Size="1" Value="0">
+                <Channel ID="DigitalInput01" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="100 to 240 VAC, 47 to 63 Hz, &lt;40 ms switching delay" />
+                    <Description Lang="de" Text="100 bis 240 VAC, 47 bis 63 Hz, &lt;40 ms Schaltverzoegerung" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="DigitalInput02" DataType="BOOL" PvName="" BitOffset="1" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="100 to 240 VAC, 47 to 63 Hz, &lt;40 ms switching delay" />
+                    <Description Lang="de" Text="100 bis 240 VAC, 47 bis 63 Hz, &lt;40 ms Schaltverzoegerung" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="DigitalInput03" DataType="BOOL" PvName="" BitOffset="2" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="100 to 240 VAC, 47 to 63 Hz, &lt;40 ms switching delay" />
+                    <Description Lang="de" Text="100 bis 240 VAC, 47 bis 63 Hz, &lt;40 ms Schaltverzoegerung" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="DigitalInput04" DataType="BOOL" PvName="" BitOffset="3" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="100 to 240 VAC, 47 to 63 Hz, &lt;40 ms switching delay" />
+                    <Description Lang="de" Text="100 bis 240 VAC, 47 bis 63 Hz, &lt;40 ms Schaltverzoegerung" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="PowerSupply" DataType="BOOL" PvName="" BitOffset="7" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Status module supply (1 = ACOK)" />
+                    <Description Lang="de" Text="Status Modulversorgung (1 = ACOK)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF3" Address="0x0" Ext="/OK" Direction="IN" Size="1" Value="">
+                <Channel ID="ModuleOk" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Module status (1 = module present)" />
+                    <Description Lang="de" Text="Modul Status (1 = Modul gesteckt)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+            </Link>
+          </Module>
+          <Module ID="ST5" Hardware="X20DO2649" ProductCode="8410" FunctionModel="0" FirmwareFolder="" Disabled="False">
+            <Link ID="Parameter">
+              <Parameter ID="InSize" Address="" Type="" Value="1">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="OutSize" Address="" Type="" Value="1">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModel" Address="" Type="" Value="Standard">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModelNumber" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Supervision" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ModuleInfo" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="DigitalOutputsPacked" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ProductCode" Address="" Type="" Value="8410">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+            </Link>
+            <Link ID="Register">
+              <Register ID="RCF1" Address="0x0" Ext="/FIXED" Direction="OUT" Size="1" Value="0">
+                <Channel ID="DigitalOutput01" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Relay, 30 VDC / 250 VAC / 5 A, C.O." />
+                    <Description Lang="de" Text="Relais, 30 VDC / 250 VAC / 5 A, Wechsler" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="DigitalOutput02" DataType="BOOL" PvName="" BitOffset="1" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Relay, 30 VDC / 250 VAC / 5 A, C.O." />
+                    <Description Lang="de" Text="Relais, 30 VDC / 250 VAC / 5 A, Wechsler" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF2" Address="0x0" Ext="/OK" Direction="IN" Size="1" Value="">
+                <Channel ID="ModuleOk" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Module status (1 = module present)" />
+                    <Description Lang="de" Text="Modul Status (1 = Modul gesteckt)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+            </Link>
+          </Module>
+          <Module ID="ST6" Hardware="X20DO2633" ProductCode="44089" FunctionModel="0" FirmwareFolder="" Disabled="False">
+            <Link ID="Parameter">
+              <Parameter ID="InSize" Address="" Type="" Value="2">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="OutSize" Address="" Type="" Value="1">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModel" Address="" Type="" Value="Standard">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModelNumber" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Supervision" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ModuleInfo" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Zerocrossing_user" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ToleranceValue" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FastSettling" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="DigitalOutputsPacked" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann01Dig" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann01wave" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SwitchOffValue1" Address="" Type="" Value="5">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann02Dig" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann02wave" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SwitchOffValue2" Address="" Type="" Value="5">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ProductCode" Address="" Type="" Value="44089">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+            </Link>
+            <Link ID="Register">
+              <Register ID="RCF1" Address="0x16" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="5" Name="CfO_SwitchOffValue2" />
+              <Register ID="RCF2" Address="0x14" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="5" Name="CfO_SwitchOffValue1" />
+              <Register ID="RCF3" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" />
+              <Register ID="RCF4" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" />
+              <Register ID="RCF5" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" Name="CfO_OutputConfig" />
+              <Register ID="RCF6" Address="0x1e" Ext="/CYCLIC" Direction="IN" Size="1" Value="0">
+                <Channel ID="LowCurrentStatus1" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Open loop detection channel 1 (1 = open loop)" />
+                    <Description Lang="de" Text="Drahtbruchsignal Kanal 1 (1 = Drahtbruch)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="LowCurrentStatus2" DataType="BOOL" PvName="" BitOffset="1" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Open loop detection channel 2 (1 = open loop)" />
+                    <Description Lang="de" Text="Drahtbruchsignal Kanal 2 (1 = Drahtbruch)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="ZeroCrossingInput" DataType="BOOL" PvName="" BitOffset="4" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Zero cross detection signal (1 = positive halfwave)" />
+                    <Description Lang="de" Text="Nulldurchgangserkennungssignal (1 = positive Halbwelle)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="ZeroCrossingStatus" DataType="BOOL" PvName="" BitOffset="7" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Status zero cross detection (0 = OK)" />
+                    <Description Lang="de" Text="Status Nulldurchgangserkennung (0 = OK)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF7" Address="0x2" Ext="/CYCLIC" Direction="OUT" Size="1" Value="0">
+                <Channel ID="DigitalOutput01" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="48 - 240 VAC / 2 A" />
+                    <Description Lang="de" Text="48 - 240 VAC / 2 A" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="DigitalOutput02" DataType="BOOL" PvName="" BitOffset="1" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="48 - 240 VAC / 2 A" />
+                    <Description Lang="de" Text="48 - 240 VAC / 2 A" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF8" Address="0x0" Ext="/OK" Direction="IN" Size="1" Value="">
+                <Channel ID="ModuleOk" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Module status (1 = module present)" />
+                    <Description Lang="de" Text="Modul Status (1 = Modul gesteckt)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+            </Link>
+          </Module>
+          <Module ID="ST7" Hardware="X20DO2633" ProductCode="44089" FunctionModel="0" FirmwareFolder="" Disabled="False">
+            <Link ID="Parameter">
+              <Parameter ID="InSize" Address="" Type="" Value="2">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="OutSize" Address="" Type="" Value="1">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModel" Address="" Type="" Value="Standard">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModelNumber" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Supervision" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ModuleInfo" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Zerocrossing_user" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ToleranceValue" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FastSettling" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="DigitalOutputsPacked" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann01Dig" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann01wave" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SwitchOffValue1" Address="" Type="" Value="5">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann02Dig" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann02wave" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SwitchOffValue2" Address="" Type="" Value="5">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ProductCode" Address="" Type="" Value="44089">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+            </Link>
+            <Link ID="Register">
+              <Register ID="RCF1" Address="0x16" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="5" Name="CfO_SwitchOffValue2" />
+              <Register ID="RCF2" Address="0x14" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="5" Name="CfO_SwitchOffValue1" />
+              <Register ID="RCF3" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" />
+              <Register ID="RCF4" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" />
+              <Register ID="RCF5" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" Name="CfO_OutputConfig" />
+              <Register ID="RCF6" Address="0x1e" Ext="/CYCLIC" Direction="IN" Size="1" Value="0">
+                <Channel ID="LowCurrentStatus1" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Open loop detection channel 1 (1 = open loop)" />
+                    <Description Lang="de" Text="Drahtbruchsignal Kanal 1 (1 = Drahtbruch)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="LowCurrentStatus2" DataType="BOOL" PvName="" BitOffset="1" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Open loop detection channel 2 (1 = open loop)" />
+                    <Description Lang="de" Text="Drahtbruchsignal Kanal 2 (1 = Drahtbruch)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="ZeroCrossingInput" DataType="BOOL" PvName="" BitOffset="4" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Zero cross detection signal (1 = positive halfwave)" />
+                    <Description Lang="de" Text="Nulldurchgangserkennungssignal (1 = positive Halbwelle)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="ZeroCrossingStatus" DataType="BOOL" PvName="" BitOffset="7" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Status zero cross detection (0 = OK)" />
+                    <Description Lang="de" Text="Status Nulldurchgangserkennung (0 = OK)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF7" Address="0x2" Ext="/CYCLIC" Direction="OUT" Size="1" Value="0">
+                <Channel ID="DigitalOutput01" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="48 - 240 VAC / 2 A" />
+                    <Description Lang="de" Text="48 - 240 VAC / 2 A" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="DigitalOutput02" DataType="BOOL" PvName="" BitOffset="1" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="48 - 240 VAC / 2 A" />
+                    <Description Lang="de" Text="48 - 240 VAC / 2 A" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF8" Address="0x0" Ext="/OK" Direction="IN" Size="1" Value="">
+                <Channel ID="ModuleOk" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Module status (1 = module present)" />
+                    <Description Lang="de" Text="Modul Status (1 = Modul gesteckt)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+            </Link>
+          </Module>
+          <Module ID="ST8" Hardware="X20DO2633" ProductCode="44089" FunctionModel="0" FirmwareFolder="" Disabled="False">
+            <Link ID="Parameter">
+              <Parameter ID="InSize" Address="" Type="" Value="2">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="OutSize" Address="" Type="" Value="1">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModel" Address="" Type="" Value="Standard">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModelNumber" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Supervision" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ModuleInfo" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Zerocrossing_user" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ToleranceValue" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FastSettling" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="DigitalOutputsPacked" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann01Dig" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann01wave" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SwitchOffValue1" Address="" Type="" Value="5">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann02Dig" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann02wave" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SwitchOffValue2" Address="" Type="" Value="5">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ProductCode" Address="" Type="" Value="44089">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+            </Link>
+            <Link ID="Register">
+              <Register ID="RCF1" Address="0x16" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="5" Name="CfO_SwitchOffValue2" />
+              <Register ID="RCF2" Address="0x14" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="5" Name="CfO_SwitchOffValue1" />
+              <Register ID="RCF3" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" />
+              <Register ID="RCF4" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" />
+              <Register ID="RCF5" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" Name="CfO_OutputConfig" />
+              <Register ID="RCF6" Address="0x2" Ext="/CYCLIC" Direction="OUT" Size="1" Value="0">
+                <Channel ID="DigitalOutput01" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="48 - 240 VAC / 2 A" />
+                    <Description Lang="de" Text="48 - 240 VAC / 2 A" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="DigitalOutput02" DataType="BOOL" PvName="" BitOffset="1" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="48 - 240 VAC / 2 A" />
+                    <Description Lang="de" Text="48 - 240 VAC / 2 A" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF7" Address="0x1e" Ext="/CYCLIC" Direction="IN" Size="1" Value="0">
+                <Channel ID="LowCurrentStatus1" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Open loop detection channel 1 (1 = open loop)" />
+                    <Description Lang="de" Text="Drahtbruchsignal Kanal 1 (1 = Drahtbruch)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="LowCurrentStatus2" DataType="BOOL" PvName="" BitOffset="1" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Open loop detection channel 2 (1 = open loop)" />
+                    <Description Lang="de" Text="Drahtbruchsignal Kanal 2 (1 = Drahtbruch)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="ZeroCrossingInput" DataType="BOOL" PvName="" BitOffset="4" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Zero cross detection signal (1 = positive halfwave)" />
+                    <Description Lang="de" Text="Nulldurchgangserkennungssignal (1 = positive Halbwelle)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="ZeroCrossingStatus" DataType="BOOL" PvName="" BitOffset="7" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Status zero cross detection (0 = OK)" />
+                    <Description Lang="de" Text="Status Nulldurchgangserkennung (0 = OK)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF8" Address="0x0" Ext="/OK" Direction="IN" Size="1" Value="">
+                <Channel ID="ModuleOk" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Module status (1 = module present)" />
+                    <Description Lang="de" Text="Modul Status (1 = Modul gesteckt)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+            </Link>
+          </Module>
+          <Module ID="ST9" Hardware="X20DO2633" ProductCode="44089" FunctionModel="0" FirmwareFolder="" Disabled="False">
+            <Link ID="Parameter">
+              <Parameter ID="InSize" Address="" Type="" Value="2">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="OutSize" Address="" Type="" Value="1">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModel" Address="" Type="" Value="Standard">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FunctionModelNumber" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Supervision" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ModuleInfo" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Zerocrossing_user" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ToleranceValue" Address="" Type="" Value="0">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="FastSettling" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="DigitalOutputsPacked" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann01Dig" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann01wave" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SwitchOffValue1" Address="" Type="" Value="5">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann02Dig" Address="" Type="" Value="on">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="Chann02wave" Address="" Type="" Value="off">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="SwitchOffValue2" Address="" Type="" Value="5">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+              <Parameter ID="ProductCode" Address="" Type="" Value="44089">
+                <Labels />
+                <Descriptions />
+              </Parameter>
+            </Link>
+            <Link ID="Register">
+              <Register ID="RCF1" Address="0x16" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="5" Name="CfO_SwitchOffValue2" />
+              <Register ID="RCF2" Address="0x14" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="5" Name="CfO_SwitchOffValue1" />
+              <Register ID="RCF3" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" />
+              <Register ID="RCF4" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" />
+              <Register ID="RCF5" Address="0x1c" Ext="/NOTCYCLIC" Direction="OUT" Size="1" Value="0" Name="CfO_OutputConfig" />
+              <Register ID="RCF6" Address="0x1e" Ext="/CYCLIC" Direction="IN" Size="1" Value="0">
+                <Channel ID="LowCurrentStatus1" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Open loop detection channel 1 (1 = open loop)" />
+                    <Description Lang="de" Text="Drahtbruchsignal Kanal 1 (1 = Drahtbruch)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="LowCurrentStatus2" DataType="BOOL" PvName="" BitOffset="1" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Open loop detection channel 2 (1 = open loop)" />
+                    <Description Lang="de" Text="Drahtbruchsignal Kanal 2 (1 = Drahtbruch)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="ZeroCrossingInput" DataType="BOOL" PvName="" BitOffset="4" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Zero cross detection signal (1 = positive halfwave)" />
+                    <Description Lang="de" Text="Nulldurchgangserkennungssignal (1 = positive Halbwelle)" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="ZeroCrossingStatus" DataType="BOOL" PvName="" BitOffset="7" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Status zero cross detection (0 = OK)" />
+                    <Description Lang="de" Text="Status Nulldurchgangserkennung (0 = OK)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF7" Address="0x2" Ext="/CYCLIC" Direction="OUT" Size="1" Value="0">
+                <Channel ID="DigitalOutput01" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="48 - 240 VAC / 2 A" />
+                    <Description Lang="de" Text="48 - 240 VAC / 2 A" />
+                  </Descriptions>
+                </Channel>
+                <Channel ID="DigitalOutput02" DataType="BOOL" PvName="" BitOffset="1" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="48 - 240 VAC / 2 A" />
+                    <Description Lang="de" Text="48 - 240 VAC / 2 A" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+              <Register ID="RCF8" Address="0x0" Ext="/OK" Direction="IN" Size="1" Value="">
+                <Channel ID="ModuleOk" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+                  <Descriptions>
+                    <Description Lang="en" Text="Module status (1 = module present)" />
+                    <Description Lang="de" Text="Modul Status (1 = Modul gesteckt)" />
+                  </Descriptions>
+                </Channel>
+              </Register>
+            </Link>
+          </Module>
+        </Link>
+        <Link ID="Register">
+          <Register ID="RCF1" Address="0x0" Ext="/OK" Direction="IN" Size="1" Value="">
+            <Channel ID="ModuleOk" DataType="BOOL" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Modul Status (1 = Modul gesteckt)" />
+                <Description Lang="en" Text="Module status (1 = module present)" />
+                <Description Lang="fr" Text="Etat module (1 = module prÃ©sent)" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF2" Address="0x1080" Ext="/INFO" Direction="IN" Size="2" Value="">
+            <Channel ID="SerialNumber1" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Seriennummer" />
+                <Description Lang="en" Text="Serialnumber" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF3" Address="0x1081" Ext="/INFO" Direction="IN" Size="2" Value="">
+            <Channel ID="SerialNumber2" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Seriennummer" />
+                <Description Lang="en" Text="Serialnumber" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF4" Address="0x1082" Ext="/INFO" Direction="IN" Size="2" Value="">
+            <Channel ID="SerialNumber3" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Seriennummer" />
+                <Description Lang="en" Text="Serialnumber" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF5" Address="0x1083" Ext="/INFO" Direction="IN" Size="2" Value="">
+            <Channel ID="ModuleID" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Produktnummer" />
+                <Description Lang="en" Text="Product Code" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF6" Address="0x1084" Ext="/INFO" Direction="IN" Size="4" Value="">
+            <Channel ID="HardwareRevision" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Hardware variant" />
+                <Description Lang="en" Text="Hardware Variante" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF7" Address="0x1086" Ext="/INFO" Direction="IN" Size="4" Value="">
+            <Channel ID="FirmwareRevision" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Firmware version" />
+                <Description Lang="en" Text="Firmware Version" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF8" Address="0x1186" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="OperatingStatus" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="en" Text="Flags indicating the current operating status of the controller" />
+                <Description Lang="de" Text="Flags fÃ¼r den Betriebszustand des Controllers" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF9" Address="0x1187" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="ErrorStatus" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="en" Text="Flags indicating the failure status of the controller (0 = OK)" />
+                <Description Lang="de" Text="Flags fÃ¼r den Fehlerzustand des Controllers (0 = OK)" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF10" Address="0x10c0" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="ClientCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der Client-Verbindungen" />
+                <Description Lang="en" Text="Number of client connections" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF11" Address="0x10c1" Ext="/CYCLIC" Direction="IN" Size="4" Value="">
+            <Channel ID="GlobalPacketCtr" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="en" Text="Number of packets for all connections" />
+                <Description Lang="de" Text="Anzahl der Pakete aller Verbindungen" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF12" Address="0x10c5" Ext="/CYCLIC" Direction="IN" Size="4" Value="">
+            <Channel ID="GlobalErrorCtr" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der Fehler aller Verbindungen" />
+                <Description Lang="en" Text="Number of errors for all connections" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF13" Address="0x10d1" Ext="/CYCLIC" Direction="IN" Size="4" Value="">
+            <Channel ID="GlobalFragmentCtr" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der fragmentierten Pakete aller Verbindungen" />
+                <Description Lang="en" Text="Number of fragmented packets for all connections" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF14" Address="0x10cd" Ext="/CYCLIC" Direction="IN" Size="4" Value="">
+            <Channel ID="GlobalMinCmdTime" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Minimale AusfÃ¼hrungsdauer der Befehle aller Verbindungen" />
+                <Description Lang="en" Text="Minimum command processing time for all connections" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF15" Address="0x10c9" Ext="/CYCLIC" Direction="IN" Size="4" Value="">
+            <Channel ID="GlobalMaxCmdTime" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Maximale AusfÃ¼hrungsdauer der Befehle aller Verbindungen" />
+                <Description Lang="en" Text="Maximum command processing time for all connections" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF16" Address="0x10c3" Ext="/CYCLIC" Direction="IN" Size="4" Value="">
+            <Channel ID="LocalPacketCtr" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der Pakete der Verbindung" />
+                <Description Lang="en" Text="Number of packets for the connection" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF17" Address="0x10c7" Ext="/CYCLIC" Direction="IN" Size="4" Value="">
+            <Channel ID="LocalErrorCtr" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="en" Text="Number of errors for the connection" />
+                <Description Lang="de" Text="Anzahl der Fehler der Verbindung" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF18" Address="0x10d3" Ext="/CYCLIC" Direction="IN" Size="4" Value="">
+            <Channel ID="LocalFragmentCtr" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="en" Text="Number of fragmented packets for the connection" />
+                <Description Lang="de" Text="Anzahl der fragmentierten Pakete der Verbindung" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF19" Address="0x10cf" Ext="/CYCLIC" Direction="IN" Size="4" Value="">
+            <Channel ID="LocalMinCmdTime" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="en" Text="Minimum command processing time for the connection" />
+                <Description Lang="de" Text="Minimale AusfÃ¼hrungsdauer fÃ¼r einen Befehl der Verbindung" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF20" Address="0x10cb" Ext="/CYCLIC" Direction="IN" Size="4" Value="">
+            <Channel ID="LocalMaxCmdTime" DataType="UDINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Maximale AusfÃ¼hrungsdauer fÃ¼r einen Befehl der Verbindung" />
+                <Description Lang="en" Text="Maximum command processing time for the connection" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF21" Address="0x1200" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="EthRxCnt" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl empfanger Frames" />
+                <Description Lang="en" Text="Number of receveived Frames" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF22" Address="0x1201" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="EthRxLost" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl verlorener Rx-Frames" />
+                <Description Lang="en" Text="Number of lost Rx-Frames" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF23" Address="0x1202" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="EthRxOversize" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl empfangener Ã¼bergroÃŸer Frames &gt; 1500 Bytes" />
+                <Description Lang="en" Text="Number of received oversized frames &gt; 1500 Bytes" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF24" Address="0x1203" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="EthCRCErrors" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl von Rx-Frames mit falscher CRC" />
+                <Description Lang="en" Text="Number of Rx-Frames with wrong CRC" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF25" Address="0x1205" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="EthRxOverflow" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl von verlorenen Rx-Frames wegen Performance-Engpass am BC" />
+                <Description Lang="en" Text="Number of lost Rx-Frames due to performance shortage on BC" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF26" Address="0x1206" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="EthTxCollision" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl von Kollisionen am Ethernet wÃ¤hrend BC sendet" />
+                <Description Lang="en" Text="Number of collisions on ethenet while BC sending" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF27" Address="0x11c0" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="CycleCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der Buszyklen" />
+                <Description Lang="en" Text="Number of bus cycles" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF28" Address="0x11c1" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="BreakCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der Buszyklen mit gesetztem Break-Signal" />
+                <Description Lang="en" Text="Number of bus cycles with set break signal" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF29" Address="0x11c2" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="SyncErrorCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der fehlerhaften synchronen Frames" />
+                <Description Lang="en" Text="Number of failed synchronous frames" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF30" Address="0x11c3" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="SyncBusyErrorCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der nicht versendeten synchronen Frames (Sender nicht bereit)" />
+                <Description Lang="en" Text="Number of not sent synchronous frames (sender not ready)" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF31" Address="0x11c4" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="SyncNoRxErrorCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der nicht empfangenen synchronen Frames (Timeout)" />
+                <Description Lang="en" Text="Number of not received synchronous frames (timeout)" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF32" Address="0x11c5" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="SyncFormatErrorCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der zerstÃ¶rten synchronen Frames" />
+                <Description Lang="en" Text="Number of faulty synchronous frames" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF33" Address="0x11c6" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="SyncPendingErrorCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der synchronen Frames, die nicht versendet werden konnten, weil gerade ein anderer empfangen wurde" />
+                <Description Lang="en" Text="Number of synchronous frames which could not be sent because of receiving a frame" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF34" Address="0x11c7" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="SyncBufferUnderrun" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der synchronen Puffer Underruns" />
+                <Description Lang="en" Text="Number of synchronous buffer underruns" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF35" Address="0x11c8" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="SyncBufferOverflow" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der synchronen Puffer ÃœberlÃ¤ufe" />
+                <Description Lang="en" Text="Number of synchronous buffer overruns" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF36" Address="0x11c9" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="AsyncErrorCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der fehlerhaften asynchronen Frames" />
+                <Description Lang="en" Text="Number of failed asynchronous frames" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF37" Address="0x11ca" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="AsyncBusyErrorCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der nicht versendeten asynchronen Frames (Sender nicht bereit)" />
+                <Description Lang="en" Text="Number of not sent asynchronous frames (sender not ready)" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF38" Address="0x11cb" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="AsyncNoRxErrorCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der nicht empfangenen asynchronen Frames (Timeout)" />
+                <Description Lang="en" Text="Number of not received asynchronous frames (timeout)" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF39" Address="0x11cc" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="AsyncFormatErrorCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der zerstÃ¶rten asynchronen Frames" />
+                <Description Lang="en" Text="Number of faulty asynchronous frames" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF40" Address="0x11cd" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="AsyncPendingErrorCount" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der asynchronen Frames, die nicht versendet werden konnten, weil gerade ein anderer empfangen wurde" />
+                <Description Lang="en" Text="Number of asynchronous frames which could not be sent because of receiving a frame" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF41" Address="0x11ce" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="AsyncBufferUnderrun" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der asynchronen Puffer Underruns" />
+                <Description Lang="en" Text="Number of asynchronous buffer underruns" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+          <Register ID="RCF42" Address="0x11cf" Ext="/CYCLIC" Direction="IN" Size="2" Value="">
+            <Channel ID="AsyncBufferOverflow" DataType="UINT" PvName="" BitOffset="0" IsRuntime="False">
+              <Descriptions>
+                <Description Lang="de" Text="Anzahl der synchronen Puffer ÃœberlÃ¤ufe" />
+                <Description Lang="en" Text="Number of synchronous buffer overruns" />
+                <Description Lang="fr" Text="" />
+              </Descriptions>
+            </Channel>
+          </Register>
+        </Link>
+      </Module>
+    </Link>
+  </Cpu>
+</IOCFG>

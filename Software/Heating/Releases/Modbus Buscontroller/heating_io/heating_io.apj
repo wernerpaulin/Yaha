@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.80.42?>
+<Project Version="1.00.0" Edition="Fieldbus" EditionComment="Standard" xmlns="http://br-automation.co.at/AS/Project">
+  <Communication />
+  <Motion RestartAcoposParameter="true" RestartInitParameter="true" />
+  <ANSIC DefaultIncludes="true" />
+  <Variables DefaultInitValue="0" DefaultRetain="false" DefaultVolatile="true" />
+  <IEC Preprocessor="false" KeywordsAsStructureMembers="false" ExtendedConstants="true" NamingConventions="true" IecExtendedComments="true" Pointers="true" />
+  <Project StoreRuntimeInProject="false" />
+</Project>

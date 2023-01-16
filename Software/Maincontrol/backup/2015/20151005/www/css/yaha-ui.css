@@ -1,0 +1,52 @@
+/* jQuery mobile styles - Begin */
+.ui-page {
+	background: #FFFFFF !important;
+}
+
+.ui-header {	
+	border-width: 1px 0 !important;
+	border-style: solid !important;
+	position: relative !important;
+	height: 40px !important;
+	background: #F0F0F0 !important;
+}
+
+.ui-content {
+	font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif !important;
+	font-size: 12px !important;
+}
+
+.ui-footer {
+	border-width: 1px 0 !important;
+	border-style: solid !important;
+	background: #F0F0F0 !important;
+}
+
+.ui-header:empty,
+.ui-footer:empty {
+	min-height: 5px !important;
+}
+/* jQuery mobile styles - End */
+
+
+/* General html styles - Begin */
+p { 
+	padding:3px 0; 
+}
+
+a {
+	text-decoration:none; 
+}
+
+a:hover { 
+	text-decoration:none;
+}
+/* General html styles - End */
+
+/* Specific IDs */
+
+.ui-icon-yaha_bulb:after {
+    background-image: url("../svg/icon_bulb.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}

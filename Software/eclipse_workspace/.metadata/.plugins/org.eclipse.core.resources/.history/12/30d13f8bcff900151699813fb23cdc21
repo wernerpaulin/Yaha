@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<info>
+		<id>overview</id>
+		<name>$yaha_tuid:myhome$</name>
+		<icon>yaha_home</icon>
+	</info>
+	<html_data>
+	<![CDATA[
+		<script type="text/javascript">
+			var cgiData = {}
+			var INDEX_DAY = 0
+			var INDEX_MONTH = 1
+			var INDEX_YEAR = 2
+			var INDEX_HOUR = 3
+			var INDEX_MINUTE = 4
+			var INDEX_SECOND = 5
+				
+			function onClickLanguageSelector(jqElement)
+			{
+				yvSwitchLanguage(jqElement.attr('href').substr(1))
+				$( "#languageSelector" ).collapsible( "collapse" );
+			}
+	
+			function moduleInit()
+			{
+				//clear current languages 
+				$("#languageSelector a").remove()
+			
+				//create new buttons according to list
+				var mainNavHtmlString = ""
+				for (languageID in AvailableLanguages)
+				{
+					mainNavHtmlString += '<a href="#' + languageID + '" class="ui-btn ui-corner-all ui-icon-yaha_flag_' + languageID + ' ui-nodisc-icon ui-btn-icon-left" style="text-align: left" onclick="onClickLanguageSelector($(this))">' + AvailableLanguages[languageID] + '</a>'
+				}
+				
+				$(mainNavHtmlString).appendTo('#languageSelector');
+
+				/* get current date and time of local machine when ever the user opens the set time dropbox */
+				$( "#setDateTimeCollapsible" ).on( "collapsibleexpand", function( event, ui ) 
+					{
+						getTimeFromLocalMachine();
+					} );
+				
+				
+				/* one submodule shows the main navigation order which can be configured by the user */
+			    $( "#moduleListOrderCfg" ).sortable();
+			    $( "#moduleListOrderCfg" ).disableSelection();
+			    <!-- Refresh list to the end of sort to have a correct display -->
+			    $( "#moduleListOrderCfg" ).on( "sortstop", function(event, ui) 
+					{
+						$( "#moduleListOrderCfg" ).listview('refresh');
+						  
+						/* rebuild module view order after user changed order by drag & drop */
+						ModuleViewOrder = [];
+						//go through each list item and rebuild order list
+						$("#moduleListOrderCfg" + " > li").each(function (index) 
+							{
+								//each list item looks like this: <li moduleNameID="overview">My Home</li>
+								//update order list with ID of modules
+								ModuleViewOrder.push($(this).attr("moduleNameID"))
+							});
+						
+						//save list as cookie		
+						yvWriteCookieModuleViewOrder(ModuleViewOrder)
+					
+						//update main navigation
+						yvUpdateMainNavigation()
+					});
+				
+
+
+				/* add current module order to sortable list so the user can change the order to the module appearance in the main navigation */
+				for (i = 0; i < ModuleViewOrder.length; i++)
+				{
+					moduleNameID = ModuleViewOrder[i]
+					moduleName = ModuleNameList[moduleNameID][MODULE_NAME_INDEX]
+					//store moduleNameID as attribute in order to rebuild later the order list based on moduleNameID 
+					$("#moduleListOrderCfg").append('<li moduleNameID="' + moduleNameID + '"' + '>' + moduleName + '</li>')
+				}
+
+
+				/* Show main navigation when overview page is loaded for fast transaction*/
+				$( "#panelMainNav" ).panel( "open" );
+			}
+			
+
+
+
+			function getTimeFromLocalMachine()
+			{
+				/* get current date of local machine which runs the browser to initalize input fields for usability */
+				setDate = new Date()	
+				$("#setDateString").val(setDate.toISOString().substring(0, 10));
+				setHours = ""
+				setHours += setDate.getHours()
+				if (setHours.length == 1)
+				{
+					setHours = "0" + setHours;		//add leading zero otherwise input field will not accept it: 09:00
+				}
+				
+				setMinutes = ""
+				setMinutes += setDate.getMinutes()
+				if (setMinutes.length == 1)
+				{
+					setMinutes = "0" + setMinutes;		//add leading zero otherwise input field will not accept it: 09:00
+				}
+
+				/* apply time to input field */
+				$("#setTimeString").val( setHours + ":" + setMinutes)
+			}
+			
+		</script>
+		
+		<div id="yaha_submodule_1" class="yaha-submodule" yaha="module_name: $yaha_tuid:dashboard$ ; module_icon: yaha_dashboard; visible: onload">
+			<div class="yaha_flex_header">
+				<h1 style="text-align:center">$yaha_tuid:diagnostics$</h1>
+			</div>
+			
+
+			<div class="yaha_flex_container">
+				<div class="yaha_flex_item">
+					<div class="ui-body ui-body-a ui-corner-all ui-dashboard-panel">
+						<h3>$yaha_tuid:overview$</h3>
+						<object data="../yaha/core/svg/floorplan_gf.svg" type="image/svg+xml" id="gf_overview"></object>
+					</div>
+				</div>
+
+		</div>
+		
+		
+		<div id="yaha_submodule_2" class="yaha-submodule" yaha="module_name: $yaha_tuid:diagnostics$ ;module_icon: yaha_debug">
+			<div class="yaha_flex_header">
+				<h1 style="text-align:center">$yaha_tuid:diagnostics$</h1>
+			</div>
+			
+			<div class="yaha_flex_container">
+				<div class="yaha_flex_item">
+				  	<table>
+				  		<tbody>
+				  			<tr>
+				  				<td>$yaha_tuid:livecounter$</td>
+				  				<td><input type="text" id="count1" yaha="io_mode:read_cyclic, write_enter" class="count_field"></td>
+				  			</tr>
+				  			<tr>
+				  				<td>$yaha_tuid:cycletime$</td>
+				  				<td><span id="systemTickRunTime" yaha="io_mode:read_cyclic ; format:00.## ; unit:s>ms show">tbd...</span></td>
+				  			</tr>
+				  			<tr>
+				  				<td>$yaha_tuid:cpuload$</td>
+				  				<td><span id="cpuLoad" yaha="io_mode:read_cyclic ; format:00.# ; unit:N>% show">tbd...</span></td>
+				  			</tr>
+				  			<tr>
+								<td colspan="2">
+								  	<a href="#" data-role="button" data-mini="true" data-inline="true" id="cmdStopSystem" yaha="io_mode:write_click ; tag_group_wr_click:STOP_SYSTEM">Stop Yaha System</a>
+									<span style="visibility:hidden" id="cmdStopSystem" yaha="tag_group:STOP_SYSTEM">1</span>
+								</td>
+				  			</tr>
+				  		</tbody>
+				  	</table>
+				</div>
+			</div>
+		
+		</div>
+		<div id="yaha_submodule_3" class="yaha-submodule" yaha="module_name: $yaha_tuid:settings$ ;module_icon: yaha_settings">
+			<div class="yaha_flex_header">
+				<h1 style="text-align:center">$yaha_tuid:settings$</h1>
+			</div>
+	
+			<div class="yaha_flex_container">
+				<div class="yaha_flex_item">
+					<div data-role="collapsible" id="languageSelector">
+						<h4>$yaha_tuid:languageselection$</h4>
+					</div>	
+				</div>
+				
+				<div class="yaha_flex_item">
+					<div data-role="collapsible" id="setDateTimeCollapsible">
+						<h4>$yaha_tuid:dateandtime$</h4>
+						
+						<table data-role="table" class="ui-responsive ui-shadow">
+							<thead>
+								<tr>
+									<th></th>
+									<th>$yaha_tuid:ondevice$</th>
+									<th>$yaha_tuid:new$</th>
+								</tr>
+							</thead>
+							<tbody>						
+					  			<tr>
+			    					<td>$yaha_tuid:time$</td>
+			    					<td><span id="currentHour" yaha="io_mode:read_cyclic ; format:00"></span>:<span id="currentMinute" yaha="io_mode:read_cyclic ; format:00"></span>:<span id="currentSecond" yaha="io_mode:read_cyclic ; format:00"></span></td>
+			    					<td><input type="time" id="setTimeString" yaha="tag_group:DATETIME_SET" value=""></td>
+			  					</tr>			
+					  			<tr>
+			    					<td>$yaha_tuid:date$</td>
+			    					<td><span id="currentDay" yaha="io_mode:read_cyclic ; format:00"></span>.<span id="currentMonth" yaha="io_mode:read_cyclic ; format:00"></span>.<span id="currentYear" yaha="io_mode:read_cyclic ; format:00"></span></td>
+			    					<td><input type="date" id="setDateString" yaha="tag_group:DATETIME_SET" value=""></td>
+			  					</tr>	
+			  					<tr>
+			    					<td colspan=3>
+									  	<a href="#" data-role="button" data-icon="check" data-mini="true" data-inline="true" id="uicmdSetDateTime" yaha="io_mode:write_click ; tag_group_wr_click:DATETIME_SET">$yaha_tuid:apply$</a>
+			    						<span style="visibility:hidden" id="cmdSetDateTime" yaha="tag_group:DATETIME_SET">1</span>
+			    					</td>
+			  					</tr>	
+							</tbody>
+						</table>					
+					</div>	
+					
+				</div>
+
+
+				<div class="yaha_flex_item">
+					<div data-role="collapsible">
+						<h4>$yaha_tuid:moduleorder$</h4>
+				        <ul data-role="listview" data-inset="true" id="moduleListOrderCfg">
+							<!-- dynamically added with moduleInit() -->
+				        </ul>
+					</div>
+				</div>
+
+			
+
+			</div>
+			
+	
+			<div class="yaha_flex_footer">
+			</div>		
+						
+		</div>
+	]]>
+	</html_data>
+</module>
+

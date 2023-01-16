@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="myhome">
+			<tuv xml:lang="de">
+				<seg>Mein Zuhause</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>My home</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Ma maison</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>我的家</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="dashboard">
+			<tuv xml:lang="de">
+				<seg>Übersicht</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Dashboard</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Tableau de bord</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>仪表盘</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="livecounter">
+			<tuv xml:lang="de">
+				<seg>Live counter</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Live counter</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Compteur</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>活计数器</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="cycletime">
+			<tuv xml:lang="de">
+				<seg>Zykluszeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Cycle time</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Temps de cycle</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>循环时间</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="cpuload">
+			<tuv xml:lang="de">
+				<seg>CPU Last</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>CPU load</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Charge CPU</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CPU负载</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="diagnostics">
+			<tuv xml:lang="de">
+				<seg>Diagnose</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Diagnostics</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Diagnostic</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>诊断</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="settings">
+			<tuv xml:lang="de">
+				<seg>Einstellungen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Settings</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Paramètres</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>设置</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="languageselection">
+			<tuv xml:lang="de">
+				<seg>Sprachauswahl</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Language selection</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Sélection de la langue choisie</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>语言选择</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="dateandtime">
+			<tuv xml:lang="de">
+				<seg>Datum und Uhrzeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Date and time</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Date et heure</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>日期和时间</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="time">
+			<tuv xml:lang="de">
+				<seg>Uhrzeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Time</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Heure</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>时间</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="date">
+			<tuv xml:lang="de">
+				<seg>Datum</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Date</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Date</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>日期</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="ondevice">
+			<tuv xml:lang="de">
+				<seg>Am Geraet</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>On device</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Sur l'appareil</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>在设备上</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="new">
+			<tuv xml:lang="de">
+				<seg>Neu</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>New</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Nouveau</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>新</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="apply">
+			<tuv xml:lang="de">
+				<seg>Übernehmen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>apply</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Appliqué</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>应用</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="allblinds">
+			<tuv xml:lang="de">
+				<seg>Alle Rollos</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>All blinds</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Tous les volets</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>所有百叶窗</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="groundfloor">
+			<tuv xml:lang="de">
+				<seg>Erdgeschoss</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Ground floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Rez-de-chaussée</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>一楼</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="firstfloor">
+			<tuv xml:lang="de">
+				<seg>1. Stock</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>First floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>premier étage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>二楼</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="open">
+			<tuv xml:lang="de">
+				<seg>Öffnen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Open</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Ouvrir</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="close">
+			<tuv xml:lang="de">
+				<seg>Schliessen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Close</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Fermer</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>关</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="stop">
+			<tuv xml:lang="de">
+				<seg>Stopp</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Stop</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Arrêter</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>停</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="lounge">
+			<tuv xml:lang="de">
+				<seg>Wohnzimmer</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Lounge</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salon</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>客厅</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="acttemp">
+			<tuv xml:lang="de">
+				<seg>Ist-Temperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Actual temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température actuelle</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>实际温度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="outside">
+			<tuv xml:lang="de">
+				<seg>Draussen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Outside</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Extérieur</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>外面</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="library">
+			<tuv xml:lang="de">
+				<seg>Bibliothek</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Library</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Bibliothèque</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>图书馆</seg>
+			</tuv>
+		</tu>
+
+
+	</body>
+</tmx>

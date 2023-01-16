@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<recordcontainers>
+		<recordcontainer id="weather" directory="/home/pi/Yaha/logs/" filenametrunk="weather" interval="900">
+			<dataitems>
+				<dataitem name="actTempOutdoor" pditag="actTempOutdoorWS1"></dataitem>
+				<dataitem name="actHumidityOutdoor" pditag="actHumidityOutdoorWS1"></dataitem>
+				<dataitem name="relativePressure" pditag="relativePressureWS1"></dataitem>
+				<dataitem name="windDirection" pditag="actHumidityOutdoorWS1"></dataitem>
+				<dataitem name="windSpeed" pditag="windSpeedWS1"></dataitem>
+				<dataitem name="solarRadiation" pditag="solarRadiationWS1"></dataitem>
+				<dataitem name="uvRadiation" pditag="uvRadiationWS1"></dataitem>
+				<dataitem name="uvRadiationIndex" pditag="uvRadiationIndexWS1"></dataitem>
+				<dataitem name="rainHourly" pditag="rainHourlyWS1"></dataitem>
+			</dataitems>
+		</recordcontainer>
+	</recordcontainers>
+</cfg>

@@ -1,0 +1,217 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#python3 /home/pi/Yaha/yaha_main.py
+#python3 /home/pi/Yaha/core/Modbus/driver.py
+
+"http://pymodbus.readthedocs.io/en/latest/examples/synchronous-client.html"
+import threading
+import logging
+import time
+
+from pymodbus3.client.sync import ModbusTcpClient as ModbusClient
+
+MODBUS_TIMEOUT = 1.0
+MODBUS_PORT_NR = 502
+ANALOG_IN = "ai"
+DIGITAL_IN = "di"
+DIGITAL_OUT = "do"
+
+class main():
+    "Specific IO handler for Modbus IOs"
+    def __init__(self, PDI):
+        self.CLIENT_IP_INDEX = 0
+        self.IO_TYPE_INDEX = 1
+        self.ADDRESS_INDEX = 2
+        self.MAX_RESISTANCE_INDEX = 3
+        self.MAX_VALUE_INDEX = 4
+        
+        self.PDI = PDI
+        
+        self.ioTags = dict()
+        self.idStringElements = list() 
+        self.readTags = dict()
+        self.writeTags = dict()   
+        
+        self.clientList = dict()    #"IP-Adr" : class 
+
+        #get all PDI tags where MODBUS is specified as owner => all these tags will be handled by the MODBUS driver
+        self.ioTags = PDI.getTagDeviceIDs('MODBUS')  #"tag" : ID
+        for tag in self.ioTags:
+            try:
+                #device IDs are formated like: CLIENT-IP:C0:A8:00:5C.AI.0x0000.rmax:2250.vmax:45000
+                self.idStringElements = self.ioTags[tag].split(".")
+                clientIPhex = self.idStringElements[self.CLIENT_IP_INDEX].lower()
+                clientIPint = "{0}.{1}.{2}.{3}".format( int(clientIPhex[10:12],16), 
+                                                        int(clientIPhex[13:15],16), 
+                                                        int(clientIPhex[16:18],16), 
+                                                        int(clientIPhex[19:21],16) )
+                #create an client infrastructure for this ip address if it does not yet exists
+                if (clientIPint not in self.clientList):
+                    self.clientList[clientIPint] = modbusClient(clientIPint, MODBUS_PORT_NR)
+
+                if self.idStringElements[self.IO_TYPE_INDEX].lower() == ANALOG_IN:
+                    self.clientList[clientIPint].ioTypes[ANALOG_IN]
+                elif self.idStringElements[self.IO_TYPE_INDEX].lower() == DIGITAL_IN:
+                    pass
+                elif self.idStringElements[self.IO_TYPE_INDEX].lower() == DIGITAL_OUT:
+                    pass
+                else:
+                    print("IO: MODBUS - IO-type <{0}> not supported of process tag: {1}".format(idStringElements[self.IO_TYPE_INDEX].lower(), tag))
+                
+                
+            except Exception as e:
+                print("IO: error in PDI owner ID for MODBUS: {0}".format(e))            
+
+        #start driver only if PDI tags are configured for ABE
+        if (len(self.ioTags) > 0):
+            self.start()
+
+    def start(self):
+        for clients in self.clientList:
+            self.clientList[clients].connect()
+    
+    def readInputs(self):
+        #go through all tags which should be read from io driver and write current value directly into PDI
+        pass
+
+
+    def writeOutputs(self):
+        #go through all write tags and see if it has been changed since last write
+        pass
+
+
+        
+class modbusClient():
+    #init
+    def __init__(self,ipAdr, portNr):
+        #debugging logging
+        #logging.basicConfig()
+        #self.mbLog = logging.getLogger()
+        #self.mbLog.setLevel(logging.DEBUG)
+        
+        self.modbusIPadr = ipAdr
+        self.modbusPortNr = portNr
+        self.mbClientHandler = None     
+            
+        self.ioTypes = dict()
+
+    
+    def connect(self):
+        #Connect to Modbus client
+        self.mbClientHandler = ModbusClient(self.modbusIPadr, port=self.modbusPortNr)
+        self.mbClientHandler.connect()
+        print("Modbus driver started!")
+
+    def readInputs(self):
+        pass
+    
+     
+    def writeOutputs(self):
+        pass
+
+
+class ioType():
+    def __init__(self):
+        self.ioList = dict()
+        self.minAdr = 0x0000
+        self.maxAdr = 0x0000
+
+class ioPoint():
+    "CLIENT-IP:C0:A8:00:5C.AI.0x0000.rmax:2250.vmax:45000"    
+    def __init__(self):
+        self.address = None
+        self.resistorMax = None
+        self.valueMax = None
+        self.processTag = None
+        self.processTagOldValue = None
+
+""" OLD CODE """
+class modbusManager():
+    #init
+    def __init__(self,ipAdr, portNr):
+        self.modbusIPadr = ipAdr
+        self.modbusPortNr = portNr
+
+        #debugging logging
+        #logging.basicConfig()
+        #self.mbLog = logging.getLogger()
+        #self.mbLog.setLevel(logging.DEBUG)
+
+        #Connect to Modbus client
+        self.client = ModbusClient(ipAdr, port=portNr)
+        self.client.connect()
+        
+        self.modbusThreadID = 0
+
+        self.statemachine = {
+                             "sIDLE": self.sIDLE,
+                             "sMB_READ_WRITE_DATA": self.sMB_READ_WRITE_DATA, 
+                             "sMB_READ_WRITE_DATA_WAIT": self.sMB_READ_WRITE_DATA_WAIT 
+                            }
+        self.activeState = "sIDLE"
+        self.activeStateOld = ""
+        self.modbusStartTime = 0
+    
+    def update(self):
+        #execute state machine
+        self.statemachine[self.activeState]()
+        #logging of state
+        if (self.activeStateOld != self.activeState):
+           self.activeStateOld = self.activeState
+           #print("Modbus (IP: {0}): state: {1}".format(self.modbusIPadr, self.activeState))
+
+
+    def modbusHandlerThread(self):
+        #X20AT4222 beide Module
+        rr = self.client.read_input_registers(0x0000, count=8)
+        if (rr.function_code < 0x80):
+            print("AT: {0}".format(rr.registers))
+        else:
+            print("AT error: {0}".format(rr))
+
+        #X20DI4653 alle 4 Kanäle
+        rr = self.client.read_discrete_inputs(0x0018,count=4)
+        if (rr.function_code < 0x80):
+            print("DI: {0}".format(rr.bits))
+        else:
+            print("DI error: {0}".format(rr))
+        
+        #X20DO2649 beide Kanäle und erstes X20DO2633
+        wr = self.client.write_coils(0x0000, [True,True,False,False,False,False,False,False,True,True,False,False,False,False,False,False,True,True,False,False,False,False,False,False])
+        if (wr.function_code < 0x80):
+            print("DO success: {0}".format(wr))
+        else:
+            print("DO error: {0}".format(wr))
+        
+    def sIDLE(self):
+        self.activeState = "sMB_READ_WRITE_DATA"
+
+    def sMB_READ_WRITE_DATA(self):
+        try:
+            #start synchronous modbus read/write as thread to not block cyclic system
+            self.modbusThreadID = threading.Thread(target=self.modbusHandlerThread)
+            self.modbusThreadID.start()
+            self.modbusStartTime = time.time()
+            self.activeState = "sMB_READ_WRITE_DATA_WAIT"
+            return
+        
+        except Exception as e:
+            print("Modbus (IP: {0}): start failed: {1}".format(self.modbusIPadr, e))
+            self.activeState = "sIDLE"
+            return       
+
+    def sMB_READ_WRITE_DATA_WAIT(self):
+        if (self.modbusThreadID.isAlive() == False):
+            #print("Modbus (IP: {0}): thread finished successfully".format(self.modbusIPadr))
+            self.activeState = "sIDLE"
+        
+        elif ( (time.time() - self.modbusStartTime) >= MODBUS_TIMEOUT ):
+            print("Modbus (IP: {0}): timeout".format(self.modbusIPadr))
+            try:
+                self.client.close()
+            except:
+                pass
+            self.activeState = "sIDLE" 
+
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="mixPosActFloor">
+			<tuv xml:lang="de">
+				<seg>Mischer FBH Istposition</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Mixer Floor Act.Position</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Mixer Floor Act.Position</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Mixer Floor Act.Position</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="mixPosActRad">
+			<tuv xml:lang="de">
+				<seg>Mischer HK Istposition</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Mixer radiator act. position</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Mixer radiator act position</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Mixer radiator act position</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="mixStateFloor">
+			<tuv xml:lang="de">
+				<seg>Mischer FBH Status</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Mixer floor state</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Mixer floor staten</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Mixer floor state</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="mixStateRad">
+			<tuv xml:lang="de">
+				<seg>Mischer HK Status</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Mixer radiator state</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Mixer radiator staten</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Mixer radiator state</seg>
+			</tuv>
+		</tu>
+
+	</body>
+</tmx>

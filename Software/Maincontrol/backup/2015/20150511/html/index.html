@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Untitled Page</title>
+    <style type="text/css">
+body
+{
+   margin: 0;
+   padding: 0;
+   background-color: #FFFFFF;
+   color: #000000;
+}
+
+<style type="text/css">
+#txtLogOutput
+{
+   border: 1px #C0C0C0 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+}
+</style>
+  </head>
+  
+  <body>
+  	<p></p>
+  	<p></p>
+  	
+  	<p>Output 1: <span id="spanOutput1">tbd...</span></p>
+  	<p>Output 2: <span id="spanOutput2">tbd...</span></p>
+  	
+  	<p>Input 1<input type="text" id="inputSetValue1"></p>
+  	<p>Input 2<input type="text" id="inputSetValue2"></p>
+  	
+  	<p><select id="selectStandard">
+		<option value="Select1">Select1 text</option>
+		<option value="Select2">Select2 text</option>
+		<option value="Select3">Select3 text</option>
+	</select></p>
+  	
+  	<p><select  id="selectGroup">
+		<optgroup label="Select Group 1">
+		  <option value="Select1G1">Select1G1 text</option>
+		  <option value="Select2G1">Select2G1 text</option>
+		</optgroup>
+		<optgroup label="Select Group 2">
+		  <option value="Select1G2">Select1G2 text</option>
+		  <option value="Select2G2">Select2G2 text</option>
+		</optgroup>
+	</select></p>
+  	
+  	<br>
+	<form action="">
+		<input type="radio" name="radiogroup" id="radiogroup1" value="radio1">radio1 text<br>
+		<input type="radio" name="radiogroup" id="radiogroup2" value="radio2">radio2 text
+	</form>
+
+	<br>
+  	<form action="">
+		<input type="checkbox" name="checkboxgroup" id="checkboxgroup1" value="check1">check1 text<br>
+		<input type="checkbox" name="checkboxgroup" id="checkboxgroup2" value="check2">check2 text 
+	</form>
+  	
+  	<p><button type="button" id="cmdClearLog">Clear log book</button></p>
+  	
+    <textarea name="txtLogOutput" id="txtLogOutput" style="position:absolute;left:86px;top:400px;width:640px;height:480px;z-index:1;"
+      rows="1"
+      cols="1">
+    </textarea>
+
+<script src="jquery-2.1.3.min.js"></script>
+<script src="yaha-juice.js"></script>
+
+<script>
+jQuery(document).ready(function()
+{
+
+	yjDefineCyclicReadTags(new Array(
+										"inputSetValue1", 
+										"inputSetValue2", 
+										"spanOutput1", 
+										"spanOutput2", 
+										"selectStandard", 
+										"selectGroup", 
+										"radiogroup1", 
+										"radiogroup2", 
+										"checkboxgroup1", 
+										"checkboxgroup2"
+										"txtLogOutput"
+										));
+
+/*
+	yjDefineCyclicReadTags(new Array(
+			"spanOutput1", 
+			"spanOutput2" 
+			));
+*/	
+	
+    jQuery("#cmdClearLog").click(function()
+    {
+    	yjReadTagList(CyclicReadTagList)
+    });
+});
+
+
+</script>
+  
+  
+  </body>
+</html>

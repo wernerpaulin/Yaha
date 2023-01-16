@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="yaha_pdi.xsl"?>
+
+<pdi>
+  <process_data>
+       <processTag>ioSimulation</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Security</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>ioMotionEntrance</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Security</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>ioMotionLounge</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Security</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+</pdi>

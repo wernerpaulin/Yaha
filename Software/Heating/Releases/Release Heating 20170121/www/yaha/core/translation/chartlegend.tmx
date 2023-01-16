@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="actTempBurner">
+			<tuv xml:lang="de">
+				<seg>Brenner Isttemp.</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Burner actual temp.</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Burner actual temp.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Burner actual temp.</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="actTempHotwater">
+			<tuv xml:lang="de">
+				<seg>Warmwasser Isttemp.</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Hot water actual temp.</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Hot water actual temp.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Hot water actual temp.</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="actTempFlowFloor">
+			<tuv xml:lang="de">
+				<seg>FBH Vorlauf Isttemp.</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Floor flow actual temp.</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Floor flow actual temp.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Floor flow actual temp.</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="floorHeatingSetFlowTemp">
+			<tuv xml:lang="de">
+				<seg>FBH Vorlauf Solltemp.</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Floor flow set temp.</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Floor flow set temp.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Floor flow set temp.</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="floorHeatingMixerActPosition">
+			<tuv xml:lang="de">
+				<seg>FBH Mischer Istpos.</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Floor mixer actual pos.</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Floor mixer actual pos.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Floor mixer actual pos.</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="actTempFlowRadiator">
+			<tuv xml:lang="de">
+				<seg>HK Vorlauf Isttemp.</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Radiator flow actual temp.</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Radiator flow actual temp.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Radiator flow actual temp.</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="radiatorHeatingSetFlowTemp">
+			<tuv xml:lang="de">
+				<seg>HK Vorlauf Solltemp.</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Radiator flow set temp.</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Radiator flow set temp.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Radiator flow set temp.</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="radiatorHeatingMixerActPosition">
+			<tuv xml:lang="de">
+				<seg>HK Mischer Istpos.</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Radiator mixer actual pos.</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Radiator mixer actual pos.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Radiator mixer actual pos.</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="actTempOutsideNorth">
+			<tuv xml:lang="de">
+				<seg>Aussentemp. Nordseite</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Outside temp. north side</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Temp. extérieure - versant nord</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>室外温度 - 北边</seg>
+			</tuv>
+		</tu>
+
+
+
+		<tu tuid="burnerDailyOperatingHours">
+			<tuv xml:lang="de">
+				<seg>Brenner Tagesbetriebsstd.</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Burner daily op. hours</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Brûleur heures de fonct.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>燃烧器运行小时</seg>
+			</tuv>
+		</tu>
+
+	</body>
+</tmx>

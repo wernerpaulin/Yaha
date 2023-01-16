@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<!--
+	Ion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Yaha Project - Getting started</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Yaha is a light weight home automation solution. It is open source and free of charge." />
+		<meta name="keywords" content="home automation, open source, raspberry pi, python, yaha" />
+
+		<meta name="apple-mobile-web-app-title" content="Yaha">
+	
+	    <!-- Icon -->
+	 	<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+		<link rel="shortcut icon" href="yaha/core/images/favicon.ico" />
+	
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />
+		
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		
+		<style>
+			/* DivTable.com */
+			.divTable{
+				display: table;
+				width: 100%;
+			}
+			.divTableRow {
+				display: table-row;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+			}
+			.divTableCell, .divTableHead {
+				border: 0px solid #000000;
+				display: table-cell;
+				padding: 3px 10px;
+				vertical-align:top;
+				text-align: left;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+				font-weight: bold;
+			}
+			.divTableFoot {
+				background-color: #EEE;
+				display: table-footer-group;
+				font-weight: bold;
+			}
+			.divTableBody {
+				display: table-row-group;
+			}		
+
+		</style>
+		
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="yaha.html">This is Yaha</a></li>
+						<li><a href="screenshots.html">Screenshots</a></li>
+						<li><a href="download.html">Download</a></li>
+						<li><a href="contact.php">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<header class="major">
+					<h2>Getting started</h2>
+				</header>
+				<div class="container">
+					<section>
+						<h2>1. Get the hardware</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:15%">
+											<img src="images/hardware.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px">
+											The currently supported hardware platform is Raspberry Pi. Although it runs also on generation 2, generation 3 is preferred because of performance and built-in wifi.
+											The hardware can be bought at various places including <a target="_blank" href="http://www.amazon.com">amazon.com</a> or other online shops like <a target="_blank" href="http://www.reichelt.de">reichelt.de</a>, <a target="_blank" href="http://www.conrad.at">conrad.at</a> or <a target="_blank" href="http://www.elv.de">elv.de</a>
+											<br>
+											Minimum equipment:
+											<ul>
+												<li>Pi board</li>
+												<li>Micro SD card 8 GB or more</li>
+												<li>Housing</li>
+												<li>Power supply 2A</li>
+												<li>Heat sink set</li>
+											</ul>
+											Although the Pi is often used headless (no monitor), a monitor, keyboard and mouse is highly recommended during configuration.		
+											<br>
+											If <a target="_blank" href="https://www.enocean.com/en/">Enocean</a> communication should be used an additional <a target="_blank" href="https://www.element14.com/community/docs/DOC-55169?ICID=enoceanpi-space-learn">add-on board for the GPIO connector</a> is required and can also be bought through the online shops mentioned above.
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+					</section>
+
+					<section>
+						<h2>2. Install Raspbian OS</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:15%">
+											<a target="_blank" href="http://www.raspberrypi.org"><img src="images/raspbian.png" alt="" style="width:100%"/></a>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px;">
+											The Raspberry Pi operating system, a Linux derivate of Debian is available on the <a target="_blank" href="https://www.raspberrypi.org/downloads">Raspberry Pi website</a>.
+											<br>
+											The website also explains <a target="_blank" href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">how to install</a> it on a SD card.
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+					</section>
+
+					<section>
+						<h2>3. Configuration of Raspbian OS</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:15%">
+											<img src="images/configuration.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px;">
+											Although Raspbian starts out of the box, it does need some configuration to be suitable for Yaha. 
+											All necessary steps are documented in a Raspberry Pi setup guideline as mind map. It guides you step by step through this process and is available in the <a href="download.html">download center</a> as PDF or Xmind. Xmind can be downloaded free of charge from: <a target="_blank" href="http://www.xmind.net">xmind.net</a>.
+											<br>
+											Most of the steps are actually useful for any purpose of use.
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+					</section>
+
+					<section>
+						<h2>4. Copy Yaha to Raspberry Pi</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:15%">
+											<img src="images/download.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px;">
+											The following zip files need to be expanded and its content to be copied onto the Pi. The best way of doing it is using filezilla which can be downloaded free of charge from <a target="_blank" href="https://filezilla-project.org">filezilla-project.org</a>.
+											<br>
+											Yaha allows you to split modules up on several PIs. For stability purpose the heating modules runs on a separate Pi. However all PIs have the destination path in common:
+			
+											<table>
+												<thead>
+													<tr>
+														<th>Package</th>
+														<th>Destination path on Pi</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Python</td>
+														<td>/home/pi/Yaha</td>
+													</tr>
+													<tr>
+														<td>CGI</td>
+														<td>/usr/lib/cgi-bin</td>
+													</tr>
+													<tr>
+														<td>www</td>
+														<td>/var/www</td>
+													</tr>
+												</tbody>
+											</table>
+											All files are available in the <a href="download.html">download center</a>.
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+					</section>
+
+					<section>
+						<h2>4. Customize your Yaha</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:15%">
+											<img src="images/customizing.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px;">
+											You most likely want or need to tailor Yaha to your requirements.
+											<br>
+											There are two options:
+											<ol>
+												<li>
+													You are happy with the functionality of existing modules
+													<br>
+													Then all you need is to define your I/Os by editing the Excel file "Yaha PDI XML generator.xlsm" and create all I/O xml-files (launch macro inside Excel).
+													Then browse the xml configurations of all modules you want to use and edit them according to your requirements.
+													Download all again to the Pi and reboot it.									
+												</li>
+												<li>
+													You want to change modules behaviour and want to create new modules
+													<br>
+													For this you need to install <a target="_blank" href="https://eclipse.org/downloads/">Eclipse</a> and <a target="_blank" href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">PyDev</a> to program in Python.
+												</li>
+											</ol>
+			
+											In case you need help to the following items please feel free to <a href="contact.php">contact me</a>:
+											<ul>
+												<li>Setup a Raspberry Pi</li>
+												<li>Configuration of existing modules and I/O configuration</li>
+												<li>Creating customized function in existing modules</li>
+												<li>Creating new modules</li>
+												<li>Technical consultation</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+					</section>
+
+
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; Werner Paulin. All rights reserved.</li>
+						<li><a href="web_disclaimer.html">Website Terms of Use</a></li>
+						<li><a href="software_disclaimer.html">Software Terms of Use</a></li>
+						<li>Design: <a href="http://templated.co">templated</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>

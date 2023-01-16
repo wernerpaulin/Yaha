@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Ion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Contact</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Yaha is a light weight home automation solution. It is open source and free of charge." />
+		<meta name="keywords" content="home automation, open source, raspberry pi, python, yaha" />
+
+		<meta name="apple-mobile-web-app-title" content="Yaha">
+	
+	    <!-- Icon -->
+	 	<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+		<link rel="shortcut icon" href="yaha/core/images/favicon.ico" />
+	
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />
+		
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<header class="major">
+					<h2>Contact</h2>
+				</header>
+				<div class="container">
+					<section>
+						<form method="post" action="mailer.php" onsubmit="MM_validateForm('from','','RisEmail','subject','','R','verif_box','','R','message','','R');return document.MM_returnValue">
+							<div style="width:50%">
+								<div class="6u 12u$(4)">
+									<input type="text" name="name" id="name" value="" placeholder="Name" />
+								</div>
+								<br />
+								<div class="6u$ 12u$(4)">
+									<input type="email" name="from" id="from" value="" placeholder="Email address" />
+								</div>
+								<br />
+								<div class="6u$ 12u$(4)">
+									<input type="text" name="subject" id="subject" value="" placeholder="Subject" />
+								</div>
+								<br />
+								<div class="12u$(4)">
+									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<br />
+								<div class="12u$">
+									<input name="verif_box" type="text" id="verif_box" placeholder="Please enter the numbers you see below"/>
+									<img style="padding-top: 10px" src="verificationimage.php?<?php echo rand(0,9999);?>" alt="verification image, type it in the box" height="50" align="absbottom" />
+									<br />
+								</div>
+								<!-- if the variable "wrong_code" is sent from previous page then display the error field -->
+								<?php if(isset($_GET['wrong_code'])){?>
+								<div style="border:1px solid #990000; background-color:#D70000; color:#FFFFFF; padding:4px; padding-left:6px;width:295px;">Wrong verification code</div>
+								<br /> 
+								<?php ;}?>
+								<br />
+								<div class="12u$">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</div>
+							</div>
+							<noscript><a href="http://www.thewebhelp.com" style="display:none;">contact form by thewebhelp</a></noscript>
+						</form>						
+					</section>
+					
+					<section>
+						<div class="fb-share-button" data-href="http://yaha-project.org/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fyaha-project.org%2F&amp;src=sdkpreparse">Share</a></div>					
+					</section>
+				</div>
+			</section>		
+		
+		
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; Werner Paulin. All rights reserved.</li>
+						<li><a href="web_disclaimer.html">Website Terms of Use</a></li>
+						<li><a href="software_disclaimer.html">Software Terms of Use</a></li>
+						<li>Design: <a href="http://templated.co">templated</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>

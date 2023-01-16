@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<blinds>
+		<blind id="guestBath">
+			<inputs>
+				<input name="up">
+					<processtag initialstate="normallyOpen">guestBathUp</processtag>
+				</input>
+				<input name="down">
+					<processtag initialstate="normallyOpen">guestBathDown</processtag>
+				</input>
+				<input name="position">
+					<processtag initialstate="normallyOpen">guestBathPos</processtag>
+				</input>
+				<input name="stop">
+					<processtag initialstate="normallyOpen">guestBathStop</processtag>
+				</input>
+				<input name="angle">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">guestBathTeach</processtag>
+				</input>
+				<input name="emcyOverrideUp">
+					<processtag initialstate="normallyOpen">xxx</processtag>
+				</input>
+				<input name="emcyOverrideDown">
+					<processtag initialstate="normallyOpen">xxx</processtag>
+				</input>
+			</inputs>			
+			<outputs>
+				<output name="up">
+					<processtag initialstate="normallyOpen">ioGuestBathroomShutterUp</processtag>
+				</output>
+				<output name="down">
+					<processtag initialstate="normallyOpen">ioGuestBathroomShutterDown</processtag>
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioGuestBathroomTeach</processtag>
+				</output>
+			</outputs>			
+			<parameters>
+				<motor>
+					<start delay="0.2"></start>
+					<stop delay="0.2"></start>
+					<closetime duration="20"></closetime>
+				</motor>
+				<modes>
+					<mode type="sunrise" action="up">
+						<enable>
+							<processtag>xxx</processtag>
+						</enable>					
+					</mode>
+					<mode type="sunset" action="up">
+						<enable>
+							<processtag>xxx</processtag>
+						</enable>					
+					</mode>
+					<mode type="sunposition">
+						<enable>
+							<processtag>xxx</processtag>
+						</enable>
+						<brightness>
+							<processtag>xxx</processtag>
+						</brightness>				
+					</mode>
+				</modes>
+				<timecontrol>
+					<enable>
+						<processtag>guestBathTimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="16" minute="18" action="on">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="16" minute="20" action="off">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="shutterStopped">
+					<processtag>xxx</processtag>
+				</statusitem>
+				<statusitem name="shutterOpening">
+					<processtag>xx</processtag>
+				</statusitem>
+				<statusitem name="fullyopen">
+					<processtag>xx</processtag>
+				</statusitem>
+				<statusitem name="fullyclosed">
+					<processtag>xx</processtag>
+				</statusitem>
+				<statusitem name="position">
+					<processtag>xx</processtag>
+				</statusitem>
+				<statusitem name="angle">
+					<processtag>xx</processtag>
+				</statusitem>
+				<statusitem name="error">
+					<processtag>xx</processtag>
+				</statusitem>
+			</statusitems>			
+		</blind>
+	</blinds>
+</cfg>

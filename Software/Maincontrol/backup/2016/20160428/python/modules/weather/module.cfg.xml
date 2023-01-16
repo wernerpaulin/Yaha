@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<stations>
+		<station id="GardenSouth">
+			<outputs>
+				<output name="recordTimeStamp">
+					<processtag>recordTimeStampWS1</processtag>
+				</output>
+				<output name="actTempIndoor">
+					<processtag>actTempIndoorWS1</processtag>
+				</output>
+				<output name="actTempOutdoor">
+					<processtag>actTempOutdoorWS1</processtag>
+				</output>
+				<output name="actHumidityIndoor">
+					<processtag>actHumidityIndoorWS1</processtag>
+				</output>
+				<output name="actHumidityOutdoor">
+					<processtag>actHumidityOutdoorWS1</processtag>
+				</output>
+				<output name="absolutePressure">
+					<processtag>absolutePressureWS1</processtag>
+				</output>
+				<output name="relativePressure">
+					<processtag>relativePressureWS1</processtag>
+				</output>
+				<output name="windDirection">
+					<processtag>windDirectionWS1</processtag>
+				</output>
+				<output name="windSpeed">
+					<processtag>windSpeedWS1</processtag>
+				</output>
+				<output name="windGust">
+					<processtag>windGustWS1</processtag>
+				</output>
+				<output name="solarRadiation">
+					<processtag>solarRadiationWS1</processtag>
+				</output>
+				<output name="uvRadiation">
+					<processtag>uvRadiationWS1</processtag>
+				</output>
+				<output name="uvRadiationIndex">
+					<processtag>uvRadiationIndexWS1</processtag>
+				</output>
+				<output name="rainHourly">
+					<processtag>rainHourlyWS1</processtag>
+				</output>
+				<output name="weatherCondition">
+					<processtag>weatherConditionWS1</processtag>
+				</output>
+				<output name="isCloudy">
+					<processtag>isCloudyWS1</processtag>
+				</output>
+				<output name="actTempOutdoorTrend">
+					<processtag>actTempOutdoorTrendWS1</processtag>
+				</output>
+				<output name="relativePressureTrend">
+					<processtag>relativePressureTrendWS1</processtag>
+				</output>
+				<output name="uvRadiationIndexTrend">
+					<processtag>uvRadiationIndexTrendWS1</processtag>
+				</output>
+				<output name="actHumidityOutdoorTrend">
+					<processtag>actHumidityOutdoorTrendWS1</processtag>
+				</output>
+				<output name="actTempOutdoorFeelsLike">
+					<processtag>actTempOutdoorFeelsLikeWS1</processtag>
+				</output>
+			</outputs>
+
+			<parameters>
+				<connection url="http://10.0.0.91/livedata.htm"></connection>
+
+				<wsdataitems>
+					<wsdataitem name="CurrTime" valuekey="value" valuetype="TIME" mapping="outputs.recordTimeStamp"></wsdataitem>
+					<wsdataitem name="inTemp" valuekey="value" valuetype="REAL" mapping="outputs.actTempIndoor"></wsdataitem>
+					<wsdataitem name="outTemp" valuekey="value" valuetype="REAL" mapping="outputs.actTempOutdoor"></wsdataitem>
+					
+					<wsdataitem name="inHumi" valuekey="value" valuetype="REAL" mapping="outputs.actHumidityIndoor"></wsdataitem>
+					<wsdataitem name="outHumi" valuekey="value" valuetype="REAL" mapping="outputs.actHumidityOutdoor"></wsdataitem>
+
+					<wsdataitem name="AbsPress" valuekey="value" valuetype="REAL" mapping="outputs.absolutePressure"></wsdataitem>
+					<wsdataitem name="RelPress" valuekey="value" valuetype="REAL" mapping="outputs.relativePressure"></wsdataitem>
+
+					<wsdataitem name="windir" valuekey="value" valuetype="REAL" mapping="outputs.windDirection"></wsdataitem>
+					<wsdataitem name="avgwind" valuekey="value" valuetype="REAL" mapping="outputs.windSpeed"></wsdataitem>
+					<wsdataitem name="gustspeed" valuekey="value" valuetype="REAL" mapping="outputs.windGust"></wsdataitem>
+
+					<wsdataitem name="solarrad" valuekey="value" valuetype="REAL" mapping="outputs.solarRadiation"></wsdataitem>
+					<wsdataitem name="uv" valuekey="value" valuetype="REAL" mapping="outputs.uvRadiation"></wsdataitem>
+					<wsdataitem name="uvi" valuekey="value" valuetype="REAL" mapping="outputs.uvRadiationIndex"></wsdataitem>
+
+					<wsdataitem name="rainofhourly" valuekey="value" valuetype="REAL" mapping="outputs.rainHourly"></wsdataitem>
+
+					<wsdataitem name="inBattSta" valuekey="value" valuetype="REAL" mapping="status.indoorSensorBattery"></wsdataitem>
+					<wsdataitem name="outBattSta" valuekey="value" valuetype="REAL" mapping="status.outdoorSensorBattery"></wsdataitem>
+				</wsdataitems>
+			</parameters>
+
+			<statusitems>
+				<statusitem name="indoorSensorBattery">
+					<processtag>indoorSensorBatteryStatusWS1</processtag>
+				</statusitem>
+				<statusitem name="outdoorSensorBattery">
+					<processtag>outdoorSensorBatteryStatusWS1</processtag>
+				</statusitem>
+			</statusitems>			
+		</station>
+	</stations>
+</cfg>
+		

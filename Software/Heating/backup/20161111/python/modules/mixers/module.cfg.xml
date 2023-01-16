@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<mixers>
+		<mixer id="flowRadiator">
+			<inputs>
+				<input name="setposition">
+					<processtag></processtag>
+				</input>
+			</inputs>
+			
+			<outputs>
+				<output name="open">
+					<processtag>ioFlowMixerRadiatorOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag>ioFlowMixerRadiatorClose</processtag>
+				</output>
+				<output name="actposition">
+					<processtag></processtag>
+				</output>
+			</outputs>
+			
+			<parameters>
+				<fullyopentime>200.0</fullyopentime>
+			</parameters>
+		</mixer>
+		<mixer id="flowFloor">
+			<inputs>
+				<input name="setposition">
+					<processtag></processtag>
+				</input>
+			</inputs>
+			
+			<outputs>
+				<output name="open">
+					<processtag>ioFlowMixerFloorOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag>ioFlowMixerFloorClose</processtag>
+				</output>
+				<output name="actposition">
+					<processtag></processtag>
+				</output>
+			</outputs>
+			
+			<parameters>
+				<fullyopentime>200.0</fullyopentime>
+			</parameters>
+		</mixer>
+	</mixers>
+</cfg>

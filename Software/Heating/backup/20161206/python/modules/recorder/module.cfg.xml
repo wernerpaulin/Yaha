@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<recordcontainers>
+		<recordcontainer id="heating" directory="/home/pi/Yaha/logs/" filenametrunk="heating" filenameoption="" interval="1" nbMaxDataRecords="1000" startCmdTag="recorderCmdStart" stopCmdTag="recorderCmdStop" clearCmdTag="recorderCmdClear">
+			<dataitems>
+				<dataitem name="Burner" pditag="actTempBurner" decimalplaces="1"></dataitem>
+				<dataitem name="Hotwater" pditag="actTempHotwater" decimalplaces="1"></dataitem>
+				<dataitem name="Flow Floor" pditag="actTempFlowFloor" decimalplaces="1"></dataitem>
+				<dataitem name="Flow Radiator" pditag="actTempFlowRadiator" decimalplaces="1"></dataitem>
+				<dataitem name="Mixer Floor" pditag="floorHeatingMixerActPosition" decimalplaces="1"></dataitem>
+				<dataitem name="Mixer Radiator" pditag="radiatorHeatingMixerActPosition" decimalplaces="1"></dataitem>
+			</dataitems>
+		</recordcontainer>
+	</recordcontainers>
+</cfg>

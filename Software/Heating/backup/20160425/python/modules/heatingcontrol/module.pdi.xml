@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="yaha_pdi.xsl"?>
+
+<pdi>
+  <process_data>
+       <processTag>count1</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1000000.0</highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>actTempBurner</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>-50.0</lowREAL>
+       <highREAL>50.0</highREAL>
+       <zone>Family</zone>
+       <subzone>Heating</subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>actTempFlowRadiator</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>-50.0</lowREAL>
+       <highREAL>50.0</highREAL>
+       <zone>Family</zone>
+       <subzone>Heating</subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>actTempFlowFloor</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>-50.0</lowREAL>
+       <highREAL>50.0</highREAL>
+       <zone>Family</zone>
+       <subzone>Heating</subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>actTempBoiler</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>-50.0</lowREAL>
+       <highREAL>50.0</highREAL>
+       <zone>Family</zone>
+       <subzone>Heating</subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>actTempOutsideNorth</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>-50.0</lowREAL>
+       <highREAL>50.0</highREAL>
+       <zone>Family</zone>
+       <subzone>Heating</subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>actTempRoomLoungeAct</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>-50.0</lowREAL>
+       <highREAL>50.0</highREAL>
+       <zone>Family</zone>
+       <subzone>Heating</subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>actTempRoomLoungeSet</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>-50.0</lowREAL>
+       <highREAL>50.0</highREAL>
+       <zone>Family</zone>
+       <subzone>Heating</subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>setTempBurner</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>80.0</highREAL>
+       <zone>Family</zone>
+       <subzone>Heating</subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+</pdi>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="yaha_pdi.xsl"?>
+
+<pdi>
+  <process_data>
+       <processTag>light1on</processTag>
+       <uiTag>uiLight1on</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>w</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <ioType>SD.light.kitchen.user.on</ioType>
+    </process_data>
+  <process_data>
+       <processTag>light1off</processTag>
+       <uiTag>uiLight1off</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>w</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <ioType>SD.light.kitchen.user.off</ioType>
+    </process_data>
+  <process_data>
+       <processTag>light1teach</processTag>
+       <uiTag>uiLight1teach</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>rw</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <ioType>SD.light.kitchen.user.learning</ioType>
+    </process_data>
+  <process_data>
+       <processTag>light1BlinkEnable</processTag>
+       <uiTag>uiLight1BlinkEnable</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>rw</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <ioType></ioType>
+    </process_data>
+  <process_data>
+       <processTag>light1ImpulseEnable</processTag>
+       <uiTag>uiLight1ImpulseEnable</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>rw</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <ioType></ioType>
+    </process_data>
+  <process_data>
+       <processTag>light1OffDelayEnable</processTag>
+       <uiTag>uiLight1OffDelayEnable</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>rw</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <ioType></ioType>
+    </process_data>
+  <process_data>
+       <processTag>light1TimeEnable</processTag>
+       <uiTag>uiLight1TimeEnable</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>rw</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <ioType></ioType>
+    </process_data>    
+
+     
+  <process_data>
+       <processTag>light2on</processTag>
+       <uiTag>uiLight2on</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>w</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Living room</room>
+       <ioType>SD.light.livingroom.user.on</ioType>
+    </process_data>
+  <process_data>
+       <processTag>light2off</processTag>
+       <uiTag>uiLight2off</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>w</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Living room</room>
+       <ioType>SD.light.livingroom.user.off</ioType>
+    </process_data>
+  <process_data>
+       <processTag>light2teach</processTag>
+       <uiTag>uiLight2teach</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>rw</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Living room</room>
+       <ioType>SD.light.livingroom.user.learning</ioType>
+    </process_data>
+  <process_data>
+       <processTag>light2BlinkEnable</processTag>
+       <uiTag>uiLight2BlinkEnable</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>rw</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <ioType></ioType>
+    </process_data>
+  <process_data>
+       <processTag>light2ImpulseEnable</processTag>
+       <uiTag>uiLight2ImpulseEnable</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>rw</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <ioType></ioType>
+    </process_data>
+  <process_data>
+       <processTag>light2OffDelayEnable</processTag>
+       <uiTag>uiLight2OffDelayEnable</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>rw</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <ioType></ioType>
+    </process_data>
+  <process_data>
+       <processTag>light2TimeEnable</processTag>
+       <uiTag>uiLight2TimeEnable</uiTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <uiMode>rw</uiMode>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <ioType></ioType>
+    </process_data>             
+</pdi>

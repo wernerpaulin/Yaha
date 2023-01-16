@@ -1,0 +1,123 @@
+/* jQuery styling for yaha svg icons */
+.ui-icon-yaha_bulb:after {
+    background-image: url("../svg/icon_bulb.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+
+.ui-icon-yaha_multimedia:after {
+    background-image: url("../svg/icon_multimedia.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_debug:after {
+    background-image: url("../svg/icon_debug.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_list:after {
+    background-image: url("../svg/icon_list.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_flag_at:after {
+    background-image: url("../svg/flags/flags/1x1/at.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_flag_de:after {
+    background-image: url("../svg/flags/flags/1x1/at.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_flag_en:after {
+    background-image: url("../svg/flags/flags/1x1/us.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_flag_fr:after {
+    background-image: url("../svg/flags/flags/1x1/fr.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_flag_cn:after {
+    background-image: url("../svg/flags/flags/1x1/cn.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_settings:after {
+    background-image: url("../svg/icon_settings.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_blinds:after {
+    background-image: url("../svg/icon_blinds.svg");
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_garage:after {
+    background-image: url("../svg/icon_garage.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_dashboard:after {
+    background-image: url("../svg/icon_dashboard.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_floorplan:after {
+    background-image: url("../svg/icon_floorplan.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_home:after {
+    background-image: url("../svg/icon_home.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_notificationcenter:after {
+    background-image: url("../svg/icon_notificationcenter.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_scenes:after {
+    background-image: url("../svg/icon_scenes.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_temperature:after {
+    background-image: url("../svg/icon_temperature.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_garden:after {
+    background-image: url("../svg/icon_garden.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_chart:after {
+    background-image: url("../svg/icon_chart.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+

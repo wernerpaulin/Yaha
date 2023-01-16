@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<boilers>
+		<boiler id="hotwater">
+			<inputs>
+				<input name="burnerActTemp">
+					<processtag>actTempBurner</processtag>
+				</input>
+				<input name="hotwaterActTemp">
+					<processtag>actTempHotwater</processtag>
+				</input>
+				<input name="ioPumpRelease">
+					<processtag>ioPumpHotwater</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="burnerSetTemp">
+					<processtag>burnerAutoSetTempHotwater</processtag>
+				</output>
+				<output name="pumpRelease">
+					<processtag initialstate="normallyOpen">hotwaterPumpAutoRelease</processtag>
+				</output>
+			</outputs>			
+			<parameters>
+				<settings>
+					<setting name="hysteresisHigh">2.0</setting>
+					<setting name="hysteresisLow">8.0</setting>
+					<setting name="legionellaProtectionTemperature">70.0</setting>
+					<setting name="legionellaProtectionHeatDuration">1800.0</setting>
+					<setting name="burnerSetTempOffset">5.0</setting>
+				</settings>				
+				<operatingmodes>
+					<switch>
+						<processtag>hotwaterPumpManOp</processtag>
+					</switch>
+					<operatingmode name="automatic">
+						<interfaces>
+							<interface name="setTemperature">
+								<processtag>hotwaterSetTemp</processtag>
+							</interface>		
+							<interface name="morningStartTime">
+								<processtag>hotwaterMorningStartTime</processtag>
+							</interface>		
+							<interface name="morningEndTime">
+								<processtag>hotwaterMorningEndTime</processtag>
+							</interface>		
+							<interface name="eveningStartTime">
+								<processtag>hotwaterEveningStartTime</processtag>
+							</interface>		
+							<interface name="eveningEndTime">
+								<processtag>hotwaterEveningEndTime</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+				</operatingmodes>
+				<simulation>
+					<enable>
+						<processtag>ioSimulation</processtag>
+					</enable>
+					<settings>
+						<setting name="boilerTemperaturePtTau">30.0</setting>
+						<setting name="environmentalTemperature">22.0</setting>
+					</settings>
+				</simulation>
+			</parameters>
+			<statusitems>
+				<statusitem name="state">
+					<processtag>hotwaterState</processtag>
+				</statusitem>
+				<statusitem name="setTemperature">
+					<processtag>hotwaterResultSetTemp</processtag>
+				</statusitem>
+			</statusitems>			
+		</boiler>
+	</boilers>
+</cfg>

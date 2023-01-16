@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<blinds>
+		<blind id="guestBath">
+			<inputs>
+				<input name="open">
+					<processtag initialstate="normallyOpen">guestBathBlindOpen</processtag>
+				</input>
+				<input name="close">
+					<processtag initialstate="normallyOpen">guestBathBlindClose</processtag>
+				</input>
+				<input name="setblindposition">
+					<processtag>guestBathBlindSetPosition</processtag>
+				</input>
+				<input name="cmdStartMovePosition">
+					<processtag>guestBathBlindCmdStartMovePosition</processtag>
+				</input>
+				<input name="stop">
+					<processtag initialstate="normallyOpen">guestBathBlindStop</processtag>
+				</input>
+				<input name="angle">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">guestBathBlindTeach</processtag>
+				</input>
+				<input name="manualswitch">
+					<processtag initialstate="normallyOpen" logic="or">ioGuestBathBlindManualSwitch</processtag>
+				</input>
+				<input name="emcyoverrideopen">
+					<processtag initialstate="normallyOpen"></processtag>
+				</input>
+				<input name="emcyoverrideclose">
+					<processtag initialstate="normallyOpen"></processtag>
+				</input>
+				<input name="ambientbrightness">
+					<processtag filtertime="300"></processtag>
+				</input>
+				<input name="homelatitude">
+					<processtag>homeLatitude</processtag>
+				</input>
+				<input name="homelongitude">
+					<processtag>homeLongitude</processtag>
+				</input>
+				<input name="homeelevation">
+					<processtag>homeElevation</processtag>
+				</input>
+				<input name="hometimezone">
+					<processtag>homeTimezone</processtag>
+				</input>
+			</inputs>			
+			<outputs>
+				<output name="open">
+					<processtag initialstate="normallyOpen">ioGuestBathBlindOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag initialstate="normallyOpen">ioGuestBathBlindClose</processtag>
+				</output>
+				<output name="stop">
+					<processtag initialstate="normallyOpen">ioGuestBathBlindStop</processtag>
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioGuestBathBlindTeach</processtag>
+				</output>
+			</outputs>			
+			<parameters>		
+				<window>
+					<position orientation="270" relativealtitude="2.5"></position>
+					<size height="1.20"></size>
+					<closetime duration="15"></closetime>
+					<coverstarttime duration="0"></coverstarttime>
+					<touchdowntime duration="11"></touchdowntime>
+					<motorstopdelay duration="0.8"></motorstopdelay>
+				</window>
+				<antiglare minbrightness="20">
+					<enable>
+						<processtag>guestBathBlindAntiGlareEnable</processtag>
+					</enable>
+				</antiglare>
+				<timecontrol>
+					<enable>
+						<processtag>guestBathBlindTimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="00" minute="01" action="openAtSunrise">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="00" minute="01" action="closeAtSunset">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="stopped">
+					<processtag>ioGuestBathBlindStatusStopped</processtag>
+				</statusitem>
+				<statusitem name="opening">
+					<processtag>ioGuestBathBlindStatusOpening</processtag>
+				</statusitem>
+				<statusitem name="closing">
+					<processtag>ioGuestBathBlindStatusClosing</processtag>
+				</statusitem>
+				<statusitem name="fullyopen">
+					<processtag>ioGuestBathBlindStatusFullyOpen</processtag>
+				</statusitem>
+				<statusitem name="fullyclosed">
+					<processtag>ioGuestBathBlindStatusFullyClosed</processtag>
+				</statusitem>
+				<statusitem name="calcmotorposition">
+					<processtag>guestBathBlindCalcMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actmotorposition">
+					<processtag>ioGuestBathBlindStatusActMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actblindposition">
+					<processtag>guestBathBlindActPosition</processtag>
+				</statusitem>
+			</statusitems>			
+		</blind>
+	</blinds>
+</cfg>
+

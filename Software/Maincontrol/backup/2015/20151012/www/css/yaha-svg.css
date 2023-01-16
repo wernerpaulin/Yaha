@@ -1,0 +1,25 @@
+/* jQuery styling for yaha svg icons */
+.ui-icon-yaha_bulb:after {
+    background-image: url("../svg/icon_bulb.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+
+.ui-icon-yaha_multimedia:after {
+    background-image: url("../svg/icon_multimedia.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_debug:after {
+    background-image: url("../svg/icon_debug.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}
+
+.ui-icon-yaha_list:after {
+    background-image: url("../svg/icon_list.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+}

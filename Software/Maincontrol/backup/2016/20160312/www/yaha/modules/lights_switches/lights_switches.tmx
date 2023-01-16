@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="info0001">
+			<tuv xml:lang="de">
+				<seg>Licht und Schalter</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Lights and switches</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="nav0001">
+			<tuv xml:lang="de">
+				<seg>Übersicht</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Dashboard</seg>
+			</tuv>
+		</tu>
+		<tu tuid="nav0002">
+			<tuv xml:lang="de">
+				<seg>Keller</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Basement</seg>
+			</tuv>
+		</tu>
+		<tu tuid="nav0003">
+			<tuv xml:lang="de">
+				<seg>Erdgeschoss</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Ground floor</seg>
+			</tuv>
+		</tu>
+		<tu tuid="nav0004">
+			<tuv xml:lang="de">
+				<seg>Obergeschoss</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Second floor</seg>
+			</tuv>
+		</tu>
+		<tu tuid="nav0005">
+			<tuv xml:lang="de">
+				<seg>Draussen</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Outside</seg>
+			</tuv>
+		</tu>
+
+
+		<tu tuid="cont0001">
+			<tuv xml:lang="de">
+				<seg>Licht und Schalter - Untermodul 1.1</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Lights and switches - Sub module 1.1</seg>
+			</tuv>
+		</tu>
+		<tu tuid="cont0002">
+			<tuv xml:lang="de">
+				<seg>Licht und Schalter - Untermodul 1.2</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Lights and switches - Sub module 1.2</seg>
+			</tuv>
+		</tu>
+		<tu tuid="cont0003">
+			<tuv xml:lang="de">
+				<seg>Licht und Schalter - Untermodul 1.3</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Lights and switches - Sub module 1.3</seg>
+			</tuv>
+		</tu>
+		<tu tuid="cont0004">
+			<tuv xml:lang="de">
+				<seg>Licht und Schalter - Untermodul 1.4</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Lights and switches - Sub module 1.4</seg>
+			</tuv>
+		</tu>
+		<tu tuid="cont0005">
+			<tuv xml:lang="de">
+				<seg>Licht und Schalter - Untermodul 1.5</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Lights and switches - Sub module 1.5</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>

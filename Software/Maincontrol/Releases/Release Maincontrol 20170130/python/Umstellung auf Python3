@@ -1,0 +1,5 @@
+1. Exception Syntax: "as", kein self.e
+2. Print mit ()
+3. yaha_ui.py: recvfrom / sendTo arbeiten jetzt mit bytes (.encode, .decode)
+4. yaha_pdi: Zeile 197: xml File für remanente Daten neu ohne Header erzeugen (sonst Doppel-Header)
+5. Aufruf mit python3

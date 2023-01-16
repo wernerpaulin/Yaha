@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='yaha_pdi.xsl'?>
+<pdi>
+	<process_data>
+		<processTag>currentRcpName</processTag>
+		<uiTag>uiCurrentRcpName</uiTag>
+		<valueType>TEXT</valueType>
+		<valueREAL />
+		<valueTEXT>test</valueTEXT>
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL />
+		<highREAL />
+		<zone />
+		<subzone />
+		<room />
+		<ioType />
+	</process_data>
+	<process_data>
+		<processTag>newRcpName</processTag>
+		<uiTag>uiNewRcpName</uiTag>
+		<valueType>TEXT</valueType>
+		<valueREAL />
+		<valueTEXT>test</valueTEXT>
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL />
+		<highREAL />
+		<zone />
+		<subzone />
+		<room />
+		<ioType />
+	</process_data>
+	<process_data>
+		<processTag>rcpNameSelector</processTag>
+		<uiTag>uiRcpNameSelector</uiTag>
+		<valueType>TEXT</valueType>
+		<valueREAL />
+		<valueTEXT>test</valueTEXT>
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL />
+		<highREAL />
+		<zone />
+		<subzone />
+		<room />
+		<ioType />
+	</process_data>
+	<process_data>
+		<processTag>rcpNameList</processTag>
+		<uiTag>uiRcpNameList</uiTag>
+		<valueType>TEXT</valueType>
+		<valueREAL />
+		<valueTEXT>["test", "yaha_pdi_default"]</valueTEXT>
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>r</uiMode>
+		<lowREAL />
+		<highREAL />
+		<zone />
+		<subzone />
+		<room />
+		<ioType />
+	</process_data>
+	<process_data>
+		<processTag>cmdLoadRcp</processTag>
+		<uiTag>uiCmdLoadRcp</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL>0</lowREAL>
+		<highREAL>1</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType />
+	</process_data>
+	<process_data>
+		<processTag>cmdSaveRcp</processTag>
+		<uiTag>uiCmdSaveRcp</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>1.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL>0</lowREAL>
+		<highREAL>1</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType />
+	</process_data>
+	<process_data>
+		<processTag>cmdCreateRcp</processTag>
+		<uiTag>uiCmdCreateRcp</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL>0</lowREAL>
+		<highREAL>1</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType />
+	</process_data>
+	<process_data>
+		<processTag>count1</processTag>
+		<uiTag>uiCount1</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>1196.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>1000000.0</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>
+	<process_data>
+		<processTag>var1</processTag>
+		<uiTag>uiVar1</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>1.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>1000000.0</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>
+	<process_data>
+		<processTag>var2</processTag>
+		<uiTag>uiVar2</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>2.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>1000000.0</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>
+	<process_data>
+		<processTag>var3</processTag>
+		<uiTag>uiVar3</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>2.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>1000000.0</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>
+	<process_data>
+		<processTag>switch1</processTag>
+		<uiTag>uiSwitch1</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>enocean</owner>
+		<deviceID>002af371.IN.F6_02_01.rockerB0</deviceID>
+		<uiMode>r</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>1.0</highREAL>
+		<zone>GF</zone>
+		<subzone>Family</subzone>
+		<room>Living room</room>
+		<ioType>switch</ioType>
+	</process_data>
+	<process_data>
+		<processTag>light1</processTag>
+		<uiTag>uiLight1</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>enocean</owner>
+		<deviceID>ffdf7880.OUT.F6_02_01.rockerB0</deviceID>
+		<uiMode>rw</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>1.0</highREAL>
+		<zone>GF</zone>
+		<subzone>Family</subzone>
+		<room>Living room</room>
+		<ioType>light</ioType>
+	</process_data>
+	<process_data>
+		<processTag>light2</processTag>
+		<uiTag>uiLight2</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>enocean</owner>
+		<deviceID>ffdf7880.OUT.F6_02_01.rockerB1</deviceID>
+		<uiMode>rw</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>1.0</highREAL>
+		<zone>GF</zone>
+		<subzone>Family</subzone>
+		<room>Kitchen</room>
+		<ioType>light</ioType>
+	</process_data>
+	<process_data>
+		<processTag>light3</processTag>
+		<uiTag>uiLight3</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>enocean</owner>
+		<deviceID>ID123459</deviceID>
+		<uiMode>rw</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>1.0</highREAL>
+		<zone>GF</zone>
+		<subzone>Guest</subzone>
+		<room>Bedroom</room>
+		<ioType>light</ioType>
+	</process_data>
+	<process_data>
+		<processTag>light4</processTag>
+		<uiTag>uiLight4</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>enocean</owner>
+		<deviceID>ID123439</deviceID>
+		<uiMode>rw</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>1.0</highREAL>
+		<zone>1F</zone>
+		<subzone>Kids</subzone>
+		<room>Felix</room>
+		<ioType>light</ioType>
+	</process_data>
+	<process_data>
+		<processTag>light5</processTag>
+		<uiTag>uiLight5</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>enocean</owner>
+		<deviceID>ID123439</deviceID>
+		<uiMode>rw</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>1.0</highREAL>
+		<zone>1F</zone>
+		<subzone>Kids</subzone>
+		<room>Theo</room>
+		<ioType>light</ioType>
+	</process_data>
+	<process_data>
+		<processTag>tempParentBathroom</processTag>
+		<uiTag>uiTempParentBathroom</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>18.5</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>enocean</owner>
+		<deviceID>ID99999</deviceID>
+		<uiMode>r</uiMode>
+		<lowREAL>-100.0</lowREAL>
+		<highREAL>100.0</highREAL>
+		<zone>1F</zone>
+		<subzone>Parents</subzone>
+		<room>Bathroom Parents</room>
+		<ioType>temperature</ioType>
+	</process_data>
+	<process_data>
+		<processTag>setTempFelix</processTag>
+		<uiTag>uiSetTempFelix</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>21.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>enocean</owner>
+		<deviceID>ID8888</deviceID>
+		<uiMode>rw</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>40.0</highREAL>
+		<zone>1F</zone>
+		<subzone>Kids</subzone>
+		<room>Felix</room>
+		<ioType>temperature</ioType>
+	</process_data>
+	<process_data>
+		<processTag>setTempTheo</processTag>
+		<uiTag>uiSetTempTheo</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>22.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>enocean</owner>
+		<deviceID>ID7777</deviceID>
+		<uiMode>rw</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>40.0</highREAL>
+		<zone>1F</zone>
+		<subzone>Kids</subzone>
+		<room>Theo</room>
+		<ioType>temperature</ioType>
+	</process_data>
+	<process_data>
+		<processTag>logEnocean</processTag>
+		<uiTag>uiLogEnocean</uiTag>
+		<valueType>TEXT</valueType>
+		<valueREAL />
+		<valueTEXT> 55 0 0 1 0 2 65 0 0 55 0 a 7 1 eb a5 0 0 7 48 ff df 78 80 0 1 ff ff ff ff 41 0 c
+ 55 0 a 7 1 eb a5 0 0 4 c ff df 78 80 0 1 ff ff ff ff 41 0 81 55 0 a 7 1 eb a5 0 0 1 c ff df 78 80 0 1 ff ff ff ff 41 0 f9
+ 55 0 1 0 2 65 0 0
+ 55 0 1 0 2 65 0 0 55 0 a 7 1 eb a5 ff 0 7 49 ff df 78 80 0 1 ff ff ff ff 41 0 61 55 0 a 7 1 eb a5 0 0 4 d ff df 78 80 0 1 ff ff ff ff 41 0 15
+ 55 0 a 7 1 eb a5 0 0 1 d ff df 78 80 0 1 ff ff ff ff 43 0 47
+ 55 0 1 0 2 65 0 0
+ 55 0 1 0 2 65 0 0 55 0 a 7 1 eb a5 0 0 7 48 ff df 78 80 0 1 ff ff ff ff 3c 0 47 55 0 a 7 1 eb a5 0 0 4 c ff df 78 80 0 1 ff ff ff ff 3c 0 ca
+ 55 0 a 7 1 eb a5 0 0 1 c ff df 78 80 0 1 ff ff ff ff 3c 0 b2
+ 55 0 1 0 2 65 0 0
+ 55 0 1 0 2 65 0 0 55 0 a 7 1 eb a5 ff 0 7 49 ff df 78 80 0 1 ff ff ff ff 3d 0 3f 55 0 a 7 1 eb a5 0 0 4 d ff df 78 80 0 1 ff ff ff ff 40 0 0
+ 55 0 a 7 1 eb a5 0 0 1 d ff df 78 80 0 1 ff ff ff ff 40 0 78
+ 55 0 1 0 2 65 0 0
+</valueTEXT>
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL />
+		<highREAL />
+		<zone>Driver</zone>
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>
+	<process_data>
+		<processTag>systemTickRunTime</processTag>
+		<uiTag>uiSystemTickRunTime</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.00559611320496</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>r</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>100000.0</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>
+	<process_data>
+		<processTag>cpuLoad</processTag>
+		<uiTag>uiCpuLoad</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0279805660248</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>r</uiMode>
+		<lowREAL>0.0</lowREAL>
+		<highREAL>1.0</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>
+	<process_data>
+		<processTag>selectStandard</processTag>
+		<uiTag>uiSelectStandard</uiTag>
+		<valueType>TEXT</valueType>
+		<valueREAL />
+		<valueTEXT>None</valueTEXT>
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL />
+		<highREAL />
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>	
+	<process_data>
+		<processTag>selectGroup</processTag>
+		<uiTag>uiSelectGroup</uiTag>
+		<valueType>TEXT</valueType>
+		<valueREAL />
+		<valueTEXT>None</valueTEXT>
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL />
+		<highREAL />
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>	
+	<process_data>
+		<processTag>selectText</processTag>
+		<uiTag>uiSelectText</uiTag>
+		<valueType>TEXT</valueType>
+		<valueREAL />
+		<valueTEXT>None</valueTEXT>
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL />
+		<highREAL />
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>	
+	<process_data>
+		<processTag>radiogroup1</processTag>
+		<uiTag>uiRadiogroup1</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL>0</lowREAL>
+		<highREAL>1</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>	
+	<process_data>
+		<processTag>radiogroup2</processTag>
+		<uiTag>uiRadiogroup2</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL>0</lowREAL>
+		<highREAL>1</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>	
+	<process_data>
+		<processTag>checkboxgroup1</processTag>
+		<uiTag>uiCheckboxgroup1</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL>0</lowREAL>
+		<highREAL>1</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>	
+	<process_data>
+		<processTag>checkboxgroup2</processTag>
+		<uiTag>uiCheckboxgroup2</uiTag>
+		<valueType>REAL</valueType>
+		<valueREAL>0.0</valueREAL>
+		<valueTEXT />
+		<domain>Main Control</domain>
+		<owner>internal</owner>
+		<deviceID />
+		<uiMode>rw</uiMode>
+		<lowREAL>0</lowREAL>
+		<highREAL>1</highREAL>
+		<zone />
+		<subzone />
+		<room />
+		<ioType>debugging</ioType>
+	</process_data>	
+</pdi>

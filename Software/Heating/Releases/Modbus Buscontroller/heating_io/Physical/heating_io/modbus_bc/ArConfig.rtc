@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=?>
+<RuntimeConfiguration Version="2.0.22">
+  <Module ID="$root" Hardware="ModbusCPU">
+    <Group ID="DDEServer">
+      <Parameter ID="DDECycleTime" Value="1000" />
+    </Group>
+  </Module>
+  <Module ID="IF1.ST1.IF1.ST1" Hardware="X20PS9400a">
+    <Selector ID="FunctionModel" Value="Standard">
+      <Group ID="General">
+        <Parameter ID="Supervision" Value="on" />
+        <Parameter ID="ModuleInfo" Value="off" />
+        <Parameter ID="StatusInfo" Value="on" />
+        <Parameter ID="PowerInfo" Value="off" />
+      </Group>
+    </Selector>
+  </Module>
+  <Module ID="IF1.ST1" Hardware="X20BC0087">
+    <Group ID="Network">
+      <Group ID="IP">
+        <Parameter ID="IPAddress" Value="192.168.0.92" />
+        <Parameter ID="SubnetMask" Value="255.255.255.0" />
+        <Parameter ID="DefaultGateway" Value="192.168.0.254" />
+        <Parameter ID="Port" Value="502" />
+      </Group>
+      <Group ID="General">
+        <Parameter ID="TcpLifeTime" Value="0" />
+        <Parameter ID="MTU" Value="1500" />
+      </Group>
+    </Group>
+    <Group ID="Watchdog">
+      <Selector ID="WatchdogMode" Value="0xC1">
+        <Parameter ID="WatchdogThreshold" Value="5000" />
+      </Selector>
+    </Group>
+    <Group ID="X2XIO">
+      <Parameter ID="X2XBusConfig" Value="0xC0" />
+      <Parameter ID="X2XBusCableLength" Value="0" />
+      <Parameter ID="IoAddressCheck" Value="0xC1" />
+      <Parameter ID="ModuleInitDelay" Value="3000" />
+    </Group>
+  </Module>
+  <Module ID="IF1.ST1.IF1.ST2" Hardware="X20AT4222">
+    <Selector ID="FunctionModel" Value="FunctionModel001">
+      <Group ID="General">
+        <Parameter ID="Supervision" Value="on" />
+        <Parameter ID="ModuleInfo" Value="off" />
+        <Parameter ID="IOCycleCounter" Value="off" />
+        <Parameter ID="InputFilter" Value="20ms" />
+      </Group>
+      <Group ID="Channel01">
+        <Parameter ID="SensorType01" Value="0.05 Ohm to 2250.0 Ohm" />
+      </Group>
+      <Group ID="Channel02">
+        <Parameter ID="SensorType02" Value="0.05 Ohm to 2250.0 Ohm" />
+      </Group>
+      <Group ID="Channel03">
+        <Parameter ID="SensorType03" Value="0.05 Ohm to 2250.0 Ohm" />
+      </Group>
+      <Group ID="Channel04">
+        <Parameter ID="SensorType04" Value="0.05 Ohm to 2250.0 Ohm" />
+      </Group>
+    </Selector>
+  </Module>
+  <Module ID="IF1.ST1.IF1.ST3" Hardware="X20AT4222">
+    <Selector ID="FunctionModel" Value="FunctionModel001">
+      <Group ID="General">
+        <Parameter ID="Supervision" Value="on" />
+        <Parameter ID="ModuleInfo" Value="off" />
+        <Parameter ID="IOCycleCounter" Value="off" />
+        <Parameter ID="InputFilter" Value="20ms" />
+      </Group>
+      <Group ID="Channel01">
+        <Parameter ID="SensorType01" Value="0.05 Ohm to 2250.0 Ohm" />
+      </Group>
+      <Group ID="Channel02">
+        <Parameter ID="SensorType02" Value="PT1000" />
+      </Group>
+      <Group ID="Channel03">
+        <Parameter ID="SensorType03" Value="off" />
+      </Group>
+      <Group ID="Channel04">
+        <Parameter ID="SensorType04" Value="off" />
+      </Group>
+    </Selector>
+  </Module>
+  <Module ID="IF1.ST1.IF1.ST4" Hardware="X20DI4653">
+    <Selector ID="FunctionModel" Value="Standard">
+      <Group ID="General">
+        <Parameter ID="Supervision" Value="on" />
+        <Parameter ID="ModuleInfo" Value="off" />
+        <Parameter ID="InputFilter" Value="10" />
+      </Group>
+    </Selector>
+  </Module>
+  <Module ID="IF1.ST1.IF1.ST5" Hardware="X20DO2649">
+    <Selector ID="FunctionModel" Value="Standard">
+      <Group ID="General">
+        <Parameter ID="Supervision" Value="on" />
+        <Parameter ID="ModuleInfo" Value="off" />
+      </Group>
+    </Selector>
+  </Module>
+  <Module ID="IF1.ST1.IF1.ST6" Hardware="X20DO2633">
+    <Selector ID="FunctionModel" Value="Standard">
+      <Group ID="General">
+        <Parameter ID="Supervision" Value="on" />
+        <Parameter ID="ModuleInfo" Value="off" />
+        <Group ID="Cfg_Zerocrossing">
+          <Selector ID="Zerocrossing_user" Value="off" />
+        </Group>
+        <Parameter ID="DigitalOutputsPacked" Value="off" />
+      </Group>
+      <Group ID="Ch01">
+        <Parameter ID="Chann01Dig" Value="on" />
+        <Parameter ID="Chann01wave" Value="off" />
+        <Parameter ID="SwitchOffValue1" Value="5" />
+      </Group>
+      <Group ID="Ch02">
+        <Parameter ID="Chann02Dig" Value="on" />
+        <Parameter ID="Chann02wave" Value="off" />
+        <Parameter ID="SwitchOffValue2" Value="5" />
+      </Group>
+    </Selector>
+  </Module>
+  <Module ID="IF1.ST1.IF1.ST7" Hardware="X20DO2633">
+    <Selector ID="FunctionModel" Value="Standard">
+      <Group ID="General">
+        <Parameter ID="Supervision" Value="on" />
+        <Parameter ID="ModuleInfo" Value="off" />
+        <Group ID="Cfg_Zerocrossing">
+          <Selector ID="Zerocrossing_user" Value="off" />
+        </Group>
+        <Parameter ID="DigitalOutputsPacked" Value="off" />
+      </Group>
+      <Group ID="Ch01">
+        <Parameter ID="Chann01Dig" Value="on" />
+        <Parameter ID="Chann01wave" Value="off" />
+        <Parameter ID="SwitchOffValue1" Value="5" />
+      </Group>
+      <Group ID="Ch02">
+        <Parameter ID="Chann02Dig" Value="on" />
+        <Parameter ID="Chann02wave" Value="off" />
+        <Parameter ID="SwitchOffValue2" Value="5" />
+      </Group>
+    </Selector>
+  </Module>
+  <Module ID="IF1.ST1.IF1.ST8" Hardware="X20DO2633">
+    <Selector ID="FunctionModel" Value="Standard">
+      <Group ID="General">
+        <Parameter ID="Supervision" Value="on" />
+        <Parameter ID="ModuleInfo" Value="off" />
+        <Group ID="Cfg_Zerocrossing">
+          <Selector ID="Zerocrossing_user" Value="off" />
+        </Group>
+        <Parameter ID="DigitalOutputsPacked" Value="off" />
+      </Group>
+      <Group ID="Ch01">
+        <Parameter ID="Chann01Dig" Value="on" />
+        <Parameter ID="Chann01wave" Value="off" />
+        <Parameter ID="SwitchOffValue1" Value="5" />
+      </Group>
+      <Group ID="Ch02">
+        <Parameter ID="Chann02Dig" Value="on" />
+        <Parameter ID="Chann02wave" Value="off" />
+        <Parameter ID="SwitchOffValue2" Value="5" />
+      </Group>
+    </Selector>
+  </Module>
+  <Module ID="IF1.ST1.IF1.ST9" Hardware="X20DO2633">
+    <Selector ID="FunctionModel" Value="Standard">
+      <Group ID="General">
+        <Parameter ID="Supervision" Value="on" />
+        <Parameter ID="ModuleInfo" Value="off" />
+        <Group ID="Cfg_Zerocrossing">
+          <Selector ID="Zerocrossing_user" Value="off" />
+        </Group>
+        <Parameter ID="DigitalOutputsPacked" Value="off" />
+      </Group>
+      <Group ID="Ch01">
+        <Parameter ID="Chann01Dig" Value="on" />
+        <Parameter ID="Chann01wave" Value="off" />
+        <Parameter ID="SwitchOffValue1" Value="5" />
+      </Group>
+      <Group ID="Ch02">
+        <Parameter ID="Chann02Dig" Value="on" />
+        <Parameter ID="Chann02wave" Value="off" />
+        <Parameter ID="SwitchOffValue2" Value="5" />
+      </Group>
+    </Selector>
+  </Module>
+</RuntimeConfiguration>

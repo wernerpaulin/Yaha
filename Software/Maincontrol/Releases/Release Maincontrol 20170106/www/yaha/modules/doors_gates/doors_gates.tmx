@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="groundfloor">
+			<tuv xml:lang="de">
+				<seg>Erdgeschoss</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Ground floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Rez-de-chaussée</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>一楼</seg>
+			</tuv>
+		</tu>
+
+	
+		<tu tuid="doorsandgates">
+			<tuv xml:lang="de">
+				<seg>Tür und Tor</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Doors and gates</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Portes et portails</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>门和大门</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="garagedoor">
+			<tuv xml:lang="de">
+				<seg>Garagentor</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Garage door</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Porte garage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>车库门</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="garage">
+			<tuv xml:lang="de">
+				<seg>Garage</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Garage</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Garage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>车库</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="timecontrol">
+			<tuv xml:lang="de">
+				<seg>Zeitsteuerung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Time control</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Contrôle horaire</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>时间控制</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="off">
+			<tuv xml:lang="de">
+				<seg>aus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>off</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>dés.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>关闭</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="on">
+			<tuv xml:lang="de">
+				<seg>ein</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>on</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>act.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开启</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="teaching">
+			<tuv xml:lang="de">
+				<seg>Anlernen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Teaching</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>programmer</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>教学</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="start">
+			<tuv xml:lang="de">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Démarrage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开始</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="openclose">
+			<tuv xml:lang="de">
+				<seg>Auf / Zu</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Open / close</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Ouvrir / Fermer</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开/关</seg>
+			</tuv>
+		</tu>
+
+	</body>
+</tmx>

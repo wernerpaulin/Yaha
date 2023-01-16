@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<?AutomationRuntimeIOSystem Version = 2.5.0.7?>
+<ChannelConfiguration xmlns="http://www.br-automation.com/AR/IO"><Module ID="$root" Hardware="ModbusCPU"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/></LegacyAddressInfo></Module><Module ID="IF1.ST1" Hardware="X20BC0087"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="BusType" Value="Unknown"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-de="Modul Status (1 = Modul gesteckt)" Description-en="Module status (1 = module present)" Description-fr="Etat module (1 = module prÃ©sent)" Ext="/OK" Address="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="SerialNumber1" Position="10" Description-de="Seriennummer" Description-en="Serialnumber" Description-fr="" Ext="/INFO" Address="0x1080" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="SerialNumber2" Position="11" Description-de="Seriennummer" Description-en="Serialnumber" Description-fr="" Ext="/INFO" Address="0x1081" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="SerialNumber3" Position="12" Description-de="Seriennummer" Description-en="Serialnumber" Description-fr="" Ext="/INFO" Address="0x1082" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="ModuleID" Position="13" Description-de="Produktnummer" Description-en="Product Code" Description-fr="" Ext="/INFO" Address="0x1083" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="HardwareRevision" Position="14" Description-de="Hardware variant" Description-en="Hardware Variante" Description-fr="" Ext="/INFO" Address="0x1084" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="FirmwareRevision" Position="15" Description-de="Firmware version" Description-en="Firmware Version" Description-fr="" Ext="/INFO" Address="0x1086" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="OperatingStatus" Position="17" Description-en="Flags indicating the current operating status of the controller" Description-de="Flags fÃ¼r den Betriebszustand des Controllers" Description-fr="" Ext="/CYCLIC" Address="0x1186" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="ErrorStatus" Position="18" Description-en="Flags indicating the failure status of the controller (0 = OK)" Description-de="Flags fÃ¼r den Fehlerzustand des Controllers (0 = OK)" Description-fr="" Ext="/CYCLIC" Address="0x1187" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="ClientCount" Position="19" Description-de="Anzahl der Client-Verbindungen" Description-en="Number of client connections" Description-fr="" Ext="/CYCLIC" Address="0x10C0" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="GlobalPacketCtr" Position="21" Description-en="Number of packets for all connections" Description-de="Anzahl der Pakete aller Verbindungen" Description-fr="" Ext="/CYCLIC" Address="0x10C1" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="GlobalErrorCtr" Position="22" Description-de="Anzahl der Fehler aller Verbindungen" Description-en="Number of errors for all connections" Description-fr="" Ext="/CYCLIC" Address="0x10C5" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="GlobalFragmentCtr" Position="23" Description-de="Anzahl der fragmentierten Pakete aller Verbindungen" Description-en="Number of fragmented packets for all connections" Description-fr="" Ext="/CYCLIC" Address="0x10D1" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="GlobalMinCmdTime" Position="24" Description-de="Minimale AusfÃ¼hrungsdauer der Befehle aller Verbindungen" Description-en="Minimum command processing time for all connections" Description-fr="" Ext="/CYCLIC" Address="0x10CD" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="GlobalMaxCmdTime" Position="25" Description-de="Maximale AusfÃ¼hrungsdauer der Befehle aller Verbindungen" Description-en="Maximum command processing time for all connections" Description-fr="" Ext="/CYCLIC" Address="0x10C9" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="LocalPacketCtr" Position="26" Description-de="Anzahl der Pakete der Verbindung" Description-en="Number of packets for the connection" Description-fr="" Ext="/CYCLIC" Address="0x10C3" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="LocalErrorCtr" Position="27" Description-en="Number of errors for the connection" Description-de="Anzahl der Fehler der Verbindung" Description-fr="" Ext="/CYCLIC" Address="0x10C7" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="LocalFragmentCtr" Position="28" Description-en="Number of fragmented packets for the connection" Description-de="Anzahl der fragmentierten Pakete der Verbindung" Description-fr="" Ext="/CYCLIC" Address="0x10D3" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="LocalMinCmdTime" Position="29" Description-en="Minimum command processing time for the connection" Description-de="Minimale AusfÃ¼hrungsdauer fÃ¼r einen Befehl der Verbindung" Description-fr="" Ext="/CYCLIC" Address="0x10CF" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="LocalMaxCmdTime" Position="30" Description-de="Maximale AusfÃ¼hrungsdauer fÃ¼r einen Befehl der Verbindung" Description-en="Maximum command processing time for the connection" Description-fr="" Ext="/CYCLIC" Address="0x10CB" Direction="IN" Type="UDINT">
+		</Channel>
+		<Channel ID="EthRxCnt" Position="31" Description-de="Anzahl empfanger Frames" Description-en="Number of receveived Frames" Description-fr="" Ext="/CYCLIC" Address="0x1200" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="EthRxLost" Position="32" Description-de="Anzahl verlorener Rx-Frames" Description-en="Number of lost Rx-Frames" Description-fr="" Ext="/CYCLIC" Address="0x1201" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="EthRxOversize" Position="33" Description-de="Anzahl empfangener Ã¼bergroÃŸer Frames &gt; 1500 Bytes" Description-en="Number of received oversized frames &gt; 1500 Bytes" Description-fr="" Ext="/CYCLIC" Address="0x1202" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="EthCRCErrors" Position="34" Description-de="Anzahl von Rx-Frames mit falscher CRC" Description-en="Number of Rx-Frames with wrong CRC" Description-fr="" Ext="/CYCLIC" Address="0x1203" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="EthRxOverflow" Position="35" Description-de="Anzahl von verlorenen Rx-Frames wegen Performance-Engpass am BC" Description-en="Number of lost Rx-Frames due to performance shortage on BC" Description-fr="" Ext="/CYCLIC" Address="0x1205" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="EthTxCollision" Position="36" Description-de="Anzahl von Kollisionen am Ethernet wÃ¤hrend BC sendet" Description-en="Number of collisions on ethenet while BC sending" Ext="/CYCLIC" Address="0x1206" Direction="IN" Type="UINT"/>
+		<Channel ID="CycleCount" Position="50" Description-de="Anzahl der Buszyklen" Description-en="Number of bus cycles" Description-fr="" Ext="/CYCLIC" Address="0x11C0" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="BreakCount" Position="51" Description-de="Anzahl der Buszyklen mit gesetztem Break-Signal" Description-en="Number of bus cycles with set break signal" Description-fr="" Ext="/CYCLIC" Address="0x11C1" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="SyncErrorCount" Position="52" Description-de="Anzahl der fehlerhaften synchronen Frames" Description-en="Number of failed synchronous frames" Description-fr="" Ext="/CYCLIC" Address="0x11C2" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="SyncBusyErrorCount" Position="53" Description-de="Anzahl der nicht versendeten synchronen Frames (Sender nicht bereit)" Description-en="Number of not sent synchronous frames (sender not ready)" Description-fr="" Ext="/CYCLIC" Address="0x11C3" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="SyncNoRxErrorCount" Position="54" Description-de="Anzahl der nicht empfangenen synchronen Frames (Timeout)" Description-en="Number of not received synchronous frames (timeout)" Description-fr="" Ext="/CYCLIC" Address="0x11C4" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="SyncFormatErrorCount" Position="55" Description-de="Anzahl der zerstÃ¶rten synchronen Frames" Description-en="Number of faulty synchronous frames" Description-fr="" Ext="/CYCLIC" Address="0x11C5" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="SyncPendingErrorCount" Position="56" Description-de="Anzahl der synchronen Frames, die nicht versendet werden konnten, weil gerade ein anderer empfangen wurde" Description-en="Number of synchronous frames which could not be sent because of receiving a frame" Description-fr="" Ext="/CYCLIC" Address="0x11C6" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="SyncBufferUnderrun" Position="57" Description-de="Anzahl der synchronen Puffer Underruns" Description-en="Number of synchronous buffer underruns" Description-fr="" Ext="/CYCLIC" Address="0x11C7" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="SyncBufferOverflow" Position="58" Description-de="Anzahl der synchronen Puffer ÃœberlÃ¤ufe" Description-en="Number of synchronous buffer overruns" Description-fr="" Ext="/CYCLIC" Address="0x11C8" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="AsyncErrorCount" Position="59" Description-de="Anzahl der fehlerhaften asynchronen Frames" Description-en="Number of failed asynchronous frames" Description-fr="" Ext="/CYCLIC" Address="0x11C9" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="AsyncBusyErrorCount" Position="60" Description-de="Anzahl der nicht versendeten asynchronen Frames (Sender nicht bereit)" Description-en="Number of not sent asynchronous frames (sender not ready)" Description-fr="" Ext="/CYCLIC" Address="0x11CA" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="AsyncNoRxErrorCount" Position="61" Description-de="Anzahl der nicht empfangenen asynchronen Frames (Timeout)" Description-en="Number of not received asynchronous frames (timeout)" Description-fr="" Ext="/CYCLIC" Address="0x11CB" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="AsyncFormatErrorCount" Position="62" Description-de="Anzahl der zerstÃ¶rten asynchronen Frames" Description-en="Number of faulty asynchronous frames" Description-fr="" Ext="/CYCLIC" Address="0x11CC" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="AsyncPendingErrorCount" Position="63" Description-de="Anzahl der asynchronen Frames, die nicht versendet werden konnten, weil gerade ein anderer empfangen wurde" Description-en="Number of asynchronous frames which could not be sent because of receiving a frame" Description-fr="" Ext="/CYCLIC" Address="0x11CD" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="AsyncBufferUnderrun" Position="64" Description-de="Anzahl der asynchronen Puffer Underruns" Description-en="Number of asynchronous buffer underruns" Description-fr="" Ext="/CYCLIC" Address="0x11CE" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="AsyncBufferOverflow" Position="65" Description-de="Anzahl der synchronen Puffer ÃœberlÃ¤ufe" Description-en="Number of synchronous buffer overruns" Description-fr="" Ext="/CYCLIC" Address="0x11CF" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="IPAddress" Position="70" Description-de="IP Adresse" Description-en="IP address" Description-fr="" Ext="/NOTCYCLIC" Address="0x00001003" Direction="OUT" Type="UINT">
+		</Channel>
+		<Channel ID="SubnetMask" Position="70" Description-de="Subnetzmaske" Description-en="Subnet mask" Description-fr="" Ext="/NOTCYCLIC" Address="0x04001007" Direction="OUT" Type="UINT">
+		</Channel>
+		<Channel ID="DefaultGateway" Position="70" Description-de="Standard Gateway" Description-en="Default gateway" Description-fr="" Ext="/NOTCYCLIC" Address="0x0400100B" Direction="OUT" Type="UINT">
+		</Channel>
+		<Channel ID="Port" Position="71" Description-de="Port number" Description-en="Portnummer" Description-fr="" Ext="/NOTCYCLIC" Address="0x0000100F" Direction="OUT" Type="UINT">
+		</Channel>
+		<Channel ID="TcpLifeTime" Position="72" Description-de="Lebensdauer der TCP Verbindung" Description-en="TCP connection lifetime" Description-fr="" Ext="/NOTCYCLIC" Address="0x04001010" Direction="OUT" Type="UINT">
+		</Channel>
+		<Channel ID="MTU" Position="73" Description-de="GrÃ¶ÃŸe der maximalen Ãœbertragungseinheit" Description-en="Maximum transmission unit" Description-fr="" Ext="/NOTCYCLIC" Address="0x04001011" Direction="OUT" Type="UINT">
+		</Channel>
+		<Channel ID="X2XBusConfig" Position="74" Description-de="X2X Bus Konfiguration" Description-en="X2X Bus configuration" Description-fr="" Ext="/NOTCYCLIC" Address="0x04001012" Direction="OUT" Type="UINT">
+		</Channel>
+		<Channel ID="X2XBusCableLength" Position="75" Description-de="FÃ¼r die optimale Ausnutzung des X2X Buszyklus kann die KabellÃ¤nge angegeben werden" Description-en="For optimization of the X2X cycle the length of the cable can be specified" Description-fr="" Ext="/NOTCYCLIC" Address="0x04001017" Direction="OUT" Type="UINT">
+		</Channel>
+		<Channel ID="IoAddressCheck" Position="76" Description-de="ÃœberprÃ¼fung der IO Adressgrenzen" Description-en="IO address check" Description-fr="" Ext="/NOTCYCLIC" Address="0x04001182" Direction="OUT" Type="UINT">
+		</Channel>
+		<Channel ID="ModuleInitDelay" Position="77" Description-de="Initialisierungsphase um den eingestellten Wert verlÃ¤ngern damit die Initialisierung verschiedener Controller synchronisert werden kann" Description-en="Extend the module initialization phase with this delay to synchronize the initialization of multiple controllers" Description-fr="" Ext="/NOTCYCLIC" Address="0x04001181" Direction="OUT" Type="UINT">
+		</Channel>
+		<Channel ID="WatchdogMode" Position="78" Description-de="Watchdog Modus" Description-en="Watchdog Mode" Description-fr="" Ext="/NOTCYCLIC" Address="0x04001043" Direction="OUT" Type="UINT">
+		</Channel>
+		<Channel ID="WatchdogThreshold" Position="79" Description-de="Watchdog Schwelle" Description-en="Watchdog Threshold" Description-fr="" Ext="/NOTCYCLIC" Address="0x04001040" Direction="OUT" Type="UINT">
+		</Channel>
+	</Module><Module ID="IF1.ST1.IF1.ST1" Hardware="X20PS9400a"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-de="Modul Status (1 = Modul gesteckt)" Description-en="Module status (1 = module present)" Description-fr="Etat module (1 = module présent)" Ext="/OK" Address="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="StatusInput01" Position="6" Description-de="Busversorgungswarnung (1 = Ueberstrom &gt;2,3 A oder Unterspannung &lt;4,7 V)" Description-en="Bus power supply warning (1 = over current &gt;2.3 A or low voltage &lt;4.7 V)" Ext="/FIXED" Address="1" BitOffset="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="StatusInput02" Position="8" Description-de="I/O Versorgungswarnung (0 = DC OK)" Description-en="I/O power supply warning (0 = DC OK)" Ext="/FIXED" Address="1" BitOffset="2" Direction="IN" Type="BOOL">
+		</Channel>
+	</Module><Module ID="IF1.ST1.IF1.ST2" Hardware="X20AT4222"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-en="Module status (1 = module present)" Description-de="Modul Status (1 = Modul gesteckt)" Ext="/OK" Address="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="Resistor01" Position="15" Description-en="Resistance measurement, 2-wire connection" Description-de="Widerstandsmessung, 2-Leiteranschluss" Address="0" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="Resistor02" Position="17" Description-en="Resistance measurement, 2-wire connection" Description-de="Widerstandsmessung, 2-Leiteranschluss" Address="2" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="Resistor03" Position="19" Description-en="Resistance measurement, 2-wire connection" Description-de="Widerstandsmessung, 2-Leiteranschluss" Address="4" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="Resistor04" Position="21" Description-en="Resistance measurement, 2-wire connection" Description-de="Widerstandsmessung, 2-Leiteranschluss" Address="6" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="StatusInput01" Position="23" Description-en="Status of analog inputs" Description-de="Status der analogen Eingaenge" Ext="/PSEUDOCYCLIC" Address="30" Direction="IN" Type="USINT">
+		</Channel>
+		<Channel ID="ConfigOutput01" Position="24" Ext="/NOTCYCLIC" Address="16" Direction="OUT" Type="USINT">
+		</Channel>
+		<Channel ID="ConfigOutput02" Position="25" Ext="/NOTCYCLIC" Address="18" Direction="OUT" Type="UINT">
+		</Channel>
+	</Module><Module ID="IF1.ST1.IF1.ST3" Hardware="X20AT4222"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-en="Module status (1 = module present)" Description-de="Modul Status (1 = Modul gesteckt)" Ext="/OK" Address="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="Resistor01" Position="15" Description-en="Resistance measurement, 2-wire connection" Description-de="Widerstandsmessung, 2-Leiteranschluss" Address="0" Direction="IN" Type="UINT">
+		</Channel>
+		<Channel ID="Temperature02" Position="16" Description-en="PT100, PT1000, 2-wire connection" Description-de="PT100, PT1000, 2-Leiteranschluss" Address="2" Direction="IN" Type="INT">
+		</Channel>
+		<Channel ID="StatusInput01" Position="23" Description-en="Status of analog inputs" Description-de="Status der analogen Eingaenge" Ext="/PSEUDOCYCLIC" Address="30" Direction="IN" Type="USINT">
+		</Channel>
+		<Channel ID="ConfigOutput01" Position="24" Ext="/NOTCYCLIC" Address="16" Direction="OUT" Type="USINT">
+		</Channel>
+		<Channel ID="ConfigOutput02" Position="25" Ext="/NOTCYCLIC" Address="18" Direction="OUT" Type="UINT">
+		</Channel>
+	</Module><Module ID="IF1.ST1.IF1.ST4" Hardware="X20DI4653"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-en="Module status (1 = module present)" Description-de="Modul Status (1 = Modul gesteckt)" Ext="/OK" Address="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalInput01" Position="6" Description-en="100 to 240 VAC, 47 to 63 Hz, &lt;40 ms switching delay" Description-de="100 bis 240 VAC, 47 bis 63 Hz, &lt;40 ms Schaltverzoegerung" Ext="/FIXED" Address="1" BitOffset="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalInput02" Position="8" Description-en="100 to 240 VAC, 47 to 63 Hz, &lt;40 ms switching delay" Description-de="100 bis 240 VAC, 47 bis 63 Hz, &lt;40 ms Schaltverzoegerung" Ext="/FIXED" Address="1" BitOffset="1" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalInput03" Position="10" Description-en="100 to 240 VAC, 47 to 63 Hz, &lt;40 ms switching delay" Description-de="100 bis 240 VAC, 47 bis 63 Hz, &lt;40 ms Schaltverzoegerung" Ext="/FIXED" Address="1" BitOffset="2" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalInput04" Position="12" Description-en="100 to 240 VAC, 47 to 63 Hz, &lt;40 ms switching delay" Description-de="100 bis 240 VAC, 47 bis 63 Hz, &lt;40 ms Schaltverzoegerung" Ext="/FIXED" Address="1" BitOffset="3" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="PowerSupply" Position="14" Description-en="Status module supply (1 = ACOK)" Description-de="Status Modulversorgung (1 = ACOK)" Ext="/FIXED" Address="1" BitOffset="7" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="ConfigOutput01" Position="16" Ext="/NOTCYCLIC" Address="18" Direction="OUT" Type="USINT">
+		</Channel>
+	</Module><Module ID="IF1.ST1.IF1.ST5" Hardware="X20DO2649"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-en="Module status (1 = module present)" Description-de="Modul Status (1 = Modul gesteckt)" Ext="/OK" Address="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalOutput01" Position="6" Description-en="Relay, 30 VDC / 250 VAC / 5 A, C.O." Description-de="Relais, 30 VDC / 250 VAC / 5 A, Wechsler" Ext="/FIXED" Address="0" BitOffset="0" Direction="OUT" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalOutput02" Position="7" Description-en="Relay, 30 VDC / 250 VAC / 5 A, C.O." Description-de="Relais, 30 VDC / 250 VAC / 5 A, Wechsler" Ext="/FIXED" Address="0" BitOffset="1" Direction="OUT" Type="BOOL">
+		</Channel>
+	</Module><Module ID="IF1.ST1.IF1.ST6" Hardware="X20DO2633"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-en="Module status (1 = module present)" Description-de="Modul Status (1 = Modul gesteckt)" Ext="/OK" Address="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalOutput01" Position="11" Description-en="48 - 240 VAC / 2 A" Description-de="48 - 240 VAC / 2 A" Address="2" BitOffset="0" Direction="OUT" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalOutput02" Position="12" Description-en="48 - 240 VAC / 2 A" Description-de="48 - 240 VAC / 2 A" Address="2" BitOffset="1" Direction="OUT" Type="BOOL">
+		</Channel>
+		<Channel ID="LowCurrentStatus1" Position="20" Description-en="Open loop detection channel 1 (1 = open loop)" Description-de="Drahtbruchsignal Kanal 1 (1 = Drahtbruch)" Address="30" BitOffset="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="LowCurrentStatus2" Position="21" Description-en="Open loop detection channel 2 (1 = open loop)" Description-de="Drahtbruchsignal Kanal 2 (1 = Drahtbruch)" Address="30" BitOffset="1" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="ZeroCrossingInput" Position="24" Description-en="Zero cross detection signal (1 = positive halfwave)" Description-de="Nulldurchgangserkennungssignal (1 = positive Halbwelle)" Address="30" BitOffset="4" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="ZeroCrossingStatus" Position="27" Description-en="Status zero cross detection (0 = OK)" Description-de="Status Nulldurchgangserkennung (0 = OK)" Address="30" BitOffset="7" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="CfO_OutputConfig" Position="40" Ext="/NOTCYCLIC" Address="28" Direction="OUT" Type="USINT">
+		</Channel>
+		<Channel ID="CfO_SwitchOffValue1" Position="42" Ext="/NOTCYCLIC" Address="20" Direction="OUT" Type="USINT">
+		</Channel>
+		<Channel ID="CfO_SwitchOffValue2" Position="43" Ext="/NOTCYCLIC" Address="22" Direction="OUT" Type="USINT">
+		</Channel>
+	</Module><Module ID="IF1.ST1.IF1.ST7" Hardware="X20DO2633"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-en="Module status (1 = module present)" Description-de="Modul Status (1 = Modul gesteckt)" Ext="/OK" Address="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalOutput01" Position="11" Description-en="48 - 240 VAC / 2 A" Description-de="48 - 240 VAC / 2 A" Address="2" BitOffset="0" Direction="OUT" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalOutput02" Position="12" Description-en="48 - 240 VAC / 2 A" Description-de="48 - 240 VAC / 2 A" Address="2" BitOffset="1" Direction="OUT" Type="BOOL">
+		</Channel>
+		<Channel ID="LowCurrentStatus1" Position="20" Description-en="Open loop detection channel 1 (1 = open loop)" Description-de="Drahtbruchsignal Kanal 1 (1 = Drahtbruch)" Address="30" BitOffset="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="LowCurrentStatus2" Position="21" Description-en="Open loop detection channel 2 (1 = open loop)" Description-de="Drahtbruchsignal Kanal 2 (1 = Drahtbruch)" Address="30" BitOffset="1" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="ZeroCrossingInput" Position="24" Description-en="Zero cross detection signal (1 = positive halfwave)" Description-de="Nulldurchgangserkennungssignal (1 = positive Halbwelle)" Address="30" BitOffset="4" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="ZeroCrossingStatus" Position="27" Description-en="Status zero cross detection (0 = OK)" Description-de="Status Nulldurchgangserkennung (0 = OK)" Address="30" BitOffset="7" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="CfO_OutputConfig" Position="40" Ext="/NOTCYCLIC" Address="28" Direction="OUT" Type="USINT">
+		</Channel>
+		<Channel ID="CfO_SwitchOffValue1" Position="42" Ext="/NOTCYCLIC" Address="20" Direction="OUT" Type="USINT">
+		</Channel>
+		<Channel ID="CfO_SwitchOffValue2" Position="43" Ext="/NOTCYCLIC" Address="22" Direction="OUT" Type="USINT">
+		</Channel>
+	</Module><Module ID="IF1.ST1.IF1.ST8" Hardware="X20DO2633"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-en="Module status (1 = module present)" Description-de="Modul Status (1 = Modul gesteckt)" Ext="/OK" Address="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalOutput01" Position="11" Description-en="48 - 240 VAC / 2 A" Description-de="48 - 240 VAC / 2 A" Address="2" BitOffset="0" Direction="OUT" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalOutput02" Position="12" Description-en="48 - 240 VAC / 2 A" Description-de="48 - 240 VAC / 2 A" Address="2" BitOffset="1" Direction="OUT" Type="BOOL">
+		</Channel>
+		<Channel ID="LowCurrentStatus1" Position="20" Description-en="Open loop detection channel 1 (1 = open loop)" Description-de="Drahtbruchsignal Kanal 1 (1 = Drahtbruch)" Address="30" BitOffset="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="LowCurrentStatus2" Position="21" Description-en="Open loop detection channel 2 (1 = open loop)" Description-de="Drahtbruchsignal Kanal 2 (1 = Drahtbruch)" Address="30" BitOffset="1" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="ZeroCrossingInput" Position="24" Description-en="Zero cross detection signal (1 = positive halfwave)" Description-de="Nulldurchgangserkennungssignal (1 = positive Halbwelle)" Address="30" BitOffset="4" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="ZeroCrossingStatus" Position="27" Description-en="Status zero cross detection (0 = OK)" Description-de="Status Nulldurchgangserkennung (0 = OK)" Address="30" BitOffset="7" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="CfO_OutputConfig" Position="40" Ext="/NOTCYCLIC" Address="28" Direction="OUT" Type="USINT">
+		</Channel>
+		<Channel ID="CfO_SwitchOffValue1" Position="42" Ext="/NOTCYCLIC" Address="20" Direction="OUT" Type="USINT">
+		</Channel>
+		<Channel ID="CfO_SwitchOffValue2" Position="43" Ext="/NOTCYCLIC" Address="22" Direction="OUT" Type="USINT">
+		</Channel>
+	</Module><Module ID="IF1.ST1.IF1.ST9" Hardware="X20DO2633"><LegacyAddressInfo><Parameter ID="PLCFamily" Value="10" Type="UDINT"/><Parameter ID="ModuleAddress" Value="0" Type="UDINT"/><Parameter ID="BusType" Value="X2X"/></LegacyAddressInfo><Channel ID="ModuleOk" Position="1" Description-en="Module status (1 = module present)" Description-de="Modul Status (1 = Modul gesteckt)" Ext="/OK" Address="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalOutput01" Position="11" Description-en="48 - 240 VAC / 2 A" Description-de="48 - 240 VAC / 2 A" Address="2" BitOffset="0" Direction="OUT" Type="BOOL">
+		</Channel>
+		<Channel ID="DigitalOutput02" Position="12" Description-en="48 - 240 VAC / 2 A" Description-de="48 - 240 VAC / 2 A" Address="2" BitOffset="1" Direction="OUT" Type="BOOL">
+		</Channel>
+		<Channel ID="LowCurrentStatus1" Position="20" Description-en="Open loop detection channel 1 (1 = open loop)" Description-de="Drahtbruchsignal Kanal 1 (1 = Drahtbruch)" Address="30" BitOffset="0" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="LowCurrentStatus2" Position="21" Description-en="Open loop detection channel 2 (1 = open loop)" Description-de="Drahtbruchsignal Kanal 2 (1 = Drahtbruch)" Address="30" BitOffset="1" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="ZeroCrossingInput" Position="24" Description-en="Zero cross detection signal (1 = positive halfwave)" Description-de="Nulldurchgangserkennungssignal (1 = positive Halbwelle)" Address="30" BitOffset="4" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="ZeroCrossingStatus" Position="27" Description-en="Status zero cross detection (0 = OK)" Description-de="Status Nulldurchgangserkennung (0 = OK)" Address="30" BitOffset="7" Direction="IN" Type="BOOL">
+		</Channel>
+		<Channel ID="CfO_OutputConfig" Position="40" Ext="/NOTCYCLIC" Address="28" Direction="OUT" Type="USINT">
+		</Channel>
+		<Channel ID="CfO_SwitchOffValue1" Position="42" Ext="/NOTCYCLIC" Address="20" Direction="OUT" Type="USINT">
+		</Channel>
+		<Channel ID="CfO_SwitchOffValue2" Position="43" Ext="/NOTCYCLIC" Address="22" Direction="OUT" Type="USINT">
+		</Channel>
+	</Module></ChannelConfiguration>

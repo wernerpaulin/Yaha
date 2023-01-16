@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset="UTF-8" http-equiv="content-type">
+    
+    <title>Yaha :: Debugging page</title>
+
+    <style type="text/css">
+
+
+
+body
+{
+   margin: 0;
+   padding: 0;
+   background-color: #FFFFFF;
+   color: #000000;
+}
+
+<style type="text/css">
+#txtLogOutput
+{
+   border: 1px #C0C0C0 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+}
+</style>
+</head>
+  
+<body>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+	<!-- Include Yaha specific scripts -->
+	<script src="js/yaha-juice.js"></script>
+	<script src="js/yaha-live.js"></script>
+	<script src="js/yaha-view.js"></script>
+
+
+  	<p></p>
+  	<a href="index.html">Home</a>
+  	<p></p>
+  	
+  	<p>Var 1: <span id="uiVar1" yaha="io_mode:read_cyclic ; tag_group:VAR_GRP_A">tbd...</span></p>
+  	<p>Var 2  <input type="text" id="uiVar2" yaha="io_mode:read_cyclic, write_enter; tag_group:VAR_GRP_A"></p>
+  	<p>Var 3: <span id="uiVar3" yaha="io_mode:read_cyclic ; tag_group:VAR_GRP_A">tbd...</span></p>
+  	
+  	<p><button type="button" id="cmdWrite" yaha="io_mode:write_click ; tag_group_wr_click:VAR_GRP_A">Write Values</button></p>
+
+  	<p>Count 1<input type="text" id="uiCount1" yaha="io_mode:read_cyclic, write_enter"></p>
+
+  	<p>Cycle time: <span id="uiSystemTickRunTime" yaha="io_mode:read_cyclic ; format:00.## ; unit:s>ms show">tbd...</span></p>
+  	<p>CPU load: <span id="uiCpuLoad" yaha="io_mode:read_cyclic ; format:00.# ; unit:N>% show">tbd...</span></p>
+
+  	
+  	<p><select id="uiSelectStandard" yaha="io_mode:read_cyclic,write_enter">
+		<option value="Select1">Select1 text</option>
+		<option value="Select2">Select2 text</option>
+		<option value="Select3">Select3 text</option>
+	</select></p>
+  	
+  	<p><select  id="uiSelectGroup" yaha="io_mode:read_cyclic,write_enter">
+		<optgroup label="Select Group 1">
+		  <option value="Select1G1">Select1G1 text</option>
+		  <option value="Select2G1">Select2G1 text</option>
+		</optgroup>
+		<optgroup label="Select Group 2">
+		  <option value="Select1G2">Select1G2 text</option>
+		  <option value="Select2G2">Select2G2 text</option>
+		</optgroup>
+	</select>
+	<span id="uiSelectText" yaha="io_mode:read_cyclic">tbd...</span>
+	</p>
+  	
+  	<br>
+	<form action="">
+		<input type="radio" name="radiogroup" id="uiRadiogroup1" value="radio1" yaha="io_mode:read_cyclic,write_click ; tag_group_wr_click:RADIO_GRP_A ; tag_group:RADIO_GRP_A">radio1 text<br>
+		<input type="radio" name="radiogroup" id="uiRadiogroup2" value="radio2" yaha="io_mode:read_cyclic,write_click ; tag_group_wr_click:RADIO_GRP_A ; tag_group:RADIO_GRP_A">radio2 text
+	</form>
+
+	<br>
+  	<form action="">
+		<input type="checkbox" name="checkboxgroup" id="uiCheckboxgroup1" value="check1" yaha="io_mode:read_cyclic,write_click ; tag_group_wr_click:CHECK_GRP_A ; tag_group:CHECK_GRP_A">check1 text<br>
+		<input type="checkbox" name="checkboxgroup" id="uiCheckboxgroup2" value="check2" yaha="io_mode:read_cyclic,write_click ; tag_group_wr_click:CHECK_GRP_A ; tag_group:CHECK_GRP_A">check2 text 
+	</form>
+
+	<br>
+
+	<table border="0">
+	  <tr>
+	    <th>Info / Action</th>
+	    <th>Light 1</th>
+	    <th>Light 2</th>
+	  </tr>
+	  <tr>
+	    <td>On / Off:</td>
+	    <td><button type="button" id="cmdLight1On" yaha="io_mode:write_click ; tag_group_wr_click:LIGHT1_ON">on</button><button type="button" id="cmdLight1Off" yaha="io_mode:write_click ; tag_group_wr_click:LIGHT1_OFF">off</button></td>
+	    <td><button type="button" id="cmdLight2On" yaha="io_mode:write_click ; tag_group_wr_click:LIGHT2_ON">on</button><button type="button" id="cmdLight2Off" yaha="io_mode:write_click ; tag_group_wr_click:LIGHT2_OFF">off</button></td>
+	  </tr>
+	  <tr>
+	    <td>On time:</td>
+	    <td><span id="uiIoLight1onTime" yaha="io_mode:read_cyclic">tbd...</span></td>
+	    <td><span id="uiIoLight2onTime" yaha="io_mode:read_cyclic">tbd...</span></td>
+	  </tr>
+	  <tr>
+	    <td>Energy:</td>
+	    <td><span id="uiIoLight1energy" yaha="io_mode:read_cyclic">tbd...</span></td>
+	    <td><span id="uiIoLight2energy" yaha="io_mode:read_cyclic">tbd...</span></td>
+	  </tr>
+	  <tr>
+	    <td>Switched:</td>
+	    <td><span id="uiIoLight1switchedOn" yaha="io_mode:read_cyclic ; value_map:1=on,0=off">tbd...</span></td>
+	    <td><span id="uiIoLight2switchedOn" yaha="io_mode:read_cyclic ; value_map:1=on,0=off">tbd...</span></td>
+	  </tr>
+	  <tr>
+	    <td>Learning:</td>
+	    <td><button type="button" id="cmdLight1teach" yaha="io_mode:write_click ; tag_group_wr_click:LIGHT1_TEACH">learn</button></td>
+	    <td><button type="button" id="cmdLight2teach" yaha="io_mode:write_click ; tag_group_wr_click:LIGHT2_TEACH">learn</button></td>
+	  </tr>
+
+	</table>
+  	<!-- the following line stores the flags used to send button trigger to server -->
+	<div style="visibility:hidden">
+	<span id="uiLight1on" yaha="tag_group:LIGHT1_ON">1</span>
+	<span id="uiLight1off" yaha="tag_group:LIGHT1_OFF">1</span>
+	<span id="uiLight2on" yaha="tag_group:LIGHT2_ON">1</span>
+	<span id="uiLight2off" yaha="tag_group:LIGHT2_OFF">1</span>
+	<span id="uiLight1teach" yaha="tag_group:LIGHT1_TEACH">1</span>
+	<span id="uiLight2teach" yaha="tag_group:LIGHT2_TEACH">1</span>
+	</div>
+
+
+
+  	<p>Living room temperature: <span id="uiIoActTempLivingroom" yaha="io_mode:read_cyclic ; format:00.# ; unit:N>$deg$C show">tbd...</span></p>
+  	<p>Living room panel set point: <span id="uiIoSetTempLivingroom" yaha="io_mode:read_cyclic">tbd...</span></p>
+
+	<form action="">
+		<input type="radio" name="uiSwitch1" id="uiSwitch1" value="radio1" yaha="io_mode:read_cyclic">Switch 1<br>
+	</form>
+
+  	
+
+	<p>Current recipe: <span id="uiCurrentRcpName" yaha="io_mode:read_cyclic">tbd...</span></p>
+
+  	<p>Choose your home configuration: 
+  	<select id="uiRcpNameSelector" yaha="io_mode:read_cyclic, write_blur ; select_data:uiRcpNameList">
+  		<!-- Options filled dynamically -->
+  	</select>
+  	<button type="button" id="cmdLoadRcp" yaha="io_mode:write_click ; tag_group_wr_click:RCP_LOAD">Load</button>
+  	<button type="button" id="cmdSaveRcp" yaha="io_mode:write_click ; tag_group_wr_click:RCP_SAVE">Save</button></p>
+
+  	<!-- the following line stores the flags used to send button trigger to server -->
+	<div style="visibility:hidden"><span id="uiCmdLoadRcp" yaha="tag_group:RCP_LOAD">1</span><span id="uiCmdSaveRcp" yaha="tag_group:RCP_SAVE">1</span></div>
+  	<span style="visibility:hidden" id="uiRcpNameList" yaha="io_mode:read_cyclic">tbd...</span>
+  	
+
+  	<p>New recipe: <input type="text" id="uiNewRcpName" yaha="tag_group:RCP_CREATE">
+  	<button type="button" id="cmdCreateRcp" yaha="io_mode:write_click ; tag_group_wr_click:RCP_CREATE">Create</button></p>
+	
+  	<!-- the following line stores the flags used to send button trigger to server -->
+	<div style="visibility:hidden"><span id="uiCmdCreateRcp" yaha="tag_group:RCP_CREATE">1</span></div>
+ 
+	<p><textarea name="txtLogOutput" id="uiLogEnocean" style="position:relative;left:100px;top:20px;width:640px;height:240px;z-index:1;"
+      rows="1"
+      cols="1">deaktiviert wegen UDP-Framegröße
+    </textarea></p>
+    
+	<svg width="400" height="180">
+	<g>
+	  <rect id="demoRect" x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+	  <text x="105" y="95" font-family="Verdana" font-size="12" fill="blue" > Hello </text>
+	</g>
+	</svg>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<pdi><zoneEnableGarage>0.0</zoneEnableGarage>
+<zoneEnableLounge>0.0</zoneEnableLounge>
+<zoneEnableFirstFloor>0.0</zoneEnableFirstFloor>
+<zoneEnableBasement>0.0</zoneEnableBasement>
+<zoneEnableEntrance>1.0</zoneEnableEntrance>
+<manuallyArmed>1.0</manuallyArmed>
+<automaticArmStartTime>22:38</automaticArmStartTime>
+<automaticArmEndTime>09:55</automaticArmEndTime>
+</pdi>

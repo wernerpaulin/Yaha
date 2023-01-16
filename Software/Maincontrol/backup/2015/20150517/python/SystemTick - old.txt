@@ -1,0 +1,63 @@
+def SystemTick(cycleTime):
+    global processData
+    
+    nextStartTime = time.time()
+
+    while True:
+        #################### BEGIN OF CYCLE #################### 
+        PDI.read()
+        print(PDI.count1)
+        PDI.count1 = PDI.count1 + 1
+        PDI.var1 = PDI.var1 + 1
+        PDI.var2 = PDI.var2 + 1
+        PDI.var3 = PDI.var3 + 1
+
+ 
+        PDI.write()
+        ##################### END OF CYCLE ##################### 
+
+        nextStartTime = nextStartTime + cycleTime
+        try:
+            time.sleep(nextStartTime - time.time()) #sleep time by runtime of previous cycle
+        except ValueError: #cycle time violation: skip compensation 
+            print('Cycle time violation: %s'%(nextStartTime - time.time()))
+            time.sleep(cycleTime)              
+
+
+def SystemTick(cycleTime):
+    global processData
+    if (cycleTime < 0.01) 
+    
+    while True:
+        startOfCycle = time.time()
+        PDI.read()
+        
+        #1. weiter machen: Laufzeitmessung mit altem Code vergleichen
+        #2. Idle Zeit  messen
+        
+        #################### BEGIN OF CYCLIC CODE #################### 
+        print(startOfCycle)
+        PDI.count1 = PDI.count1 + 1
+        print(PDI.count1)
+        PDI.var1 = PDI.var1 + 1
+        PDI.var2 = PDI.var2 + 1
+        PDI.var3 = PDI.var3 + 1
+
+ 
+        PDI.write()
+        ##################### END OF CYCIC CODE ##################### 
+
+        endOfCycle = time.time()
+        print(endOfCycle)
+
+        runTime = endOfCycle - startOfCycle
+        cpuLoad = runTime / cycleTime
+        print(str(runTime) + " " + str(cycleTime))
+
+        #prepare next cycle
+        try:
+            time.sleep(cycleTime - runTime) #sleep time reduced by runtime of previous cycle
+        except ValueError:                  #cycle time violation: skip compensation 
+            print('Cycle time violation: %s'%(runTime))
+            time.sleep(cycleTime)              
+

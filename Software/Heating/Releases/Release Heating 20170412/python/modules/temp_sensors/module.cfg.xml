@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<sensors>
+		<linearizationcurves>
+			<linearizationcurve id="burner">
+				<pointpairs>
+					<pointpair x="1067" y="15" ></pointpair>
+					<pointpair x="1090" y="20" ></pointpair>
+					<pointpair x="1113" y="25" ></pointpair>
+					<pointpair x="1137" y="30" ></pointpair>
+					<pointpair x="1161" y="35" ></pointpair>
+					<pointpair x="1185" y="40" ></pointpair>
+					<pointpair x="1210" y="45" ></pointpair>
+					<pointpair x="1234" y="50" ></pointpair>
+					<pointpair x="1260" y="55" ></pointpair>
+					<pointpair x="1285" y="60" ></pointpair>
+					<pointpair x="1311" y="65" ></pointpair>
+					<pointpair x="1337" y="70" ></pointpair>
+					<pointpair x="1363" y="75" ></pointpair>
+					<pointpair x="1380" y="80" ></pointpair>
+					<pointpair x="1417" y="85" ></pointpair>
+				</pointpairs>
+			</linearizationcurve>
+			<linearizationcurve id="outside">
+				<pointpairs>
+					<pointpair x="642" y="-10" ></pointpair>
+					<pointpair x="633" y="-5" ></pointpair>
+					<pointpair x="623" y="0" ></pointpair>
+					<pointpair x="612" y="5" ></pointpair>
+					<pointpair x="600" y="10" ></pointpair>
+					<pointpair x="588" y="15" ></pointpair>
+					<pointpair x="575" y="20" ></pointpair>
+					<pointpair x="563" y="25" ></pointpair>
+				</pointpairs>
+			</linearizationcurve>
+			<linearizationcurve id="PT1000">
+				<pointpairs>
+					<pointpair x="0" y="0" ></pointpair>
+					<pointpair x="1000" y="100" ></pointpair>
+				</pointpairs>
+			</linearizationcurve>
+		</linearizationcurves>
+	
+		<sensor id="tempBurner" linearizationcurveid="burner">
+			<inputs>
+				<input name="rawvalue">
+					<processtag>ioRawTempBurner</processtag>
+				</input>
+			</inputs>
+			
+			<outputs>
+				<output name="scaledvalue">
+					<processtag>actTempBurner</processtag>
+				</output>
+			</outputs>
+		</sensor>
+		<sensor id="tempFlowRadiator" linearizationcurveid="burner">
+			<inputs>
+				<input name="rawvalue">
+					<processtag>ioRawTempFlowRadiator</processtag>
+				</input>
+			</inputs>
+			
+			<outputs>
+				<output name="scaledvalue">
+					<processtag>actTempFlowRadiator</processtag>
+				</output>
+			</outputs>
+		</sensor>
+		<sensor id="tempFlowFloor" linearizationcurveid="burner">
+			<inputs>
+				<input name="rawvalue">
+					<processtag>ioRawTempFlowFloor</processtag>
+				</input>
+			</inputs>
+			
+			<outputs>
+				<output name="scaledvalue">
+					<processtag>actTempFlowFloor</processtag>
+				</output>
+			</outputs>
+		</sensor>
+		<sensor id="tempHotwater" linearizationcurveid="burner">
+			<inputs>
+				<input name="rawvalue">
+					<processtag>ioRawTempHotwater</processtag>
+				</input>
+			</inputs>
+			
+			<outputs>
+				<output name="scaledvalue">
+					<processtag>actTempHotwater</processtag>
+				</output>
+			</outputs>
+		</sensor>
+		<sensor id="tempOutsideNorth" linearizationcurveid="outside">
+			<inputs>
+				<input name="rawvalue">
+					<processtag>ioRawTempOutsideNorth</processtag>
+				</input>
+			</inputs>
+			
+			<outputs>
+				<output name="scaledvalue">
+					<processtag>actTempOutsideNorth</processtag>
+				</output>
+			</outputs>
+		</sensor>
+		<sensor id="tempLounge" linearizationcurveid="PT1000">
+			<inputs>
+				<input name="rawvalue">
+					<processtag>ioRawTempLounge</processtag>
+				</input>
+			</inputs>
+			
+			<outputs>
+				<output name="scaledvalue">
+					<processtag>actTempRoomLounge</processtag>
+				</output>
+			</outputs>
+		</sensor>
+		<sensor id="tempLibrary" linearizationcurveid="PT1000">
+			<inputs>
+				<input name="rawvalue">
+					<processtag>ioRawTempLounge</processtag>
+				</input>
+			</inputs>
+			
+			<outputs>
+				<output name="scaledvalue">
+					<processtag>actTempRoomLibrary</processtag>
+				</output>
+			</outputs>
+		</sensor>
+	</sensors>
+
+</cfg>

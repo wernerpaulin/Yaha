@@ -1,0 +1,1599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head>
+    <title>ModbusTCP Controller Configuration</title>
+      <style type="text/css">
+        body{
+	          font-family: Tahoma;
+	          font-size:8pt;
+	          text-decoration: none;
+        }
+        p{
+	          font-family: Tahoma;
+	          font-size: 10pt;
+	          font-weight: normal;
+	          text-decoration: none;
+        }
+        h1{
+	          font-family: Tahoma;
+	          font-size: 12pt;
+	          font-style: normal;
+	          font-weight: bold;
+	          text-decoration: underline;
+        }
+        h2{
+	          font-family: Tahoma;
+	          font-size: 12pt;
+	          font-style: normal;
+	          font-weight: bold;
+	          text-decoration: none;
+        }
+        h3{
+	          font-family: Tahoma;
+	          font-size: 11pt;
+	          font-style: normal;
+	          font-weight: bold;
+	          text-decoration: none;
+        }
+
+        table{
+ 	        font-family: Tahoma;
+ 	        font-size: 10pt;
+            text-align: left;
+            vertical-align : middle;
+            margin-top: 5pt;    
+            margin-bottom: 25pt;
+            border-color: #000000;
+            border-width: 1px;
+            border-spacing: 0px;
+            border-collapse: collapse;
+            border-style: solid;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        tr{
+	          border-width: 1px;
+	          border-style: solid;
+	          border-color: #EEEEEE;
+        }
+        th{
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+ 	        font-size: 10pt;
+ 	        font-style: normal;
+ 	        font-weight: bold;
+            text-align: left;
+            vertical-align: middle;
+            background-color: #DDDDDD;
+            border-color: #AAAAAA;
+            border-width: 1px;
+            border-style: solid;
+        }
+        td{
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+	        border-width: 1px;
+	        border-style: solid;
+	        border-color: #AAAAAA;
+        }
+
+        table.header{
+	          font-size: 16pt;
+	          font-weight: bold;
+	          width: 100%;
+	          border-color: #AAAAAA;
+	          background-color: #FF8800;
+        }
+        td.header{
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+	        border-width: 0px;
+	        border-style: solid;
+	        border-color: #FF8800;
+        }
+
+        table.heading{
+	          font-size: 14pt;
+	          font-weight: bold;
+	          width: 100%;
+	          border-color: #AAAAAA;
+	          background-color: #FF8800;
+        }
+        td.heading{
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+	        border-width: 0px;
+	        border-style: solid;
+	        border-color: #FF8800;
+        }
+
+        hr.heading{
+	          color: #FF8800;
+        }	
+
+        tr.odd{
+	          background-color: #FFFFFF;
+        }
+        tr.even{
+	          background-color: #EEEEEE;
+        }
+
+        table.modpar{
+        }
+        tr.modpar{
+        }
+        td.modpar{
+        }
+
+        table.regcfg{
+            text-align: right;
+            vertical-align: middle;
+        }
+        tr.regcfg{
+        }
+        td.regcfg{
+        }
+
+        table.chcfg{
+        }
+        td.chcfg{
+        }
+        th.chcfg{
+        }
+      </style>
+    
+	</head>
+    
+	<body>
+
+      <table class="header">
+        <tr>
+          <td class="header">Modbus/TCP Configuration File</td>
+        </tr>
+      </table>
+      
+     <p>Use the following list of stations to navigate to the parameters of the according station.</p>
+     <ul>
+               <li><a href="#Station192.168.0.92">Station 192.168.0.92 : 502</a>
+          <ul>
+            <li><a href="#Station192.168.0.92ModuleParameter">Module Parameter</a></li>
+            <li><a href="#Station192.168.0.92RegisterConfig">Register Configuration</a></li>
+            <li><a href="#Station192.168.0.92ChannelMappingBit">Bit Channel Mapping</a></li>
+            <li><a href="#Station192.168.0.92ChannelMappingWord">Word Channel Mapping</a></li>
+          </ul>
+        </li>
+
+     </ul>
+      
+      <br />
+      <br />
+      
+          <table class="heading">
+      <tr>
+        <td class="heading"><a name="Station192.168.0.92">Station 192.168.0.92 : 502</a></td>
+      </tr>
+    </table>
+    <a name="Station192.168.0.92ModuleParameter"><H2>Module Parameter Table<hr class="heading"></H2></a>
+    <p>The module parameter table lists the parameters of the buscontroller and for each configured module, such as the function model in which the module
+        should be operated and the product code of the module expected for a specific slot. These parameters can be read through the functions 3, 4, 23 and written by
+        the functions 6, 16 and 23. The parameter ProductCode represents the value which uniquely identifies the module, which is also known as Hardware ID or 
+        B&amp;R ID code.</p>
+    <p>
+      <ul>
+        <li><b>Slot</b> shows the slot where the module is plugged (Slot 0 is preserved for the controller).</li>
+        <li><b>Module</b> shows the hardware name of the module.</li>
+        <li><b>Parameter</b> displays the parameter name.</li>
+        <li><b>Address</b> displays the address of the parameter.</li>
+        <li><b>Datatype</b> displays the datatype of the parameter.</li>
+        <li><b>Size</b> in bytes of the parameter according to the datatype.</li>
+        <li><b>Value</b> shows the value which is configured for the parameter.</li>
+      </ul>
+    </p>
+    <table class="modpar">
+      <tr>
+        <th>Slot</th>
+        <th>Module</th>
+        <th>Parameter</th>
+        <th>Address</th>
+        <th>Datatype</th>
+        <th>Size</th>
+        <th>Value</th>
+      </tr>
+      <tr class="odd">
+<td rowspan="18">-</td>
+<td rowspan="18">X20BC0087</td>
+<td>CheckSum</td>
+<td>0x01240</td>
+<td>u32</td>
+<td>4</td>
+<td>0xf23062e0</td>
+</tr>
+<tr class="odd">
+<td>SubnetMask0</td>
+<td>0x01007</td>
+<td>u16</td>
+<td>2</td>
+<td>255</td>
+</tr>
+<tr class="odd">
+<td>SubnetMask1</td>
+<td>0x01008</td>
+<td>u16</td>
+<td>2</td>
+<td>255</td>
+</tr>
+<tr class="odd">
+<td>SubnetMask2</td>
+<td>0x01009</td>
+<td>u16</td>
+<td>2</td>
+<td>255</td>
+</tr>
+<tr class="odd">
+<td>SubnetMask3</td>
+<td>0x0100A</td>
+<td>u16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>DefaultGateway0</td>
+<td>0x0100B</td>
+<td>u16</td>
+<td>2</td>
+<td>192</td>
+</tr>
+<tr class="odd">
+<td>DefaultGateway1</td>
+<td>0x0100C</td>
+<td>u16</td>
+<td>2</td>
+<td>168</td>
+</tr>
+<tr class="odd">
+<td>DefaultGateway2</td>
+<td>0x0100D</td>
+<td>u16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>DefaultGateway3</td>
+<td>0x0100E</td>
+<td>u16</td>
+<td>2</td>
+<td>254</td>
+</tr>
+<tr class="odd">
+<td>TcpLifeTime</td>
+<td>0x01010</td>
+<td>u16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>MTU</td>
+<td>0x01011</td>
+<td>u16</td>
+<td>2</td>
+<td>1500</td>
+</tr>
+<tr class="odd">
+<td>WatchdogMode</td>
+<td>0x01043</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC1</td>
+</tr>
+<tr class="odd">
+<td>WatchdogThreshold</td>
+<td>0x01040</td>
+<td>u16</td>
+<td>2</td>
+<td>5000</td>
+</tr>
+<tr class="odd">
+<td>X2XBusConfig</td>
+<td>0x01012</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC0</td>
+</tr>
+<tr class="odd">
+<td>X2XBusCableLength</td>
+<td>0x01017</td>
+<td>u16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>IoAddressCheck</td>
+<td>0x01182</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC1</td>
+</tr>
+<tr class="odd">
+<td>ModuleInitDelay</td>
+<td>0x01181</td>
+<td>u16</td>
+<td>2</td>
+<td>3000</td>
+</tr>
+<tr class="odd">
+<td>ConfigMode</td>
+<td>0x01188</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC1</td>
+</tr>
+<tr class="even">
+<td rowspan="4">1</td>
+<td rowspan="4">X20PS9400a</td>
+<td>ProductCode</td>
+<td>0x0A008</td>
+<td>u16</td>
+<td>2</td>
+<td>8076</td>
+</tr>
+<tr class="even">
+<td>FunctionModel</td>
+<td>0x0A009</td>
+<td>u16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>ConfigIndex</td>
+<td>0x0A00A</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC000</td>
+</tr>
+<tr class="even">
+<td>ConfigLength</td>
+<td>0x0A00B</td>
+<td>u16</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td rowspan="4">2</td>
+<td rowspan="4">X20AT4222</td>
+<td>ProductCode</td>
+<td>0x0A018</td>
+<td>u16</td>
+<td>2</td>
+<td>7079</td>
+</tr>
+<tr class="odd">
+<td>FunctionModel</td>
+<td>0x0A019</td>
+<td>u16</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>ConfigIndex</td>
+<td>0x0A01A</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC004</td>
+</tr>
+<tr class="odd">
+<td>ConfigLength</td>
+<td>0x0A01B</td>
+<td>u16</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td rowspan="4">3</td>
+<td rowspan="4">X20AT4222</td>
+<td>ProductCode</td>
+<td>0x0A028</td>
+<td>u16</td>
+<td>2</td>
+<td>7079</td>
+</tr>
+<tr class="even">
+<td>FunctionModel</td>
+<td>0x0A029</td>
+<td>u16</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>ConfigIndex</td>
+<td>0x0A02A</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC020</td>
+</tr>
+<tr class="even">
+<td>ConfigLength</td>
+<td>0x0A02B</td>
+<td>u16</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td rowspan="4">4</td>
+<td rowspan="4">X20DI4653</td>
+<td>ProductCode</td>
+<td>0x0A038</td>
+<td>u16</td>
+<td>2</td>
+<td>9541</td>
+</tr>
+<tr class="odd">
+<td>FunctionModel</td>
+<td>0x0A039</td>
+<td>u16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>ConfigIndex</td>
+<td>0x0A03A</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC034</td>
+</tr>
+<tr class="odd">
+<td>ConfigLength</td>
+<td>0x0A03B</td>
+<td>u16</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td rowspan="4">5</td>
+<td rowspan="4">X20DO2649</td>
+<td>ProductCode</td>
+<td>0x0A048</td>
+<td>u16</td>
+<td>2</td>
+<td>8410</td>
+</tr>
+<tr class="even">
+<td>FunctionModel</td>
+<td>0x0A049</td>
+<td>u16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>ConfigIndex</td>
+<td>0x0A04A</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC03C</td>
+</tr>
+<tr class="even">
+<td>ConfigLength</td>
+<td>0x0A04B</td>
+<td>u16</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td rowspan="4">6</td>
+<td rowspan="4">X20DO2633</td>
+<td>ProductCode</td>
+<td>0x0A058</td>
+<td>u16</td>
+<td>2</td>
+<td>44089</td>
+</tr>
+<tr class="odd">
+<td>FunctionModel</td>
+<td>0x0A059</td>
+<td>u16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>ConfigIndex</td>
+<td>0x0A05A</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC040</td>
+</tr>
+<tr class="odd">
+<td>ConfigLength</td>
+<td>0x0A05B</td>
+<td>u16</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td rowspan="4">7</td>
+<td rowspan="4">X20DO2633</td>
+<td>ProductCode</td>
+<td>0x0A068</td>
+<td>u16</td>
+<td>2</td>
+<td>44089</td>
+</tr>
+<tr class="even">
+<td>FunctionModel</td>
+<td>0x0A069</td>
+<td>u16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>ConfigIndex</td>
+<td>0x0A06A</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC040</td>
+</tr>
+<tr class="even">
+<td>ConfigLength</td>
+<td>0x0A06B</td>
+<td>u16</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td rowspan="4">8</td>
+<td rowspan="4">X20DO2633</td>
+<td>ProductCode</td>
+<td>0x0A078</td>
+<td>u16</td>
+<td>2</td>
+<td>44089</td>
+</tr>
+<tr class="odd">
+<td>FunctionModel</td>
+<td>0x0A079</td>
+<td>u16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>ConfigIndex</td>
+<td>0x0A07A</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC040</td>
+</tr>
+<tr class="odd">
+<td>ConfigLength</td>
+<td>0x0A07B</td>
+<td>u16</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td rowspan="4">9</td>
+<td rowspan="4">X20DO2633</td>
+<td>ProductCode</td>
+<td>0x0A088</td>
+<td>u16</td>
+<td>2</td>
+<td>44089</td>
+</tr>
+<tr class="even">
+<td>FunctionModel</td>
+<td>0x0A089</td>
+<td>u16</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>ConfigIndex</td>
+<td>0x0A08A</td>
+<td>u16</td>
+<td>2</td>
+<td>0xC040</td>
+</tr>
+<tr class="even">
+<td>ConfigLength</td>
+<td>0x0A08B</td>
+<td>u16</td>
+<td>2</td>
+<td>7</td>
+</tr>
+
+    </table>
+	<a name="Station192.168.0.92RegisterConfig"><H2>Register Configuration Table<hr class="heading"></H2></a>
+	<p>The register configuration table shows the configuration values for the I/O module registers. These records can be read through the functions
+        3, 4, 23 and written by the functions 6, 16 and 23.</p>
+    <p>
+      <ul>
+        <li><b>Length</b> shows the number of entries in a configuration block.</li>
+        <li><b>Module</b> contains the slot numbers of the modules by which a configuration block is referenced.</li>
+        <li><b>Address</b> displays the address of a register configuration record.</li>
+        <li><b>Type</b> shows the type of the register to configure.</li>
+        <li><b>Size</b> displays the size in bytes of the register to configure.</li>
+        <li><b>Value</b> contains the initialization value of the register.</li>
+        <li><b>Record</b> shows the configuration entry in hex as it is written to the controller.</li>
+      </ul>
+    </p>
+    <table class="regcfg">
+      <tr>
+        <th>Length</th>
+        <th>Module</th>
+        <th>Address</th>
+        <th>Register</th>
+        <th>Type</th>
+        <th>Size</th>
+        <th>Value</th>
+        <th>Record [hex]</th>
+      </tr>
+      <tr class="odd">
+<td rowspan="1">1</td>
+<td rowspan="1">1</td>
+<td>C000</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0001 - 0201 - 00000000</td>
+</tr>
+<tr class="even">
+<td rowspan="7">7</td>
+<td rowspan="7">2</td>
+<td>C004</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0000 - 0002 - 00000000</td>
+</tr>
+<tr class="even">
+<td>C008</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0002 - 0002 - 00000000</td>
+</tr>
+<tr class="even">
+<td>C00C</td>
+<td>4</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0004 - 0002 - 00000000</td>
+</tr>
+<tr class="even">
+<td>C010</td>
+<td>6</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0006 - 0002 - 00000000</td>
+</tr>
+<tr class="even">
+<td>C014</td>
+<td>30</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>001E - 0001 - 00000000</td>
+</tr>
+<tr class="even">
+<td>C018</td>
+<td>16</td>
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td>0010 - 0501 - 00000003</td>
+</tr>
+<tr class="even">
+<td>C01C</td>
+<td>18</td>
+<td>5</td>
+<td>2</td>
+<td>26214</td>
+<td>0012 - 0502 - 00006666</td>
+</tr>
+<tr class="odd">
+<td rowspan="5">5</td>
+<td rowspan="5">3</td>
+<td>C020</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0000 - 0002 - 00000000</td>
+</tr>
+<tr class="odd">
+<td>C024</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0002 - 0002 - 00000000</td>
+</tr>
+<tr class="odd">
+<td>C028</td>
+<td>30</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>001E - 0001 - 00000000</td>
+</tr>
+<tr class="odd">
+<td>C02C</td>
+<td>16</td>
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td>0010 - 0501 - 00000003</td>
+</tr>
+<tr class="odd">
+<td>C030</td>
+<td>18</td>
+<td>5</td>
+<td>2</td>
+<td>30518</td>
+<td>0012 - 0502 - 00007736</td>
+</tr>
+<tr class="even">
+<td rowspan="2">2</td>
+<td rowspan="2">4</td>
+<td>C034</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0001 - 0201 - 00000000</td>
+</tr>
+<tr class="even">
+<td>C038</td>
+<td>18</td>
+<td>5</td>
+<td>1</td>
+<td>10</td>
+<td>0012 - 0501 - 0000000A</td>
+</tr>
+<tr class="odd">
+<td rowspan="1">1</td>
+<td rowspan="1">5</td>
+<td>C03C</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0000 - 0301 - 00000000</td>
+</tr>
+<tr class="even">
+<td rowspan="7">7</td>
+<td rowspan="7">6, 7, 8, 9</td>
+<td>C040</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0002 - 0101 - 00000000</td>
+</tr>
+<tr class="even">
+<td>C044</td>
+<td>30</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>001E - 0001 - 00000000</td>
+</tr>
+<tr class="even">
+<td>C048</td>
+<td>22</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>0016 - 0501 - 00000005</td>
+</tr>
+<tr class="even">
+<td>C04C</td>
+<td>20</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>0014 - 0501 - 00000005</td>
+</tr>
+<tr class="even">
+<td>C050</td>
+<td>28</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>001C - 0501 - 00000000</td>
+</tr>
+<tr class="even">
+<td>C054</td>
+<td>28</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>001C - 0501 - 00000000</td>
+</tr>
+<tr class="even">
+<td>C058</td>
+<td>28</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>001C - 0501 - 00000000</td>
+</tr>
+
+    </table>
+	<a name="Station192.168.0.92ChannelMappingBit"><H2>Bit Channel Mapping Tables<hr class="heading"></H2></a>
+	<H3>Input Channels</H3>
+    <p>Input channels are read with function code 2.</p>
+    <p>
+      <ul>
+        <li><b>Slot</b> where the module is plugged.</li>
+        <li><b>Module</b> shows the hardware name of the module.</li>
+        <li><b>Address</b> displays the address of the channel.</li>
+        <li><b>Channel</b> displays the name of the channel or the symbolic name associated to the channel.</li>
+      </ul>
+    </p>
+    <table class="chcfg">
+      <tr>
+        <th>Slot</th>
+        <th>Module</th>
+        <th>Address</th>
+        <th>Channel</th>
+      </tr>
+      <tr class="odd">
+<td rowspan="2">1</td>
+<td rowspan="2">X20PS9400a</td>
+<td>0x0000</td>
+<td>IF1.ST1.StatusInput01</td>
+</tr>
+<tr class="odd">
+<td>0x0002</td>
+<td>IF1.ST1.StatusInput02</td>
+</tr>
+<tr class="even">
+<td rowspan="5">4</td>
+<td rowspan="5">X20DI4653</td>
+<td>0x0018</td>
+<td>IF1.ST4.DigitalInput01</td>
+</tr>
+<tr class="even">
+<td>0x0019</td>
+<td>IF1.ST4.DigitalInput02</td>
+</tr>
+<tr class="even">
+<td>0x001A</td>
+<td>IF1.ST4.DigitalInput03</td>
+</tr>
+<tr class="even">
+<td>0x001B</td>
+<td>IF1.ST4.DigitalInput04</td>
+</tr>
+<tr class="even">
+<td>0x001F</td>
+<td>IF1.ST4.PowerSupply</td>
+</tr>
+<tr class="odd">
+<td rowspan="4">6</td>
+<td rowspan="4">X20DO2633</td>
+<td>0x0020</td>
+<td>IF1.ST6.LowCurrentStatus1</td>
+</tr>
+<tr class="odd">
+<td>0x0021</td>
+<td>IF1.ST6.LowCurrentStatus2</td>
+</tr>
+<tr class="odd">
+<td>0x0024</td>
+<td>IF1.ST6.ZeroCrossingInput</td>
+</tr>
+<tr class="odd">
+<td>0x0027</td>
+<td>IF1.ST6.ZeroCrossingStatus</td>
+</tr>
+<tr class="even">
+<td rowspan="4">7</td>
+<td rowspan="4">X20DO2633</td>
+<td>0x0028</td>
+<td>IF1.ST7.LowCurrentStatus1</td>
+</tr>
+<tr class="even">
+<td>0x0029</td>
+<td>IF1.ST7.LowCurrentStatus2</td>
+</tr>
+<tr class="even">
+<td>0x002C</td>
+<td>IF1.ST7.ZeroCrossingInput</td>
+</tr>
+<tr class="even">
+<td>0x002F</td>
+<td>IF1.ST7.ZeroCrossingStatus</td>
+</tr>
+<tr class="odd">
+<td rowspan="4">8</td>
+<td rowspan="4">X20DO2633</td>
+<td>0x0030</td>
+<td>IF1.ST8.LowCurrentStatus1</td>
+</tr>
+<tr class="odd">
+<td>0x0031</td>
+<td>IF1.ST8.LowCurrentStatus2</td>
+</tr>
+<tr class="odd">
+<td>0x0034</td>
+<td>IF1.ST8.ZeroCrossingInput</td>
+</tr>
+<tr class="odd">
+<td>0x0037</td>
+<td>IF1.ST8.ZeroCrossingStatus</td>
+</tr>
+<tr class="even">
+<td rowspan="4">9</td>
+<td rowspan="4">X20DO2633</td>
+<td>0x0038</td>
+<td>IF1.ST9.LowCurrentStatus1</td>
+</tr>
+<tr class="even">
+<td>0x0039</td>
+<td>IF1.ST9.LowCurrentStatus2</td>
+</tr>
+<tr class="even">
+<td>0x003C</td>
+<td>IF1.ST9.ZeroCrossingInput</td>
+</tr>
+<tr class="even">
+<td>0x003F</td>
+<td>IF1.ST9.ZeroCrossingStatus</td>
+</tr>
+
+    </table>
+    <H3>Output Channels</H3>
+    <p>Output channels are written with function codes 5 and 15 or read with function code 1.</p>
+    <p>
+      <ul>
+        <li><b>Slot</b> where the module is plugged (Slot 0 is preserved for the controller).</li>
+        <li><b>Module</b> shows the hardware name of the module.</li>
+        <li><b>Address</b> displays the address of the channel.</li>
+        <li><b>Channel</b> displays the name of the channel or the symbolic name associated to the channel.</li>
+      </ul>
+    </p>
+    <table class="chcfg">
+      <tr>
+        <th>Slot</th>
+        <th>Module</th>
+        <th>Address</th>
+        <th>Channel</th>
+      </tr>
+      <tr class="odd">
+<td rowspan="2">5</td>
+<td rowspan="2">X20DO2649</td>
+<td>0x0000</td>
+<td>IF1.ST5.DigitalOutput01</td>
+</tr>
+<tr class="odd">
+<td>0x0001</td>
+<td>IF1.ST5.DigitalOutput02</td>
+</tr>
+<tr class="even">
+<td rowspan="2">6</td>
+<td rowspan="2">X20DO2633</td>
+<td>0x0008</td>
+<td>IF1.ST6.DigitalOutput01</td>
+</tr>
+<tr class="even">
+<td>0x0009</td>
+<td>IF1.ST6.DigitalOutput02</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">7</td>
+<td rowspan="2">X20DO2633</td>
+<td>0x0010</td>
+<td>IF1.ST7.DigitalOutput01</td>
+</tr>
+<tr class="odd">
+<td>0x0011</td>
+<td>IF1.ST7.DigitalOutput02</td>
+</tr>
+<tr class="even">
+<td rowspan="2">8</td>
+<td rowspan="2">X20DO2633</td>
+<td>0x0018</td>
+<td>IF1.ST8.DigitalOutput01</td>
+</tr>
+<tr class="even">
+<td>0x0019</td>
+<td>IF1.ST8.DigitalOutput02</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">9</td>
+<td rowspan="2">X20DO2633</td>
+<td>0x0020</td>
+<td>IF1.ST9.DigitalOutput01</td>
+</tr>
+<tr class="odd">
+<td>0x0021</td>
+<td>IF1.ST9.DigitalOutput02</td>
+</tr>
+
+    </table>
+    <a name="Station192.168.0.92ChannelMappingWord"><H2>Word Channel Mapping Tables<hr class="heading"></H2></a>
+    <H3>Input Channels</H3>
+    <p>The input channels are read through the functions 3, 4 and 23.</p>
+    <p>
+      <ul>
+        <li><b>Slot</b> where the module is plugged (Slot 0 is preserved for the controller).</li>
+        <li><b>Module</b> shows the hardware name of the module.</li>
+        <li><b>Address</b> displays the address of the channel.</li>
+        <li><b>Datatype</b> displays the datatype of the channel.</li>
+        <li><b>Bit</b> The bit offset in case of acyclic accessible digital channels.</li>
+        <li><b>Channel</b> displays the name of the channel or the symbolic name associated to the channel.</li>
+      </ul>
+    </p>
+    <table class="chcfg">
+      <tr>
+        <th>Slot</th>
+        <th>Module</th>
+        <th>Address</th>
+        <th>Datatype</th>
+        <th>Bit</th>
+        <th>Channel</th>
+      </tr>
+      <tr class="odd">
+<td rowspan="41">-</td>
+<td rowspan="41">X20BC0087</td>
+<td>0x10C0</td>
+<td>u16</td>
+<td></td>
+<td>ClientCount</td>
+</tr>
+<tr class="odd">
+<td>0x10C1</td>
+<td>u32</td>
+<td></td>
+<td>GlobalPacketCtr</td>
+</tr>
+<tr class="odd">
+<td>0x10C3</td>
+<td>u32</td>
+<td></td>
+<td>LocalPacketCtr</td>
+</tr>
+<tr class="odd">
+<td>0x10C5</td>
+<td>u32</td>
+<td></td>
+<td>GlobalErrorCtr</td>
+</tr>
+<tr class="odd">
+<td>0x10C7</td>
+<td>u32</td>
+<td></td>
+<td>LocalErrorCtr</td>
+</tr>
+<tr class="odd">
+<td>0x10C9</td>
+<td>u32</td>
+<td></td>
+<td>GlobalMaxCmdTime</td>
+</tr>
+<tr class="odd">
+<td>0x10CB</td>
+<td>u32</td>
+<td></td>
+<td>LocalMaxCmdTime</td>
+</tr>
+<tr class="odd">
+<td>0x10CD</td>
+<td>u32</td>
+<td></td>
+<td>GlobalMinCmdTime</td>
+</tr>
+<tr class="odd">
+<td>0x10CF</td>
+<td>u32</td>
+<td></td>
+<td>LocalMinCmdTime</td>
+</tr>
+<tr class="odd">
+<td>0x10D1</td>
+<td>u32</td>
+<td></td>
+<td>GlobalFragmentCtr</td>
+</tr>
+<tr class="odd">
+<td>0x10D3</td>
+<td>u32</td>
+<td></td>
+<td>LocalFragmentCtr</td>
+</tr>
+<tr class="odd">
+<td>0x1186</td>
+<td>u16</td>
+<td></td>
+<td>OperatingStatus</td>
+</tr>
+<tr class="odd">
+<td>0x1187</td>
+<td>u16</td>
+<td></td>
+<td>ErrorStatus</td>
+</tr>
+<tr class="odd">
+<td>0x11C0</td>
+<td>u16</td>
+<td></td>
+<td>CycleCount</td>
+</tr>
+<tr class="odd">
+<td>0x11C1</td>
+<td>u16</td>
+<td></td>
+<td>BreakCount</td>
+</tr>
+<tr class="odd">
+<td>0x11C2</td>
+<td>u16</td>
+<td></td>
+<td>SyncErrorCount</td>
+</tr>
+<tr class="odd">
+<td>0x11C3</td>
+<td>u16</td>
+<td></td>
+<td>SyncBusyErrorCount</td>
+</tr>
+<tr class="odd">
+<td>0x11C4</td>
+<td>u16</td>
+<td></td>
+<td>SyncNoRxErrorCount</td>
+</tr>
+<tr class="odd">
+<td>0x11C5</td>
+<td>u16</td>
+<td></td>
+<td>SyncFormatErrorCount</td>
+</tr>
+<tr class="odd">
+<td>0x11C6</td>
+<td>u16</td>
+<td></td>
+<td>SyncPendingErrorCount</td>
+</tr>
+<tr class="odd">
+<td>0x11C7</td>
+<td>u16</td>
+<td></td>
+<td>SyncBufferUnderrun</td>
+</tr>
+<tr class="odd">
+<td>0x11C8</td>
+<td>u16</td>
+<td></td>
+<td>SyncBufferOverflow</td>
+</tr>
+<tr class="odd">
+<td>0x11C9</td>
+<td>u16</td>
+<td></td>
+<td>AsyncErrorCount</td>
+</tr>
+<tr class="odd">
+<td>0x11CA</td>
+<td>u16</td>
+<td></td>
+<td>AsyncBusyErrorCount</td>
+</tr>
+<tr class="odd">
+<td>0x11CB</td>
+<td>u16</td>
+<td></td>
+<td>AsyncNoRxErrorCount</td>
+</tr>
+<tr class="odd">
+<td>0x11CC</td>
+<td>u16</td>
+<td></td>
+<td>AsyncFormatErrorCount</td>
+</tr>
+<tr class="odd">
+<td>0x11CD</td>
+<td>u16</td>
+<td></td>
+<td>AsyncPendingErrorCount</td>
+</tr>
+<tr class="odd">
+<td>0x11CE</td>
+<td>u16</td>
+<td></td>
+<td>AsyncBufferUnderrun</td>
+</tr>
+<tr class="odd">
+<td>0x11CF</td>
+<td>u16</td>
+<td></td>
+<td>AsyncBufferOverflow</td>
+</tr>
+<tr class="odd">
+<td>0x1200</td>
+<td>u16</td>
+<td></td>
+<td>EthRxCnt</td>
+</tr>
+<tr class="odd">
+<td>0x1201</td>
+<td>u16</td>
+<td></td>
+<td>EthRxLost</td>
+</tr>
+<tr class="odd">
+<td>0x1202</td>
+<td>u16</td>
+<td></td>
+<td>EthRxOversize</td>
+</tr>
+<tr class="odd">
+<td>0x1203</td>
+<td>u16</td>
+<td></td>
+<td>EthCRCErrors</td>
+</tr>
+<tr class="odd">
+<td>0x1205</td>
+<td>u16</td>
+<td></td>
+<td>EthRxOverflow</td>
+</tr>
+<tr class="odd">
+<td>0x1206</td>
+<td>u16</td>
+<td></td>
+<td>EthTxCollision</td>
+</tr>
+<tr class="odd">
+<td>0x1080</td>
+<td>u16</td>
+<td></td>
+<td>SerialNumber1</td>
+</tr>
+<tr class="odd">
+<td>0x1081</td>
+<td>u16</td>
+<td></td>
+<td>SerialNumber2</td>
+</tr>
+<tr class="odd">
+<td>0x1082</td>
+<td>u16</td>
+<td></td>
+<td>SerialNumber3</td>
+</tr>
+<tr class="odd">
+<td>0x1083</td>
+<td>u16</td>
+<td></td>
+<td>ModuleID</td>
+</tr>
+<tr class="odd">
+<td>0x1084</td>
+<td>u32</td>
+<td></td>
+<td>HardwareRevision</td>
+</tr>
+<tr class="odd">
+<td>0x1086</td>
+<td>u32</td>
+<td></td>
+<td>FirmwareRevision</td>
+</tr>
+<tr class="even">
+<td rowspan="2">1</td>
+<td rowspan="2">X20PS9400a</td>
+<td>0x2000</td>
+<td>boolean</td>
+<td>8</td>
+<td>IF1.ST1.StatusInput01</td>
+</tr>
+<tr class="even">
+<td>0x2000</td>
+<td>boolean</td>
+<td>10</td>
+<td>IF1.ST1.StatusInput02</td>
+</tr>
+<tr class="odd">
+<td rowspan="5">2</td>
+<td rowspan="5">X20AT4222</td>
+<td>0x0000</td>
+<td>u16</td>
+<td></td>
+<td>IF1.ST2.Resistor01</td>
+</tr>
+<tr class="odd">
+<td>0x0001</td>
+<td>u16</td>
+<td></td>
+<td>IF1.ST2.Resistor02</td>
+</tr>
+<tr class="odd">
+<td>0x0002</td>
+<td>u16</td>
+<td></td>
+<td>IF1.ST2.Resistor03</td>
+</tr>
+<tr class="odd">
+<td>0x0003</td>
+<td>u16</td>
+<td></td>
+<td>IF1.ST2.Resistor04</td>
+</tr>
+<tr class="odd">
+<td>0x2000</td>
+<td>u8</td>
+<td>0</td>
+<td>IF1.ST2.StatusInput01</td>
+</tr>
+<tr class="even">
+<td rowspan="3">3</td>
+<td rowspan="3">X20AT4222</td>
+<td>0x0004</td>
+<td>u16</td>
+<td></td>
+<td>IF1.ST3.Resistor01</td>
+</tr>
+<tr class="even">
+<td>0x0005</td>
+<td>i16</td>
+<td></td>
+<td>IF1.ST3.Temperature02</td>
+</tr>
+<tr class="even">
+<td>0x2001</td>
+<td>u8</td>
+<td>8</td>
+<td>IF1.ST3.StatusInput01</td>
+</tr>
+<tr class="odd">
+<td rowspan="5">4</td>
+<td rowspan="5">X20DI4653</td>
+<td>0x2001</td>
+<td>boolean</td>
+<td>0</td>
+<td>IF1.ST4.DigitalInput01</td>
+</tr>
+<tr class="odd">
+<td>0x2001</td>
+<td>boolean</td>
+<td>1</td>
+<td>IF1.ST4.DigitalInput02</td>
+</tr>
+<tr class="odd">
+<td>0x2001</td>
+<td>boolean</td>
+<td>2</td>
+<td>IF1.ST4.DigitalInput03</td>
+</tr>
+<tr class="odd">
+<td>0x2001</td>
+<td>boolean</td>
+<td>3</td>
+<td>IF1.ST4.DigitalInput04</td>
+</tr>
+<tr class="odd">
+<td>0x2001</td>
+<td>boolean</td>
+<td>7</td>
+<td>IF1.ST4.PowerSupply</td>
+</tr>
+<tr class="even">
+<td rowspan="4">6</td>
+<td rowspan="4">X20DO2633</td>
+<td>0x2002</td>
+<td>boolean</td>
+<td>8</td>
+<td>IF1.ST6.LowCurrentStatus1</td>
+</tr>
+<tr class="even">
+<td>0x2002</td>
+<td>boolean</td>
+<td>9</td>
+<td>IF1.ST6.LowCurrentStatus2</td>
+</tr>
+<tr class="even">
+<td>0x2002</td>
+<td>boolean</td>
+<td>12</td>
+<td>IF1.ST6.ZeroCrossingInput</td>
+</tr>
+<tr class="even">
+<td>0x2002</td>
+<td>boolean</td>
+<td>15</td>
+<td>IF1.ST6.ZeroCrossingStatus</td>
+</tr>
+<tr class="odd">
+<td rowspan="4">7</td>
+<td rowspan="4">X20DO2633</td>
+<td>0x2002</td>
+<td>boolean</td>
+<td>0</td>
+<td>IF1.ST7.LowCurrentStatus1</td>
+</tr>
+<tr class="odd">
+<td>0x2002</td>
+<td>boolean</td>
+<td>1</td>
+<td>IF1.ST7.LowCurrentStatus2</td>
+</tr>
+<tr class="odd">
+<td>0x2002</td>
+<td>boolean</td>
+<td>4</td>
+<td>IF1.ST7.ZeroCrossingInput</td>
+</tr>
+<tr class="odd">
+<td>0x2002</td>
+<td>boolean</td>
+<td>7</td>
+<td>IF1.ST7.ZeroCrossingStatus</td>
+</tr>
+<tr class="even">
+<td rowspan="4">8</td>
+<td rowspan="4">X20DO2633</td>
+<td>0x2003</td>
+<td>boolean</td>
+<td>8</td>
+<td>IF1.ST8.LowCurrentStatus1</td>
+</tr>
+<tr class="even">
+<td>0x2003</td>
+<td>boolean</td>
+<td>9</td>
+<td>IF1.ST8.LowCurrentStatus2</td>
+</tr>
+<tr class="even">
+<td>0x2003</td>
+<td>boolean</td>
+<td>12</td>
+<td>IF1.ST8.ZeroCrossingInput</td>
+</tr>
+<tr class="even">
+<td>0x2003</td>
+<td>boolean</td>
+<td>15</td>
+<td>IF1.ST8.ZeroCrossingStatus</td>
+</tr>
+<tr class="odd">
+<td rowspan="4">9</td>
+<td rowspan="4">X20DO2633</td>
+<td>0x2003</td>
+<td>boolean</td>
+<td>0</td>
+<td>IF1.ST9.LowCurrentStatus1</td>
+</tr>
+<tr class="odd">
+<td>0x2003</td>
+<td>boolean</td>
+<td>1</td>
+<td>IF1.ST9.LowCurrentStatus2</td>
+</tr>
+<tr class="odd">
+<td>0x2003</td>
+<td>boolean</td>
+<td>4</td>
+<td>IF1.ST9.ZeroCrossingInput</td>
+</tr>
+<tr class="odd">
+<td>0x2003</td>
+<td>boolean</td>
+<td>7</td>
+<td>IF1.ST9.ZeroCrossingStatus</td>
+</tr>
+
+    </table>
+    <H3>Output Channels</H3>
+    <p>The output channels are written through the functions 6, 16 and 23 or read with function 3, 4 and 23.</p>
+    <p>
+      <ul>
+        <li><b>Slot</b> where the module is plugged (Slot 0 is preserved for the controller).</li>
+        <li><b>Module</b> shows the hardware name of the module.</li>
+        <li><b>Address</b> displays the address of the channel.</li>
+        <li><b>Datatype</b> displays the datatype of the channel.</li>
+        <li><b>Bit</b> The bit offset in case of acyclic accessible digital channels.</li>
+        <li><b>Channel</b> displays the name of the channel or the symbolic name associated to the channel.</li>
+      </ul>
+    </p>
+    <table class="chcfg">
+      <tr>
+        <th>Slot</th>
+        <th>Module</th>
+        <th>Address</th>
+        <th>Datatype</th>
+        <th>Bit</th>
+        <th>Channel</th>
+      </tr>
+      <tr class="odd">
+<td rowspan="2">5</td>
+<td rowspan="2">X20DO2649</td>
+<td>0x2400</td>
+<td>boolean</td>
+<td>8</td>
+<td>IF1.ST5.DigitalOutput01</td>
+</tr>
+<tr class="odd">
+<td>0x2400</td>
+<td>boolean</td>
+<td>9</td>
+<td>IF1.ST5.DigitalOutput02</td>
+</tr>
+<tr class="even">
+<td rowspan="2">6</td>
+<td rowspan="2">X20DO2633</td>
+<td>0x2400</td>
+<td>boolean</td>
+<td>0</td>
+<td>IF1.ST6.DigitalOutput01</td>
+</tr>
+<tr class="even">
+<td>0x2400</td>
+<td>boolean</td>
+<td>1</td>
+<td>IF1.ST6.DigitalOutput02</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">7</td>
+<td rowspan="2">X20DO2633</td>
+<td>0x2401</td>
+<td>boolean</td>
+<td>8</td>
+<td>IF1.ST7.DigitalOutput01</td>
+</tr>
+<tr class="odd">
+<td>0x2401</td>
+<td>boolean</td>
+<td>9</td>
+<td>IF1.ST7.DigitalOutput02</td>
+</tr>
+<tr class="even">
+<td rowspan="2">8</td>
+<td rowspan="2">X20DO2633</td>
+<td>0x2401</td>
+<td>boolean</td>
+<td>0</td>
+<td>IF1.ST8.DigitalOutput01</td>
+</tr>
+<tr class="even">
+<td>0x2401</td>
+<td>boolean</td>
+<td>1</td>
+<td>IF1.ST8.DigitalOutput02</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">9</td>
+<td rowspan="2">X20DO2633</td>
+<td>0x2402</td>
+<td>boolean</td>
+<td>8</td>
+<td>IF1.ST9.DigitalOutput01</td>
+</tr>
+<tr class="odd">
+<td>0x2402</td>
+<td>boolean</td>
+<td>9</td>
+<td>IF1.ST9.DigitalOutput02</td>
+</tr>
+
+    </table>
+
+
+    </body>
+
+</html>

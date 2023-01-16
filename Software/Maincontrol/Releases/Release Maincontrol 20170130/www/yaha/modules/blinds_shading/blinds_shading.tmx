@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="modulename">
+			<tuv xml:lang="de">
+				<seg>Rollos</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Blinds and shading</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Volets et ombrage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>百叶窗和遮光</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="groundfloor">
+			<tuv xml:lang="de">
+				<seg>Erdgeschoss</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Ground floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Rez-de-chaussée</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>一楼</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="overview">
+			<tuv xml:lang="de">
+				<seg>Übersicht</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Overview</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Aperçu</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>概览</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="firstfloor">
+			<tuv xml:lang="de">
+				<seg>1. Stock</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>First floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>premier étage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>二楼</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="open">
+			<tuv xml:lang="de">
+				<seg>Öffnen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Open</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Ouvrir</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="close">
+			<tuv xml:lang="de">
+				<seg>Schliessen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Close</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Fermer</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>关</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="stop">
+			<tuv xml:lang="de">
+				<seg>Stopp</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Stop</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Arrêter</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>停</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="guestbathroomblinds">
+			<tuv xml:lang="de">
+				<seg>Gästebad</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Guest bathroom</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salle de bains des invités</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>客用浴室</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="guestbathwindow_headline">
+			<tuv xml:lang="de">
+				<seg>Gästebad</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Guest bathroom</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salle de bains des invités</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>客用浴室</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="masterbathroomblinds">
+			<tuv xml:lang="de">
+				<seg>Elternbad</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Master bathroom</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salle de bains principale</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>主浴室</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="masterbathwindow_headline">
+			<tuv xml:lang="de">
+				<seg>Elternbad</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Master bathroom</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salle de bains principale</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>主浴室</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="kitcheneastblinds">
+			<tuv xml:lang="de">
+				<seg>Küche Ost</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Kitchen east</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Cuisine est</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>厨房东</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="kitcheneast_headline">
+			<tuv xml:lang="de">
+				<seg>Küche Ost</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Kitchen east</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Cuisine est</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>厨房东</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="kitchensouthblinds">
+			<tuv xml:lang="de">
+				<seg>Küche Süd</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Kitchen south</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Cuisine sud</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>厨房南</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="kitchensouth_headline">
+			<tuv xml:lang="de">
+				<seg>Küche Süd</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Kitchen south</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Cuisine sud</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>厨房南</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="loungesouthleftblinds">
+			<tuv xml:lang="de">
+				<seg>Wohnzimmertür links</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Lounge door left</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salon porte-fenêtre gauche</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>客厅左门</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="loungesouthleft_headline">
+			<tuv xml:lang="de">
+				<seg>Wohnzimmertür links</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Lounge door left</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salon porte-fenêtre gauche</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>客厅左门</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="loungesouthrightblinds">
+			<tuv xml:lang="de">
+				<seg>Wohnzimmertür rechts</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Lounge door right</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salon porte-fenêtre droite</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>客厅右门</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="loungesouthright_headline">
+			<tuv xml:lang="de">
+				<seg>Wohnzimmertür rechts</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Lounge door right</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salon porte-fenêtre droite</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>客厅右门</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="loungeterraceblinds">
+			<tuv xml:lang="de">
+				<seg>Terrassentür</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Terrace door</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Porte terrasse</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>天台门</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="loungeterrace_headline">
+			<tuv xml:lang="de">
+				<seg>Terrassentür</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Terrace door</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Porte terrasse</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>天台门</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="timecontrol">
+			<tuv xml:lang="de">
+				<seg>Zeitsteuerung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Time control</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Contrôle horaire</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>时间控制</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="autoshading">
+			<tuv xml:lang="de">
+				<seg>Automatische Beschattung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Auto shading</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Ombrage automatique</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>汽车遮阳</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="off">
+			<tuv xml:lang="de">
+				<seg>aus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>off</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>dés.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>关闭</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="on">
+			<tuv xml:lang="de">
+				<seg>ein</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>on</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>act.</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开启</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="teaching">
+			<tuv xml:lang="de">
+				<seg>Anlernen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Teaching</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>programmer</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>教学</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="start">
+			<tuv xml:lang="de">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Démarrage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>开始</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="set">
+			<tuv xml:lang="de">
+				<seg>Soll</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Set</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Réglé</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>设定值</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="actualshade">
+			<tuv xml:lang="de">
+				<seg>Istbeschattung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Actual shade</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Ombrage actuel</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>实际遮光</seg>
+			</tuv>
+		</tu>
+
+	</body>
+</tmx>

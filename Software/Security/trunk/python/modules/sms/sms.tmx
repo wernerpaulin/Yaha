@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="alarmcenter">
+			<tuv xml:lang="de">
+				<seg>Alarmzentrale</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Alarm center</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Alarm center</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Alarm center</seg>
+			</tuv>
+		</tu>
+		<tu tuid="disarmed">
+			<tuv xml:lang="de">
+				<seg>deaktiviert</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>disarmed</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_disarmed</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_disarmed</seg>
+			</tuv>
+		</tu>
+		<tu tuid="inactive">
+			<tuv xml:lang="de">
+				<seg>deaktiviert</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>inactive</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_inactive</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_inactive</seg>
+			</tuv>
+		</tu>
+		<tu tuid="armed">
+			<tuv xml:lang="de">
+				<seg>aktiviert</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>armed</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_armed</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_armed</seg>
+			</tuv>
+		</tu>
+		<tu tuid="gettingarmed">
+			<tuv xml:lang="de">
+				<seg>Aktivierung im Gange</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>getting armed</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_getting armed</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_getting armed</seg>
+			</tuv>
+		</tu>
+		<tu tuid="ok">
+			<tuv xml:lang="de">
+				<seg>OK</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>ok</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_ok</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_ok</seg>
+			</tuv>
+		</tu>
+		<tu tuid="alarm">
+			<tuv xml:lang="de">
+				<seg>Alarm</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>alarm</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_alarm</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_alarm</seg>
+			</tuv>
+		</tu>
+		<tu tuid="entrance">
+			<tuv xml:lang="de">
+				<seg>Eingang</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>entrance</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_entrance</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_entrance</seg>
+			</tuv>
+		</tu>
+		<tu tuid="lounge">
+			<tuv xml:lang="de">
+				<seg>Wohnzimmer</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Lounge</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Salon</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>客厅</seg>
+			</tuv>
+		</tu>
+		<tu tuid="firstfloor">
+			<tuv xml:lang="de">
+				<seg>Erster Stock</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>First floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_First floor</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_First floor</seg>
+			</tuv>
+		</tu>
+		<tu tuid="garage">
+			<tuv xml:lang="de">
+				<seg>Garage</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Garage</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Garage</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Garage</seg>
+			</tuv>
+		</tu>
+		<tu tuid="basement">
+			<tuv xml:lang="de">
+				<seg>Keller</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Basement</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Basement</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Basement</seg>
+			</tuv>
+		</tu>
+		<tu tuid="unknowncommand">
+			<tuv xml:lang="de">
+				<seg>Unbekanntes Kommando</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Unknown command</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Unknown command</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>CN_Unknown command</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>

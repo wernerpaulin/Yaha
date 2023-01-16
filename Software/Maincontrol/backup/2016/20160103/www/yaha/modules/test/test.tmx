@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="info0001">
+			<tuv xml:lang="de">
+				<seg>Test</seg>
+			</tuv>
+
+			<tuv xml:lang="en">
+				<seg>Test</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>

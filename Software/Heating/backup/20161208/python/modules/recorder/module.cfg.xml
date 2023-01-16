@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<recordcontainers>
+		<recordcontainer id="heating" directory="/home/pi/Yaha/logs/" filenametrunk="heating" filenameoption="" interval="1" nbMaxDataRecords="1000" startCmdTag="recorderCmdStart" stopCmdTag="recorderCmdStop" clearCmdTag="recorderCmdClear">
+			<dataitems>
+				<dataitem name="Burner" pditag="actTempBurner" decimalplaces="1"></dataitem>
+				<dataitem name="Hotwater" pditag="actTempHotwater" decimalplaces="1"></dataitem>
+				<dataitem name="Flow Floor Act" pditag="actTempFlowFloor" decimalplaces="1"></dataitem>
+				<dataitem name="Flow Floor Set" pditag="floorHeatingSetFlowTemp" decimalplaces="1"></dataitem>
+				<dataitem name="Mixer Floor" pditag="floorHeatingMixerActPosition" decimalplaces="1"></dataitem>
+				<dataitem name="Flow Radiator Act" pditag="actTempFlowRadiator" decimalplaces="1"></dataitem>
+				<dataitem name="Flow Radiator Set" pditag="radiatorHeatingSetFlowTemp" decimalplaces="1"></dataitem>
+				<dataitem name="Mixer Radiator" pditag="radiatorHeatingMixerActPosition" decimalplaces="1"></dataitem>
+			</dataitems>
+		</recordcontainer>
+		
+		<recordcontainer id="statistics" directory="/home/pi/Yaha/logs/" filenametrunk="statistics" filenameoption="%y" interval="3600" calcTimeBase="300">
+			<dataitems>
+				<dataitem name="actTempOutsideNorth" pditag="actTempOutsideNorth" calculation="avg" decimalplaces="1"></dataitem>
+				<dataitem name="burnerDailyOperatingHours" pditag="burnerDailyOperatingHours" decimalplaces="1"></dataitem>
+			</dataitems>
+		</recordcontainer>
+	</recordcontainers>
+</cfg>

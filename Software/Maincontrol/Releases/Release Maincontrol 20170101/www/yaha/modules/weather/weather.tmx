@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="weather">
+			<tuv xml:lang="de">
+				<seg>Wetter</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Weather</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Météo</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>天气</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="weathercondition">
+			<tuv xml:lang="de">
+				<seg>Wetterlage</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Weather condition</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Conditions météorologiques</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>天气条件</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="gardensouth">
+			<tuv xml:lang="de">
+				<seg>Garten Südseite</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Garden south</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Jardin Sud</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>花园南</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="feelslike">
+			<tuv xml:lang="de">
+				<seg>gefühlt</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>feels like</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Ressentie</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>感觉像</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="humidity">
+			<tuv xml:lang="de">
+				<seg>Luftfeuchtigkeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Humidity</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Humidité</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>湿度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="pressure">
+			<tuv xml:lang="de">
+				<seg>Luftdruck</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Pressure</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Pression</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>压力</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="uvindex">
+			<tuv xml:lang="de">
+				<seg>UV Index</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>UV index</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Indice UV</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>紫外线指数</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="of">
+			<tuv xml:lang="de">
+				<seg>von</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>of</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>de</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>中占</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="wind">
+			<tuv xml:lang="de">
+				<seg>Wind</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Wind</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Vent</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>风</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="gust">
+			<tuv xml:lang="de">
+				<seg>Böen mit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Gust speed</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Rafale</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>阵风速度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="charts">
+			<tuv xml:lang="de">
+				<seg>Grafiken</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Charts</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Graphique</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>图像</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="rain">
+			<tuv xml:lang="de">
+				<seg>Regenmenge</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Rain</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Pluie</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>降雨量</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="mmperhour">
+			<tuv xml:lang="de">
+				<seg>mm pro Stunde</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>mm per hour</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>mm par heure</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>毫米每小时</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="showyear">
+			<tuv xml:lang="de">
+				<seg>Jahr auswählen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Select year</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Sélectionner l'année</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>选择年份</seg>
+			</tuv>
+		</tu>
+
+	</body>
+</tmx>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="yaha_pdi.xsl"?>
+
+<pdi>
+  <process_data>
+       <processTag>light1on</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light1off</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light1teach</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light1BlinkEnable</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <isRemanent>true</isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light1ImpulseEnable</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <isRemanent>true</isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light1OffDelayEnable</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <isRemanent>true</isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light1TimeEnable</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Kitchen</room>
+       <isRemanent>true</isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light2on</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Living room</room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light2off</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Living room</room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light2teach</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Living room</room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light2BlinkEnable</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Living room</room>
+       <isRemanent>true</isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light2ImpulseEnable</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Living room</room>
+       <isRemanent>true</isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light2OffDelayEnable</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Living room</room>
+       <isRemanent>true</isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>light2TimeEnable</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Living room</room>
+       <isRemanent>true</isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>garageImpulse</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Garage</room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>garageTeach</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Garage</room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>garageImpulseEnable</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>1.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Garage</room>
+       <isRemanent>true</isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>garageTimeEnable</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Garage</room>
+       <isRemanent>true</isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>garageLightOn</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Garage</room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>garageLightOff</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Garage</room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>garageLightTeach</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Garage</room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>garageLightImpulseEnable</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>1.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone>Family</subzone>
+       <room>Garage</room>
+       <isRemanent></isRemanent>
+    </process_data>
+</pdi>

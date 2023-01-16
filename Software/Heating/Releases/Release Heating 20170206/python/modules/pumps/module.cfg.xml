@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<pumps>
+		<pump id="hotwater">
+			<inputs>
+				<input name="release">
+					<processtag logic="or">hotwaterPumpAutoRelease</processtag>
+					<processtag logic="or">burnerAlarmOverTemp</processtag>
+				</input>
+				<input name="pipeAmbientTemperature">
+					<processtag></processtag>
+				</input>
+				<input name="safetyRelease">
+					<processtag initialstate="normallyOpen"></processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="release">
+					<processtag initialstate="normallyOpen">ioPumpHotwater</processtag>
+				</output>
+			</outputs>			
+			<parameters>
+				<settings>
+				</settings>				
+				<operatingmodes>
+					<switch>
+						<processtag>hotwaterPumpManOp</processtag>
+					</switch>
+					<operatingmode name="automatic">
+						<interfaces>
+							<interface name="release">
+								<processtag>hotwaterPumpAutoRelease</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+					<operatingmode name="manual">
+						<interfaces>
+							<interface name="release">
+								<processtag>hotwaterPumpManOverride</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+				</operatingmodes>
+				<simulation>
+					<enable>
+						<processtag>ioSimulation</processtag>
+					</enable>
+				</simulation>
+			</parameters>
+			<statusitems>
+				<statusitem name="state">
+					<processtag>hotwaterPumpState</processtag>
+				</statusitem>
+				<statusitem name="totalOperatingHours">
+					<processtag>hotwaterPumpTotalOperatingHours</processtag>
+				</statusitem>
+				<statusitem name="annualOperatingHours">
+					<processtag>hotwaterPumpAnnualOperatingHours</processtag>
+				</statusitem>
+				<statusitem name="alarmFrostProtectionActive">
+					<processtag></processtag>
+				<statusitem name="alarmSafetyReleaseOff">
+					<processtag></processtag>
+				</statusitem>
+				</statusitem>
+			</statusitems>			
+		</pump>
+
+		<pump id="floorheating">
+			<inputs>
+				<input name="release">
+					<processtag>floorPumpAutoRelease</processtag>
+				</input>
+				<input name="pipeAmbientTemperature">
+					<processtag>actTempOutsideNorth</processtag>
+				</input>
+				<input name="safetyRelease">
+					<processtag initialstate="normallyOpen">ioPumpFloorSafetyRelease</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="release">
+					<processtag initialstate="normallyOpen">ioPumpFloor</processtag>
+				</output>
+			</outputs>			
+			<parameters>
+				<settings>
+					<setting name="frostProtectTemperature">5.0</setting>
+					<setting name="safetyReleaseOnMaxDelay">2.0</setting>
+				</settings>				
+				<operatingmodes>
+					<switch>
+						<processtag>floorPumpManOp</processtag>
+					</switch>
+					<operatingmode name="automatic">
+						<interfaces>
+							<interface name="release">
+								<processtag>floorPumpAutoRelease</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+					<operatingmode name="manual">
+						<interfaces>
+							<interface name="release">
+								<processtag>floorPumpManOverride</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+				</operatingmodes>
+				<simulation>
+					<enable>
+						<processtag>ioSimulation</processtag>
+					</enable>
+				</simulation>
+			</parameters>
+			<statusitems>
+				<statusitem name="state">
+					<processtag>floorPumpState</processtag>
+				</statusitem>
+				<statusitem name="totalOperatingHours">
+					<processtag>floorPumpTotalOperatingHours</processtag>
+				</statusitem>
+				<statusitem name="annualOperatingHours">
+					<processtag>floorPumpAnnualOperatingHours</processtag>
+				</statusitem>
+				<statusitem name="alarmFrostProtectionActive">
+					<processtag>floorPumpAlarmFrostProtect</processtag>
+				</statusitem>
+				<statusitem name="alarmSafetyReleaseOff">
+					<processtag>floorPumpAlarmSafetyReleaseOff</processtag>
+				</statusitem>
+			</statusitems>			
+		</pump>
+
+		<pump id="radiatorheating">
+			<inputs>
+				<input name="release">
+					<processtag>radiatorPumpAutoRelease</processtag>
+				</input>
+				<input name="pipeAmbientTemperature">
+					<processtag>actTempOutsideNorth</processtag>
+				</input>
+				<input name="safetyRelease">
+					<processtag initialstate="normallyOpen"></processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="release">
+					<processtag initialstate="normallyOpen">ioPumpRadiator</processtag>
+				</output>
+			</outputs>			
+			<parameters>
+				<settings>
+					<setting name="frostProtectTemperature">5.0</setting>
+				</settings>				
+				<operatingmodes>
+					<switch>
+						<processtag>radiatorPumpManOp</processtag>
+					</switch>
+					<operatingmode name="automatic">
+						<interfaces>
+							<interface name="release">
+								<processtag>radiatorPumpAutoRelease</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+					<operatingmode name="manual">
+						<interfaces>
+							<interface name="release">
+								<processtag>radiatorPumpManOverride</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+				</operatingmodes>
+				<simulation>
+					<enable>
+						<processtag>ioSimulation</processtag>
+					</enable>
+				</simulation>
+			</parameters>
+			<statusitems>
+				<statusitem name="state">
+					<processtag>radiatorPumpState</processtag>
+				</statusitem>
+				<statusitem name="totalOperatingHours">
+					<processtag>radiatorPumpTotalOperatingHours</processtag>
+				</statusitem>
+				<statusitem name="annualOperatingHours">
+					<processtag>radiatorPumpAnnualOperatingHours</processtag>
+				</statusitem>
+				<statusitem name="alarmFrostProtectionActive">
+					<processtag>radiatorPumpAlarmFrostProtect</processtag>
+				</statusitem>
+				<statusitem name="alarmSafetyReleaseOff">
+					<processtag>radiatorPumpAlarmSafetyReleaseOff</processtag>
+				</statusitem>
+			</statusitems>			
+		</pump>
+
+	</pumps>
+</cfg>

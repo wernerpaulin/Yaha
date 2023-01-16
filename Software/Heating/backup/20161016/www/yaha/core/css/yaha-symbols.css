@@ -1,0 +1,109 @@
+/* styling for yaha svg icons */
+/*
+USAGE:
+	<span class="yaha-symbol yaha-symbol-xyz"></span>
+or	<span class="yaha-symbol-background yaha-symbol-xyz"></span>	
+*/
+
+/* styling of symbol for span elements */
+.yaha-symbol {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+}
+
+/* styling to add symbol to any other element */
+.yaha-symbol-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.yaha-symbol:before {
+  content: "\00a0";
+}
+
+/* defintions of all symbols - Begin */
+.yaha-symbol-logo {
+  background-image: url("../svg/yaha_logo.svg");
+}
+
+.yaha-symbol-window {
+  background-image: url("../svg/icon_window.svg");
+}
+
+.yaha-symbol-light-on {
+  background-image: url("../svg/icon_bulb_on.svg");
+}
+
+.yaha-symbol-light-off {
+  background-image: url("../svg/icon_bulb_off.svg");
+}
+
+.yaha-symbol-garage-door {
+  background-image: url("../svg/icon_garage.svg");
+}
+
+.yaha-symbol-weather-sun {
+  background-image: url("../svg/symbol_weather_sun.svg");
+}
+
+.yaha-symbol-weather-cloud-sun {
+  background-image: url("../svg/symbol_weather_cloud_sun.svg");
+}
+
+.yaha-symbol-weather-cloud {
+  background-image: url("../svg/symbol_weather_cloud.svg");
+}
+
+.yaha-symbol-weather-rain {
+  background-image: url("../svg/symbol_weather_rain.svg");
+}
+
+.yaha-symbol-weather-snow {
+  background-image: url("../svg/symbol_weather_snow.svg");
+}
+
+.yaha-symbol-arrow-down-right {
+  background-image: url("../svg/symbol_arrow_down_right.svg");
+}
+
+.yaha-symbol-arrow-up-right {
+  background-image: url("../svg/symbol_arrow_up_right.svg");
+}
+
+.yaha-symbol-arrow-right {
+  background-image: url("../svg/symbol_arrow_right.svg");
+}
+
+.yaha-symbol-compass-rose-wind {
+  background-image: url("../svg/symbol_compass_rose_wind.svg");
+}
+
+.yaha-symbol-not-home {
+  background-image: url("../svg/icon_not_home.svg");
+}
+
+.yaha-symbol-time {
+  background-image: url("../svg/icon_time.svg");
+}
+
+.yaha-symbol-switched-on {
+  background-image: url("../svg/icon_switched_on.svg");
+}
+
+.yaha-symbol-heating-off {
+  background-image: url("../svg/icon_button_off.svg");
+}
+
+.yaha-symbol-night {
+  background-image: url("../svg/icon_night.svg");
+}
+
+.yaha-symbol-fire {
+  background-image: url("../svg/symbol_fire.svg");
+}
+
+/* definitions of all symbols - End */

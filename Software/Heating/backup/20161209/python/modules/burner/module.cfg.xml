@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<burners>
+		<burner id="main">
+			<inputs>
+				<input name="actTemp">
+					<processtag>actTempBurner</processtag>
+				</input>
+				<input name="switchedOn">
+					<processtag initialstate="normallyOpen">ioBurnerSwitchedOn</processtag>
+				</input>
+				<input name="generalFailure">
+					<processtag initialstate="normallyOpen">ioBurnerFailure</processtag>
+				</input>
+				<input name="overTemperature">
+					<processtag initialstate="normallyOpen">ioBurnerOvertemperature</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="release">
+					<processtag initialstate="normallyOpen">ioBurnerRelease</processtag>
+				</output>
+			</outputs>			
+			<parameters>
+				<settings>
+					<setting name="maximumTemperature">80.0</setting>
+					<setting name="safetySwitchOffTemperature">85.0</setting>
+					<setting name="minOnTime">300.0</setting>
+					<setting name="hysteresisHigh">2.0</setting>
+					<setting name="hysteresisLow">2.0</setting>
+				</settings>				
+				<operatingmodes>
+					<switch>
+						<processtag>burnerManOp</processtag>
+					</switch>
+					<operatingmode name="automatic">
+						<interfaces>
+							<interface name="setTemperature">
+								<processtag cmp="max">burnerAutoSetTempRadiator</processtag>
+								<processtag cmp="max">burnerAutoSetTempFloor</processtag>
+								<processtag cmp="max">burnerAutoSetTempHotwater</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+					<operatingmode name="manual">
+						<interfaces>
+							<interface name="release">
+								<processtag>burnerManControllerRelease</processtag>
+							</interface>		
+							<interface name="setTemperature">
+								<processtag>burnerManSetTemp</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+				</operatingmodes>
+				<simulation>
+					<enable>
+						<processtag>ioSimulation</processtag>
+					</enable>
+					<settings>
+						<setting name="burnerTemperaturePtTau">30.0</setting>
+						<setting name="environmentalTemperature">22.0</setting>
+					</settings>
+				</simulation>
+			</parameters>
+			<statusitems>
+				<statusitem name="state">
+					<processtag>burnerState</processtag>
+				</statusitem>
+				<statusitem name="setTemperature">
+					<processtag>burnerSetTemp</processtag>
+				</statusitem>
+				<statusitem name="totalOperatingHours">
+					<processtag>burnerTotalOperatingHours</processtag>
+				</statusitem>
+				<statusitem name="annualOperatingHours">
+					<processtag>burnerAnnualOperatingHours</processtag>
+				</statusitem>
+				<statusitem name="dailyOperatingHours">
+					<processtag>burnerDailyOperatingHours</processtag>
+				</statusitem>
+				<statusitem name="alarmOvertemperature">
+					<processtag>burnerAlarmOverTemp</processtag>
+				</statusitem>
+				<statusitem name="alarmGeneralFailure">
+					<processtag>burnerAlarmFault</processtag>
+				</statusitem>
+			</statusitems>			
+		</burner>
+	</burners>
+</cfg>

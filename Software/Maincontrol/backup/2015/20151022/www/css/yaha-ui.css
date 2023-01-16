@@ -1,0 +1,89 @@
+/* jQuery mobile styles override - Begin */
+.ui-page {
+	background: #FFFFFF !important;
+}
+
+.ui-header {	
+	border-width: 1px 0 !important;
+	border-style: solid !important;
+	position: relative !important;
+	height: 40px !important;
+	background: #F6F6F6 !important;
+	color: #0C40FF !important;
+}
+
+.ui-content {
+	font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif !important;
+	font-size: 12px !important;
+}
+
+.ui-footer {
+	border-width: 1px 0 !important;
+	border-style: solid !important;
+	background: #F0F0F0 !important;
+}
+
+.ui-header:empty,
+.ui-footer:empty {
+	min-height: 5px !important;
+}
+
+/* navigation bar - normal */
+.ui-navbar ul li .ui-btn {
+	background: #F6F6F6 !important;
+}
+/* navigation bar - on mouse hover */
+/*.ui-navbar ul li .ui-btn:hover {
+	background: #80C4FF !important;
+}*/
+/* navigation bar - button pressed */
+.ui-navbar ul li a.ui-btn-active {
+	background: linear-gradient( #AADAFF, #80C4FF ) !important;
+}
+
+#main_nav_panel_header
+{
+	position: absolute;
+    left: 80px;
+    top: 30px;
+}
+
+#main_nav_panel_content
+{
+	position: absolute;
+    left: 20px;
+    top: 80px;
+}
+
+.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+    margin: 0;
+}
+.ui-li-static.ui-collapsible {
+    padding: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > .ui-btn {
+    border-top-width: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-heading.ui-collapsible-heading-collapsed > .ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-bottom-width: 0;
+}
+
+
+/* jQuery mobile styles override - End */
+
+
+/* General html styles - Begin */
+p { 
+	padding:3px 0; 
+}
+
+a {
+	text-decoration:none; 
+}
+
+a:hover { 
+	text-decoration:none;
+}
+/* General html styles - End */
+

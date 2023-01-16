@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationRuntimeIOSystem Version="1.0"?>
+<IO xmlns="http://www.br-automation.com/AR/IO">
+<Links>
+<LN ID="I#X01O0000$2" T="1">
+</LN>
+<LN ID="I#X01I1080" T="6">
+</LN>
+<LN ID="I#X01I1081" T="6">
+</LN>
+<LN ID="I#X01I1082" T="6">
+</LN>
+<LN ID="I#X01I1083" T="6">
+</LN>
+<LN ID="I#X01I1084" T="7">
+</LN>
+<LN ID="I#X01I1086" T="7">
+</LN>
+<LN ID="I#X01C1186" T="6">
+</LN>
+<LN ID="I#X01C1187" T="6">
+</LN>
+<LN ID="I#X01C10C0" T="6">
+</LN>
+<LN ID="I#X01C10C1" T="7">
+</LN>
+<LN ID="I#X01C10C5" T="7">
+</LN>
+<LN ID="I#X01C10D1" T="7">
+</LN>
+<LN ID="I#X01C10CD" T="7">
+</LN>
+<LN ID="I#X01C10C9" T="7">
+</LN>
+<LN ID="I#X01C10C3" T="7">
+</LN>
+<LN ID="I#X01C10C7" T="7">
+</LN>
+<LN ID="I#X01C10D3" T="7">
+</LN>
+<LN ID="I#X01C10CF" T="7">
+</LN>
+<LN ID="I#X01C10CB" T="7">
+</LN>
+<LN ID="I#X01C1200" T="6">
+</LN>
+<LN ID="I#X01C1201" T="6">
+</LN>
+<LN ID="I#X01C1202" T="6">
+</LN>
+<LN ID="I#X01C1203" T="6">
+</LN>
+<LN ID="I#X01C1205" T="6">
+</LN>
+<LN ID="I#X01C1206" T="6">
+</LN>
+<LN ID="I#X01C11C0" T="6">
+</LN>
+<LN ID="I#X01C11C1" T="6">
+</LN>
+<LN ID="I#X01C11C2" T="6">
+</LN>
+<LN ID="I#X01C11C3" T="6">
+</LN>
+<LN ID="I#X01C11C4" T="6">
+</LN>
+<LN ID="I#X01C11C5" T="6">
+</LN>
+<LN ID="I#X01C11C6" T="6">
+</LN>
+<LN ID="I#X01C11C7" T="6">
+</LN>
+<LN ID="I#X01C11C8" T="6">
+</LN>
+<LN ID="I#X01C11C9" T="6">
+</LN>
+<LN ID="I#X01C11CA" T="6">
+</LN>
+<LN ID="I#X01C11CB" T="6">
+</LN>
+<LN ID="I#X01C11CC" T="6">
+</LN>
+<LN ID="I#X01C11CD" T="6">
+</LN>
+<LN ID="I#X01C11CE" T="6">
+</LN>
+<LN ID="I#X01C11CF" T="6">
+</LN>
+<LN ID="I#X01O0000$2" T="1">
+</LN>
+<LN ID="I#X01F0001$0" T="1">
+</LN>
+<LN ID="I#X01F0001$2" T="1">
+</LN>
+<LN ID="I#X01O0000$2" T="1">
+</LN>
+<LN ID="I#X01C0000" T="6">
+</LN>
+<LN ID="I#X01C0002" T="6">
+</LN>
+<LN ID="I#X01C0004" T="6">
+</LN>
+<LN ID="I#X01C0006" T="6">
+</LN>
+<LN ID="I#X01C001E" T="5">
+</LN>
+<LN ID="I#X01O0000$2" T="1">
+</LN>
+<LN ID="I#X01C0000" T="6">
+</LN>
+<LN ID="I#X01C0002" T="3">
+</LN>
+<LN ID="I#X01C001E" T="5">
+</LN>
+<LN ID="I#X01O0000$2" T="1">
+</LN>
+<LN ID="I#X01F0001$0" T="1">
+</LN>
+<LN ID="I#X01F0001$1" T="1">
+</LN>
+<LN ID="I#X01F0001$2" T="1">
+</LN>
+<LN ID="I#X01F0001$3" T="1">
+</LN>
+<LN ID="I#X01F0001$7" T="1">
+</LN>
+<LN ID="I#X01O0000$2" T="1">
+</LN>
+<LN ID="Q#X01F0000$0" T="1">
+</LN>
+<LN ID="Q#X01F0000$1" T="1">
+</LN>
+<LN ID="I#X01O0000$2" T="1">
+</LN>
+<LN ID="Q#X01C0002$0" T="1">
+</LN>
+<LN ID="Q#X01C0002$1" T="1">
+</LN>
+<LN ID="I#X01C001E$0" T="1">
+</LN>
+<LN ID="I#X01C001E$1" T="1">
+</LN>
+<LN ID="I#X01C001E$4" T="1">
+</LN>
+<LN ID="I#X01C001E$7" T="1">
+</LN>
+<LN ID="I#X01O0000$2" T="1">
+</LN>
+<LN ID="Q#X01C0002$0" T="1">
+</LN>
+<LN ID="Q#X01C0002$1" T="1">
+</LN>
+<LN ID="I#X01C001E$0" T="1">
+</LN>
+<LN ID="I#X01C001E$1" T="1">
+</LN>
+<LN ID="I#X01C001E$4" T="1">
+</LN>
+<LN ID="I#X01C001E$7" T="1">
+</LN>
+<LN ID="I#X01O0000$2" T="1">
+</LN>
+<LN ID="Q#X01C0002$0" T="1">
+</LN>
+<LN ID="Q#X01C0002$1" T="1">
+</LN>
+<LN ID="I#X01C001E$0" T="1">
+</LN>
+<LN ID="I#X01C001E$1" T="1">
+</LN>
+<LN ID="I#X01C001E$4" T="1">
+</LN>
+<LN ID="I#X01C001E$7" T="1">
+</LN>
+<LN ID="I#X01O0000$2" T="1">
+</LN>
+<LN ID="Q#X01C0002$0" T="1">
+</LN>
+<LN ID="Q#X01C0002$1" T="1">
+</LN>
+<LN ID="I#X01C001E$0" T="1">
+</LN>
+<LN ID="I#X01C001E$1" T="1">
+</LN>
+<LN ID="I#X01C001E$4" T="1">
+</LN>
+<LN ID="I#X01C001E$7" T="1">
+</LN>
+</Links></IO>

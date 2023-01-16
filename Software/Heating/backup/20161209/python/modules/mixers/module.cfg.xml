@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<mixers>
+		<mixer id="floor">
+			<inputs>
+				<input name="alarmPumpSafetyReleaseOff">
+					<processtag initialstate="normallyOpen">floorPumpAlarmSafetyReleaseOff</processtag>
+				</input>
+			</inputs>			
+			<outputs>
+				<output name="open">
+					<processtag initialstate="normallyOpen">ioFlowMixerFloorOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag initialstate="normallyOpen">ioFlowMixerFloorClose</processtag>
+				</output>
+			</outputs>			
+			<parameters>
+				<settings>
+					<setting name="fullyOpenTime">15.0</setting>
+					<setting name="fullyOpenPosition">100.0</setting>
+					<setting name="fullyClosedPosition">0.0</setting>
+					<setting name="zeroWindow">3.0</setting>
+				</settings>				
+				<operatingmodes>
+					<switch>
+						<processtag>floorHeatingManOp</processtag>
+					</switch>
+					<operatingmode name="automatic">
+						<interfaces>
+							<interface name="setPosition">
+								<processtag>floorHeatingMixerAutoSetPosition</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+					<operatingmode name="manual">
+						<interfaces>
+							<interface name="setPosition">
+								<processtag>floorHeatingMixerManSetPosition</processtag>
+							</interface>		
+							<interface name="cmdHoming">
+								<processtag>floorHeatingMixerManHoming</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+				</operatingmodes>
+			</parameters>
+			<statusitems>
+				<statusitem name="state">
+					<processtag>floorHeatingMixerState</processtag>
+				</statusitem>
+				<statusitem name="actPosition">
+					<processtag>floorHeatingMixerActPosition</processtag>
+				</statusitem>
+				<statusitem name="setPosition">
+					<processtag>floorHeatingMixerSetPosition</processtag>
+				</statusitem>
+			</statusitems>			
+		</mixer>
+
+		<mixer id="radiator">
+			<inputs>
+				<input name="alarmPumpSafetyReleaseOff">
+					<processtag initialstate="normallyOpen">xyz</processtag>
+				</input>
+			</inputs>			
+			<outputs>
+				<output name="open">
+					<processtag initialstate="normallyOpen">ioFlowMixerRadiatorOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag initialstate="normallyOpen">ioFlowMixerRadiatorClose</processtag>
+				</output>
+			</outputs>			
+			<parameters>
+				<settings>
+					<setting name="fullyOpenTime">15.0</setting>
+					<setting name="fullyOpenPosition">100.0</setting>
+					<setting name="fullyClosedPosition">0.0</setting>
+					<setting name="zeroWindow">3.0</setting>
+				</settings>				
+				<operatingmodes>
+					<switch>
+						<processtag>radiatorHeatingManOp</processtag>
+					</switch>
+					<operatingmode name="automatic">
+						<interfaces>
+							<interface name="setPosition">
+								<processtag>radiatorHeatingMixerAutoSetPosition</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+					<operatingmode name="manual">
+						<interfaces>
+							<interface name="setPosition">
+								<processtag>radiatorHeatingMixerManSetPosition</processtag>
+							</interface>		
+							<interface name="cmdHoming">
+								<processtag>radiatorHeatingMixerManHoming</processtag>
+							</interface>		
+						</interfaces>
+					</operatingmode>
+				</operatingmodes>
+			</parameters>
+			<statusitems>
+				<statusitem name="state">
+					<processtag>radiatorHeatingMixerState</processtag>
+				</statusitem>
+				<statusitem name="actPosition">
+					<processtag>radiatorHeatingMixerActPosition</processtag>
+				</statusitem>
+				<statusitem name="setPosition">
+					<processtag>radiatorHeatingMixerSetPosition</processtag>
+				</statusitem>
+			</statusitems>			
+		</mixer>
+
+	</mixers>
+</cfg>

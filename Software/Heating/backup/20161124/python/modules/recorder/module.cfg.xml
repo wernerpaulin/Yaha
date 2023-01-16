@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<recordcontainers>
+		<recordcontainer id="heating" directory="/home/pi/Yaha/logs/" filenametrunk="heating" filenameoption="" interval="1" maxNbDataRecords="100" startCmdTag="recorderCmdStart" stopCmdTag="recorderCmdStop" clearCmdTag="recorderCmdClear">
+			<dataitems>
+				<dataitem name="mixPosActFloor" pditag="floorHeatingMixerActPosition"></dataitem>
+				<dataitem name="mixPosActRad" pditag="radiatorHeatingMixerActPosition"></dataitem>
+				<dataitem name="mixStateFloor" pditag="floorHeatingMixerState"></dataitem>
+				<dataitem name="mixStateRad" pditag="radiatorHeatingMixerState"></dataitem>
+			</dataitems>
+		</recordcontainer>
+	</recordcontainers>
+</cfg>

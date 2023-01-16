@@ -1,0 +1,519 @@
+<html>
+<head>
+    <title>Yaha</title>
+	<meta name="apple-mobile-web-app-title" content="Yaha">
+    <!-- Home icon 114x114 .png -->
+  
+	<!-- Include meta tag to ensure proper rendering and touch zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Include the jQuery scripts -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+	<!-- Include jQuery Mobile style sheet -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+
+	<!-- Include Data-Driven Documents (D3) library -->
+	<script src="js/d3.min.js"></script>
+
+	<!-- Include JS cookie library -->
+	<script src="js/js.cookie.js"></script>
+
+	<!-- Include Yaha specific scripts -->
+	<script src="js/yaha-juice.js"></script>
+	<script src="js/yaha-live.js"></script>
+	<script src="js/yaha-view.js"></script>
+
+	<!-- Include Yaha style sheets -->
+    <link rel="stylesheet" type="text/css" href="css/yaha-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="css/yaha-icons.css"/>
+    <link rel="stylesheet" type="text/css" href="css/yaha-symbols.css"/>
+    <link rel="stylesheet" type="text/css" href="svg/flags/css/flag-icon.css"/>
+    
+    <!-- Full screen - hide the browser URL bar -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes">
+    <!-- Set color of status bar -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+</head>
+<body>
+
+
+<div data-role="page">
+	<div data-role="panel" id="panelMainNav" data-position="left" data-display="overlay" data-dismissible="true" data-swipe-close="true">
+		<!-- filled during runtime -->
+	</div>
+
+	<div data-role="header" class="ui-header">
+		<h1 id="header_text">Yaha</h1>
+		<a href="#panelMainNav" class="ui-btn ui-icon-yaha_list ui-btn-icon-notext ui-corner-all ui-nodisc-icon"></a>
+	</div>
+	
+	<div data-role="main" class="ui-content yaha-ui-content">
+		<!-- filled during runtime -->
+	</div>
+	
+	<div data-role="footer" data-position="fixed" class="ui-footer">
+	  <div data-role="navbar" class="ui-navbar">
+		<ul>
+		  <li></li>	<!-- filled during runtime -->
+		</ul>
+	  </div>
+	</div>
+</div> 
+
+
+
+
+<div class="yaha-active-module" style="display:none">
+
+</div>
+
+<div class="yaha-test-module" style="display:none">
+	<script type="text/javascript">
+		function moduleInit()
+		{
+			yjInitSvgInteraction("groundfloor", function(objStr) { alert("clicked object:  " + objStr) })
+		
+			drawPieChart()
+			drawLineChart()
+			drawStackedBarsChart()
+		}
+
+
+	function drawPieChart()
+	{
+		var width = 360,
+		    height = 360,
+		    radius = Math.min(width, height) / 2;
+
+        var legendRectSize = 18;                                  // NEW
+        var legendSpacing = 4;                                    // NEW
+		
+		var color = d3.scale.category20();			
+		
+		var arc = d3.svg.arc()
+		    .outerRadius(radius - 10)
+		    .innerRadius(radius - 60);
+		
+		var pie = d3.layout.pie()
+		    .sort(null)
+		    .value(function(d) { return d.population; });
+		
+		var svg = d3.select('#pie_chart')
+			.append('svg')
+		    .attr("width", width)
+		    .attr("height", height)
+		  .append("g")
+		    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+		
+		d3.csv("reports/piechart_data.csv", function(error, data) {
+			if (error) throw error;
+		  data.forEach(function(d) {
+		    d.population = +d.population;					//POPULATION -> generisch
+		  });
+		
+		  var g = svg.selectAll(".arc")
+		      .data(pie(data))
+		    .enter().append("g")
+		      .attr("class", "arc");
+		
+		  g.append("path")
+		      .attr("d", arc)
+		      .style("fill", function(d) { return "#808080"; })		//start animation with a grey ring
+			    .transition()
+			    .duration(1000)
+
+				  .attrTween('d', function(finish) {
+				        var start = {
+				                startAngle: 0,
+				                endAngle: 0
+				            };
+				        var i = d3.interpolate(start, finish);
+				        return function(d) { return arc(i(d)); };
+				  })
+		      .style("fill", function(d) { return color(d.data.age); }); //set correct colors for segments	AGE -> GENERISCH
+
+
+		      
+		  g.append("text")
+		      .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+		      .attr("dy", ".35em")
+		      .style("text-anchor", "middle")
+		      .text(function(d) { return d.data.age; });
+
+        var legend = svg.selectAll('.legend')                     // NEW
+          .data(color.domain())                                   // NEW
+          .enter()                                                // NEW
+          .append('g')                                            // NEW
+          .attr('class', 'legend')                                // NEW
+          .attr('transform', function(d, i) {                     // NEW
+            var height = legendRectSize + legendSpacing;          // NEW
+            var offset =  height * color.domain().length / 2;     // NEW
+            var horz = -2 * legendRectSize;                       // NEW
+            var vert = i * height - offset;                       // NEW
+            return 'translate(' + horz + ',' + vert + ')';        // NEW
+          });                                                     // NEW
+
+        legend.append('rect')                                     // NEW
+          .attr('width', legendRectSize)                          // NEW
+          .attr('height', legendRectSize)                         // NEW
+          .style('fill', color)                                   // NEW
+          .style('stroke', color);                                // NEW
+          
+        legend.append('text')                                     // NEW
+          .attr('x', legendRectSize + legendSpacing)              // NEW
+          .attr('y', legendRectSize - legendSpacing)              // NEW
+          .text(function(d) { return d; });                       // NEW
+		
+		});	
+	}
+
+
+	function drawLineChart()
+	{
+
+		var margin = {top: 20, right: 80, bottom: 30, left: 50},
+	    width = 960 - margin.left - margin.right,
+	    height = 500 - margin.top - margin.bottom;
+
+	var parseDate = d3.time.format("%d.%m.%Y %H:%M").parse;	//https://github.com/mbostock/d3/wiki/Time-Formatting
+
+	var x = d3.time.scale()
+	    .range([0, width]);
+
+	var y = d3.scale.linear()
+	    .range([height, 0]);
+
+	var color = d3.scale.category10();
+
+	var xAxis = d3.svg.axis()
+	    .scale(x)
+	    .orient("bottom");
+
+	var yAxis = d3.svg.axis()
+	    .scale(y)
+	    .orient("left");
+
+	var line = d3.svg.line()
+	    .interpolate("basis")
+	    .x(function(d) { return x(d.date); })
+	    .y(function(d) { return y(d.temperature); });
+
+	var svg = d3.select('#line_chart')
+		.append('svg')
+	    .attr("width", width + margin.left + margin.right)
+	    .attr("height", height + margin.top + margin.bottom)
+	  .append("g")
+	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	d3.csv("reports/linechart_data.csv", function(error, data) {
+		  if (error) throw error;
+
+	  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
+
+	  data.forEach(function(d) {
+	    d.date = parseDate(d.date);
+	  });
+
+	  var cities = color.domain().map(function(name) {
+	    return {
+	      name: name,
+	      values: data.map(function(d) {
+	        return {date: d.date, temperature: +d[name]};
+	      })
+	    };
+	  });
+
+	  x.domain(d3.extent(data, function(d) { return d.date; }));
+
+	  y.domain([
+	    d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
+	    d3.max(cities, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); })
+	  ]);
+
+	  svg.append("g")
+	      .attr("class", "x axis")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(xAxis);
+
+	  svg.append("g")
+	      .attr("class", "y axis")
+	      .call(yAxis)
+	    .append("text")
+	      .attr("transform", "rotate(-90)")
+	      .attr("y", 6)
+	      .attr("dy", ".71em")
+	      .style("text-anchor", "end")
+	      .text("Temperature (ºF)");
+
+	  var city = svg.selectAll(".city")
+	      .data(cities)
+	    .enter().append("g")
+	      .attr("class", "city");
+
+	  city.append("path")
+	      .attr("class", "line")
+	      .attr("d", function(d) { return line(d.values); })
+	      .style("stroke", function(d) { return color(d.name); });
+
+	  city.append("text")
+	      .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+	      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.temperature) + ")"; })
+	      .attr("x", 3)
+	      .attr("dy", ".35em")
+	      .text(function(d) { return d.name; });
+	});		
+		
+		
+		
+	
+	}
+
+	function drawStackedBarsChart()
+	{
+		var margin = {top: 20, right: 20, bottom: 30, left: 40},
+		    width = 960 - margin.left - margin.right,
+		    height = 500 - margin.top - margin.bottom;
+		
+		//var x = d3.scale.ordinal()
+		//    .rangeRoundBands([0, width], .1);
+		
+		var x = d3.time.scale()
+		    .range([100, width - 20]);	
+		//var x = d3.time.scale().range([width/data.length/2, width-width/data.length/2]);
+				
+		var y = d3.scale.linear()
+		    .rangeRound([height, 0]);
+		
+		var color = d3.scale.category20();	
+
+		var parseDate = d3.time.format("%d.%m.%Y %H:%M").parse;	//https://github.com/mbostock/d3/wiki/Time-Formatting
+
+		
+		var xAxis = d3.svg.axis()
+		    .scale(x)
+		    .orient("bottom");
+
+		var yAxis = d3.svg.axis()
+		    .scale(y)
+		    .orient("left")
+		    .tickFormat(d3.format(".2s"));
+		
+		var svg = d3.select('#bar_chart')
+			.append('svg')
+		    .attr("width", width + margin.left + margin.right)
+		    .attr("height", height + margin.top + margin.bottom)
+		  .append("g")
+		    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+		
+		d3.csv("reports/barchart_data.csv", function(error, data) {
+		  if (error) throw error;
+		
+		  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
+		
+		  data.forEach(function(d) {
+		    var y0 = 0;
+		    d.date = parseDate(d.date);
+		    d.valueGroup = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
+		    d.total = d.valueGroup[d.valueGroup.length - 1].y1;
+		  });
+		
+		  data.sort(function(a, b) { return b.total - a.total; });
+		
+		  x.domain(data.map(function(d) { return d.date; }));
+		  y.domain([0, d3.max(data, function(d) { return d.total; })]);
+		
+		  svg.append("g")
+		      .attr("class", "x axis")
+		      .attr("transform", "translate(0," + height + ")")
+		      .call(xAxis);
+		
+		  svg.append("g")
+		      .attr("class", "y axis")
+		      .call(yAxis)
+		    .append("text")
+		      .attr("transform", "rotate(-90)")
+		      .attr("y", 6)
+		      .attr("dy", ".71em")
+		      .style("text-anchor", "end")
+		      .text("Costs");
+		
+		  var date = svg.selectAll(".date")
+		      .data(data)
+		    .enter().append("g")
+		      .attr("class", "g")
+		      .attr("transform", function(d) { return "translate(" + x(d.date) + ",0)"; });
+		
+		  date.selectAll("rect")
+		      .data(function(d) { return d.valueGroup; })
+		    .enter().append("rect")
+		      //.attr("width", x.rangeBand())
+		      .attr("x", function(d) { return x(d.date) - (width/data.length)/2; })
+			.attr("width", width/data.length)
+		      .attr("y", function(d) { return y(d.y1); })
+		      .attr("height", function(d) { return y(d.y0) - y(d.y1); })
+		      .style("fill", function(d) { return color(d.name); });
+		
+		  var legend = svg.selectAll(".legend")
+		      .data(color.domain().slice().reverse())
+		    .enter().append("g")
+		      .attr("class", "legend")
+		      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+		
+		  legend.append("rect")
+		      .attr("x", width - 18)
+		      .attr("width", 18)
+		      .attr("height", 18)
+		      .style("fill", color);
+		
+		  legend.append("text")
+		      .attr("x", width - 24)
+		      .attr("y", 9)
+		      .attr("dy", ".35em")
+		      .style("text-anchor", "end")
+		      .text(function(d) { return d; });
+
+		
+		});
+
+
+		
+	}
+
+
+
+		
+	</script>
+
+	<div id="yaha_submodule_1" class="yaha-submodule" yaha="module_name: Test 1 ; module_icon: yaha_multimedia; visible: onload">
+		<p>Lights & switches</p>
+
+		<div class="yaha_flex_container">
+			<div class="yaha_flex_item">
+				<h2>Clickable Floor Plan</h2>
+				<object data="svg/symbol_ground_floor.svg" type="image/svg+xml" id="groundfloor"></object>
+
+				<h2>Flip switch</h2>
+				<input type="checkbox" data-role="flipswitch" data-wrapper-class="yaha-flipswitch-onoff" data-off-text="Aus" data-on-text="Ein">
+
+				<h2>Slider with number display</h2>
+				<div style="text-align:center;">
+					<span style="padding-left:55px; font-size: 30pt;" id="slider2">...</span>
+					<input type="number" data-type="range" min="0" max="100" step="1" value="50" data-highlight="true" yaha="mirror_span_id: slider2">
+				</div>
+
+				<h2>Pop up dialog</h2>
+				<a href="#yaha_popupOnOff" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop">Pop Up</a>
+				<div data-role="popup" id="yaha_popupOnOff" class="ui-corner-all yaha-popup-container">
+					<div class="yaha-popup-header">
+						<h3>Wohnzimmer</h3>
+					</div>
+					<div class="yaha-popup-content">
+						<a href="#" data-role="button" data-inline="true">Ein</a>    
+						<a href="#" data-role="button" data-inline="true">Aus</a>  
+						<a href="#" data-role="button" data-inline="true">Auto</a>  
+					</div>
+				</div>
+			</div>
+
+			<div class="yaha_flex_item">
+				<h2>Table</h2>
+
+				<table data-role="table" class="ui-responsive ui-shadow">
+					<thead>
+						<tr>
+							<th>Device</th>
+							<th>Power</th>
+							<th>Chart</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Fridge</td>
+							<td>5 KWh</td>
+							<td><a class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-icon-yaha_chart ui-btn-icon-notext" href="#"></a></td>
+						</tr>
+						<tr>
+							<td>Washing machine</td>
+							<td>12 KWh</td>
+							<td><a class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-icon-yaha_chart ui-btn-icon-notext" href="#"></a></td>
+						</tr>
+						<tr>
+							<td>Dryer</td>
+							<td>20 KWh</td>
+							<td><a class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-icon-yaha_chart ui-btn-icon-notext" href="#"></a></td>
+						</tr>
+						<tr>
+							<td>Freezer</td>
+							<td>8 KWh</td>
+							<td><a class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-icon-yaha_chart ui-btn-icon-notext" href="#"></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="yaha_flex_item">
+				<h2>Pie chart</h2>
+				<div id="pie_chart"></div>
+			</div>
+
+			<div class="yaha_flex_item">
+
+			</div>
+			
+			<div class="yaha_flex_item">
+				<h2>Collabsible content</h2>
+				<div data-role="collapsible">
+					<h4>On / off</h4>
+					<p>Any content or widget</p>
+				</div>
+			</div>
+		</div>
+
+
+		<h2>Line chart</h2>
+		<div id="line_chart"></div>
+
+		<h2>Stacked bar chart</h2>
+		<div id="bar_chart"></div>
+						
+	</div>
+	<div id="yaha_submodule_2" class="yaha-submodule" yaha="module_name: Test 2 ;module_icon: yaha_home2">
+		<p>Test - Sub module 1.2</p>
+		<div class="yaha_flex_header">
+			<p>Module header</p>
+
+		</div>
+
+		<div class="yaha_flex_container">
+			<div class="yaha_flex_item">Flex 1 <br> Flex 1.2
+			<div data-role="collapsible">
+				<h4>Test</h4>
+			</div>
+			
+			</div>
+			<div class="yaha_flex_item">Flex 2</div>
+			<div class="yaha_flex_item">Flex 3</div>
+			<div class="yaha_flex_item">Flex 3</div>
+			<div class="yaha_flex_item">Flex 3</div>
+		</div>
+
+		<div class="yaha_flex_footer">
+			<p>Module footer</p>
+		</div>		
+	</div>
+	<div id="yaha_submodule_3" class="yaha-submodule" yaha="module_name: Test 3 ;module_icon: yaha_multimedia">
+		<p>Test - Sub module 1.3</p>
+	</div>
+	<div id="yaha_submodule_4" class="yaha-submodule" yaha="module_name: Test 4 ;module_icon: yaha_floorplan">
+		<p>Test - Sub module 1.4</p>
+	</div>
+	<div id="yaha_submodule_5" class="yaha-submodule" yaha="module_name: Test 5 ;module_icon: yaha_multimedia">
+		<p>Test - Sub module 1.5</p>
+	</div>
+</div>
+
+</body>
+</html>

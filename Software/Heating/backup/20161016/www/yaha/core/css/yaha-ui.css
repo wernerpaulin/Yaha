@@ -1,0 +1,359 @@
+/* jQuery mobile styles override - Begin */
+.ui-page {
+	background: #FFFFFF !important;
+}
+
+.ui-header {	
+	border-width: 1px 0 !important;
+	border-style: solid !important;
+	position: relative !important;
+	height: 45px !important;
+	background: #F6F6F6 !important;
+	color: #0C40FF !important;
+}
+
+.ui-content {
+	font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif !important;
+	font-size: 12px !important;
+}
+
+.ui-footer {
+	border-width: 1px 0 !important;
+	border-style: solid !important;
+	background: #F0F0F0 !important;
+}
+
+.yaha-ui-space-for-footer {
+    display:block;
+    width:100%;
+    height:60px;
+    background-color:#FFFFFF;
+    opacity: 0.5; 
+}
+
+.ui-header:empty,
+.ui-footer:empty {
+	min-height: 5px !important;
+}
+
+.ui-panel {
+	width: 18em !important;
+}
+
+/* navigation bar - normal */
+.ui-navbar ul li .ui-btn {
+	background: #F6F6F6 !important;
+}
+/* navigation bar - on mouse hover */
+/*.ui-navbar ul li .ui-btn:hover {
+	background: #80C4FF !important;
+}*/
+/* navigation bar - button pressed */
+.ui-navbar ul li a.ui-btn-active {
+	background: linear-gradient( #AACAFF, #80C4FF ) !important;
+}
+
+.yaha_flex_item .ui-dashboard-panel {
+	border-width: 1;
+	box-shadow: 1px 1px 1px #aaaaaa !important;
+	/*background-color: FFFFFF !important; */
+}
+
+.ui-slider {
+	display: inline-block;
+	height: 32px;
+	width: 100% !important;
+	top: 0;
+}
+
+#main_nav_panel_header
+{
+	position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+#main_nav_panel_content
+{
+	position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+    margin: 0;
+}
+.ui-li-static.ui-collapsible {
+    padding: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > .ui-btn {
+    border-top-width: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-heading.ui-collapsible-heading-collapsed > .ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-bottom-width: 0;
+}
+
+.ui-input-text {
+	width: 50% !important;
+}
+
+.yaha-popup-container {
+	max-width:400px !important; 
+	height: 90px !important; 
+	background-color: #FFFFFF !important; 
+	border-top: 40px !important; 
+	border-style: solid !important; 
+	border-color: #AACAFF !important;
+	padding-left: 10px;	
+	text-align: left;	
+}
+.yaha-popup-header {
+	top:-50px; 
+	position: relative;
+}
+.yaha-popup-content {
+	top:-50px; 
+	position: relative;
+}
+
+
+/* Custom indentations are needed because the length of custom labels differs from the length of the standard labels */
+.yaha-flipswitch-onoff.ui-flipswitch .ui-btn.ui-flipswitch-on {
+    text-indent: -30px !important;		/* position of on-label: smaller = shift left */
+	font-size:    12px !important;
+}
+.yaha-flipswitch-onoff.ui-flipswitch .ui-flipswitch-off {
+    text-indent: 5px !important;		/* position of off-label: smaller = shift left */
+	font-size:  12px !important;
+}
+/* Custom widths are needed because the length of custom labels differs from the length of the standard labels */
+.yaha-flipswitch-onoff.ui-flipswitch {
+    width:       60px !important;				/* overall width of flip switch */
+	height:      23px !important;
+	font-family: sans-serif !important;
+}
+.yaha-flipswitch-onoff.ui-flipswitch.ui-flipswitch-active {
+    padding-left: 37px !important;		/* active.padding-left = width - active.width */
+    width:        23px !important; 			/* = height */
+}
+
+/* jQuery mobile styles override - End */
+
+
+/* General html styles - Begin */
+p { 
+	padding:3px 0; 
+}
+
+a {
+	text-decoration:none; 
+}
+
+a:hover { 
+	text-decoration:none;
+}
+
+.yaha-data-table thead > tr {
+    border-bottom: 2px solid #A0A0A0;
+}
+.yaha-data-table tbody > tr {
+    border-bottom: 1px solid #d6d6d6;
+}
+.yaha-data-table thead > tr {
+    background-color: #AACAFF;
+}
+
+.yaha-data-table tbody > tr:nth-child(even) {
+    background-color: #AACAFF;
+}
+.yaha-data-table tbody > tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+
+/* Spinner - Begin */
+.sp {
+  width: 50px;
+  height: 50px;
+  clear: both;
+  margin: 20px auto;
+}
+
+/* Circle Rotation */
+.sp-circle {
+  border: 8px rgba(0, 0, 0, 0.25) solid;
+  border-top: 8px #0C40FF solid;
+  border-radius: 50%;
+  -webkit-animation: spCircRot .6s infinite linear;
+  animation: spCircRot .6s infinite linear;
+}
+
+@-webkit-keyframes spCircRot {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes spCircRot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* Spinner - End */
+
+/* General html styles - End */
+
+
+/* Flexbox settings - Begin */
+.yaha_flex_header {
+display: block;
+margin-top: 10px;		/* distance to content above */
+padding: 2px;
+/*background: lime;*/
+/* min-height: 100px; */
+}
+
+.yaha_flex_footer {
+display: block;
+margin-bottom: 10px;	/* distance to content below */
+padding: 2px;
+/*background: pink;*/
+/* min-height: 100px; */
+}
+
+
+.yaha_flex_container {
+/* enables flex box */
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+display: -ms-flexbox;      /* TWEENER - IE 10 */
+display: -webkit-flex;     /* NEW - Chrome */
+display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+/* With row direction the flex items are stacked in a row from left-to-right in ltr context */
+-webkit-flex-direction: row; /* Safari */
+flex-direction:         row;
+
+/* Flex items are displayed in multiple rows if needed from left-to-right and top-to-bottom */
+-webkit-flex-wrap: wrap; /* Safari */
+flex-wrap:         wrap;
+
+/* Flex items are aligned at the center of the flex container */
+-webkit-justify-content: center; /* Safari */
+justify-content:         center;
+}
+
+
+.yaha_flex_item {
+margin: 8px;		/* space between containers */
+}
+
+/* Change to column layout if screen with is small */
+@media screen and (max-width: 768px) {
+	#weather_linechart {
+	zoom: 70%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#weather_linechart {
+	zoom: 55%;
+	}
+}
+
+
+@media screen and (max-width: 420px) {
+	.yaha_flex_item {
+	width: 100%;
+	zoom: 70%;
+	}
+
+	.ui-btn-inline {
+	zoom: 70%;
+	}
+	
+	object {
+	zoom: 85%;
+	}
+
+	#weather_linechart {
+	zoom: 30%;
+	}
+}
+
+
+
+
+/* Flexbox settings - End */
+
+
+/* D3 - Begin */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: inline;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.line1{
+		fill: none;
+		stroke: steelblue;
+		stroke-width: 1px;
+	}
+
+.line2 {
+	fill: none;
+	stroke: green;
+	stroke-width: 1px;
+}
+
+.line3 {
+	fill: none;
+	stroke: orange;
+	stroke-width: 1px;
+}
+
+.line4 {
+	fill: none;
+	stroke: red;
+	stroke-width: 1px;
+}
+/* D3 - End */
+
+
+/* let a tag or object blink */
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite;
+}
+

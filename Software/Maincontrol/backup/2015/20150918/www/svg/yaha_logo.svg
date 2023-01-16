@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="275" height="128">
+	<style>
+		#yaha_logo_text{
+			font-size:100px;
+			font-style:normal;
+			font-variant:normal;
+			font-weight:normal;
+			font-stretch:normal;
+			text-align:start;
+			line-height:125%;
+			letter-spacing:0px;
+			word-spacing:0px:
+			writing-mode:lr-tb;
+			text-anchor:start;
+			fill:#000000;
+			fill-opacity:1;
+			stroke:none;
+			font-family:Arial Black;
+		}
+		#yaha_logo_triangle{
+			fill:#3F00FF;
+			stroke:none;
+		}
+	</style>
+
+	<defs>
+     <linearGradient id="triangleGrade" x1="0%" y1="0%" x2="0%" y2="100%">
+       <stop offset="0%" style="stop-color:#3F00FF;stop-opacity:1" />
+       <stop offset="60%" style="stop-color:#3F00FF;stop-opacity:1" />
+       <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+     </linearGradient>
+   </defs>
+	
+	<!-- build log -->
+	<g id="yaha_icon_style">
+	  	<text id="yaha_logo_text" x="0" y="100" >Yaha</text>
+
+		<g id="yaha_logo_triangle">
+			<polygon points="25,24.5 53.2,24.5 39.16,48"/>
+		</g>
+  	</g>
+</svg>
+
+

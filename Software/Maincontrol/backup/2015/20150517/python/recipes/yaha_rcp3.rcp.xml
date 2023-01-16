@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="yaha_rcp.xsl"?>
+<pdi>
+	<process_data>
+		<processTag>setTempFelix</processTag>
+		<valueType>REAL</valueType>		
+		<value>33.0</value>
+	</process_data>
+	<process_data>
+		<processTag>setTempTheo</processTag>
+		<valueType>REAL</valueType>		
+		<value>33.1</value>
+	</process_data>
+	<process_data>
+		<processTag>logEnocean</processTag>
+		<valueType>TEXT</valueType>		
+		<value>yaha_rcp3.rcp</value>
+	</process_data>	
+</pdi>

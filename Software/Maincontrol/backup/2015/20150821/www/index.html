@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Yaha :: Demo page</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+    <style type="text/css">
+
+
+
+body
+{
+   margin: 0;
+   padding: 0;
+   background-color: #FFFFFF;
+   color: #000000;
+}
+
+<style type="text/css">
+#txtLogOutput
+{
+   border: 1px #C0C0C0 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+}
+</style>
+</head>
+  
+  <body>
+  	<p></p>
+  	<p></p>
+  	
+  	<p>Var 1: <span id="uiVar1">tbd...</span></p>
+  	<p>Var 2<input type="text" id="uiVar2"></p>
+  	<p>Var 3: <span id="uiVar3">tbd...</span></p>
+
+  	<p>Count 1<input type="text" id="uiCount1"></p>
+
+  	<p>Cycle time: <span id="uiSystemTickRunTime">tbd...</span> ms</p>
+  	<p>CPU load: <span id="uiCpuLoad">tbd...</span> %</p>
+
+  	
+  	<p><select id="uiSelectStandard">
+		<option value="Select1">Select1 text</option>
+		<option value="Select2">Select2 text</option>
+		<option value="Select3">Select3 text</option>
+	</select></p>
+  	
+  	<p><select  id="uiSelectGroup">
+		<optgroup label="Select Group 1">
+		  <option value="Select1G1">Select1G1 text</option>
+		  <option value="Select2G1">Select2G1 text</option>
+		</optgroup>
+		<optgroup label="Select Group 2">
+		  <option value="Select1G2">Select1G2 text</option>
+		  <option value="Select2G2">Select2G2 text</option>
+		</optgroup>
+	</select>
+	<span id="uiSelectText">tbd...</span>
+	</p>
+  	
+  	<br>
+	<form action="">
+		<input type="radio" name="radiogroup" id="uiRadiogroup1" value="radio1">radio1 text<br>
+		<input type="radio" name="radiogroup" id="uiRadiogroup2" value="radio2">radio2 text
+	</form>
+
+	<br>
+  	<form action="">
+		<input type="checkbox" name="checkboxgroup" id="uiCheckboxgroup1" value="check1">check1 text<br>
+		<input type="checkbox" name="checkboxgroup" id="uiCheckboxgroup2" value="check2">check2 text 
+	</form>
+
+	<p><button type="button" id="cmdLight1On">Light 1 On</button><button type="button" id="cmdLight1Off">Light 1 Off</button></p>
+  	<!-- the following line stores the flags used to send button trigger to server -->
+	<div style="visibility:hidden"><span id="uiLight1on">1</span><span id="uiLight1off">1</span></div>
+
+	<p><b>Status information - Light 1:</b></p>
+	<p>On time: <span id="uiIoLight1onTime">tbd...</span></p>
+	<p>Energy: <span id="uiIoLight1energy">tbd...</span></p>
+	<p>Lamp 1: <span id="uiIoLight1switchedOn">tbd...</span></p>
+
+  	<p>Living room temperature: <span id="uiIoActTempLivingroom">tbd...</span>°C</p>
+  	<p>Living room panel set point: <span id="uiIoSetTempLivingroom">tbd...</span></p>
+
+	<form action="">
+		<input type="radio" name="uiSwitch1" id="uiSwitch1" value="radio1">Switch 1<br>
+	</form>
+
+  	
+  	<p><button type="button" id="cmdWrite">Write Values</button></p>
+
+	<p>Current recipe: <span id="uiCurrentRcpName">tbd...</span></p>
+
+  	<p>Choose your home configuration: <select id="uiRcpNameSelector"><!-- Options filled dynamically --></select><button type="button" id="cmdLoadRcp">Load</button><button type="button" id="cmdSaveRcp">Save</button></p>
+  	<span style="visibility:hidden" id="uiRcpNameList">tbd...</span>
+
+  	<p>New recipe: <input type="text" id="uiNewRcpName"><button type="button" id="cmdCreateRcp">Create</button></p>
+	
+  	<!-- the following line stores the flags used to send button trigger to server -->
+	<div style="visibility:hidden"><span id="uiCmdLoadRcp">1</span><span id="uiCmdSaveRcp">1</span><span id="uiCmdCreateRcp">1</span></div>
+ 
+	<p><textarea name="txtLogOutput" id="uiLogEnocean" style="position:relative;left:100px;top:20px;width:640px;height:240px;z-index:1;"
+      rows="1"
+      cols="1">
+    </textarea></p>
+    
+	<svg width="400" height="180">
+	<g>
+	  <rect id="demoRect" x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+	  <text x="105" y="95" font-family="Verdana" font-size="12" fill="blue" > Hello </text>
+	</g>
+	</svg>
+
+<script src="jquery-2.1.3.min.js"></script>
+<script src="yaha-juice.js"></script>
+
+
+<script>
+
+jQuery(document).ready(function()
+{
+	//define tags which will be cyclically read from the server (writing will be done on enter for input fields or on a user defined event (e.g. click) - see below)
+	yjDefineCyclicReadTagList(new Array(
+			"uiCurrentRcpName",
+			"uiRcpNameList",
+			"uiCount1", 
+			"uiVar1", 
+			"uiVar2", 
+			"uiVar3",
+			"uiLogEnocean",
+			"uiSystemTickRunTime",
+			"uiCpuLoad",
+			"uiSelectStandard",
+			"uiSelectGroup",
+			"uiSelectText",
+			"uiRadiogroup1",
+			"uiRadiogroup2",
+			"uiCheckboxgroup1",
+			"uiCheckboxgroup2",
+			"uiSwitch1",
+			"uiIoLight1onTime",
+			"uiIoLight1energy",
+			"uiIoLight1switchedOn",
+			"uiIoSetTempLivingroom",
+			"uiIoActTempLivingroom"
+	));
+	
+	//hook post processing function into update cycle so formating of numbers and units is possible
+	yjAddPostUpdateUiFunction(postUpdateUi)
+
+	yjStartCyclicUIrefresh(300)
+
+
+    jQuery("#uiSelectStandard").click(function(){yjWriteTagList(new Array("uiSelectStandard"));});
+    jQuery("#uiSelectGroup").click(function(){yjWriteTagList(new Array("uiSelectGroup"));});
+
+    jQuery("#uiRadiogroup1").click(function(){yjWriteTagList(new Array("uiRadiogroup1", "uiRadiogroup2"));});
+    jQuery("#uiRadiogroup2").click(function(){yjWriteTagList(new Array("uiRadiogroup1", "uiRadiogroup2"));});
+    
+    jQuery("#uiCheckboxgroup1").click(function(){yjWriteTagList(new Array("uiCheckboxgroup1", "uiCheckboxgroup2"));});
+    jQuery("#uiCheckboxgroup2").click(function(){yjWriteTagList(new Array("uiCheckboxgroup1", "uiCheckboxgroup2"));});
+
+    jQuery("#cmdWrite").click(function(){yjWriteTagList(new Array("uiVar1", "uiVar2", "uiVar3"));});
+
+	
+    jQuery("#uiRcpNameSelector").blur(function(){yjWriteTagList(new Array("uiRcpNameSelector"));});
+
+	
+    jQuery("#cmdLoadRcp").click(
+	function()
+	{
+		jQuery("#uiCmdLoadRcp").text = "1";
+		yjWriteTagList(new Array("uiCmdLoadRcp", "uiRcpNameSelector")); //make sure current selector is transfered as well in case blur and enter were not fired yet
+	});
+
+    jQuery("#cmdSaveRcp").click(
+	function()
+	{
+		jQuery("#uiCmdSaveRcp").text = "1";
+		yjWriteTagList(new Array("uiCmdSaveRcp"));
+	});
+
+    jQuery("#cmdCreateRcp").click(
+	function()
+	{
+		jQuery("#uiCmdCreateRcp").text = "1";
+		yjWriteTagList(new Array("uiCmdCreateRcp", "uiNewRcpName"));
+	});
+
+    jQuery("#cmdLight1On").click(
+	function()
+	{
+		jQuery("#uiLight1on").text = "1";
+		yjWriteTagList(new Array("uiLight1on"));
+	});	
+	
+    jQuery("#cmdLight1Off").click(
+	function()
+	{
+		jQuery("#uiLight1off").text = "1";
+		yjWriteTagList(new Array("uiLight1off"));
+	});	
+	
+    
+    $('#demoRect').click( function(){
+    	  alert('hello');
+    	});
+});
+
+//this function can be used to reformat raw valued from the server
+function postUpdateUi(jsonData)
+{
+	//data from server comes in JSON format => convert to JavaScript object
+	dataFromServer = jQuery.parseJSON(jsonData)
+
+	//update only tags which where updated
+	for (tag in dataFromServer)
+	{
+		switch(tag)
+		{
+			case "uiSystemTickRunTime":
+				numFloat = parseFloat(jQuery("#uiSystemTickRunTime").text()) * 1000
+				jQuery("#uiSystemTickRunTime").text(numFloat.toFixed(2))
+			break;
+			
+			case "uiCpuLoad":
+				numFloat = parseFloat(jQuery("#uiCpuLoad").text()) * 100
+				jQuery("#uiCpuLoad").text(numFloat.toFixed(2))			
+			break;
+				
+			case "uiRcpNameList":
+				yjHelperFillSelect("uiRcpNameList", "uiRcpNameSelector")
+			break;
+			
+			case "uiIoLight1switchedOn":
+				if (jQuery("#uiIoLight1switchedOn").text() == "1") 
+				{
+					jQuery("#uiIoLight1switchedOn").text("on")
+				}
+				else
+				{
+					jQuery("#uiIoLight1switchedOn").text("off")
+				}
+			break;
+			
+			case "uiIoActTempLivingroom":
+				numFloat = parseFloat(jQuery("#uiIoActTempLivingroom").text())
+				jQuery("#uiIoActTempLivingroom").text(numFloat.toFixed(1))
+			break;
+		}
+	}
+}
+
+
+</script>
+  
+  
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="yaha_pdi.xsl"?>
+
+<pdi>
+  <process_data>
+       <processTag>cmdSetDateTime</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0</lowREAL>
+       <highREAL>1</highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>setDateString</processTag>
+       <valueType>TEXT</valueType>
+       <valueREAL></valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0</lowREAL>
+       <highREAL>1</highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>setTimeString</processTag>
+       <valueType>TEXT</valueType>
+       <valueREAL></valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL></lowREAL>
+       <highREAL></highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>currentYear</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL></lowREAL>
+       <highREAL></highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>currentMonth</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL></lowREAL>
+       <highREAL></highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>currentDay</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL></lowREAL>
+       <highREAL></highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>currentHour</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL></lowREAL>
+       <highREAL></highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>currentMinute</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL></lowREAL>
+       <highREAL></highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>currentSecond</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL></lowREAL>
+       <highREAL></highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>systemTickRunTime</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>100000.0</highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>cpuLoad</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+  <process_data>
+       <processTag>cmdStopSystem</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0</lowREAL>
+       <highREAL>1</highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+
+  <process_data>
+       <processTag>count1</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Main Control</domain>
+       <owner>internal</owner>
+       <deviceID></deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1000000.0</highREAL>
+       <zone></zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+</pdi>

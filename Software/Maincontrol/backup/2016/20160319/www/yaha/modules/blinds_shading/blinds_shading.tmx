@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="modulename">
+			<tuv xml:lang="de">
+				<seg>Rollos</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Blinds and shading</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Blinds and shading</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="groundfloor">
+			<tuv xml:lang="de">
+				<seg>Erdgeschoss</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Ground floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Ground floor</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="overview">
+			<tuv xml:lang="de">
+				<seg>Übersicht</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Overview</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Overview</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="firstfloor">
+			<tuv xml:lang="de">
+				<seg>1. Stock</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>First floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_First floor</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="guestbathwindow_headline">
+			<tuv xml:lang="de">
+				<seg>Gästebad</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Guest bathroom</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Guest bathroom</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="masterbathwindow_headline">
+			<tuv xml:lang="de">
+				<seg>Elternbad</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Master bathroom</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Master bathroom</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="open">
+			<tuv xml:lang="de">
+				<seg>Öffnen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Open</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Open</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="close">
+			<tuv xml:lang="de">
+				<seg>Schliessen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Close</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Close</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="stop">
+			<tuv xml:lang="de">
+				<seg>Stopp</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Stop</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Stop</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="guestbathroomblinds">
+			<tuv xml:lang="de">
+				<seg>Gästebad</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Guest bathroom</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Guest bathroom</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="masterbathroomblinds">
+			<tuv xml:lang="de">
+				<seg>Elternbad</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Master bathroom</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Master bathroom</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="timecontrol">
+			<tuv xml:lang="de">
+				<seg>Zeitsteuerung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Time control</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Time control</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="autoshading">
+			<tuv xml:lang="de">
+				<seg>Automatische Beschattung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Auto shading</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Auto shading</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="off">
+			<tuv xml:lang="de">
+				<seg>aus</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>off</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_off</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="on">
+			<tuv xml:lang="de">
+				<seg>ein</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>on</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_on</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="teaching">
+			<tuv xml:lang="de">
+				<seg>Anlernen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Teaching</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Teaching</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="start">
+			<tuv xml:lang="de">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Start</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Start</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="set">
+			<tuv xml:lang="de">
+				<seg>Soll</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Set</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Set</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="act">
+			<tuv xml:lang="de">
+				<seg>Ist</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Act</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Act</seg>
+			</tuv>
+		</tu>
+
+
+
+
+	</body>
+</tmx>

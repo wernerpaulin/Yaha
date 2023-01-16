@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<!--
+	Ion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Yaha Project - Under the hood</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Yaha is a light weight home automation solution. It is open source and free of charge." />
+		<meta name="keywords" content="home automation, open source, raspberry pi, python, yaha" />
+
+		<meta name="apple-mobile-web-app-title" content="Yaha">
+	
+	    <!-- Icon -->
+	 	<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+		<link rel="shortcut icon" href="yaha/core/images/favicon.ico" />
+	
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />
+		
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		
+		<style>
+			/* DivTable.com */
+			.divTable{
+				display: table;
+				width: 100%;
+			}
+			.divTableRow {
+				display: table-row;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+			}
+			.divTableCell, .divTableHead {
+				border: 0px solid #000000;
+				display: table-cell;
+				padding: 3px 10px;
+				vertical-align:top;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+				font-weight: bold;
+			}
+			.divTableFoot {
+				background-color: #EEE;
+				display: table-footer-group;
+				font-weight: bold;
+			}
+			.divTableBody {
+				display: table-row-group;
+			}		
+
+		</style>
+		
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="yaha.html">This is Yaha</a></li>
+						<li><a href="screenshots.html">Screenshots</a></li>
+						<li><a href="download.html">Download</a></li>
+						<li><a href="contact.php">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<header class="major">
+					<h2>Under the hood</h2>
+				</header>
+				<div class="container">
+					<section>
+						<p style="text-align:center;">
+							What makes Yaha different from other open source platforms is that it is build with industrial automation background.
+						</p>
+					</section>
+					<hr class="major" />
+					<section>
+						<h2>General architecture</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:50%">
+											<img src="images/yaha_architecture_overview.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px">
+											Yaha runtime is programmed fully in Python an runs on any open platform (e.g. <a target="_blank" href="http://www.raspberrypi.org">Raspberry Pi</a>). 
+											<br>
+											Any HTML5 compatible web client UIs connects through a web server to Yaha. 
+											<br>
+											<a href="download.html">Download architecture as PDF</a>
+											<br>
+											<br>
+											Industrial automation grade features:
+											<ul>
+												<li>Cyclic system for stable and reliable control performance (e.g. for heating control)</li>
+												<li>Automatic loading and starting of installed modules</li>
+												<li>An I/O schedulers makes sure input data from sensors are up-to-date before add-on modules are being executed. Consequently after all add-on modules have been executed all outputs are written to the actuators</li>
+												<li>Modular input/output driver concept to connect any actuators and sensors in an easy way: Once a driver exists users just specify the path to the I/O in a configuration. The drivers makes the protocol transparent or invisible to the data point. Hence there is no direct access to I/O protocols necessary in the modules.</li>
+												<li>Distributed control ability: modules can run on different hardware controllers but are linked together</li>
+												<li>Central data management of all variables which are shared amongst modules which also includes I/O configuration. This data management handles also limits, remanent data to avoid explicitly saving and loading data</li>
+												<li>User interface strictly separated from runtime code. A special UI module provides data to the Apache web server</li>
+												<li>Configuration instead of programming existing modules</li>
+												<li>Multi-language support including UNICODE (e.g. Chinese simplified and traditional characters) using TMX translation files</li>
+												<li>Built-in unit conversion to convert values into familiar units</li>
+											</ul>										
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+						<br>
+						<br>
+					</section>
+
+					<section>
+						<h2>Module handling</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:50%">
+											<img src="images/yaha_architecture_modules.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px">
+											The base of Yaha is a cyclic system which takes care of the following main tasks:
+											<ul>
+												<li>Executing add-on modules</li>
+												<li>I/O scheduling by calling all installed drivers</li>
+												<li>Handling UI data requests</li>
+												<li>Handling data requests from other Yaha controllers (distributed control)</li>
+												<li>Management of the global process data image</li>
+											</ul>
+											The core of Yaha automatically loads all installed modules. Because each module has a standard load and execution interface, its own configuration and its own variables, Yaha can be extended in very flexible way.
+											<br>
+											<a href="download.html">Download architecture as PDF</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+						<br>
+						<br>
+					</section>
+
+
+					<section>
+						<h2>User interface</h2>
+						<p>
+							<div class="divTable">
+								<div class="divTableBody">
+									<div class="divTableRow">
+										<div class="divTableCell" style="width:50%">
+											<img src="images/yaha_architecture_ui.png" alt="" style="width:100%"/>
+										</div>
+										<div class="divTableCell" style="float:left; padding-left:30px">
+											When a web client connects to Yaha, the Javascript based "Yaha Juice" framework will be loaded by the browser.
+											<br>
+											This framework is based on <a target="_blank" href="www.jquery.com">jQuery</a> and <a target="_blank" href="https://d3js.org">D3 (Data-Driven Documents)</a>.
+											<br>
+											It has the following main tasks:
+											<ul>
+												<li>Dynamically loading of all available visualization modules</li>
+												<li>Language handling</li>
+												<li>Cyclic data communication to Yaha runtime and update live values and graphics</li>
+											</ul>
+											<a href="download.html">Download architecture as PDF</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</p>
+						<br>
+						<br>
+					</section>
+
+					<hr class="major" />
+
+					<section>
+						<h2>Detailed architecture</h2>
+						<p>
+							For those who want to have even more details, UML like diagrams show the internal structure of Yaha.
+							<br>
+							In order to open these diagrams as UML please download <a target="_blank" href="http://www.umlet.com/changes.htm">UMLet</a>. 
+							<br>
+							<br>
+							UML diagrams for runtime modules:
+							<ul>
+								<li>Module concepts</li>
+								<li>System overview</li>
+								<li>I/O scheduler</li>
+								<li>Web bridge</li>
+								<li>I/O scheduler</li>
+								<li>Enocean driver</li>
+							</ul>
+							
+							UML diagrams for web client:
+							<ul>
+								<li>Juice framework</li>
+								<li>View handling</li>
+								<li>Module navigation</li>
+							</ul>
+							<a href="download.html">Download UML diagrams</a>
+							<br>
+							<br>
+						</p>
+						<br>
+						<br>
+					</section>
+
+					<hr class="major" />
+
+					<section>
+						<h2>Wanna make Yaha better?</h2>
+						<p>
+							The Yaha project is not yet finished. 
+							<br>
+							The projects vision is to create a fully decentralized home automation platform. Each Yaha controller has all modules and all configurations but the execution is distributed over all controllers.
+							If one controller fails another one takes over and keeps your home automation operational. 
+							<br>
+							Hence, there is no single point of failure which can shut down your house. In order to achieve this smaller and bigger steps still need to be taken:
+							<table>
+								<thead>
+									<tr>
+										<th>Category</th>
+										<th>Topic</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Usability</td>
+										<td>XML configuration of modules and I/O configuration directly in the browser instead of using Eclipse</td>
+										<td>open</td>
+									</tr>
+									<tr>
+										<td>Usability</td>
+										<td>Installer for Pi to avoid manual configuration and copying</td>
+										<td>open</td>
+									</tr>
+									<tr>
+										<td>Distributed controller concept</td>
+										<td>Porting to <a target="_blank" href="https://developer.android.com/things/index.html">Android Things</a> and <a target="_blank" href="https://developers.google.com/weave/">Weave</a> as a base instead of Raspbian. This gives access to a mesh network (Weave) and a powerful base.</td>
+										<td>open</td>
+									</tr>
+									<tr>
+										<td>Distributed controller concept</td>
+										<td>Module distribution, configuration and execution in a decentralized system.</td>
+										<td>open</td>
+									</tr>
+									<tr>
+										<td>Distributed controller concept</td>
+										<td>IP binding to enable an easy IP based access for UIs of the decentralized architecture. For the user there is only one URL to access the mesh network of Yaha controllers</td>
+										<td>open</td>
+									</tr>
+									<tr>
+										<td>Various</td>
+										<td>Refactoring of software architecture</td>
+										<td>open</td>
+									</tr>
+								</tbody>
+							</table>
+						</p>
+						<p>Interested in these challenges? Please <a href="contact.php">contact us</a>.</p>
+						<br>
+						<br>
+					</section>
+
+
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; Werner Paulin. All rights reserved.</li>
+						<li><a href="web_disclaimer.html">Website Terms of Use</a></li>
+						<li><a href="software_disclaimer.html">Software Terms of Use</a></li>
+						<li>Design: <a href="http://templated.co">templated</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>

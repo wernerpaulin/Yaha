@@ -1,0 +1,21 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * File: IoMap.iom
+ * Author: asdemo
+ * Created: December 29, 2009
+ ********************************************************************
+ * IO mapping file
+ ********************************************************************)
+VAR_CONFIG
+	aiTempBoiler AT %IW."7AT324.70".Resistor01;
+	aiTempBurner AT %IW."7AT324.70".Resistor02;
+	aiTempFlow AT %IW."7AT324.70".Resistor03;
+	aiTempOutside AT %IW."7AT324.70".Resistor04;
+	aiTempLivingroom AT %IW."7AT324.70a".Resistor01;
+	doBurner AT %QX."7DO721.7".DigitalOutput01;
+	doFlowPump AT %QX."7DO721.7".DigitalOutput02;
+	doBoilerPump AT %QX."7DO721.7".DigitalOutput03;
+	doMixerOpen AT %QX."7DO721.7a".DigitalOutput01;
+	doMixerClose AT %QX."7DO721.7a".DigitalOutput02;
+END_VAR

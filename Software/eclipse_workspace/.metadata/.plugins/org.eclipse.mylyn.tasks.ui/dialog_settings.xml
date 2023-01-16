@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="TaskSelectionDialogSection">
+		<item value="Aggregate for window 1428312689091" key="WorkingSetName"/>
+		<item value="false" key="OpenInBrowser"/>
+		<item value="true" key="ShowCompletedTasks"/>
+		<item value="true" key="IsUsingWindowWorkingSet"/>
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="154" key="DIALOG_Y_ORIGIN"/>
+			<item value="415" key="DIALOG_X_ORIGIN"/>
+		</section>
+	</section>
+</section>

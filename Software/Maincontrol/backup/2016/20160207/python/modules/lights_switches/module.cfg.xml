@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<switches>
+		<switch id="light1">
+			<inputs>
+				<input name="on">
+					<processtag initialstate="normallyOpen" logic="or">light1on</processtag>
+				</input>
+				<input name="off">
+					<processtag initialstate="normallyOpen">light1off</processtag>
+				</input>
+				<input name="brightness">
+				</input>
+				<input name="color">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">light1teach</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="on">
+					<processtag initialstate="normallyOpen">ioLight1offOn</processtag>
+				</output>
+				<output name="off">
+					<processtag initialstate="normallyClosed">ioLight1offOn</processtag>
+				</output>
+				<output name="brightness">
+				</output>
+				<output name="color">
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioLight1teach</processtag>
+				</output>
+			</outputs>
+			<logic>
+				<times>
+					<enable>
+						<processtag>xxx</processtag>
+					</enable>
+					<time type="on">
+						<processtag>aaa</processtag>
+					</time>
+					<time type="off">
+						<processtag>bbb</processtag>
+					</time>
+					<time type="on">
+					<processtag>aaa</processtag>
+					</time>
+					<time type="off">
+						<processtag>bbb</processtag>
+					</time>
+				</times>
+				<blink>
+					<enable>
+						<processtag>light1BlinkEnable</processtag>
+					</enable>
+					<onintervall>
+						<processtag>light1BlinkOntime</processtag>
+					</onintervall>
+					<offintervall>
+						<processtag>light1BlinkOfftime</processtag>
+					</offintervall>
+				</blink>
+				<outputmodes>
+					<outputmode type="impulse">
+						<enable>
+							<processtag>light1ImpulseEnable</processtag>
+						</enable>
+						<duration>
+							<processtag>light1ImpulseDuration</processtag>
+						</duration>						
+					</outputmode>
+					<outputmode type="offdelay">
+						<enable>
+							<processtag>light1OffDelayEnable</processtag>
+						</enable>
+						<duration>
+							<processtag>light1OffDelayDuration</processtag>
+						</duration>						
+					</outputmode>
+				</outputmodes>
+			</logic>
+			<statusitems>
+				<statusitem name="ontime">
+					<processtag>ioLight1onTime</processtag>
+				</statusitem>
+				<statusitem name="energy">
+					<processtag>ioLight1energy</processtag>
+				</statusitem>
+				<statusitem name="switchlevel">
+					<processtag>ioLight1switchedOn</processtag>
+				</statusitem>
+			</statusitems>
+		</switch>
+		
+		<switch id="light2">
+			<inputs>
+				<input name="on">
+					<processtag initialstate="normallyOpen" logic="or">light2on</processtag>
+				</input>
+				<input name="off">
+					<processtag initialstate="normallyOpen">light2off</processtag>
+				</input>
+				<input name="brightness">
+				</input>
+				<input name="color">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">light2teach</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="on">
+					<processtag initialstate="normallyOpen">ioLight2offOn</processtag>
+				</output>
+				<output name="off">
+					<processtag initialstate="normallyClosed">ioLight2offOn</processtag>
+				</output>
+				<output name="brightness">
+				</output>
+				<output name="color">
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioLight2teach</processtag>
+				</output>
+			</outputs>
+			<logic>
+				<times>
+					<enable>
+						<processtag>xxx</processtag>
+					</enable>
+					<time type="on">
+						<processtag>aaa</processtag>
+					</time>
+					<time type="off">
+						<processtag>bbb</processtag>
+					</time>
+					<time type="on">
+					<processtag>aaa</processtag>
+					</time>
+					<time type="off">
+						<processtag>bbb</processtag>
+					</time>
+				</times>
+				<blink>
+					<enable>
+						<processtag>light2BlinkEnable</processtag>
+					</enable>
+					<onintervall>
+						<processtag>light2BlinkOntime</processtag>
+					</onintervall>
+					<offintervall>
+						<processtag>light2BlinkOfftime</processtag>
+					</offintervall>
+				</blink>
+				<outputmodes>
+					<outputmode type="impulse">
+						<enable>
+							<processtag>light2ImpulseEnable</processtag>
+						</enable>
+						<duration>
+							<processtag>light2ImpulseDuration</processtag>
+						</duration>						
+					</outputmode>
+					<outputmode type="offdelay">
+						<enable>
+							<processtag>light2OffDelayEnable</processtag>
+						</enable>
+						<duration>
+							<processtag>light2OffDelayDuration</processtag>
+						</duration>						
+					</outputmode>
+				</outputmodes>
+
+			</logic>
+			<statusitems>
+				<statusitem name="ontime">
+					<processtag>ioLight2onTime</processtag>
+				</statusitem>
+				<statusitem name="energy">
+					<processtag>ioLight2energy</processtag>
+				</statusitem>
+				<statusitem name="switchlevel">
+					<processtag>ioLight2switchedOn</processtag>
+				</statusitem>
+			</statusitems>
+		</switch>
+	</switches>
+</cfg>

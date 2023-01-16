@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.80.42?>
+<BuildOptions>
+  <Project>
+    <IECNamingConvention>true</IECNamingConvention>
+    <IecKeywordsAsStructureMembers>false</IecKeywordsAsStructureMembers>
+    <IecExtendedConstants>true</IecExtendedConstants>
+    <ProjectLogicalDirectory>C:\projects\heating_io\Logical\</ProjectLogicalDirectory>
+    <ProjectTempDirectory>C:\projects\heating_io\Temp\</ProjectTempDirectory>
+    <ASVersion>3.0.80.42</ASVersion>
+    <Edition>Fieldbus</Edition>
+    <CrossReference>false</CrossReference>
+    <ActiveConfiguration>heating_io</ActiveConfiguration>
+    <CreateAnsiCDeclarations>false</CreateAnsiCDeclarations>
+    <GccVersion>V2.95.3</GccVersion>
+  </Project>
+  <Config Name="heating_io">
+    <Target>SGC</Target>
+    <PermanentAnalogMemory>0</PermanentAnalogMemory>
+    <PermanentDigitalMemory>0</PermanentDigitalMemory>
+    <GccVersion>V2.95.3</GccVersion>
+  </Config>
+  <CiR />
+</BuildOptions>

@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<groupcontrol>
+		<groups>
+			<group id="groundfloor">
+				<inputs>
+					<input name="open">
+						<processtag initialstate="normallyOpen" logic="or">groundFloorBlindOpen</processtag>
+					</input>
+					<input name="close">
+						<processtag initialstate="normallyOpen" logic="or">groundFloorBlindClose</processtag>
+					</input>
+					<input name="stop">
+						<processtag initialstate="normallyOpen" logic="or">groundFloorBlindStop</processtag>
+					</input>
+				</inputs>
+
+				<outputs>
+					<output name="open">
+						<processtag initialstate="normallyOpen">kitchenEastBlindOpen</processtag>
+						<processtag initialstate="normallyOpen">kitchenSouthBlindOpen</processtag>
+						<processtag initialstate="normallyOpen">loungeSouthLeftBlindOpen</processtag>
+						<processtag initialstate="normallyOpen">loungeSouthRightBlindOpen</processtag>
+						<processtag initialstate="normallyOpen">loungeTerraceBlindOpen</processtag>
+						<processtag initialstate="normallyOpen">guestBathBlindOpen</processtag>
+					</output>								
+					<output name="close">
+						<processtag initialstate="normallyOpen">kitchenEastBlindClose</processtag>
+						<processtag initialstate="normallyOpen">kitchenSouthBlindClose</processtag>
+						<processtag initialstate="normallyOpen">loungeSouthLeftBlindClose</processtag>
+						<processtag initialstate="normallyOpen">loungeSouthRightBlindClose</processtag>
+						<processtag initialstate="normallyOpen">loungeTerraceBlindClose</processtag>
+						<processtag initialstate="normallyOpen">guestBathBlindClose</processtag>
+					</output>								
+					<output name="stop">
+						<processtag initialstate="normallyOpen">kitchenEastBlindStop</processtag>
+						<processtag initialstate="normallyOpen">kitchenSouthBlindStop</processtag>
+						<processtag initialstate="normallyOpen">loungeSouthLeftBlindStop</processtag>
+						<processtag initialstate="normallyOpen">loungeSouthRightBlindStop</processtag>
+						<processtag initialstate="normallyOpen">loungeTerraceBlindStop</processtag>
+						<processtag initialstate="normallyOpen">guestBathBlindStop</processtag>
+					</output>								
+				</outputs>
+			</group>
+		</groups>
+
+		<groups>
+			<group id="firstfloor">
+				<inputs>
+					<input name="open">
+						<processtag initialstate="normallyOpen" logic="or">firstFloorBlindOpen</processtag>
+					</input>
+					<input name="close">
+						<processtag initialstate="normallyOpen" logic="or">firstFloorBlindClose</processtag>
+					</input>
+					<input name="stop">
+						<processtag initialstate="normallyOpen" logic="or">firstFloorBlindStop</processtag>
+					</input>
+				</inputs>
+
+				<outputs>
+					<output name="open">
+						<processtag initialstate="normallyOpen">masterBathBlindOpen</processtag>
+					</output>								
+					<output name="close">
+						<processtag initialstate="normallyOpen">masterBathBlindClose</processtag>
+					</output>								
+					<output name="stop">
+						<processtag initialstate="normallyOpen">masterBathBlindStop</processtag>
+					</output>								
+				</outputs>
+			</group>
+		</groups>
+	</groupcontrol>
+	
+	<blinds>
+		<blind id="guestBath">
+			<inputs>
+				<input name="open">
+					<processtag initialstate="normallyOpen" logic="or">guestBathBlindOpen</processtag>
+				</input>
+				<input name="close">
+					<processtag initialstate="normallyOpen">guestBathBlindClose</processtag>
+				</input>
+				<input name="setblindposition">
+					<processtag>guestBathBlindSetPosition</processtag>
+				</input>
+				<input name="cmdStartMovePosition">
+					<processtag>guestBathBlindCmdStartMovePosition</processtag>
+				</input>
+				<input name="stop">
+					<processtag initialstate="normallyOpen">guestBathBlindStop</processtag>
+				</input>
+				<input name="angle">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">guestBathBlindTeach</processtag>
+				</input>
+				<input name="manualswitch">
+					<processtag initialstate="normallyOpen" logic="or">ioGuestBathBlindManualSwitch</processtag>
+				</input>
+				<input name="iscloudy">
+					<processtag initialstate="normallyOpen"></processtag>
+				</input>
+				<input name="homelatitude">
+					<processtag>homeLatitude</processtag>
+				</input>
+				<input name="homelongitude">
+					<processtag>homeLongitude</processtag>
+				</input>
+				<input name="homeelevation">
+					<processtag>homeElevation</processtag>
+				</input>
+				<input name="hometimezone">
+					<processtag>homeTimezone</processtag>
+				</input>
+			</inputs>			
+			<outputs>
+				<output name="open">
+					<processtag initialstate="normallyOpen">ioGuestBathBlindOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag initialstate="normallyOpen">ioGuestBathBlindClose</processtag>
+				</output>
+				<output name="stop">
+					<processtag initialstate="normallyOpen">ioGuestBathBlindStop</processtag>
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioGuestBathBlindTeach</processtag>
+				</output>
+			</outputs>			
+			<parameters>		
+				<window>
+					<motorposfullyopen position="3"></motorposfullyopen>
+					<motorposfullyclosed position="82"></motorposfullyclosed>
+					<motorstopdelay duration="0.4"></motorstopdelay>
+					<position orientation="280"></position>
+					<size height="1.20" floordistance="0.98"></size>
+				</window>
+				<autoshading>
+					<enable>
+						<processtag>guestBathBlindAutoShadingEnable</processtag>
+					</enable>
+					<observer height="1.5" windowdistance="0.9"></observer>
+					<azimuth rangenorth="50" rangesouth="50"></azimuth>
+				</autoshading>
+				<timecontrol>
+					<enable>
+						<processtag>guestBathBlindTimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="00" minute="01" action="openAtSunrise">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="00" minute="01" action="closeAtSunset">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="stopped">
+					<processtag>ioGuestBathBlindStatusStopped</processtag>
+				</statusitem>
+				<statusitem name="opening">
+					<processtag>ioGuestBathBlindStatusOpening</processtag>
+				</statusitem>
+				<statusitem name="closing">
+					<processtag>ioGuestBathBlindStatusClosing</processtag>
+				</statusitem>
+				<statusitem name="fullyopen">
+					<processtag>ioGuestBathBlindStatusFullyOpen</processtag>
+				</statusitem>
+				<statusitem name="fullyclosed">
+					<processtag>ioGuestBathBlindStatusFullyClosed</processtag>
+				</statusitem>
+				<statusitem name="calcmotorposition">
+					<processtag>guestBathBlindCalcMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actmotorposition">
+					<processtag>ioGuestBathBlindStatusActMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actblindposition">
+					<processtag>guestBathBlindActPosition</processtag>
+				</statusitem>
+			</statusitems>			
+		</blind>
+
+		<blind id="masterBath">
+			<inputs>
+				<input name="open">
+					<processtag initialstate="normallyOpen">masterBathBlindOpen</processtag>
+				</input>
+				<input name="close">
+					<processtag initialstate="normallyOpen">masterBathBlindClose</processtag>
+				</input>
+				<input name="setblindposition">
+					<processtag>masterBathBlindSetPosition</processtag>
+				</input>
+				<input name="cmdStartMovePosition">
+					<processtag>masterBathBlindCmdStartMovePosition</processtag>
+				</input>
+				<input name="stop">
+					<processtag initialstate="normallyOpen">masterBathBlindStop</processtag>
+				</input>
+				<input name="angle">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">masterBathBlindTeach</processtag>
+				</input>
+				<input name="manualswitch">
+					<processtag initialstate="normallyOpen" logic="or">ioMasterBathBlindManualSwitch</processtag>
+				</input>
+				<input name="iscloudy">
+					<processtag initialstate="normallyOpen"></processtag>
+				</input>
+				<input name="homelatitude">
+					<processtag>homeLatitude</processtag>
+				</input>
+				<input name="homelongitude">
+					<processtag>homeLongitude</processtag>
+				</input>
+				<input name="homeelevation">
+					<processtag>homeElevation</processtag>
+				</input>
+				<input name="hometimezone">
+					<processtag>homeTimezone</processtag>
+				</input>
+			</inputs>			
+			<outputs>
+				<output name="open">
+					<processtag initialstate="normallyOpen">ioMasterBathBlindOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag initialstate="normallyOpen">ioMasterBathBlindClose</processtag>
+				</output>
+				<output name="stop">
+					<processtag initialstate="normallyOpen">ioMasterBathBlindStop</processtag>
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioMasterBathBlindTeach</processtag>
+				</output>
+			</outputs>			
+			<parameters>		
+				<window>
+					<motorposfullyopen position="3"></motorposfullyopen>
+					<motorposfullyclosed position="82"></motorposfullyclosed>
+					<motorstopdelay duration="0.4"></motorstopdelay>
+					<position orientation="30"></position>
+					<size height="1.20" floordistance="0.98"></size>
+				</window>
+				<autoshading>
+					<enable>
+						<processtag>masterBathBlindAutoShadingEnable</processtag>
+					</enable>
+					<observer height="1.5" windowdistance="0.9"></observer>
+					<azimuth rangenorth="50" rangesouth="50"></azimuth>
+				</autoshading>
+				<timecontrol>
+					<enable>
+						<processtag>masterBathBlindTimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="00" minute="01" action="openAtSunrise">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="00" minute="01" action="closeAtSunset">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="stopped">
+					<processtag>ioMasterBathBlindStatusStopped</processtag>
+				</statusitem>
+				<statusitem name="opening">
+					<processtag>ioMasterBathBlindStatusOpening</processtag>
+				</statusitem>
+				<statusitem name="closing">
+					<processtag>ioMasterBathBlindStatusClosing</processtag>
+				</statusitem>
+				<statusitem name="fullyopen">
+					<processtag>ioMasterBathBlindStatusFullyOpen</processtag>
+				</statusitem>
+				<statusitem name="fullyclosed">
+					<processtag>ioMasterBathBlindStatusFullyClosed</processtag>
+				</statusitem>
+				<statusitem name="calcmotorposition">
+					<processtag>masterBathBlindCalcMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actmotorposition">
+					<processtag>ioMasterBathBlindStatusActMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actblindposition">
+					<processtag>masterBathBlindActPosition</processtag>
+				</statusitem>
+			</statusitems>			
+		</blind>
+
+		<blind id="kitchenEast">
+			<inputs>
+				<input name="open">
+					<processtag initialstate="normallyOpen">kitchenEastBlindOpen</processtag>
+				</input>
+				<input name="close">
+					<processtag initialstate="normallyOpen">kitchenEastBlindClose</processtag>
+				</input>
+				<input name="setblindposition">
+					<processtag>kitchenEastBlindSetPosition</processtag>
+				</input>
+				<input name="cmdStartMovePosition">
+					<processtag>kitchenEastBlindCmdStartMovePosition</processtag>
+				</input>
+				<input name="stop">
+					<processtag initialstate="normallyOpen">kitchenEastBlindStop</processtag>
+				</input>
+				<input name="angle">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">kitchenEastBlindTeach</processtag>
+				</input>
+				<input name="manualswitch">
+					<processtag initialstate="normallyOpen" logic="or">ioKitchenEastBlindManualSwitch</processtag>
+				</input>
+				<input name="iscloudy">
+					<processtag initialstate="normallyOpen"></processtag>
+				</input>
+				<input name="homelatitude">
+					<processtag>homeLatitude</processtag>
+				</input>
+				<input name="homelongitude">
+					<processtag>homeLongitude</processtag>
+				</input>
+				<input name="homeelevation">
+					<processtag>homeElevation</processtag>
+				</input>
+				<input name="hometimezone">
+					<processtag>homeTimezone</processtag>
+				</input>
+			</inputs>			
+			<outputs>
+				<output name="open">
+					<processtag initialstate="normallyOpen">ioKitchenEastBlindOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag initialstate="normallyOpen">ioKitchenEastBlindClose</processtag>
+				</output>
+				<output name="stop">
+					<processtag initialstate="normallyOpen">ioKitchenEastBlindStop</processtag>
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioKitchenEastBlindTeach</processtag>
+				</output>
+			</outputs>			
+			<parameters>		
+				<window>
+					<motorposfullyopen position="40"></motorposfullyopen>
+					<motorposfullyclosed position="100"></motorposfullyclosed>
+					<motorstopdelay duration="0.4"></motorstopdelay>
+					<position orientation="75"></position>
+					<size height="1.20" floordistance="0.98"></size>
+				</window>
+				<autoshading>
+					<enable>
+						<processtag>kitchenEastBlindAutoShadingEnable</processtag>
+					</enable>
+					<observer height="1.5" windowdistance="0.9"></observer>
+					<azimuth rangenorth="50" rangesouth="50"></azimuth>
+				</autoshading>
+				<timecontrol>
+					<enable>
+						<processtag>kitchenEastBlindTimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="00" minute="01" action="openAtSunrise">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="00" minute="01" action="closeAtSunset">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="stopped">
+					<processtag>ioKitchenEastBlindStatusStopped</processtag>
+				</statusitem>
+				<statusitem name="opening">
+					<processtag>ioKitchenEastBlindStatusOpening</processtag>
+				</statusitem>
+				<statusitem name="closing">
+					<processtag>ioKitchenEastBlindStatusClosing</processtag>
+				</statusitem>
+				<statusitem name="fullyopen">
+					<processtag>ioKitchenEastBlindStatusFullyOpen</processtag>
+				</statusitem>
+				<statusitem name="fullyclosed">
+					<processtag>ioKitchenEastBlindStatusFullyClosed</processtag>
+				</statusitem>
+				<statusitem name="calcmotorposition">
+					<processtag>kitchenEastBlindCalcMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actmotorposition">
+					<processtag>ioKitchenEastBlindStatusActMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actblindposition">
+					<processtag>kitchenEastBlindActPosition</processtag>
+				</statusitem>
+			</statusitems>			
+		</blind>
+
+		<blind id="kitchenSouth">
+			<inputs>
+				<input name="open">
+					<processtag initialstate="normallyOpen">kitchenSouthBlindOpen</processtag>
+				</input>
+				<input name="close">
+					<processtag initialstate="normallyOpen">kitchenSouthBlindClose</processtag>
+				</input>
+				<input name="setblindposition">
+					<processtag>kitchenSouthBlindSetPosition</processtag>
+				</input>
+				<input name="cmdStartMovePosition">
+					<processtag>kitchenSouthBlindCmdStartMovePosition</processtag>
+				</input>
+				<input name="stop">
+					<processtag initialstate="normallyOpen">kitchenSouthBlindStop</processtag>
+				</input>
+				<input name="angle">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">kitchenSouthBlindTeach</processtag>
+				</input>
+				<input name="manualswitch">
+					<processtag initialstate="normallyOpen" logic="or">ioKitchenSouthBlindManualSwitch</processtag>
+				</input>
+				<input name="iscloudy">
+					<processtag initialstate="normallyOpen"></processtag>
+				</input>
+				<input name="homelatitude">
+					<processtag>homeLatitude</processtag>
+				</input>
+				<input name="homelongitude">
+					<processtag>homeLongitude</processtag>
+				</input>
+				<input name="homeelevation">
+					<processtag>homeElevation</processtag>
+				</input>
+				<input name="hometimezone">
+					<processtag>homeTimezone</processtag>
+				</input>
+			</inputs>			
+			<outputs>
+				<output name="open">
+					<processtag initialstate="normallyOpen">ioKitchenSouthBlindOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag initialstate="normallyOpen">ioKitchenSouthBlindClose</processtag>
+				</output>
+				<output name="stop">
+					<processtag initialstate="normallyOpen">ioKitchenSouthBlindStop</processtag>
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioKitchenSouthBlindTeach</processtag>
+				</output>
+			</outputs>			
+			<parameters>		
+				<window>
+					<motorposfullyopen position="3"></motorposfullyopen>
+					<motorposfullyclosed position="82"></motorposfullyclosed>
+					<motorstopdelay duration="0.4"></motorstopdelay>
+					<position orientation="215"></position>
+					<size height="1.20" floordistance="0.98"></size>
+				</window>
+				<autoshading>
+					<enable>
+						<processtag>kitchenSouthBlindAutoShadingEnable</processtag>
+					</enable>
+					<observer height="1.5" windowdistance="0.9"></observer>
+					<azimuth rangenorth="50" rangesouth="50"></azimuth>
+				</autoshading>
+				<timecontrol>
+					<enable>
+						<processtag>kitchenSouthBlindTimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="00" minute="01" action="openAtSunrise">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="00" minute="01" action="closeAtSunset">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="stopped">
+					<processtag>ioKitchenSouthBlindStatusStopped</processtag>
+				</statusitem>
+				<statusitem name="opening">
+					<processtag>ioKitchenSouthBlindStatusOpening</processtag>
+				</statusitem>
+				<statusitem name="closing">
+					<processtag>ioKitchenSouthBlindStatusClosing</processtag>
+				</statusitem>
+				<statusitem name="fullyopen">
+					<processtag>ioKitchenSouthBlindStatusFullyOpen</processtag>
+				</statusitem>
+				<statusitem name="fullyclosed">
+					<processtag>ioKitchenSouthBlindStatusFullyClosed</processtag>
+				</statusitem>
+				<statusitem name="calcmotorposition">
+					<processtag>kitchenSouthBlindCalcMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actmotorposition">
+					<processtag>ioKitchenSouthBlindStatusActMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actblindposition">
+					<processtag>kitchenSouthBlindActPosition</processtag>
+				</statusitem>
+			</statusitems>			
+		</blind>
+
+		<blind id="loungeSouthLeft">
+			<inputs>
+				<input name="open">
+					<processtag initialstate="normallyOpen">loungeSouthLeftBlindOpen</processtag>
+				</input>
+				<input name="close">
+					<processtag initialstate="normallyOpen">loungeSouthLeftBlindClose</processtag>
+				</input>
+				<input name="setblindposition">
+					<processtag>loungeSouthLeftBlindSetPosition</processtag>
+				</input>
+				<input name="cmdStartMovePosition">
+					<processtag>loungeSouthLeftBlindCmdStartMovePosition</processtag>
+				</input>
+				<input name="stop">
+					<processtag initialstate="normallyOpen">loungeSouthLeftBlindStop</processtag>
+				</input>
+				<input name="angle">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">loungeSouthLeftBlindTeach</processtag>
+				</input>
+				<input name="manualswitch">
+					<processtag initialstate="normallyOpen" logic="or">ioLoungeSouthLeftBlindManualSwitch</processtag>
+				</input>
+				<input name="iscloudy">
+					<processtag initialstate="normallyOpen"></processtag>
+				</input>
+				<input name="homelatitude">
+					<processtag>homeLatitude</processtag>
+				</input>
+				<input name="homelongitude">
+					<processtag>homeLongitude</processtag>
+				</input>
+				<input name="homeelevation">
+					<processtag>homeElevation</processtag>
+				</input>
+				<input name="hometimezone">
+					<processtag>homeTimezone</processtag>
+				</input>
+			</inputs>			
+			<outputs>
+				<output name="open">
+					<processtag initialstate="normallyOpen">ioLoungeSouthLeftBlindOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag initialstate="normallyOpen">ioLoungeSouthLeftBlindClose</processtag>
+				</output>
+				<output name="stop">
+					<processtag initialstate="normallyOpen">ioLoungeSouthLeftBlindStop</processtag>
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioLoungeSouthLeftBlindTeach</processtag>
+				</output>
+			</outputs>			
+			<parameters>		
+				<window>
+					<motorposfullyopen position="0"></motorposfullyopen>
+					<motorposfullyclosed position="85"></motorposfullyclosed>
+					<motorstopdelay duration="0.4"></motorstopdelay>
+					<position orientation="215"></position>
+					<size height="2.17" floordistance="0.0"></size>
+				</window>
+				<autoshading>
+					<enable>
+						<processtag>loungeSouthLeftBlindAutoShadingEnable</processtag>
+					</enable>
+					<observer height="1.0" windowdistance="0.9"></observer>
+					<azimuth rangenorth="50" rangesouth="50"></azimuth>
+				</autoshading>
+				<timecontrol>
+					<enable>
+						<processtag>loungeSouthLeftBlindTimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="00" minute="01" action="openAtSunrise">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="00" minute="01" action="closeAtSunset">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="stopped">
+					<processtag>ioLoungeSouthLeftBlindStatusStopped</processtag>
+				</statusitem>
+				<statusitem name="opening">
+					<processtag>ioLoungeSouthLeftBlindStatusOpening</processtag>
+				</statusitem>
+				<statusitem name="closing">
+					<processtag>ioLoungeSouthLeftBlindStatusClosing</processtag>
+				</statusitem>
+				<statusitem name="fullyopen">
+					<processtag>ioLoungeSouthLeftBlindStatusFullyOpen</processtag>
+				</statusitem>
+				<statusitem name="fullyclosed">
+					<processtag>ioLoungeSouthLeftBlindStatusFullyClosed</processtag>
+				</statusitem>
+				<statusitem name="calcmotorposition">
+					<processtag>loungeSouthLeftBlindCalcMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actmotorposition">
+					<processtag>ioLoungeSouthLeftBlindStatusActMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actblindposition">
+					<processtag>loungeSouthLeftBlindActPosition</processtag>
+				</statusitem>
+			</statusitems>			
+		</blind>
+
+		<blind id="loungeSouthRight">
+			<inputs>
+				<input name="open">
+					<processtag initialstate="normallyOpen">loungeSouthRightBlindOpen</processtag>
+				</input>
+				<input name="close">
+					<processtag initialstate="normallyOpen">loungeSouthRightBlindClose</processtag>
+				</input>
+				<input name="setblindposition">
+					<processtag>loungeSouthRightBlindSetPosition</processtag>
+				</input>
+				<input name="cmdStartMovePosition">
+					<processtag>loungeSouthRightBlindCmdStartMovePosition</processtag>
+				</input>
+				<input name="stop">
+					<processtag initialstate="normallyOpen">loungeSouthRightBlindStop</processtag>
+				</input>
+				<input name="angle">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">loungeSouthRightBlindTeach</processtag>
+				</input>
+				<input name="manualswitch">
+					<processtag initialstate="normallyOpen" logic="or">ioLoungeSouthRightBlindManualSwitch</processtag>
+				</input>
+				<input name="iscloudy">
+					<processtag initialstate="normallyOpen"></processtag>
+				</input>
+				<input name="homelatitude">
+					<processtag>homeLatitude</processtag>
+				</input>
+				<input name="homelongitude">
+					<processtag>homeLongitude</processtag>
+				</input>
+				<input name="homeelevation">
+					<processtag>homeElevation</processtag>
+				</input>
+				<input name="hometimezone">
+					<processtag>homeTimezone</processtag>
+				</input>
+			</inputs>			
+			<outputs>
+				<output name="open">
+					<processtag initialstate="normallyOpen">ioLoungeSouthRightBlindOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag initialstate="normallyOpen">ioLoungeSouthRightBlindClose</processtag>
+				</output>
+				<output name="stop">
+					<processtag initialstate="normallyOpen">ioLoungeSouthRightBlindStop</processtag>
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioLoungeSouthRightBlindTeach</processtag>
+				</output>
+			</outputs>			
+			<parameters>		
+				<window>
+					<motorposfullyopen position="47"></motorposfullyopen>
+					<motorposfullyclosed position="100"></motorposfullyclosed>
+					<motorstopdelay duration="0.4"></motorstopdelay>
+					<position orientation="215"></position>
+					<size height="2.17" floordistance="0.0"></size>
+				</window>
+				<autoshading>
+					<enable>
+						<processtag>loungeSouthRightBlindAutoShadingEnable</processtag>
+					</enable>
+					<observer height="1.0" windowdistance="0.9"></observer>
+					<azimuth rangenorth="50" rangesouth="50"></azimuth>
+				</autoshading>
+				<timecontrol>
+					<enable>
+						<processtag>loungeSouthRightBlindTimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="00" minute="01" action="openAtSunrise">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="00" minute="01" action="closeAtSunset">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="stopped">
+					<processtag>ioLoungeSouthRightBlindStatusStopped</processtag>
+				</statusitem>
+				<statusitem name="opening">
+					<processtag>ioLoungeSouthRightBlindStatusOpening</processtag>
+				</statusitem>
+				<statusitem name="closing">
+					<processtag>ioLoungeSouthRightBlindStatusClosing</processtag>
+				</statusitem>
+				<statusitem name="fullyopen">
+					<processtag>ioLoungeSouthRightBlindStatusFullyOpen</processtag>
+				</statusitem>
+				<statusitem name="fullyclosed">
+					<processtag>ioLoungeSouthRightBlindStatusFullyClosed</processtag>
+				</statusitem>
+				<statusitem name="calcmotorposition">
+					<processtag>loungeSouthRightBlindCalcMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actmotorposition">
+					<processtag>ioLoungeSouthRightBlindStatusActMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actblindposition">
+					<processtag>loungeSouthRightBlindActPosition</processtag>
+				</statusitem>
+			</statusitems>			
+		</blind>
+
+		<blind id="loungeTerrace">
+			<inputs>
+				<input name="open">
+					<processtag initialstate="normallyOpen" logic="or">loungeTerraceBlindOpen</processtag>
+				</input>
+				<input name="close">
+					<processtag initialstate="normallyOpen">loungeTerraceBlindClose</processtag>
+				</input>
+				<input name="setblindposition">
+					<processtag>loungeTerraceBlindSetPosition</processtag>
+				</input>
+				<input name="cmdStartMovePosition">
+					<processtag>loungeTerraceBlindCmdStartMovePosition</processtag>
+				</input>
+				<input name="stop">
+					<processtag initialstate="normallyOpen">loungeTerraceBlindStop</processtag>
+				</input>
+				<input name="angle">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">loungeTerraceBlindTeach</processtag>
+				</input>
+				<input name="manualswitch">
+					<processtag initialstate="normallyOpen" logic="or">ioLoungeTerraceBlindManualSwitch</processtag>
+				</input>
+				<input name="iscloudy">
+					<processtag initialstate="normallyOpen"></processtag>
+				</input>
+				<input name="homelatitude">
+					<processtag>homeLatitude</processtag>
+				</input>
+				<input name="homelongitude">
+					<processtag>homeLongitude</processtag>
+				</input>
+				<input name="homeelevation">
+					<processtag>homeElevation</processtag>
+				</input>
+				<input name="hometimezone">
+					<processtag>homeTimezone</processtag>
+				</input>
+			</inputs>			
+			<outputs>
+				<output name="open">
+					<processtag initialstate="normallyOpen">ioLoungeTerraceBlindOpen</processtag>
+				</output>
+				<output name="close">
+					<processtag initialstate="normallyOpen">ioLoungeTerraceBlindClose</processtag>
+				</output>
+				<output name="stop">
+					<processtag initialstate="normallyOpen">ioLoungeTerraceBlindStop</processtag>
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioLoungeTerraceBlindTeach</processtag>
+				</output>
+			</outputs>			
+			<parameters>		
+				<window>
+					<motorposfullyopen position="3"></motorposfullyopen>
+					<motorposfullyclosed position="82"></motorposfullyclosed>
+					<motorstopdelay duration="0.4"></motorstopdelay>
+					<position orientation="270"></position>
+					<size height="2.17" floordistance="0.0"></size>
+				</window>
+				<autoshading>
+					<enable>
+						<processtag>loungeTerraceBlindAutoShadingEnable</processtag>
+					</enable>
+					<observer height="1.0" windowdistance="0.9"></observer>
+					<azimuth rangenorth="50" rangesouth="50"></azimuth>
+				</autoshading>
+				<timecontrol>
+					<enable>
+						<processtag>loungeTerraceBlindTimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="00" minute="01" action="openAtSunrise">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="00" minute="01" action="closeAtSunset">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="stopped">
+					<processtag>ioLoungeTerraceBlindStatusStopped</processtag>
+				</statusitem>
+				<statusitem name="opening">
+					<processtag>ioLoungeTerraceBlindStatusOpening</processtag>
+				</statusitem>
+				<statusitem name="closing">
+					<processtag>ioLoungeTerraceBlindStatusClosing</processtag>
+				</statusitem>
+				<statusitem name="fullyopen">
+					<processtag>ioLoungeTerraceBlindStatusFullyOpen</processtag>
+				</statusitem>
+				<statusitem name="fullyclosed">
+					<processtag>ioLoungeTerraceBlindStatusFullyClosed</processtag>
+				</statusitem>
+				<statusitem name="calcmotorposition">
+					<processtag>loungeTerraceBlindCalcMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actmotorposition">
+					<processtag>ioLoungeTerraceBlindStatusActMotorPos</processtag>
+				</statusitem>
+				<statusitem name="actblindposition">
+					<processtag>loungeTerraceBlindActPosition</processtag>
+				</statusitem>
+			</statusitems>			
+		</blind>
+
+	</blinds>
+</cfg>
+

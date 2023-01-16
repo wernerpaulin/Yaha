@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="actHumidityOutdoor">
+			<tuv xml:lang="de">
+				<seg>Luftfeuchtigkeit aussen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Outdoor humidity</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Humidité extérieure</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>室外空气湿度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="actTempOutdoor">
+			<tuv xml:lang="de">
+				<seg>Aussentemperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Outdoor temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Température extérieure</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>室外温度</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="rainHourly">
+			<tuv xml:lang="de">
+				<seg>Regenmenge pro Stunde</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Hourly rainfall</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Précipitation par heure</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>每小时降雨量</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="relativePressure">
+			<tuv xml:lang="de">
+				<seg>Relativer Luftdruck</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Relative pressure</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Pression relative</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>相对空气压力</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="solarRadiation">
+			<tuv xml:lang="de">
+				<seg>Sonneneinstrahlung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Solar radiation</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Radiation solaire</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>阳光</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="uvRadiation">
+			<tuv xml:lang="de">
+				<seg>UV Strahlung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>UV radiation</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Radiation UV</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>紫外线辐射</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="uvRadiationIndex">
+			<tuv xml:lang="de">
+				<seg>UV Index</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>UV index</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Indice UV</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>紫外线指数</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="windDirection">
+			<tuv xml:lang="de">
+				<seg>Windrichtung</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Wind direction</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Direction du vent</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>风向</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="windSpeed">
+			<tuv xml:lang="de">
+				<seg>Windgeschwindigkeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Wind speed</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>Vitesse du vent</seg>
+			</tuv>
+			<tuv xml:lang="cn">
+				<seg>风速</seg>
+			</tuv>
+		</tu>
+
+	</body>
+</tmx>
+

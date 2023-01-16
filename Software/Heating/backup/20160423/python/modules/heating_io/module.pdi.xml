@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="yaha_pdi.xsl"?>
+
+<pdi>
+  <process_data>
+       <processTag>ai1</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Heating</domain>
+       <owner>i2c</owner>
+       <deviceID>ABE_ADCDiff.IN.68.1</deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>5.0</highREAL>
+       <zone>GF</zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+
+  <process_data>
+       <processTag>do1</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Heating</domain>
+       <owner>i2c</owner>
+       <deviceID>GPIO.OUT.12</deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+
+  <process_data>
+       <processTag>di1</processTag>
+       <valueType>REAL</valueType>
+       <valueREAL>0.0</valueREAL>
+       <valueTEXT></valueTEXT>
+       <domain>Heating</domain>
+       <owner>i2c</owner>
+       <deviceID>GPIO.IN.16</deviceID>
+       <lowREAL>0.0</lowREAL>
+       <highREAL>1.0</highREAL>
+       <zone>GF</zone>
+       <subzone></subzone>
+       <room></room>
+       <isRemanent></isRemanent>
+    </process_data>
+
+</pdi>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" width="60px" height="60px" onload="resetStyle()">
+	<!-- DEFAULT STYLE like resetStyle() is necessary because Safari does not react on onload() of SVG when page loaded locally -->
+	<style>
+		#yaha_icon_style{
+			stroke:#808080;
+			fill:#808080;
+		}
+	
+		#yaha_icon_frame{
+			stroke-width:2;
+			fill-opacity:0;
+		}
+	
+		#yaha_icon_elements{
+			stroke-width:1;
+			fill-opacity:1;
+		}
+	</style>
+
+
+	<script type="text/ecmascript"><![CDATA[
+		document.setStyleHighlight = function() 
+		{
+			document.getElementById("yaha_icon_style").style.stroke = "#0C40FF";
+			document.getElementById("yaha_icon_style").style.fill = "#0C40FF";
+			document.getElementById("yaha_icon_elements").style.fill = "#0C40FF";
+			document.getElementById("yaha_icon_elements").style.stroke = "#0C40FF";
+		}		
+
+		document.setStyleInverted = function() 
+		{
+			document.getElementById("yaha_icon_style").style.stroke = "#0C40FF";
+			document.getElementById("yaha_icon_style").style.fill = "#0C40FF";
+
+
+			document.getElementById("yaha_icon_frame").style['fill-opacity'] = 1;
+			document.getElementById("yaha_icon_frame").style['stroke-width'] = 2;
+			
+			document.getElementById("yaha_icon_elements").style['fill-opacity'] = 1;
+			document.getElementById("yaha_icon_elements").style['stroke-width'] = 1;
+			document.getElementById("yaha_icon_elements").style.fill = "#FFFFFF";
+			document.getElementById("yaha_icon_elements").style.stroke = "#FFFFFF";
+    	}		
+
+
+		//default settings of this symbol
+		document.resetStyle = function() 
+		{
+			document.getElementById("yaha_icon_style").style.stroke = "#808080";
+			document.getElementById("yaha_icon_style").style.fill = "#808080";
+
+
+			document.getElementById("yaha_icon_frame").style['fill-opacity'] = 0;
+			document.getElementById("yaha_icon_frame").style['stroke-width'] = 2;
+			
+			document.getElementById("yaha_icon_elements").style['fill-opacity'] = 1;
+			document.getElementById("yaha_icon_elements").style['stroke-width'] = 1;
+			document.getElementById("yaha_icon_elements").style.fill = "#808080";
+			document.getElementById("yaha_icon_elements").style.stroke = "#808080";
+		}
+	]]></script>
+
+
+	<!-- build icon -->
+	<g id="yaha_icon_style">
+	  	<rect id="yaha_icon_frame" x="20" y="20" width="60" height="60"/>
+
+		<g id="yaha_icon_elements">
+			<rect x="29" y="30" width="7" height="7" />
+  			<rect x="44" y="32" width="30" height="3"/>
+
+			<rect x="29" y="46" width="7" height="7" />
+  			<rect x="44" y="48" width="30" height="3"/>
+
+			<rect x="29" y="62" width="7" height="7" />
+  			<rect x="44" y="64" width="30" height="3"/>
+		</g>
+  	</g>
+</svg>
+
+

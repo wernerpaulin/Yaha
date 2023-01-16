@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>Yaha</title>
+	<meta name="apple-mobile-web-app-title" content="Yaha">
+
+    <!-- Icon -->
+ 	<link rel="icon" type="image/vnd.microsoft.icon" href="yaha/core/images/favicon.ico" />
+	<link rel="shortcut icon" href="yaha/core/images/favicon.ico" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png" />
+
+	
+	<!-- Include meta tag to ensure proper rendering and touch zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Include the jQuery scripts -->
+	<script src="yaha/core/js/jquery-2.1.3.min.js"></script>
+	<script src="yaha/core/js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="yaha/core/js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+
+	<!-- Include jQuery Mobile style sheet -->
+	<link rel="stylesheet" href="yaha/core/css/jquery.mobile-1.4.5.css">
+
+	<!-- Include Data-Driven Documents (D3) library -->
+	<script src="yaha/core/js/d3.min.js"></script>
+
+	<!-- Include JS cookie library -->
+	<script src="yaha/core/js/js.cookie.js"></script>
+
+	<!-- Include Yaha specific scripts -->
+	<script src="yaha/core/js/yaha-juice.js"></script>
+	<script src="yaha/core/js/yaha-view.js"></script>
+	<script src="yaha/core/js/yaha-linechart.js"></script>
+
+	<!-- Include Yaha style sheets -->
+    <link rel="stylesheet" type="text/css" href="yaha/core/css/yaha-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="yaha/core/css/yaha-icons.css"/>
+    <link rel="stylesheet" type="text/css" href="yaha/core/css/yaha-symbols.css"/>
+    <link rel="stylesheet" type="text/css" href="yaha/core/css/yaha-linechart.css"/>
+    <link rel="stylesheet" type="text/css" href="yaha/core/svg/flags/css/flag-icon.css"/>
+    
+    <!-- Full screen - hide the browser URL bar -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes">
+    <!-- Set color of status bar -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+</head>
+
+
+<body>
+	<div data-role="page">
+		<div data-role="header" class="ui-header" id="pageheader">
+			<h1 id="header_text">Yaha</h1>
+			<a href="#panelMainNav" class="ui-btn ui-icon-yaha_list ui-btn-icon-notext ui-corner-all ui-nodisc-icon"></a>
+		</div>
+		
+		<div data-role="main" class="ui-content yaha-ui-content">
+		<!-- filled during runtime -->
+		</div>
+
+		<div class="yaha-ui-space-for-footer">
+
+		</div>
+		
+
+		
+		<div data-role="footer" data-position="fixed" class="ui-footer">
+		  <div data-role="navbar" class="ui-navbar">
+			<ul>
+			  <li></li>	<!-- filled during runtime -->
+			</ul>
+		  </div>
+		</div>
+		
+		
+		<div data-role="panel" id="panelMainNav" data-position="left" data-display="overlay" data-dismissible="true" data-swipe-close="true">
+			<!-- filled during runtime -->
+		</div>
+	
+		<!-- splash screen will be hidden during runtime and content will be inserted into main -->
+		<div data-role="popup" id="popup_wait" class="ui-content" data-dismissible="false" style="width: 200px">
+			<span class="yaha-symbol yaha-symbol-logo" style="width: 200px; line-height: 180px;"></span>
+			<br>
+			<div class="sp sp-circle" style="position: absolute; top: 250px; left: 180px; margin: -100px 0 0 -100px;"></div>
+			<br>
+			<h2 id="load_progress" style="text-align: center; position: absolute; top: 270px; left: 193px; margin: -100px 0 0 -100px;">0%</h2> 
+		</div>
+	</div> 
+</body>
+</html>

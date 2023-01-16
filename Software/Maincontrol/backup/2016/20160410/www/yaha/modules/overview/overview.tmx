@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<tmx version="1.4">
+	<header>
+	</header>
+	<body>
+		<tu tuid="myhome">
+			<tuv xml:lang="de">
+				<seg>Mein Zuhause</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>My home</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_My home</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="dashboard">
+			<tuv xml:lang="de">
+				<seg>Übersicht 1</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Dashboard</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Dashboard</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="livecounter">
+			<tuv xml:lang="de">
+				<seg>Live counter</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Live counter</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Live counter</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="cycletime">
+			<tuv xml:lang="de">
+				<seg>Zykluszeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Cycle time</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Cycle time</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="cpuload">
+			<tuv xml:lang="de">
+				<seg>CPU Last</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>CPU load</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_CPU load</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="diagnostics">
+			<tuv xml:lang="de">
+				<seg>Diagnose</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Diagnostics</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Diagnostics</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="settings">
+			<tuv xml:lang="de">
+				<seg>Einstellungen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Settings</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Settings</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="languageselection">
+			<tuv xml:lang="de">
+				<seg>Sprachauswahl</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Language selection</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Language selection</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="dateandtime">
+			<tuv xml:lang="de">
+				<seg>Datum und Uhrzeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Date and time</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Date and time</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="time">
+			<tuv xml:lang="de">
+				<seg>Uhrzeit</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Time</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Time</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="date">
+			<tuv xml:lang="de">
+				<seg>Datum</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Date</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Date</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="ondevice">
+			<tuv xml:lang="de">
+				<seg>Am Geraet</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>On device</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_On device</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="new">
+			<tuv xml:lang="de">
+				<seg>Neu</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>New</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_New</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="apply">
+			<tuv xml:lang="de">
+				<seg>Übernehmen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>apply</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_apply</seg>
+			</tuv>
+		</tu>
+		
+		<tu tuid="moduleorder">
+			<tuv xml:lang="de">
+				<seg>Modulreihenfolge in der Navigation</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Main Navigation module order</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Main Navigation module order</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="allblinds">
+			<tuv xml:lang="de">
+				<seg>Alle Rollos</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>All blinds</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_All blinds</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="groundfloor">
+			<tuv xml:lang="de">
+				<seg>Erdgeschoss</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Ground floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Ground floor</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="firstfloor">
+			<tuv xml:lang="de">
+				<seg>1. Stock</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>First floor</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_First floor</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="open">
+			<tuv xml:lang="de">
+				<seg>Öffnen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Open</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Open</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="close">
+			<tuv xml:lang="de">
+				<seg>Schliessen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Close</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Close</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="stop">
+			<tuv xml:lang="de">
+				<seg>Stopp</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Stop</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Stop</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="lounge">
+			<tuv xml:lang="de">
+				<seg>Wohzimmer</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Lounge</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Lounge</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="acttemp">
+			<tuv xml:lang="de">
+				<seg>Ist-Temperatur</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Actual temperature</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Actual temperature</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="outside">
+			<tuv xml:lang="de">
+				<seg>Draussen</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Outside</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Outside</seg>
+			</tuv>
+		</tu>
+
+		<tu tuid="library">
+			<tuv xml:lang="de">
+				<seg>Bibliothek</seg>
+			</tuv>
+			<tuv xml:lang="en">
+				<seg>Library</seg>
+			</tuv>
+			<tuv xml:lang="fr">
+				<seg>FR_Library</seg>
+			</tuv>
+		</tu>
+
+
+	</body>
+</tmx>

@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>1146</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+fg=white
+fontsize=12
+valign=center
+halign=center
+/Browser/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>696</x>
+      <y>24</y>
+      <w>234</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*Javascript User Interface Communication Environment*
+/Reads and writes values from/to html tags/
+File: yaha-juice.js
+
+--
+CyclicReadTagList
+WriteTagListQueue
+ReadTagListQueue
+
+--
+yjSuspendCyclicRead()
+yjDefineCyclicReadTagList()
+yjStartCyclicUIrefresh()
+yjStopCyclicUIrefresh()
+yjAddPostUpdateUiFunction()
+yjCylicRefresh()
+yjWriteTagList()
+yjReadTagList()
+populateCGIdataToWrite()
+populateCGIdataToRead()
+updateUI()
+yjAttributeProcessor()
+postUpdateUi()
+fillSelect()
+getYahaProperty()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>498</x>
+      <y>96</y>
+      <w>210</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;330.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>30</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>342</x>
+      <y>24</y>
+      <w>162</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*Yaha HMI control*
+/Manages content and user interaction/
+File: yaha-view.js
+
+--
+document.ready()
+onClickMainMenu()
+
+
+--
+reloadYahaView()
+getModuleContent()
+buildMainMenu()
+showModuleContent()
+buildSubMenu()
+showSubModuleContent()
+jQueryRefreshWidgetsInContent()
+
+--
+getSavedLanguage()
+getAvailableLanguages()
+getModuleList()
+
+--
+yjInitSvgInteraction()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>252</y>
+      <w>48</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+CGI calls</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>354</x>
+      <y>252</y>
+      <w>48</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+CGI calls
+</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>342</x>
+      <y>324</y>
+      <w>162</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*Dynamic HMI content provider*
+/Sends HTML content to client/
+File: yaha_view.py
+
+--
+/cgi.FieldStorage:/
+requestType : value
+languange : value
+moduleNameID : value
+setTime : value
+setDate : value
+
+--
+/CGI request types:/
+getModuleList()
+getModuleContent()
+getAvailableLanguages()
+getDateTime()
+setDateTime()
+
+--
+createTranslationMap()
+translateText()
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>324</y>
+      <w>240</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*Live data communication bridge*
+/Connects Yaha runtime with UI/
+File: yaha_webbridge.py
+
+--
+/cgi.FieldStorage:/
+uiTag : $read$
+uiTag : value as Text
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>252</y>
+      <w>54</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+CGI reply</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>834</x>
+      <y>252</y>
+      <w>54</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+CGI reply</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>606</y>
+      <w>240</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*Live data provider for UI*
+/Handles read and write requests from web bridge/
+File: yaha_ui.py
+--
+
+/Class: Server:/
+.update()
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>528</y>
+      <w>72</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+UDP as JSON
+txData {dict}</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>528</y>
+      <w>72</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+UDP as JSON
+txData {dict}</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>792</y>
+      <w>240</w>
+      <h>378</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*Process Data Image interface*
+/Provides functions to access PDI data base/
+File: yaha_pdi.py
+
+/Class: ProcessDataImage/
+
+*Members:*
+Dynamically added according to configuration
+
+*Methods*
+.addItemsFromFile()
+.read()
+.write()
+.getDeviceIDs()
+.getTagHostChannels()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>672</y>
+      <w>96</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+YahaPDIwriteValue()</panel_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>672</y>
+      <w>96</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+YahaPDIreadValue()</panel_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>300</y>
+      <w>1146</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+fg=white
+fontsize=12
+valign=center
+halign=center
+/Web server/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>582</y>
+      <w>1146</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+fg=white
+fontsize=12
+valign=center
+halign=center
+/Yaha runtime/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>90</x>
+      <y>24</y>
+      <w>204</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>*Start page*
+/Yaha User Interface/
+File: index.html
+
+halign=left
+valign=top
+--
+Header: id="header_text"
+Main: class="ui-content"
+Footer: class="ui-navbar"
+
+--
+Main navigation panel: id="panelMainNav"
+Pop-up: id="popup_wait"
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>210</x>
+      <y>408</y>
+      <w>84</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Module
+Content
+layer=-3
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>210</x>
+      <y>486</y>
+      <w>84</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Module
+TMX</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>426</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>486</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>216</x>
+      <y>450</y>
+      <w>90</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+Languange specific
+texts</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>1020</x>
+      <y>792</y>
+      <w>120</w>
+      <h>372</h>
+    </coordinates>
+    <panel_attributes>/Yaha/
+/Process Data Image/
+
+sqlite3 :memory:</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>798</y>
+      <w>108</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>918</y>
+      <w>240</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*Main program*
+/Core program which provides a cyclic system/
+/and activates all other module/
+File: yaha_main.py
+
+--
+SystemTick()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>810</y>
+      <w>198</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+init:ProcessDataImage()
+read()
+write()</panel_attributes>
+    <additional_attributes>10.0;230.0;310.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>1086</y>
+      <w>240</w>
+      <h>222</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*IO Scheduler*
+/Provides inputs and outputs of pyhsical values in/
+/a cyclic context/
+File: yaha_io/scheduler.py
+
+--
+
+/Class: yahaEnceanIOpoint/
+processTag
+moduleID
+hostChannel
+direction
+functionType
+functionVariable
+functionTypeOptionString
+processTagOldValue
+enoceanDevice
+
+/Class: yahaEnoceanIOwrapper/
+enoceanManager
+readTags
+writeTags
+hostChannels</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>1026</y>
+      <w>72</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+init: main()
+readInputs()
+writeOutputs()</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>1608</y>
+      <w>240</w>
+      <h>318</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*Enocean driver*
+/Reads and writes data to enocean sensors and actors/
+File: enocean.protocol/driver.py
+
+--
+
+/Class: ESP3/
+calcCRC8sum()
+getPacketType()
+getDataLength()
+getOptDataLength()
+extractDataBlock()
+extractOptDataBlock()
+
+/Class: ESP3_packet/
+packetType
+dataLength
+optDataLength
+data
+optData
+
+/Class: EnoceanDevice/
+packetTypeRadio
+
+/Class: main()/
+addDevice()
+addDeviceFunctionType()
+unpackESP3packet()
+packESP3packet()
+pollRxBuffer()
+sTxStateSend()
+sTxStateWait()
+update()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>624</x>
+      <y>1842</y>
+      <w>240</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*Enocean equipment profiles*
+/Profile manager for enocean devices/
+File: enocean.profiles/eep.py
+
+--
+
+/Class: PacketTypeRadio/
+setSupportedProfile()
+unpack()
+pack()
+getTagValue()
+setTagValue()
+isReady()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>948</x>
+      <y>1842</y>
+      <w>186</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*Profile implementations*
+/Implementatin of various enocean profiles/
+File: enocean.profiles/
+
+--
+RPS telegrams:
+F6_02_01.py
+
+--
+4BS telegrams:
+A5_10_03.py
+A5_11_04.py
+A5_38_08.py
+
+--
+
+/Class: ???:/
+.???
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>1302</y>
+      <w>198</w>
+      <h>318</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+hostID
+main()
+addDevice()
+addDEviceFunctionType()
+enoceanDevice.packetTypeRadio.setTagValue()
+update()
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;510.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>1848</y>
+      <w>132</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+setTagValue()
+setSupportedProfile()
+unpack()</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>858</x>
+      <y>1848</y>
+      <w>102</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+pack()
+unpack()</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>888</y>
+      <w>72</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0;100.0;170.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>618</y>
+      <w>198</w>
+      <h>342</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+init: Server()
+update()</panel_attributes>
+    <additional_attributes>10.0;550.0;310.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>1458</y>
+      <w>240</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>halign=left
+*Yaha Addon Module Manager*
+/Initalizes and updates generically all modules which are found/
+File: manager.py
+--
+
+/Class: Manager/
+.createYahaModuleList()
+.initializeYahaModules()
+.updateYahaModules()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>942</y>
+      <w>198</w>
+      <h>540</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;880.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1020</x>
+      <y>1536</y>
+      <w>84</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Module
+--
+.init()
+.update()
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1020</x>
+      <y>1368</y>
+      <w>84</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Module
+--
+.init()
+.update()
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1020</x>
+      <y>1452</y>
+      <w>84</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Module
+--
+.init()
+.update()
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>1470</y>
+      <w>108</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>1464</y>
+      <w>108</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>1374</y>
+      <w>108</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;170.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1146</x>
+      <y>1368</y>
+      <w>162</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>PDI
+All variables which should be published
+--
+id: Long="36548"
+[waiting for message]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1098</x>
+      <y>1368</y>
+      <w>60</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>1158</y>
+      <w>90</w>
+      <h>222</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+Consume PDI data
+Produce PDI data</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;350.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1134</x>
+      <y>1110</y>
+      <w>252</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+Automatically added to PDI by the 
+Addon Module Manager</panel_attributes>
+    <additional_attributes>190.0;430.0;190.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<switches>
+		<switch id="light1">
+			<inputs>
+				<input name="on">
+					<processtag initialstate="normallyOpen" logic="or">light1on</processtag>
+				</input>
+				<input name="off">
+					<processtag initialstate="normallyOpen">light1off</processtag>
+				</input>
+				<input name="brightness">
+				</input>
+				<input name="color">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">light1teach</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="on">
+					<processtag initialstate="normallyOpen">ioLight1offOn</processtag>
+				</output>
+				<output name="off">
+					<processtag initialstate="normallyClosed">ioLight1offOn</processtag>
+				</output>
+				<output name="brightness">
+				</output>
+				<output name="color">
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioLight1teach</processtag>
+				</output>
+			</outputs>
+			<parameters>
+				<blink>
+					<enable>
+						<processtag>light1BlinkEnable</processtag>
+					</enable>
+					<intervals>
+						<interval type="on" duration="1"></interval>
+						<interval type="off" duration="1"></interval>
+					</intervals>
+				</blink>
+				<outputmodes>
+					<outputmode type="impulse" duration="1">
+						<enable>
+							<processtag>light1ImpulseEnable</processtag>
+						</enable>
+					</outputmode>
+					<outputmode type="offdelay" duration="1">
+						<enable>
+							<processtag>light1OffDelayEnable</processtag>
+						</enable>					
+					</outputmode>
+				</outputmodes>
+				<timecontrol>
+					<enable>
+						<processtag>light1TimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="16" minute="18" action="on">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="16" minute="20" action="off">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="ontime">
+					<processtag>ioLight1onTime</processtag>
+				</statusitem>
+				<statusitem name="energy">
+					<processtag>ioLight1energy</processtag>
+				</statusitem>
+				<statusitem name="switchlevel">
+					<processtag>ioLight1switchedOn</processtag>
+				</statusitem>
+			</statusitems>
+		</switch>
+		
+		<switch id="light2">
+			<inputs>
+				<input name="on">
+					<processtag initialstate="normallyOpen" logic="or">light2on</processtag>
+				</input>
+				<input name="off">
+					<processtag initialstate="normallyOpen">light2off</processtag>
+				</input>
+				<input name="brightness">
+				</input>
+				<input name="color">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">light2teach</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="on">
+					<processtag initialstate="normallyOpen">ioLight2offOn</processtag>
+				</output>
+				<output name="off">
+					<processtag initialstate="normallyClosed">ioLight2offOn</processtag>
+				</output>
+				<output name="brightness">
+				</output>
+				<output name="color">
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioLight2teach</processtag>
+				</output>
+			</outputs>
+			<parameters>
+				<blink>
+					<enable>
+						<processtag>light2BlinkEnable</processtag>
+					</enable>
+					<intervals>
+						<interval type="on" duration="1"></interval>
+						<interval type="off" duration="1"></interval>
+					</intervals>
+				</blink>
+				<outputmodes>
+					<outputmode type="impulse" duration="1">
+						<enable>
+							<processtag>light2ImpulseEnable</processtag>
+						</enable>					
+					</outputmode>
+					<outputmode type="offdelay" duration="1">
+						<enable>
+							<processtag>light2OffDelayEnable</processtag>
+						</enable>					
+					</outputmode>
+				</outputmodes>
+				<timecontrol>
+					<enable>
+						<processtag>light2TimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="11" minute="30" action="on">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="11" minute="32" action="off">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="ontime">
+					<processtag>ioLight2onTime</processtag>
+				</statusitem>
+				<statusitem name="energy">
+					<processtag>ioLight2energy</processtag>
+				</statusitem>
+				<statusitem name="switchlevel">
+					<processtag>ioLight2switchedOn</processtag>
+				</statusitem>
+			</statusitems>
+		</switch>
+		
+		<switch id="garagedoor">
+			<inputs>
+				<input name="on">
+					<processtag initialstate="normallyOpen" logic="or">garageImpulse</processtag>
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">garageTeach</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="on">
+					<processtag initialstate="normallyOpen">ioGarageOffOn</processtag>
+					<processtag initialstate="normallyOpen">garageLightOn</processtag>
+				</output>
+				<output name="off">
+					<processtag initialstate="normallyClosed">ioGarageOffOn</processtag>
+				</output>
+				<output name="brightness">
+				</output>
+				<output name="color">
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioGarageTeach</processtag>
+				</output>
+			</outputs>
+			<parameters>
+				<outputmodes>
+					<outputmode type="impulse" duration="1">
+						<enable>
+							<processtag>garageImpulseEnable</processtag>
+						</enable>
+					</outputmode>
+				</outputmodes>
+				<timecontrol>
+					<enable>
+						<processtag>garageTimeEnable</processtag>
+					</enable>
+					<events>
+						<event hour="16" minute="18" action="on">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+						<event hour="16" minute="20" action="off">
+							<dateranges>
+								<daterange>
+									<start day="1" month="1"></start>
+									<end day="31" month="12"></end>
+									<weekdays>
+										<weekday>0</weekday>
+										<weekday>1</weekday>
+										<weekday>2</weekday>
+										<weekday>3</weekday>
+										<weekday>4</weekday>
+										<weekday>5</weekday>
+										<weekday>6</weekday>
+									</weekdays>	
+								</daterange>
+							</dateranges>
+						</event>
+					</events>
+				</timecontrol>
+			</parameters>
+			<statusitems>
+				<statusitem name="switchlevel">
+					<processtag>ioGarageSwitchedOn</processtag>
+				</statusitem>
+			</statusitems>
+		</switch>
+
+		<switch id="garageLight">
+			<inputs>
+				<input name="on">
+					<processtag initialstate="normallyOpen">garageLightOn</processtag>
+				</input>
+				<input name="off">
+					<processtag initialstate="normallyOpen">garageLightOff</processtag>
+				</input>
+				<input name="brightness">
+				</input>
+				<input name="color">
+				</input>
+				<input name="teach">
+					<processtag initialstate="normallyOpen">garageLightTeach</processtag>
+				</input>
+			</inputs>
+			<outputs>
+				<output name="on">
+					<processtag initialstate="normallyOpen">ioGarageLightOffOn</processtag>
+				</output>
+				<output name="off">
+					<processtag initialstate="normallyClosed">ioGarageLightOffOn</processtag>
+				</output>
+				<output name="brightness">
+				</output>
+				<output name="color">
+				</output>
+				<output name="teach">
+					<processtag initialstate="normallyOpen">ioGarageLightTeach</processtag>
+				</output>
+			</outputs>
+			<parameters>
+				<outputmodes>
+					<outputmode type="impulse" duration="300">
+						<enable>
+							<processtag>garageLightImpulseEnable</processtag>
+						</enable>
+					</outputmode>
+				</outputmodes>
+			</parameters>
+			<statusitems>
+				<statusitem name="ontime">
+					<processtag>ioGarageLightOnTime</processtag>
+				</statusitem>
+				<statusitem name="energy">
+					<processtag>ioGarageLightEnergy</processtag>
+				</statusitem>
+				<statusitem name="switchlevel">
+					<processtag>ioGarageLightSwitchedOn</processtag>
+				</statusitem>
+			</statusitems>
+		</switch>
+	</switches>
+</cfg>

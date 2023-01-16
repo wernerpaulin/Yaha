@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pdi>
+<light1BlinkEnable>0</light1BlinkEnable>
+<light2ImpulseEnable>0</light2ImpulseEnable>
+<light1OffDelayEnable>0</light1OffDelayEnable>
+<light2TimeEnable>0</light2TimeEnable>
+<light1ImpulseEnable>1</light1ImpulseEnable>
+</pdi>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<heatsources>
+		<heatsource id="burner">
+			<inputs>
+				<input name="settemp">
+					<processtag>setTempBurner</processtag>
+				</input>
+			</inputs>
+			
+			<outputs>
+				<output name="release">
+					<processtag>ioBurnerRelease</processtag>
+				</output>
+			</outputs>
+
+			<statusitems>
+				<statusitem name="switchedon">
+					<processtag>ioBurnerStatusOn</processtag>
+				</statusitem>				
+				<statusitem name="generalfailure">
+					<processtag>ioBurnerFailure</processtag>
+				</statusitem>				
+				<statusitem name="overtemperature">
+					<processtag>ioBurnerOvertemperature</processtag>
+				</statusitem>				
+			</statusitems>
+		</heatsource>
+	</heatsources>
+</cfg>

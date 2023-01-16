@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1656</x>
+      <y>315</y>
+      <w>126</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_yjCyclicRefresh()_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1710</x>
+      <y>333</y>
+      <w>27</w>
+      <h>711</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;770.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1710</x>
+      <y>378</y>
+      <w>18</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1449</x>
+      <y>378</y>
+      <w>135</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>WriteTagListQueue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1449</x>
+      <y>414</y>
+      <w>135</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*tag name*
+--
+uiCount1
+...
+..
+.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1575</x>
+      <y>378</y>
+      <w>153</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1710</x>
+      <y>540</y>
+      <w>18</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1449</x>
+      <y>540</y>
+      <w>135</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>ReadTagListQueue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1449</x>
+      <y>576</y>
+      <w>135</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*tag name*
+--
+uiCount1
+...
+..
+.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1575</x>
+      <y>540</y>
+      <w>153</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2178</x>
+      <y>315</y>
+      <w>171</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_populateCGIdataToWrite()_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1719</x>
+      <y>414</y>
+      <w>558</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+populateCGIdataToWrite()</panel_attributes>
+    <additional_attributes>10.0;20.0;600.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2259</x>
+      <y>432</y>
+      <w>18</w>
+      <h>387</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1809</x>
+      <y>801</y>
+      <w>144</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>CGI data
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1809</x>
+      <y>837</y>
+      <w>72</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*Tag*
+--
+uiCount1
+...
+..
+.
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1881</x>
+      <y>837</y>
+      <w>72</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*Value*
+--
+0
+...
+..
+.
+
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1944</x>
+      <y>810</y>
+      <w>333</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;350.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1719</x>
+      <y>639</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1710</x>
+      <y>648</y>
+      <w>18</w>
+      <h>324</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1719</x>
+      <y>954</y>
+      <w>801</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+CGI post: cgiData</panel_attributes>
+    <additional_attributes>10.0;20.0;870.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1917</x>
+      <y>315</y>
+      <w>171</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_populateCGIdataToRead()_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1998</x>
+      <y>333</y>
+      <w>27</w>
+      <h>801</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;870.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1719</x>
+      <y>576</y>
+      <w>297</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+populateCGIdataToRead()</panel_attributes>
+    <additional_attributes>10.0;20.0;310.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1998</x>
+      <y>594</y>
+      <w>18</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1809</x>
+      <y>630</y>
+      <w>144</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>CGI data
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1809</x>
+      <y>666</y>
+      <w>72</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*Tag*
+--
+uiCount1
+...
+..
+.
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1881</x>
+      <y>666</y>
+      <w>72</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*Value*
+--
+$read$
+$read$
+$read$
+$read$
+
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1944</x>
+      <y>639</y>
+      <w>72</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1719</x>
+      <y>801</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1710</x>
+      <y>423</y>
+      <w>189</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+yjSuspendCyclicRead</panel_attributes>
+    <additional_attributes>20.0;10.0;60.0;10.0;60.0;220.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2421</x>
+      <y>315</y>
+      <w>180</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_server: yaha_webbridge.py_
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2250</x>
+      <y>333</y>
+      <w>36</w>
+      <h>810</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>20.0;10.0;10.0;880.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2502</x>
+      <y>333</y>
+      <w>27</w>
+      <h>729</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;790.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2502</x>
+      <y>972</y>
+      <w>18</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1710</x>
+      <y>1026</y>
+      <w>18</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1719</x>
+      <y>1008</y>
+      <w>801</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+CGI response [JSON stream]</panel_attributes>
+    <additional_attributes>870.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1656</x>
+      <y>1008</y>
+      <w>90</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>callback</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2655</x>
+      <y>315</y>
+      <w>171</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_updateUI()_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1719</x>
+      <y>1044</y>
+      <w>1035</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+updateUI()</panel_attributes>
+    <additional_attributes>10.0;20.0;1130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2736</x>
+      <y>333</y>
+      <w>27</w>
+      <h>810</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;880.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2871</x>
+      <y>315</y>
+      <w>198</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>_PostUpdateUiFunctionObj()_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2961</x>
+      <y>333</y>
+      <w>27</w>
+      <h>882</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;960.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1719</x>
+      <y>1080</y>
+      <w>1260</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+PostUpdateUiFunctionObj()</panel_attributes>
+    <additional_attributes>10.0;20.0;1380.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2736</x>
+      <y>1062</y>
+      <w>18</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>2961</x>
+      <y>1098</y>
+      <w>18</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>243</x>
+      <y>405</y>
+      <w>639</w>
+      <h>342</h>
+    </coordinates>
+    <panel_attributes>Yaha Attribute
+--
+yaha = "property1:value1,value2 ; property2:value1 ; ..."</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>243</x>
+      <y>459</y>
+      <w>135</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>*property*
+--
+io_mode
+
+
+
+
+
+--
+--
+tag_group_wr_click
+--
+tag_group_wr_blur
+--
+tag_group_wr_enter
+--
+tag_group
+--
+format
+--
+unit
+--
+value_map
+--
+select_data
+--
+select_value</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>459</y>
+      <w>171</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>*values*
+--
+read_cyclic
+--
+write_click
+--
+write_blur
+--
+write_enter
+--
+write_change
+--
+any name
+--
+any name
+--
+any name
+--
+any name(s)
+--
+00.##
+--
+[src unit] &gt; [dst unit] show
+--
+[value]= [text],...
+--
+ui-Tag name
+--
+id of a html tag</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>549</x>
+      <y>459</y>
+      <w>333</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>*description*
+--
+sets direction and event for data exchange
+
+
+
+
+
+--
+--
+name of tag group which should be written on click
+--
+name of tag group which should be written on blur
+--
+name of tag group which should be written on enter
+--
+defines which tag groups this tag is member of
+--
+formating style after receiving the raw value
+--
+unit conversion and optional showing the unit
+--
+replacing certain values with text
+--
+ui tag from Yaha runtime with select data to fill
+--
+id which sets the value shown in the select box</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>666</y>
+      <w>72</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>*Unit*
+--
+ms
+s
+min
+h
+day
+%
+N
+$deg$C</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>72</x>
+      <y>666</y>
+      <w>72</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>*Scaling*
+--
+0.001
+1
+60
+3600
+86400
+0.001
+1
+1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>0</x>
+      <y>630</y>
+      <w>144</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>UnitDefinitionTable</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>135</x>
+      <y>639</y>
+      <w>126</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1197</x>
+      <y>540</y>
+      <w>171</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>CyclicReadTagList</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1197</x>
+      <y>576</y>
+      <w>171</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*tag name*
+--
+uiCount1
+...
+..
+.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1359</x>
+      <y>540</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>477</y>
+      <w>342</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>360.0;80.0;320.0;80.0;320.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>954</x>
+      <y>36</y>
+      <w>90</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Tag ID*
+--
+ui...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1044</x>
+      <y>36</y>
+      <w>81</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Tag Group*
+--
+any name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>954</x>
+      <y>0</y>
+      <w>171</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>writeClickTriggerIDs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>954</x>
+      <y>171</y>
+      <w>90</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Tag ID*
+--
+ui...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1044</x>
+      <y>171</y>
+      <w>81</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Tag Group*
+--
+any name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>954</x>
+      <y>135</y>
+      <w>171</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>writeBlurTriggerIDs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>954</x>
+      <y>306</y>
+      <w>90</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Tag ID*
+--
+ui...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1044</x>
+      <y>306</y>
+      <w>81</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Tag Group*
+--
+any name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>954</x>
+      <y>270</y>
+      <w>171</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>writeEnterTriggerIDs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1197</x>
+      <y>225</y>
+      <w>90</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Group name*
+--
+any name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1287</x>
+      <y>225</y>
+      <w>81</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*List of tags*
+--
+tag1, tag2,...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1197</x>
+      <y>189</y>
+      <w>171</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Tag Groups</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1116</x>
+      <y>189</y>
+      <w>99</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1116</x>
+      <y>54</y>
+      <w>63</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0;50.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1116</x>
+      <y>189</y>
+      <w>63</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;160.0;50.0;160.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>0</y>
+      <w>99</w>
+      <h>522</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>90.0;10.0;30.0;10.0;30.0;560.0;10.0;560.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>135</y>
+      <w>99</w>
+      <h>405</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>90.0;10.0;50.0;10.0;50.0;430.0;10.0;430.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>270</y>
+      <w>99</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>90.0;10.0;70.0;10.0;70.0;300.0;10.0;300.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1359</x>
+      <y>243</y>
+      <w>108</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0;50.0;160.0;100.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1404</x>
+      <y>261</y>
+      <w>117</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Added to queue on event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1179</x>
+      <y>81</y>
+      <w>198</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Tag group is optional.
+Necessary if more than one ID should be written</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1197</x>
+      <y>774</y>
+      <w>63</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Tag ID*
+--
+ui...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1260</x>
+      <y>774</y>
+      <w>171</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Format string*
+--
+00.##
+#.##</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1197</x>
+      <y>738</y>
+      <w>234</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>FormatIDs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1197</x>
+      <y>900</y>
+      <w>63</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Tag ID*
+--
+ui...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1260</x>
+      <y>900</y>
+      <w>171</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Unit conversion string*
+--
+[src unit] &gt; [dst unit] show</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1197</x>
+      <y>864</y>
+      <w>234</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>UnitConversionIDsit</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1197</x>
+      <y>1026</y>
+      <w>63</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Tag ID*
+--
+ui...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1260</x>
+      <y>1026</y>
+      <w>171</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Mapping string*
+--
+[value]= [text],...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1197</x>
+      <y>990</y>
+      <w>234</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>ValueMapIDs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1197</x>
+      <y>1152</y>
+      <w>153</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*Tag ID with select data*
+--
+ui...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1350</x>
+      <y>1152</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*ID of select control*
+--
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1197</x>
+      <y>1116</y>
+      <w>279</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>SelectDataIDs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>630</y>
+      <w>342</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>360.0;130.0;320.0;130.0;320.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>648</y>
+      <w>342</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>360.0;250.0;300.0;250.0;300.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>666</y>
+      <w>342</w>
+      <h>351</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>360.0;370.0;280.0;370.0;280.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>684</y>
+      <w>342</w>
+      <h>459</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>360.0;490.0;260.0;490.0;260.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1467</x>
+      <y>1125</y>
+      <w>1512</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>1660.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1422</x>
+      <y>738</y>
+      <w>126</w>
+      <h>414</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>120.0;440.0;120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1422</x>
+      <y>864</y>
+      <w>126</w>
+      <h>279</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>120.0;290.0;120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1422</x>
+      <y>999</y>
+      <w>126</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>120.0;150.0;120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1197</x>
+      <y>1278</y>
+      <w>153</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*ID of select control*
+--
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1350</x>
+      <y>1278</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>*ID of html tag*
+--
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1197</x>
+      <y>1242</y>
+      <w>279</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>SelectValueIDs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>711</y>
+      <w>342</w>
+      <h>558</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>360.0;600.0;240.0;600.0;240.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

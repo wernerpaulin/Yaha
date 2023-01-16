@@ -1,0 +1,46 @@
+/* styling for yaha svg icons */
+/*
+USAGE:
+	<span class="yaha-symbol yaha-symbol-xyz"></span>
+or	<span class="yaha-symbol-background yaha-symbol-xyz"></span>	
+*/
+
+/* styling of symbol for span elements */
+.yaha-symbol {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+}
+
+/* styling to add symbol to any other element */
+.yaha-symbol-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.yaha-symbol:before {
+  content: "\00a0";
+}
+
+/* defintions of all symbols - Begin */
+.yaha-symbol-logo {
+  background-image: url("../svg/yaha_logo.svg");
+}
+
+.yaha-symbol-window {
+  background-image: url("../svg/icon_window.svg");
+}
+
+.yaha-symbol-light-on {
+  background-image: url("../svg/icon_bulb_on.svg");
+}
+
+.yaha-symbol-light-off {
+  background-image: url("../svg/icon_bulb_off.svg");
+}
+
+
+/* definitions of all symbols - End */

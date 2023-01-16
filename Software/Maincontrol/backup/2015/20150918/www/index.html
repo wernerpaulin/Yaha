@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset="UTF-8" http-equiv="content-type">
+
+    <title>Yaha :: UI Test page</title>
+    <link rel="stylesheet" type="text/css" href="css/yaha-ui.css"/>
+    
+    <!-- Set the viewport to show the page at a scale of 1.0, and make it non-scalable -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
+    
+    <!-- Make it fullscreen / hide the browser URL bar -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes">
+    
+    <!--
+        Give the status bar another colour
+        Valid values for "content" are: "default" (white), "black" and "black-translucent"
+        If set to "default" or "black", the content is displayed below the status bar. If set to
+        "black-translucent", the content is displayed under the bar.
+    -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <meta name="apple-mobile-web-app-title" content="Yaha">
+    
+    <!-- Enables or disables automatic detection of possible phone numbers in a webpage in Safari on iOS. -->
+    <meta name="format-detection" content="telephone=no">
+    
+    <!--
+        Add a Home icon.
+        By default, Mobile Safari searches for a file named "apple-touch-icon.png" in the root directory of your website.
+        If it can't find any image there, you can specify it using the code below. Make sure the image has a dimension
+        of 114x114 and is a PNG file. The glossy finish and resizing for the different devices will be done automatically.
+        
+        In case you don't want the gloss applied, use "apple-touch-icon-precomposed" instead of "apple-touch-icon".
+    -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    
+    <!--
+        Add a splash screen / startup image.
+        Take note this file exactly needs to be 320x460 for iPhone or 1004x768 for iPad, and is a PNG file.
+        Also, this only works if "apple-mobile-web-app-capable" is set to "yes".
+    -->
+    <link rel="apple-touch-startup-image" href="images/Yaha 1004x768.png" />
+    
+    <!--
+        Prevent the user from elastic scrolling / rubber banding. Sadly, doesn't always work properly.
+        For a more solid solution, check out ScrollFix ( https://github.com/joelambert/ScrollFix )
+    -->
+    <script>
+    function BlockElasticScroll(event) {
+        event.preventDefault() ;
+    }
+    
+    // In JavaScript, you can use "window.navigator.standalone" to detect wether
+    // the page is being viewed on your website, or as a standalone application.
+    
+    // You can also the detect the device the user is using.
+    // var isIPhone = navigator.userAgent.indexOf("iPhone") != -1 ;
+    // var isIPod = navigator.userAgent.indexOf("iPod") != -1 ;
+    // var isIPad = navigator.userAgent.indexOf("iPad") != -1 ;
+    // var isIOs = isIPhone || isIPod || isIPad ;
+        </script>
+</head>
+<body ontouchmove="BlockElasticScroll(event);">
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+	<script src="js/yaha-juice.js"></script>
+	<script src="js/yaha-live.js"></script>
+	<script src="js/yaha-view.js"></script>
+
+
+<!-- Overlay for notification which are displayed on top of UI -->
+<div id="contentOverlay" onclick="hideMainNav()"></div>
+
+<div style="position: fixed; 
+            top:0px;
+            height: 600px; 
+            z-index:105;
+            left:10%;
+            right:10%;
+            border: 1px solid black;
+            background-color: #FFFFFF;">
+
+    <div style="position: absolute; 
+                top: 0; 
+                width: 100%; 
+                height: 560px; 
+                border: 1px solid blue;
+                z-index:106;
+                background-color:none;">
+
+		<div>
+			<h1 style="text-align:center; margin: 80px 0 40px 0">Yaha Main Navigation</h1>
+		</div>
+		<div id="pieChart" class="chart" style="height:300px;width: 300px"></div>
+    </div>
+
+    <div style="position: absolute; 
+                bottom: 0; 
+                width: 100%; 
+                height: 40px; 
+                border: 1px solid red;
+                z-index:106;
+                background-color:none;">
+    	<span style="top: -10px; left: calc(50% - 50px);" class="yahaIcon"><object id="mainNavSelector" data="svg/icon_main_nav_selector.svg" type="image/svg+xml"></object></span>
+    </div>
+</div>
+	
+
+<div id="content_container" onclick="hideMainNavSelector()">
+	<div id="content_header">
+
+	</div>
+
+	
+	<div id="content_body">
+		<h1>iOS Template</h1>
+		<p>Test paragraph</p>
+		<a href="debug.html">Debugging page</a>
+		
+		<div id="draggable" class="ui-widget-content">
+  			<p>Drag me around</p>
+  			<a href="https://jqueryui.com/draggable/#events">Events für Drag-Position</a>
+		</div>	
+		
+	</div>
+	
+	
+	<div id="content_footer">
+		<div class="sub_menu">
+			<span class="yahaIcon"><object id="submenu1" data="svg/icon_list.svg" type="image/svg+xml"></object></span>
+			<span class="yahaIcon"><object id="submenu2" data="svg/icon_list.svg" type="image/svg+xml"></object></span>
+			<span class="yahaIcon"><object id="submenu3" data="svg/icon_list.svg" type="image/svg+xml"></object></span>
+			<span class="yahaIcon"><object id="submenu4" data="svg/icon_list.svg" type="image/svg+xml"></object></span>
+			<span class="yahaIcon"><object id="submenu5" data="svg/icon_list.svg" type="image/svg+xml"></object></span>
+		</div>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>

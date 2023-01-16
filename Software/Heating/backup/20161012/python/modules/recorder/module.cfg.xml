@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfg>
+	<recordcontainers>
+		<recordcontainer id="heating" directory="/home/pi/Yaha/logs/" filenametrunk="heating" interval="900">
+			<dataitems>
+				<dataitem name="count1" pditag="count1"></dataitem>
+			</dataitems>
+		</recordcontainer>
+	</recordcontainers>
+</cfg>
